@@ -344,7 +344,7 @@ const Projects = () => {
             {filteredProjects.map((project) => (
               <Link key={project.id} to={`/projects/${project.slug}`}>
                 <Card className="group cursor-pointer overflow-hidden border-border/50 bg-card/50 backdrop-blur-sm hover:border-xr-neon/50 transition-all duration-300">
-                  <div className="aspect-video bg-gradient-to-br from-xr-neon/20 to-xr-cyber/20 relative overflow-hidden">
+                  <div className="aspect-[4/3] bg-gradient-to-br from-xr-neon/20 to-xr-cyber/20 relative overflow-hidden">
                     {/* Project Image */}
                     <img
                       src={project.image}
@@ -356,7 +356,7 @@ const Projects = () => {
                     <div className="absolute top-3 left-3">
                       <Badge
                         variant="secondary"
-                        className="bg-xr-neon/20 text-xr-neon border-xr-neon/30 text-xs"
+                        className="bg-muted/70 text-foreground border-border/10 text-xs rounded-[6px]"
                       >
                         {project.categoryLabel}
                       </Badge>
@@ -364,7 +364,7 @@ const Projects = () => {
 
                     {project.featured && (
                       <div className="absolute top-3 right-3">
-                        <Badge className="bg-xr-cyber/20 text-xr-cyber border-xr-cyber/30 text-xs">
+                        <Badge className="bg-muted/80 text-foreground border-border/40 text-xs rounded-[6px]">
                           Featured
                         </Badge>
                       </div>

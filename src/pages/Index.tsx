@@ -37,7 +37,7 @@ const Index = () => {
     {
       title: "Kedarnath Mythological Story",
       category: "VR Experience",
-      image: "/placeholder.svg",
+      image: "/Photos/Kedarnath.png",
       description:
         "Immersive VR experience bringing ancient mythological stories of Kedarnath to life",
       slug: "kedarnath",
@@ -45,7 +45,7 @@ const Index = () => {
     {
       title: "Savey - Interactive Piggy Bank",
       category: "Interactive Design",
-      image: "/placeholder.svg",
+      image: "/Photos/Savey.png",
       description:
         "Friendly piggy bank that makes saving joyful for kids with expressive eyes and sounds",
       slug: "savey",
@@ -53,7 +53,7 @@ const Index = () => {
     {
       title: "The Mushroom House",
       category: "3D Environment",
-      image: "/placeholder.svg",
+      image: "/Photos/Mushroom.png",
       description:
         "Fantasy 3D environment showcasing complete pipeline from Maya to Unreal Engine 5",
       slug: "mushroom-house",
@@ -126,8 +126,14 @@ const Index = () => {
                             : "bg-minimal-cool/10"
                       }`}
                     >
+                      {/* Project Image */}
+                      <img
+                        src={project.image}
+                        alt={project.title}
+                        className="absolute inset-0 w-full h-full object-cover object-center z-0"
+                      />
                       {/* Project category badge */}
-                      <div className="absolute top-4 left-4">
+                      <div className="absolute top-4 left-4 z-10">
                         <span className="text-xs font-normal text-muted-foreground bg-background/80 backdrop-blur-sm px-3 py-1 rounded-full border border-border/50">
                           {project.category}
                         </span>
@@ -135,7 +141,7 @@ const Index = () => {
 
                       {/* Simple accent dot */}
                       <div
-                        className={`absolute bottom-4 right-4 w-3 h-3 rounded-full ${
+                        className={`absolute bottom-4 right-4 w-3 h-3 rounded-full z-10 ${
                           currentColor === "minimal-sage"
                             ? "bg-minimal-sage/60"
                             : currentColor === "minimal-warm"

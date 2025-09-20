@@ -60,7 +60,7 @@ const HorizontalCarousel: React.FC = () => {
           repeat: Infinity,
           ease: "linear",
         }}
-        style={{ width: "200%" }}
+        style={{ width: "400%" }}
       >
         {duplicatedImages.map((image, index) => (
           <div
@@ -68,7 +68,7 @@ const HorizontalCarousel: React.FC = () => {
             className="flex-shrink-0 w-80 bg-card rounded-2xl overflow-hidden border border-border/50 shadow-sm"
           >
             {/* Image */}
-            <div className="aspect-[4/3] overflow-hidden">
+            <div className="aspect-[4/5] overflow-hidden">
               <img
                 src={image.src}
                 alt={image.caption}

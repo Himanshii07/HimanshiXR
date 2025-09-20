@@ -21,7 +21,7 @@ const MinimalistHero: React.FC = () => {
       <div className="absolute right-12 top-0 bottom-0 w-px bg-blue-200 opacity-20" />
 
       {/* Hand-drawn illustrations */}
-      <HandDrawnIllustrations />
+      <HandDrawnIllustrations showTooltip={true} />
 
       <div className="container mx-auto px-4 text-center relative z-10">
         <motion.div
