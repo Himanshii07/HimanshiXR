@@ -12,13 +12,15 @@ import {
   Layers,
   Cpu,
   Zap,
+  Play,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import CustomVideoPlayer from "@/components/ui/VideoPlayer";
+
 
 const AngryBirds = () => {
   useEffect(() => {
@@ -72,129 +74,111 @@ const AngryBirds = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
 
-      {/* Header */}
-      <section className="py-12 bg-gradient-to-br from-background to-xr-neon/5">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <Button
-              asChild
-              variant="ghost"
-              className="mb-8 text-muted-foreground hover:text-foreground"
-            >
-              <Link to="/projects">
-                <ArrowLeft className="mr-2 h-4 w-4" />
-                Back to Projects
-              </Link>
-            </Button>
-
-            <div className="grid lg:grid-cols-3 gap-8">
-              <div className="lg:col-span-2">
-                <div className="mb-6">
-                  <Badge className="mb-4 bg-xr-neon/20 text-xr-neon border-xr-neon/30">
-                    {projectDetails.category}
-                  </Badge>
-                  <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-foreground to-xr-neon bg-clip-text text-transparent">
-                    {projectDetails.title}
-                  </h1>
-                  <p className="text-xl text-muted-foreground leading-relaxed">
-                    As part of the Introduction to Coding course, I developed a
-                    2D version of Angry Birds using Unity. The project involved
-                    designing levels, scripting physics-based interactions, and
-                    creating an engaging user interface with a home screen. With
-                    three distinct levels, the game combined strategy and fun,
-                    showcasing gameplay mechanics and visual aesthetics inspired
-                    by the classic Angry Birds experience.
-                  </p>
-                </div>
-
-                <div className="flex flex-wrap gap-4 mb-8">
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    className="border-xr-neon text-xr-neon hover:bg-xr-neon hover:text-xr-neon-foreground"
-                  >
-                    <ExternalLink className="mr-2 h-4 w-4" />
-                    View Demo
-                  </Button>
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    className="border-border hover:border-xr-cyber text-muted-foreground hover:text-xr-cyber"
-                  >
-                    <Github className="mr-2 h-4 w-4" />
-                    Source Code
-                  </Button>
-                </div>
+      {/* Hero Section - Updated to match Mushroom House style */}
+      <section className="relative py-24 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-red-50" />
+        <div className="relative container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            {/* Back Button */}
+            <div className="mb-8">
+              <Button
+                asChild
+                variant="ghost"
+                className="text-red-600 hover:text-red-800"
+              >
+                <Link to="/projects">
+                  <ArrowLeft className="w-4 h-4 mr-2" />
+                  Back to Projects
+                </Link>
+              </Button>
+            </div>
+            {/* Project Header */}
+            <div className="text-center mb-16">
+              <div className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-red-400/10 to-pink-400/10 border border-red-400/20 mb-6">
+                <Gamepad2 className="w-4 h-4 mr-2 text-red-400" />
+                <span className="text-sm font-medium text-red-400">
+                  Game Development
+                </span>
               </div>
-
-              <div>
-                <Card className="border-border/50 bg-card/50 backdrop-blur-sm">
-                  <CardHeader>
-                    <CardTitle className="text-lg">Project Details</CardTitle>
-                  </CardHeader>
-                  <CardContent className="space-y-4">
-                    <div className="flex items-center space-x-3">
-                      <Calendar className="w-4 h-4 text-xr-neon" />
-                      <div>
-                        <p className="text-sm font-medium">Year</p>
-                        <p className="text-sm text-muted-foreground">
-                          {projectDetails.year}
-                        </p>
-                      </div>
-                    </div>
-                    <div className="flex items-center space-x-3">
-                      <Clock className="w-4 h-4 text-xr-neon" />
-                      <div>
-                        <p className="text-sm font-medium">Duration</p>
-                        <p className="text-sm text-muted-foreground">
-                          {projectDetails.duration}
-                        </p>
-                      </div>
-                    </div>
-                    <div className="flex items-center space-x-3">
-                      <User className="w-4 h-4 text-xr-neon" />
-                      <div>
-                        <p className="text-sm font-medium">Project Type</p>
-                        <p className="text-sm text-muted-foreground">
-                          {projectDetails.client}
-                        </p>
-                      </div>
-                    </div>
-                    <div>
-                      <p className="text-sm font-medium mb-2">
-                        Tools & Technologies
-                      </p>
-                      <div className="flex flex-wrap gap-2">
-                        {projectDetails.tools.map((tool, index) => (
-                          <Badge
-                            key={index}
-                            variant="outline"
-                            className="text-xs"
-                          >
-                            {tool}
-                          </Badge>
-                        ))}
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-red-600 via-pink-400 to-red-400 bg-clip-text text-transparent">
+                {projectDetails.title}
+              </h1>
+              <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed mb-8">
+                As part of the Introduction to Coding course, I developed a 2D version of Angry Birds using Unity. The project involved designing levels, scripting physics-based interactions, and creating an engaging user interface with a home screen. With three distinct levels, the game combined strategy and fun, showcasing gameplay mechanics and visual aesthetics inspired by the classic Angry Birds experience.
+              </p>
+              <div className="flex flex-wrap justify-center gap-4 mb-8">
+                <Badge variant="outline" className="text-sm border-red-400 text-red-600">
+                  <Calendar className="w-3 h-3 mr-1" />
+                  {projectDetails.year}
+                </Badge>
+                <Badge variant="outline" className="text-sm border-pink-400 text-pink-600">
+                  <Clock className="w-3 h-3 mr-1" />
+                  {projectDetails.duration}
+                </Badge>
+                <Badge variant="outline" className="text-sm border-red-400 text-red-600">
+                  <User className="w-3 h-3 mr-1" />
+                  {projectDetails.client}
+                </Badge>
+              </div>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Button size="lg" className="bg-gradient-to-r from-red-600 to-pink-400 text-white hover:from-red-700 hover:to-pink-500">
+                  <Play className="mr-2 h-4 w-4" />
+                  View Gameplay Demo
+                </Button>
+                <Button variant="outline" size="lg" className="border-red-400 text-pink-600 hover:bg-pink-400 hover:text-black">
+                  <Github className="mr-2 h-4 w-4" />
+                  Source Code
+                </Button>
               </div>
             </div>
+            {/* Video Showcase */}
+            <CustomVideoPlayer
+              src="https://www.youtube.com/embed/SjZT8W8lbZU?mute=0"
+              title="Angry Birds Recreation Project"
+              className="aspect-video mb-16"
+            />
           </div>
         </div>
       </section>
 
-      {/* Project Video (YouTube) */}
-      <section className="py-16">
+      {/* Project Overview Section */}
+      <section className="py-24 bg-gradient-to-r from-red-50 via-background to-pink-50">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <Card className="overflow-hidden border-border/50 bg-card/50 backdrop-blur-sm">
-              <CustomVideoPlayer
-                src="https://www.youtube.com/embed/SjZT8W8lbZU?mute=0"
-                title="Angry Birds Recreation Project"
-                className="aspect-video mb-16"
-              />
-            </Card>
+            <div className="grid lg:grid-cols-2 gap-16 items-center">
+              <div>
+                <h2 className="text-3xl font-bold mb-6">Project Overview</h2>
+                <p className="text-muted-foreground leading-relaxed mb-6">
+                  This project was a hands-on introduction to 2D game development, focusing on physics-based gameplay and level design. The goal was to recreate the core mechanics and fun of Angry Birds using Unity and C#.
+                </p>
+                <p className="text-muted-foreground leading-relaxed mb-6">
+                  I designed three unique levels, implemented slingshot mechanics, and added visual polish with particle effects and UI screens. The project helped me master Unity's physics engine and game scripting fundamentals.
+                </p>
+                <p className="text-muted-foreground leading-relaxed">
+                  The final result is a simple but engaging game that demonstrates my ability to build interactive experiences and manage a complete game development pipeline.
+                </p>
+              </div>
+              <div className="space-y-6">
+                <div>
+                  <h3 className="font-semibold text-foreground mb-2">Focus</h3>
+                  <p className="text-muted-foreground">Physics-based 2D game development</p>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-foreground mb-2">Primary Tools</h3>
+                  <p className="text-muted-foreground">Unity → C# → Physics Engine</p>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-foreground mb-2">Key Skills</h3>
+                  <div className="flex flex-wrap gap-2">
+                    {projectDetails.tools.map((tool, index) => (
+                      <Badge key={index} variant="secondary" className="text-xs">
+                        {tool}
+                      </Badge>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -204,7 +188,7 @@ const AngryBirds = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-red-600">
                 Key Features
               </h2>
               <p className="text-lg text-muted-foreground">
@@ -244,7 +228,7 @@ const AngryBirds = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-red-600">
                 Learning Outcomes
               </h2>
               <p className="text-lg text-muted-foreground">
@@ -319,9 +303,9 @@ const AngryBirds = () => {
       </section>
 
       {/* Next Project */}
-      <section className="py-24 bg-gradient-to-r from-xr-neon/10 via-background to-xr-cyber/10">
+      <section className="py-24 bg-gradient-to-r from-red-50 via-background to-red-100">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-red-600">
             Explore More Projects
           </h2>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
@@ -332,7 +316,7 @@ const AngryBirds = () => {
           <Button
             asChild
             size="lg"
-            className="bg-xr-neon text-xr-neon-foreground hover:bg-xr-neon/80"
+            className="bg-red-600 text-white hover:bg-red-700"
           >
             <Link to="/projects">
               View All Projects

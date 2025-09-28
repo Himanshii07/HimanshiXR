@@ -527,11 +527,41 @@ const Savey = () => {
               expressive eyes and blinking animations
             </p>
 
-            <CustomVideoPlayer
-              src="/videos/Savey Kids.mp4"
-              title="Savey User Testing Highlights"
-              className="aspect-video mb-16"
-            />
+
+            {/* Collage of news images */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-12">
+              {/* Cricket match controversy news image */}
+             
+              {/* Overcrowding news image */}
+              <div>
+                <img
+                  src="/Photos/new/1.jpeg"
+                  alt="News: Kedarnath flooded with pilgrims as more than 10 lakh people visit the temple in a short span. Large crowd in front of the temple."
+                  className="rounded-xl shadow-lg w-full aspect-[4/5] object-cover"
+                />
+              </div>
+         
+              {/* Dance/reel controversy image */}
+              <div>
+                <img
+                  src="/Photos/new/5.png"
+                  alt="Pilgrims upset as Kedarnath Dham turns into reel shooting and dance ground."
+                  className="rounded-xl shadow-lg w-full aspect-[4/5] object-cover"
+                />
+              </div>
+              {/* Outbreak image */}
+              <div>
+                <img
+                  src="/Photos/new/8.jpeg"
+                  alt="News about virus outbreak affecting horses and mules in Kedarnath, May 2025"
+                  className="rounded-xl shadow-lg w-full aspect-[4/5] object-cover"
+                />
+              </div>
+              {/* Helicopter crash news image */}
+              
+            </div>
+
+
 
             <div className="grid md:grid-cols-3 gap-4 text-sm">
               <div className="bg-green-100 text-green-700 p-4 rounded-lg">

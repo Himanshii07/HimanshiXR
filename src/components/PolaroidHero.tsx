@@ -20,7 +20,7 @@ const PolaroidHero: React.FC = () => {
 
               {/* Polaroid frame */}
               <div className="bg-white p-3 pb-16 shadow-2xl transform rotate-2 hover:rotate-0 transition-transform duration-500">
-                <div className="aspect-square relative overflow-hidden bg-gray-100">
+                <div className="aspect-3/4 relative overflow-hidden bg-gray-100">
                   <img
                     src="/Photos/me.jpg"
                     alt="Himanshi profile"
