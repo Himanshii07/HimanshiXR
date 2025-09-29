@@ -18,7 +18,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Navigation from "@/components/Navigation";
-import CustomVideoPlayer from "@/components/ui/VideoPlayer";
 
 const PreFlightVR = () => {
   useEffect(() => {
@@ -40,10 +39,10 @@ const PreFlightVR = () => {
               </Link>
             </Button>
             <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-blue-400 to-blue-300 bg-clip-text text-transparent">
-              Pre-flight Maintenance Check - VR
+              Preflight Maintenance Check VR
             </h1>
             <p className="text-lg text-muted-foreground mb-8">
-              VR-based pre-flight maintenance training simulation for safe, immersive, and hands-on learning.
+              We designed a VR-based pre-flight maintenance training simulation to replace costly, risky traditional methods. A guided inspection is followed by independent practice with real-time feedback in a safe, immersive setup.
             </p>
             <div className="flex flex-wrap justify-center gap-4 mb-8">
               <Badge variant="outline" className="text-sm border-blue-400 text-blue-600">
@@ -60,9 +59,8 @@ const PreFlightVR = () => {
               </Badge>
             </div>
             <div className="flex justify-center mb-8">
-              <img src="/Photos/preflight/hero.jpg" alt="Pre-flight VR hero" className="rounded-xl shadow-lg w-full max-w-lg object-cover" />
+              <img src="https://images.pexels.com/photos/6006171/pexels-photo-6006171.jpeg" alt="Aircraft maintenance hangar" className="rounded-xl shadow-lg w-full max-w-lg object-cover" />
             </div>
-            <CustomVideoPlayer src="https://www.youtube.com/embed/preflight-demo" title="Pre-flight VR Demo" className="aspect-video mb-16" />
           </div>
         </div>
       </section>
@@ -73,7 +71,7 @@ const PreFlightVR = () => {
           <div className="max-w-3xl mx-auto text-center mb-10">
             <h2 className="text-3xl font-bold mb-4">Body Storming</h2>
             <p className="text-lg text-muted-foreground mb-6">Physical enactment of maintenance tasks to understand user needs and workflow.</p>
-            <img src="/Photos/preflight/bodystorming.jpg" alt="Body Storming" className="rounded-xl shadow-lg w-full object-cover" />
+            <img src="https://images.pexels.com/photos/7640741/pexels-photo-7640741.jpeg" alt="Bodystorming with sticky notes and team" className="rounded-xl shadow-lg w-full object-cover" />
           </div>
         </div>
       </section>
@@ -85,9 +83,9 @@ const PreFlightVR = () => {
             <h2 className="text-3xl font-bold mb-4">GOMS Model</h2>
             <p className="text-lg text-muted-foreground mb-6">Task analysis for guided inspection and independent practice.</p>
             <div className="grid md:grid-cols-3 gap-6">
-              <img src="/Photos/preflight/goms-1.jpg" alt="GOMS Model 1" className="rounded-lg shadow w-full object-cover aspect-square" />
-              <img src="/Photos/preflight/goms-2.jpg" alt="GOMS Model 2" className="rounded-lg shadow w-full object-cover aspect-square" />
-              <img src="/Photos/preflight/goms-3.jpg" alt="GOMS Model 3" className="rounded-lg shadow w-full object-cover aspect-square" />
+              <img src="https://images.pexels.com/photos/29765799/pexels-photo-29765799.jpeg" alt="Checklist for task decomposition" className="rounded-lg shadow w-full object-cover aspect-square" />
+              <img src="https://images.pexels.com/photos/11786435/pexels-photo-11786435.jpeg" alt="Aircraft inspection context" className="rounded-lg shadow w-full object-cover aspect-square" />
+              <img src="https://images.pexels.com/photos/2059638/pexels-photo-2059638.jpeg" alt="Rotor maintenance task context" className="rounded-lg shadow w-full object-cover aspect-square" />
             </div>
           </div>
         </div>
@@ -100,10 +98,10 @@ const PreFlightVR = () => {
             <h2 className="text-3xl font-bold mb-4">Storyboarding</h2>
             <p className="text-lg text-muted-foreground mb-6">Visualizing the trainee journey from guided session to independent practice.</p>
             <div className="grid md:grid-cols-4 gap-6">
-              <img src="/Photos/preflight/story-1.jpg" alt="Storyboard 1" className="rounded-lg shadow w-full object-cover aspect-square" />
-              <img src="/Photos/preflight/story-2.jpg" alt="Storyboard 2" className="rounded-lg shadow w-full object-cover aspect-square" />
-              <img src="/Photos/preflight/story-3.jpg" alt="Storyboard 3" className="rounded-lg shadow w-full object-cover aspect-square" />
-              <img src="/Photos/preflight/story-4.jpg" alt="Storyboard 4" className="rounded-lg shadow w-full object-cover aspect-square" />
+              <img src="https://images.pexels.com/photos/6002182/pexels-photo-6002182.jpeg" alt="Storyboard sketch details" className="rounded-lg shadow w-full object-cover aspect-square" />
+              <img src="https://images.pexels.com/photos/7640741/pexels-photo-7640741.jpeg" alt="Journey mapping with sticky notes" className="rounded-lg shadow w-full object-cover aspect-square" />
+              <img src="https://images.pexels.com/photos/29765811/pexels-photo-29765811.jpeg" alt="Desk setup for sketching" className="rounded-lg shadow w-full object-cover aspect-square" />
+              <img src="https://images.pexels.com/photos/29765799/pexels-photo-29765799.jpeg" alt="Checklist frames" className="rounded-lg shadow w-full object-cover aspect-square" />
             </div>
           </div>
         </div>
@@ -115,7 +113,7 @@ const PreFlightVR = () => {
           <div className="max-w-2xl mx-auto text-center mb-10">
             <h2 className="text-3xl font-bold mb-4">Human Factors</h2>
             <p className="text-lg text-muted-foreground mb-6">Designed for safety, comfort, and effective learning in VR.</p>
-            <img src="/Photos/preflight/humanfactors.jpg" alt="Human Factors" className="rounded-xl shadow-lg w-full object-cover" />
+            <img src="https://images.pexels.com/photos/4506105/pexels-photo-4506105.jpeg" alt="Human factors: posture and comfort" className="rounded-xl shadow-lg w-full object-cover" />
           </div>
         </div>
       </section>
@@ -126,7 +124,7 @@ const PreFlightVR = () => {
           <div className="max-w-2xl mx-auto text-center mb-10">
             <h2 className="text-3xl font-bold mb-4">XR Design Heuristics</h2>
             <p className="text-lg text-muted-foreground mb-6">Applied best practices for immersive training and feedback.</p>
-            <img src="/Photos/preflight/heuristics.jpg" alt="XR Design Heuristics" className="rounded-xl shadow-lg w-full object-cover" />
+            <img src="https://images.pexels.com/photos/8097823/pexels-photo-8097823.jpeg" alt="VR training context and heuristics" className="rounded-xl shadow-lg w-full object-cover" />
           </div>
         </div>
       </section>
