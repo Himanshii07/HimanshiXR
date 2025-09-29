@@ -22,7 +22,6 @@ import {
   Flower,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Navigation from "@/components/Navigation";
 import CustomVideoPlayer from "@/components/ui/VideoPlayer";
@@ -159,107 +158,51 @@ const MushroomHouse = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
 
-      {/* Hero Section with Fantasy Theme */}
-      <section className="relative py-24 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-purple-900/10" />
-
-        {/* Magical floating elements */}
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-1/4 left-1/4 w-20 h-20 bg-purple-400/20 rounded-full blur-xl animate-float" />
-          <div
-            className="absolute top-1/3 right-1/3 w-16 h-16 bg-pink-400/20 rounded-full blur-lg animate-float"
-            style={{ animationDelay: "0.5s" }}
-          />
-          <div
-            className="absolute bottom-1/4 left-1/3 w-24 h-24 bg-green-400/20 rounded-full blur-xl animate-float"
-            style={{ animationDelay: "1s" }}
-          />
-          <div
-            className="absolute bottom-1/3 right-1/4 w-18 h-18 bg-yellow-400/20 rounded-full blur-lg animate-float"
-            style={{ animationDelay: "1.5s" }}
-          />
-          <div
-            className="absolute top-1/2 left-1/2 w-14 h-14 bg-blue-400/20 rounded-full blur-md animate-float"
-            style={{ animationDelay: "2s" }}
-          />
-        </div>
-
-        <div className="relative container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            {/* Back Button */}
-            <div className="mb-8">
-              <Button
-                asChild
-                variant="ghost"
-                className="text-muted-foreground hover:text-foreground"
+      {/* Hero Section - subtle fantasy theme, more visuals */}
+      <section className="relative py-24 overflow-hidden bg-gradient-to-br from-background via-background to-purple-100">
+        <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-purple-400/20 rounded-full blur-2xl" />
+        <div className="absolute bottom-1/3 right-1/4 w-32 h-32 bg-pink-400/20 rounded-full blur-2xl" />
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto text-center">
+            <Button
+              asChild
+              variant="ghost"
+              className="mb-8 text-muted-foreground hover:text-foreground"
+            >
+              <Link to="/projects">
+                <ArrowLeft className="w-4 h-4 mr-2" />
+                Back to Projects
+              </Link>
+            </Button>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-purple-400 via-pink-400 to-yellow-400 bg-clip-text text-transparent">
+              {projectDetails.title}
+            </h1>
+            <p className="text-xl text-muted-foreground mb-8">
+              {projectDetails.subtitle}
+            </p>
+            <div className="flex flex-wrap justify-center gap-4 mb-8">
+              <Badge
+                variant="outline"
+                className="text-sm border-purple-400 text-purple-400"
               >
-                <Link to="/projects">
-                  <ArrowLeft className="w-4 h-4 mr-2" />
-                  Back to Projects
-                </Link>
-              </Button>
+                <Calendar className="w-3 h-3 mr-1" />
+                {projectDetails.year}
+              </Badge>
+              <Badge
+                variant="outline"
+                className="text-sm border-pink-400 text-pink-400"
+              >
+                <Users className="w-3 h-3 mr-1" />
+                {projectDetails.team}
+              </Badge>
+              <Badge
+                variant="outline"
+                className="text-sm border-yellow-400 text-yellow-400"
+              >
+                <Award className="w-3 h-3 mr-1" />
+                {projectDetails.status}
+              </Badge>
             </div>
-
-            {/* Project Header */}
-            <div className="text-center mb-16">
-              <div className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-purple-400/10 to-pink-400/10 border border-purple-400/20 mb-6">
-                <Sparkles className="w-4 h-4 mr-2 text-purple-400" />
-                <span className="text-sm font-medium text-purple-400">
-                  Fantasy 3D Environment
-                </span>
-              </div>
-
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-purple-400 via-pink-400 to-yellow-400 bg-clip-text text-transparent">
-                {projectDetails.title}
-              </h1>
-
-              <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed mb-8">
-                {projectDetails.subtitle}
-              </p>
-
-              <div className="flex flex-wrap justify-center gap-4 mb-8">
-                <Badge
-                  variant="outline"
-                  className="text-sm border-purple-400 text-purple-400"
-                >
-                  <Calendar className="w-3 h-3 mr-1" />
-                  {projectDetails.year}
-                </Badge>
-                <Badge
-                  variant="outline"
-                  className="text-sm border-pink-400 text-pink-400"
-                >
-                  <Users className="w-3 h-3 mr-1" />
-                  {projectDetails.team}
-                </Badge>
-                <Badge
-                  variant="outline"
-                  className="text-sm border-yellow-400 text-yellow-400"
-                >
-                  <Award className="w-3 h-3 mr-1" />
-                  {projectDetails.status}
-                </Badge>
-              </div>
-
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button
-                  size="lg"
-                  className="bg-gradient-to-r from-purple-400 to-pink-400 text-white hover:from-purple-500 hover:to-pink-500"
-                >
-                  <Play className="mr-2 h-4 w-4" />
-                  View 3D Modeling Process
-                </Button>
-                <Button
-                  variant="outline"
-                  size="lg"
-                  className="border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black"
-                >
-                  <Camera className="mr-2 h-4 w-4" />
-                  Environment Showcase
-                </Button>
-              </div>
-            </div>
-            {/* YouTube Video Showcase */}
             <CustomVideoPlayer
               src="https://youtu.be/zkfMJK6O_9Y?mute=0&autoplay=1"
               title="Mushroom House YouTube Showcase"
@@ -269,266 +212,145 @@ const MushroomHouse = () => {
         </div>
       </section>
 
-      {/* Project Overview */}
-      <section className="py-24 bg-gradient-to-r from-purple-900/10 via-background to-pink-900/10">
+      {/* Moodboard Section */}
+      <section className="py-16 bg-purple-50">
         <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <div className="grid lg:grid-cols-2 gap-16 items-center">
-              <div>
-                <h2 className="text-3xl font-bold mb-6">Project Overview</h2>
-                <p className="text-muted-foreground leading-relaxed mb-6">
-                  This project was a hands-on introduction to the full 3D
-                  pipeline, from modeling to animation to real-time rendering.
-                  The core model was a stylized mushroom house, created in
-                  Autodesk Maya.
-                </p>
-                <p className="text-muted-foreground leading-relaxed mb-6">
-                  After modeling, I learned how to create UV maps and applied
-                  detailed hand-painted textures using Substance Painter. The
-                  final rigging and animation of interactive elements like the
-                  leaves were also done in Maya.
-                </p>
-                <p className="text-muted-foreground leading-relaxed">
-                  To elevate the outcome, the animated model was imported into
-                  Unreal Engine 5, where I built an entire fantasy environment
-                  around it—bringing the scene to life with lighting, props, and
-                  storytelling elements.
-                </p>
-              </div>
-
-              <div className="space-y-6">
-                <div>
-                  <h3 className="font-semibold text-foreground mb-2">Focus</h3>
-                  <p className="text-muted-foreground">
-                    Complete 3D production pipeline mastery
-                  </p>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-foreground mb-2">
-                    Primary Tools
-                  </h3>
-                  <p className="text-muted-foreground">
-                    Maya → Substance Painter → Unreal Engine 5
-                  </p>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-foreground mb-2">
-                    Art Style
-                  </h3>
-                  <p className="text-muted-foreground">
-                    Stylized fantasy with hand-painted textures
-                  </p>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-foreground mb-2">
-                    Key Skills
-                  </h3>
-                  <div className="flex flex-wrap gap-2">
-                    {technologies.slice(0, 6).map((tech, index) => (
-                      <Badge
-                        key={index}
-                        variant="secondary"
-                        className="text-xs"
-                      >
-                        {tech}
-                      </Badge>
-                    ))}
-                    <Badge variant="secondary" className="text-xs">
-                      +{technologies.length - 6} more
-                    </Badge>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div className="max-w-6xl mx-auto text-center mb-10">
+            <h2 className="text-3xl font-bold mb-4">Moodboard</h2>
+            <p className="text-lg text-muted-foreground mb-6">
+              Fantasy, whimsy, and hand-painted textures
+            </p>
+            <img
+              src="/Photos/Mushroom/2.png"
+              alt="Mushroom House Moodboard"
+              className="rounded-xl shadow-lg w-full object-cover"
+            />
           </div>
         </div>
       </section>
 
-      {/* 3D Pipeline Process */}
-      <section className="py-24">
+      {/* 3D Pipeline Section - short, more images, no cards */}
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                🎨 3D Production Pipeline
-              </h2>
-              <p className="text-lg text-muted-foreground">
-                From initial modeling to final environment rendering
-              </p>
-            </div>
-
-            <div className="space-y-12">
-              {pipelineSteps.map((step, index) => {
-                const Icon = step.icon;
-                const isEven = index % 2 === 0;
-                return (
-                  <div key={index} className="flex justify-center">
-                    <div className="max-w-2xl w-full">
-                      <Card className="border-border/50 bg-card/50 backdrop-blur-sm hover:border-purple-400/50 transition-all duration-300">
-                        <CardContent className="p-8">
-                          <div className="flex items-center mb-4">
-                            <div className="w-12 h-12 bg-purple-400/10 rounded-full flex items-center justify-center mr-4">
-                              <Icon className="w-6 h-6 text-purple-400" />
-                            </div>
-                            <div>
-                              <Badge variant="outline" className="text-xs mb-2">
-                                Step {step.step}
-                              </Badge>
-                              <h3 className="text-xl font-semibold text-purple-400">
-                                {step.title}
-                              </h3>
-                            </div>
-                          </div>
-                          <p className="text-muted-foreground leading-relaxed mb-4">
-                            {step.description}
-                          </p>
-                          <div className="flex flex-wrap gap-2">
-                            {step.tools.map((tool, toolIndex) => (
-                              <Badge
-                                key={toolIndex}
-                                variant="secondary"
-                                className="text-xs"
-                              >
-                                {tool}
-                              </Badge>
-                            ))}
-                          </div>
-                        </CardContent>
-                      </Card>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
+          <div className="max-w-6xl mx-auto text-center mb-10">
+            <h2 className="text-3xl font-bold mb-4">3D Production Pipeline</h2>
+            <p className="text-lg text-muted-foreground mb-8">
+              Modeling, texturing, rigging, and environment building
+            </p>
+              <img
+                src="/Photos/Mushroom/1.png"
+                alt="Modeling in Maya"
+                className="rounded-lg shadow w-full object-cover aspect-16/9"
+              />
           </div>
         </div>
       </section>
 
-      {/* Environment Features */}
-      <section className="py-24 bg-gradient-to-r from-purple-900/10 via-background to-pink-900/10">
+      {/* Fantasy Environment Features - add images */}
+      <section className="py-16 bg-gradient-to-r from-purple-100 via-background to-pink-100">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                🌟 Fantasy Environment Features
+            <div className="text-center mb-10">
+              <h2 className="text-3xl font-bold mb-4">
+                Fantasy Environment Features
               </h2>
-              <p className="text-lg text-muted-foreground">
-                Detailed elements that bring the magical world to life
+              <p className="text-lg text-muted-foreground mb-8">
+                Elements that bring the magical world to life
               </p>
             </div>
-
             <div className="grid md:grid-cols-2 gap-8">
-              {environmentFeatures.map((feature, index) => {
-                const Icon = feature.icon;
-                const colors = ["purple", "pink", "yellow", "green"];
-                const color = colors[index % colors.length];
-                return (
-                  <Card
-                    key={index}
-                    className="border-border/50 bg-card/50 backdrop-blur-sm hover:border-purple-400/50 transition-all duration-300"
-                  >
-                    <CardContent className="p-8">
-                      <div className="flex items-start space-x-4">
-                        <div
-                          className={`w-12 h-12 bg-${color}-400/10 rounded-lg flex items-center justify-center flex-shrink-0`}
-                        >
-                          <Icon className={`w-6 h-6 text-${color}-400`} />
-                        </div>
-                        <div>
-                          <div className="flex items-center gap-2 mb-2">
-                            <h3 className="text-lg font-semibold">
-                              {feature.title}
-                            </h3>
-                            <Badge variant="outline" className="text-xs">
-                              {feature.category}
-                            </Badge>
-                          </div>
-                          <p className="text-muted-foreground text-sm leading-relaxed">
-                            {feature.description}
-                          </p>
-                        </div>
-                      </div>
-                    </CardContent>
-                  </Card>
-                );
-              })}
+              <div className="bg-purple-50 p-4 rounded-xl shadow">
+                <img
+                  src="/Photos/Mushroom/5.png"
+                  alt="Magical Mushroom House"
+                  className="rounded-lg mb-4 w-full object-cover aspect-square"
+                />
+                <h3 className="font-bold mb-2">Magical Mushroom House</h3>
+                <p className="text-sm text-muted-foreground">
+                  Glowing windows and chimney create a warm, inviting atmosphere.
+                </p>
+              </div>
+              <div className="bg-pink-50 p-4 rounded-xl shadow">
+                <img
+                  src="/Photos/Mushroom/6.png"
+                  alt="Detailed Pathways & Boundaries"
+                  className="rounded-lg mb-4 w-full object-cover aspect-square"
+                />
+                <h3 className="font-bold mb-2">Detailed Pathways & Boundaries</h3>
+                <p className="text-sm text-muted-foreground">
+                  Stone tile footpath and wooden fence for clear spatial
+                  definition.
+                </p>
+              </div>
+              <div className="bg-yellow-50 p-4 rounded-xl shadow">
+                <img
+                  src="/Photos/Mushroom/8.png"
+                  alt="Realistic Props & Details"
+                  className="rounded-lg mb-4 w-full object-cover aspect-square"
+                />
+                <h3 className="font-bold mb-2">Realistic Props & Details</h3>
+                <p className="text-sm text-muted-foreground">
+                  Sacks, logs, pots, and lanterns for environmental storytelling.
+                </p>
+              </div>
+              <div className="bg-green-50 p-4 rounded-xl shadow">
+                <img
+                  src="/Photos/Mushroom/9.png"
+                  alt="Natural Flora & Landscape"
+                  className="rounded-lg mb-4 w-full object-cover aspect-square"
+                />
+                <h3 className="font-bold mb-2">Natural Flora & Landscape</h3>
+                <p className="text-sm text-muted-foreground">
+                  Tiny mushrooms, wildflowers, and grass clusters for a rich,
+                  organic environment.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Technical Achievements */}
-      <section className="py-24">
-        <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                🚀 Technical Achievements
-              </h2>
-              <p className="text-lg text-muted-foreground">
-                Skills and techniques mastered through this project
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-6">
-              {technicalAchievements.map((achievement, index) => (
-                <Card
-                  key={index}
-                  className="border-border/50 bg-card/50 backdrop-blur-sm hover:border-xr-neon/50 transition-all duration-300"
-                >
-                  <CardContent className="p-6">
-                    <h3 className="text-lg font-semibold mb-3 text-xr-neon">
-                      {achievement.title}
-                    </h3>
-                    <p className="text-muted-foreground text-sm leading-relaxed">
-                      {achievement.description}
-                    </p>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Learning Outcomes */}
-      <section className="py-24 bg-gradient-to-r from-purple-900/10 via-background to-pink-900/10">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                📚 Skills Developed
-              </h2>
-              <p className="text-lg text-muted-foreground">
-                Key competencies gained through this comprehensive 3D project
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-              {learningOutcomes.map((skill, index) => (
-                <Card
-                  key={index}
-                  className="text-center p-4 border-border/50 bg-card/50 backdrop-blur-sm hover:border-purple-400/50 transition-all duration-300"
-                >
-                  <CardContent className="p-4">
-                    <div className="w-8 h-8 bg-purple-400/10 rounded-full flex items-center justify-center mx-auto mb-3">
-                      <span className="text-purple-400 text-sm font-bold">
-                        {index + 1}
-                      </span>
-                    </div>
-                    <p className="text-sm font-medium text-foreground leading-tight">
-                      {skill}
-                    </p>
-                  </CardContent>
-                </Card>
-              ))}
+      {/* Technical Achievements - short, visual */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-8">
+          <div className="max-w-3xl mx-auto text-center grid md:grid-cols-1 gap-8 mb-16">
+            <h2 className="text-3xl font-bold mb-4">Technical Achievements</h2>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="bg-purple-50 p-4 rounded-xl shadow aspect-auto">
+                <h3 className="font-bold mb-2">3D Pipeline Mastery</h3>
+                <p className="text-sm text-muted-foreground">
+                  Modeling, texturing, rigging, and real-time rendering in Unreal
+                  Engine 5.
+                </p>
+              </div>
+              <div className="bg-pink-50 p-4 rounded-xl shadow">
+                <h3 className="font-bold mb-2">Hand-Painted Textures</h3>
+                <p className="text-sm text-muted-foreground">
+                  Created unique, stylized textures for authentic fantasy
+                  aesthetic.
+                </p>
+              </div>
+              <div className="bg-yellow-50 p-4 rounded-xl shadow">
+                <h3 className="font-bold mb-2">Environment Optimization</h3>
+                <p className="text-sm text-muted-foreground">
+                  Optimized assets for real-time rendering while maintaining
+                  quality.
+                </p>
+              </div>
+              <div className="bg-green-50 p-4 rounded-xl shadow">
+                <h3 className="font-bold mb-2">Environmental Storytelling</h3>
+                <p className="text-sm text-muted-foreground">
+                  Used props, lighting, and composition to create a narrative
+                  atmosphere.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Project Navigation */}
-      <section className="py-24 bg-gradient-to-r from-purple-400/10 via-background to-pink-400/10">
+      <section className="py-16 bg-gradient-to-r from-purple-400/10 via-background to-pink-400/10">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Explore More Creative Work
@@ -537,7 +359,6 @@ const MushroomHouse = () => {
             Discover other projects that showcase the intersection of art and
             technology
           </p>
-
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               asChild
@@ -549,7 +370,6 @@ const MushroomHouse = () => {
                 Previous: Savey Interactive Piggy Bank
               </Link>
             </Button>
-
             <Button
               asChild
               size="lg"

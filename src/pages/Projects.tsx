@@ -55,7 +55,7 @@ const Projects = () => {
         "A friendly, expressive piggy bank that reacts to a child's behavior, encouraging them to save not out of obligation, but out of joy. Turns saving into a game using emotional cues, sounds, and interaction.",
       longDescription:
         "Savey is an interactive companion that turns saving into an emotional, sensory, and cognitive experience. With expressive OLED eyes, happy sounds, coin detection, and transparent design, it makes kids want to save more because they enjoy it, not because they have to.",
-      image: "/Photos/Savey.png",
+      image: "/Photos/savey/13.png",
       tags: [
         "Arduino",
         "OLED Display",

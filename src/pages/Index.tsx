@@ -45,7 +45,7 @@ const Index = () => {
     {
       title: "Savey - Interactive Piggy Bank",
       category: "Interactive Design",
-      image: "/Photos/Savey.png",
+      image: "/Photos/savey/13.png",
       description:
         "Friendly piggy bank that makes saving joyful for kids with expressive eyes and sounds",
       slug: "savey",
