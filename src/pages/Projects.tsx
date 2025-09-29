@@ -196,7 +196,7 @@ const Projects = () => {
         "An AI-powered educational tool using color-coded element cards and image recognition to make chemistry interactive and fun for students. Real-time compound identification with instant feedback.",
       longDescription:
         "To make chemistry more interactive and fun for students, we designed an AI-powered educational tool using color-coded element cards. Each card represents a chemical element, and students can arrange them to form compounds. Using image recognition, the tool instantly identifies the compound and gives real-time feedback. This hands-on approach helps students visualize and understand chemical combinations better.",
-      image: "/Photos/Smart Chemistry 1.png",
+      image: "/Photos/Chem.png",
       tags: [
         "Artificial Intelligence",
         "Machine Learning",
@@ -285,7 +285,7 @@ const Projects = () => {
       longDescription:
         "We designed a VR-based pre-flight maintenance simulation to replace costly, risky traditional training. Trainees first complete a guided inspection with real-time feedback, then practice independently to build confidence safely.",
       image:
-        "https://images.pexels.com/photos/6006171/pexels-photo-6006171.jpeg",
+        "/Photos/Flight/8.png",
       tags: [
         "VR",
         "Training Simulation",

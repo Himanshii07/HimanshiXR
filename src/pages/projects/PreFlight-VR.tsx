@@ -28,10 +28,10 @@ const PreFlightVR = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
 
-      {/* Hero Section */}
+      {/* Hero Section - concise summary, visual */}
       <section className="relative py-24 bg-gradient-to-br from-background via-blue-100 to-blue-200 overflow-hidden">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
+          <div className="max-w-6xl mx-auto text-center">
             <Button
               asChild
               variant="ghost"
@@ -46,10 +46,10 @@ const PreFlightVR = () => {
               Preflight Maintenance Check VR
             </h1>
             <p className="text-lg text-muted-foreground mb-8">
-              We designed a VR-based pre-flight maintenance training simulation
-              to replace costly, risky traditional methods. A guided inspection
-              is followed by independent practice with real-time feedback in a
-              safe, immersive setup.
+              VR-based pre-flight maintenance training simulation to address
+              costly, risky, and hands-off traditional methods. Guided inspection
+              and independent practice in a safe, immersive environment with
+              real-time feedback.
             </p>
             <div className="flex flex-wrap justify-center gap-4 mb-8">
               <Badge
@@ -76,26 +76,26 @@ const PreFlightVR = () => {
             </div>
             <div className="flex justify-center mb-8">
               <img
-                src="https://images.pexels.com/photos/6006171/pexels-photo-6006171.jpeg"
+                src="/Photos/Flight/8.png"
                 alt="Aircraft maintenance hangar"
-                className="rounded-xl shadow-lg w-full max-w-lg object-cover"
+                className="rounded-lg shadow w-full grid md:grid-cols-1 gap-1 aspect-16/9 max-w-14xl mx-auto"
               />
             </div>
           </div>
         </div>
       </section>
 
-      {/* Body Storming Section */}
+      {/* Bodystorming Section - process, scripting, modeling, filming */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center mb-10">
-            <h2 className="text-3xl font-bold mb-4">Body Storming</h2>
+          <div className="max-w-6xl mx-auto text-center mb-10">
+            <h2 className="text-3xl font-bold mb-4">Bodystorming</h2>
             <p className="text-lg text-muted-foreground mb-6">
-              Physical enactment of maintenance tasks to understand user needs
-              and workflow.
+              We bodystormed the VR training by scripting interactions, creating a
+              plane model, and filming the process to refine inspections and UI.
             </p>
             <img
-              src="https://images.pexels.com/photos/7640741/pexels-photo-7640741.jpeg"
+              src="/Photos/Flight/1.png"
               alt="Bodystorming with sticky notes and team"
               className="rounded-xl shadow-lg w-full object-cover"
             />
@@ -103,99 +103,77 @@ const PreFlightVR = () => {
         </div>
       </section>
 
-      {/* GOMS Model Section */}
+      {/* Interaction Planning Section */}
       <section className="py-16 bg-blue-50">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center mb-10">
+          <div className="max-w-6xl mx-auto text-center mb-10">
             <h2 className="text-3xl font-bold mb-4">GOMS Model</h2>
             <p className="text-lg text-muted-foreground mb-6">
-              Task analysis for guided inspection and independent practice.
-            </p>
-            <div className="grid md:grid-cols-3 gap-6">
-              <img
-                src="https://images.pexels.com/photos/29765799/pexels-photo-29765799.jpeg"
-                alt="Checklist for task decomposition"
-                className="rounded-lg shadow w-full object-cover aspect-square"
-              />
-              <img
-                src="https://images.pexels.com/photos/11786435/pexels-photo-11786435.jpeg"
-                alt="Aircraft inspection context"
-                className="rounded-lg shadow w-full object-cover aspect-square"
-              />
-              <img
-                src="https://images.pexels.com/photos/2059638/pexels-photo-2059638.jpeg"
-                alt="Rotor maintenance task context"
-                className="rounded-lg shadow w-full object-cover aspect-square"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Storyboarding Section */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center mb-10">
-            <h2 className="text-3xl font-bold mb-4">Storyboarding</h2>
-            <p className="text-lg text-muted-foreground mb-6">
-              Visualizing the trainee journey from guided session to independent
-              practice.
-            </p>
-            <div className="grid md:grid-cols-4 gap-6">
-              <img
-                src="https://images.pexels.com/photos/6002182/pexels-photo-6002182.jpeg"
-                alt="Storyboard sketch details"
-                className="rounded-lg shadow w-full object-cover aspect-square"
-              />
-              <img
-                src="https://images.pexels.com/photos/7640741/pexels-photo-7640741.jpeg"
-                alt="Journey mapping with sticky notes"
-                className="rounded-lg shadow w-full object-cover aspect-square"
-              />
-              <img
-                src="https://images.pexels.com/photos/29765811/pexels-photo-29765811.jpeg"
-                alt="Desk setup for sketching"
-                className="rounded-lg shadow w-full object-cover aspect-square"
-              />
-              <img
-                src="https://images.pexels.com/photos/29765799/pexels-photo-29765799.jpeg"
-                alt="Checklist frames"
-                className="rounded-lg shadow w-full object-cover aspect-square"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Human Factors Section */}
-      <section className="py-16 bg-blue-50">
-        <div className="container mx-auto px-4">
-          <div className="max-w-2xl mx-auto text-center mb-10">
-            <h2 className="text-3xl font-bold mb-4">Human Factors</h2>
-            <p className="text-lg text-muted-foreground mb-6">
-              Designed for safety, comfort, and effective learning in VR.
+              Before adding any interactions, we carefully planned and discussed
+              each step to ensure a smooth and intuitive user experience in VR.
             </p>
             <img
-              src="https://images.pexels.com/photos/4506105/pexels-photo-4506105.jpeg"
-              alt="Human factors: posture and comfort"
+              src="/Photos/Flight/8.jpg"
+              alt="Checklist for interaction planning"
               className="rounded-xl shadow-lg w-full object-cover"
             />
           </div>
         </div>
       </section>
 
-      {/* XR Design Heuristics Section */}
+      {/* Storyboarding Section - images only */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <div className="max-w-2xl mx-auto text-center mb-10">
-            <h2 className="text-3xl font-bold mb-4">XR Design Heuristics</h2>
+          <div className="max-w-6xl mx-auto text-center mb-10">
+            <h2 className="text-3xl font-bold mb-4">Storyboarding</h2>
             <p className="text-lg text-muted-foreground mb-6">
-              Applied best practices for immersive training and feedback.
+              Visualizing the trainee journey from guided session to independent
+              practice.
             </p>
+            <div className="grid md:grid-cols-1 gap-6">
+              <img
+                src="/Photos/Flight/3.png"
+                alt="Storyboard sketch details"
+                className="rounded-lg shadow w-full object-cover aspect-16/9"
+              />
+              <img
+                src="/Photos/Flight/4.png"
+                alt="Journey mapping with sticky notes"
+                className="rounded-lg shadow w-full object-cover aspect-16/9"
+              />
+              <img
+                src="/Photos/Flight/5.png"
+                alt="Desk setup for sketching"
+                className="rounded-lg shadow w-full object-cover aspect-16/9"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Human Factors Section - reference image only */}
+      <section className="py-16 bg-blue-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto text-center mb-10 gap-8">
+            
             <img
-              src="https://images.pexels.com/photos/8097823/pexels-photo-8097823.jpeg"
-              alt="VR training context and heuristics"
-              className="rounded-xl shadow-lg w-full object-cover"
+              src="/Photos/Flight/6.jpg"
+              alt="Human Factors reference"
+              className="rounded-xl w-full object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* XR Design Heuristics Section - reference image only */}
+      <section className="py-16 bg-blue-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto text-center mb-10 gap-8">
+            
+            <img
+              src="/Photos/Flight/7.jpg"
+              alt="XR Design Heuristics reference"
+              className="rounded-xl w-full object-cover gap-20"
             />
           </div>
         </div>
