@@ -274,7 +274,7 @@ const Projects = () => {
         live: "#",
       },
     },
-,
+    ,
     {
       id: 10,
       title: "Preflight Maintenance Check VR",
@@ -284,7 +284,8 @@ const Projects = () => {
         "VR-based pre-flight maintenance training with guided inspection and independent practice in a safe, immersive environment.",
       longDescription:
         "We designed a VR-based pre-flight maintenance simulation to replace costly, risky traditional training. Trainees first complete a guided inspection with real-time feedback, then practice independently to build confidence safely.",
-      image: "https://images.pexels.com/photos/6006171/pexels-photo-6006171.jpeg",
+      image:
+        "https://images.pexels.com/photos/6006171/pexels-photo-6006171.jpeg",
       tags: [
         "VR",
         "Training Simulation",
@@ -356,7 +357,7 @@ const Projects = () => {
       duration: "1 week",
       slug: "ethnography",
       links: { demo: "#", github: "#", live: "#" },
-    }
+    },
   ];
 
   const filters = [

@@ -53,9 +53,18 @@ const App = () => (
             element={<NetflixSpatial />}
           />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/projects/preflight-maintenance-check-vr" element={<PreFlightVR />} />
-          <Route path="/projects/samsung-ai-agent" element={<SamsungAIAgent />} />
-          <Route path="/projects/system-thinking" element={<SystemThinking />} />
+          <Route
+            path="/projects/preflight-maintenance-check-vr"
+            element={<PreFlightVR />}
+          />
+          <Route
+            path="/projects/samsung-ai-agent"
+            element={<SamsungAIAgent />}
+          />
+          <Route
+            path="/projects/system-thinking"
+            element={<SystemThinking />}
+          />
           <Route path="/projects/ethnography" element={<Ethnography />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

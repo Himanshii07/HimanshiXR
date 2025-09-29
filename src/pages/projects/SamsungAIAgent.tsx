@@ -19,23 +19,44 @@ const SamsungAIAgent = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-blue-900/10" />
         <div className="relative container mx-auto px-4">
           <div className="max-w-5xl mx-auto text-center">
-            <Button asChild variant="ghost" className="mb-8 text-muted-foreground hover:text-foreground">
+            <Button
+              asChild
+              variant="ghost"
+              className="mb-8 text-muted-foreground hover:text-foreground"
+            >
               <Link to="/projects">
                 <ArrowLeft className="w-4 h-4 mr-2" />
                 Back to Projects
               </Link>
             </Button>
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">Samsung AI Agent</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">
+              Samsung AI Agent
+            </h1>
             <p className="text-lg text-muted-foreground mb-8 max-w-3xl mx-auto">
-              Concept prototype exploring proactive multimodal assistance across Samsung devices—context awareness, on-device privacy, and helpful automation.
+              Concept prototype exploring proactive multimodal assistance across
+              Samsung devices—context awareness, on-device privacy, and helpful
+              automation.
             </p>
             <div className="flex flex-wrap justify-center gap-3 mb-8">
-              <Badge variant="outline" className="text-sm"><Calendar className="w-3 h-3 mr-1" />2025</Badge>
-              <Badge variant="outline" className="text-sm"><Users className="w-3 h-3 mr-1" />Individual</Badge>
-              <Badge variant="outline" className="text-sm"><Award className="w-3 h-3 mr-1" />Concept</Badge>
+              <Badge variant="outline" className="text-sm">
+                <Calendar className="w-3 h-3 mr-1" />
+                2025
+              </Badge>
+              <Badge variant="outline" className="text-sm">
+                <Users className="w-3 h-3 mr-1" />
+                Individual
+              </Badge>
+              <Badge variant="outline" className="text-sm">
+                <Award className="w-3 h-3 mr-1" />
+                Concept
+              </Badge>
             </div>
             <div className="aspect-video max-w-4xl mx-auto rounded-xl overflow-hidden border border-border/50 bg-card/50">
-              <img src="/Photos/illustrations/netflix.png" alt="Samsung AI Agent concept" className="w-full h-full object-cover" />
+              <img
+                src="/Photos/illustrations/netflix.png"
+                alt="Samsung AI Agent concept"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>
@@ -46,15 +67,24 @@ const SamsungAIAgent = () => {
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             <div>
               <h2 className="text-xl font-semibold mb-2">Overview</h2>
-              <p className="text-sm text-muted-foreground">Framing the opportunity for an assistant that anticipates needs, reduces friction, and respects privacy.</p>
+              <p className="text-sm text-muted-foreground">
+                Framing the opportunity for an assistant that anticipates needs,
+                reduces friction, and respects privacy.
+              </p>
             </div>
             <div>
               <h2 className="text-xl font-semibold mb-2">Approach</h2>
-              <p className="text-sm text-muted-foreground">Journey mapping, intent modeling, and lightweight prototypes for notification, voice, and glanceable UI.</p>
+              <p className="text-sm text-muted-foreground">
+                Journey mapping, intent modeling, and lightweight prototypes for
+                notification, voice, and glanceable UI.
+              </p>
             </div>
             <div>
               <h2 className="text-xl font-semibold mb-2">Outcomes</h2>
-              <p className="text-sm text-muted-foreground">Design directions for proactive prompts, cross-device handoff, and safe-guarded automation.</p>
+              <p className="text-sm text-muted-foreground">
+                Design directions for proactive prompts, cross-device handoff,
+                and safe-guarded automation.
+              </p>
             </div>
           </div>
         </div>
