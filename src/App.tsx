@@ -17,6 +17,7 @@ import SmartChemistry from "./pages/projects/SmartChemistry";
 import AngryBirds from "./pages/projects/AngryBirds";
 import NetflixSpatial from "./pages/projects/NetflixSpatial";
 import NotFound from "./pages/NotFound";
+import PreFlightVR from "./pages/projects/PreFlight-VR";
 
 const queryClient = new QueryClient();
 
@@ -49,6 +50,7 @@ const App = () => (
             element={<NetflixSpatial />}
           />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/projects/preflight-maintenance-check-vr" element={<PreFlightVR />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
