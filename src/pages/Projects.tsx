@@ -274,6 +274,35 @@ const Projects = () => {
         live: "#",
       },
     },
+    {
+      id: 10,
+      title: "Pre-flight Maintenance Check - VR",
+      category: "vr",
+      categoryLabel: "Virtual Reality",
+      description:
+        "VR-based pre-flight maintenance training simulation for safe, immersive, and hands-on learning.",
+      longDescription:
+        "We designed a VR-based pre-flight maintenance training simulation to address the challenges of traditional methods, which are often costly, risky, and lack hands-on practice. Our VR solution offers a guided inspection session followed by independent practice, allowing trainees to learn in a safe, immersive environment with real-time feedback.",
+      image: "/Photos/preflight/hero.jpg",
+      tags: [
+        "Unity",
+        "VR",
+        "Training Simulation",
+        "Human Factors",
+        "XR Heuristics",
+        "Storyboarding",
+      ],
+      featured: true,
+      year: "2025",
+      client: "Team Project",
+      duration: "1 month",
+      slug: "preflight-vr",
+      links: {
+        demo: "#",
+        github: "#",
+        live: "#",
+      },
+    },
   ];
 
   const filters = [
