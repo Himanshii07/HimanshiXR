@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { ArrowLeft, Calendar, Users, NotebookPen } from "lucide-react";
+import { ArrowLeft, Calendar, Users, FileText } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Badge } from "@/components/ui/badge";
@@ -32,7 +32,7 @@ const Ethnography = () => {
             <div className="flex flex-wrap justify-center gap-3 mb-8">
               <Badge variant="outline" className="text-sm"><Calendar className="w-3 h-3 mr-1" />2025</Badge>
               <Badge variant="outline" className="text-sm"><Users className="w-3 h-3 mr-1" />Research</Badge>
-              <Badge variant="outline" className="text-sm"><NotebookPen className="w-3 h-3 mr-1" />Methods</Badge>
+              <Badge variant="outline" className="text-sm"><FileText className="w-3 h-3 mr-1" />Methods</Badge>
             </div>
             <div className="aspect-video max-w-4xl mx-auto rounded-xl overflow-hidden border border-border/50 bg-card/50">
               <img src="/Photos/life/1.jpeg" alt="Ethnographic field context" className="w-full h-full object-cover" />
