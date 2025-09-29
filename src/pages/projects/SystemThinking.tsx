@@ -439,7 +439,6 @@ const SystemThinking = () => {
         </div>
       </section>
 
-      {/* Quick system framing placeholders from original page */}
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
