@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { ArrowLeft, Calendar, Users, Network } from "lucide-react";
+import { ArrowLeft, Calendar, Users, Share2 } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Badge } from "@/components/ui/badge";
@@ -32,7 +32,7 @@ const SystemThinking = () => {
             <div className="flex flex-wrap justify-center gap-3 mb-8">
               <Badge variant="outline" className="text-sm"><Calendar className="w-3 h-3 mr-1" />2025</Badge>
               <Badge variant="outline" className="text-sm"><Users className="w-3 h-3 mr-1" />Case Study</Badge>
-              <Badge variant="outline" className="text-sm"><Network className="w-3 h-3 mr-1" />Systems</Badge>
+              <Badge variant="outline" className="text-sm"><Share2 className="w-3 h-3 mr-1" />Systems</Badge>
             </div>
             <div className="aspect-video max-w-4xl mx-auto rounded-xl overflow-hidden border border-border/50 bg-card/50">
               <img src="/Photos/illustrations/shares.png" alt="Systems map visualization" className="w-full h-full object-cover" />
