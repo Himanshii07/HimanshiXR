@@ -18,6 +18,9 @@ import AngryBirds from "./pages/projects/AngryBirds";
 import NetflixSpatial from "./pages/projects/NetflixSpatial";
 import NotFound from "./pages/NotFound";
 import PreFlightVR from "./pages/projects/PreFlight-VR";
+import SamsungAIAgent from "./pages/projects/SamsungAIAgent";
+import SystemThinking from "./pages/projects/SystemThinking";
+import Ethnography from "./pages/projects/Ethnography";
 
 const queryClient = new QueryClient();
 
@@ -51,6 +54,9 @@ const App = () => (
           />
           <Route path="/contact" element={<Contact />} />
           <Route path="/projects/preflight-maintenance-check-vr" element={<PreFlightVR />} />
+          <Route path="/projects/samsung-ai-agent" element={<SamsungAIAgent />} />
+          <Route path="/projects/system-thinking" element={<SystemThinking />} />
+          <Route path="/projects/ethnography" element={<Ethnography />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
