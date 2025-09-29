@@ -160,6 +160,9 @@ const SystemThinking = () => {
               <Badge variant="outline" className="text-sm"><Users className="w-3 h-3 mr-1" />Case Study</Badge>
               <Badge variant="outline" className="text-sm"><Share2 className="w-3 h-3 mr-1" />Systems</Badge>
             </div>
+            <div className="aspect-video max-w-4xl mx-auto rounded-xl overflow-hidden border border-border/50 bg-card/50">
+              <img src="/placeholder.svg" alt="Systems map visualization placeholder" className="w-full h-full object-cover" />
+            </div>
           </div>
         </div>
       </section>
@@ -203,6 +206,9 @@ const SystemThinking = () => {
                 <span key={t} className="text-xs px-2 py-1 rounded-md border bg-card/60 text-muted-foreground text-center">{t}</span>
               ))}
             </div>
+            <div className="mt-4 aspect-[16/9] rounded-lg overflow-hidden border">
+              <img src="/placeholder.svg" alt="Initial research visual placeholder" className="w-full h-full object-cover" />
+            </div>
           </div>
           <div className="rounded-xl border border-border/60 bg-card/40 p-5">
             <h3 className="text-xl font-semibold mb-3">Secondary Research</h3>
@@ -212,6 +218,9 @@ const SystemThinking = () => {
               <li>Journal for Geographic Studies</li>
               <li>News articles about past Pune flood events</li>
             </ul>
+            <div className="mt-4 aspect-[16/9] rounded-lg overflow-hidden border">
+              <img src="/placeholder.svg" alt="Secondary research visual placeholder" className="w-full h-full object-cover" />
+            </div>
           </div>
         </div>
       </section>
@@ -222,9 +231,14 @@ const SystemThinking = () => {
           <h2 className="text-3xl font-bold mb-6">Major Causes</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {majorCauses.map((c) => (
-              <div key={c.title} className="rounded-xl border border-border/60 bg-card/40 p-4">
-                <h3 className="font-semibold mb-1">{c.title}</h3>
-                <p className="text-sm text-muted-foreground">{c.caption}</p>
+              <div key={c.title} className="rounded-xl overflow-hidden border border-border/60 bg-card/40">
+                <div className="aspect-[4/3] overflow-hidden">
+                  <img src="/placeholder.svg" alt={`${c.title} placeholder`} className="w-full h-full object-cover" />
+                </div>
+                <div className="p-4">
+                  <h3 className="font-semibold mb-1">{c.title}</h3>
+                  <p className="text-sm text-muted-foreground">{c.caption}</p>
+                </div>
               </div>
             ))}
           </div>
@@ -260,6 +274,13 @@ const SystemThinking = () => {
                 <li>Preferred communication channels</li>
               </ul>
             </div>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-6">
+            {[1,2,3].map((i)=> (
+              <div key={i} className="aspect-[16/9] rounded-lg overflow-hidden border">
+                <img src="/placeholder.svg" alt={`Primary research photo ${i} placeholder`} className="w-full h-full object-cover" />
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -398,6 +419,9 @@ const SystemThinking = () => {
                 </ul>
               </div>
             </div>
+            <div className="mt-4 aspect-[16/9] rounded-lg overflow-hidden border">
+              <img src="/placeholder.svg" alt="WhatsApp alerts mockups placeholder" className="w-full h-full object-cover" />
+            </div>
           </div>
 
           <div className="rounded-xl border border-border/60 bg-card/40 p-6">
@@ -425,6 +449,13 @@ const SystemThinking = () => {
                 </ul>
               </div>
             </div>
+            <div className="mt-4 grid grid-cols-2 md:grid-cols-3 gap-3">
+              {[1,2,3].map((i)=> (
+                <div key={i} className="aspect-[16/9] rounded-lg overflow-hidden border">
+                  <img src="/placeholder.svg" alt={`Bamboo floatable visual ${i} placeholder`} className="w-full h-full object-cover" />
+                </div>
+              ))}
+            </div>
           </div>
 
           <div className="rounded-xl border border-border/60 bg-card/40 p-6">
@@ -444,6 +475,13 @@ const SystemThinking = () => {
                   <li>Avoids flooded or dangerous areas using live routing</li>
                 </ul>
               </div>
+            </div>
+            <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-3">
+              {[1,2].map((i)=> (
+                <div key={i} className="aspect-[16/9] rounded-lg overflow-hidden border">
+                  <img src="/placeholder.svg" alt={`AR concept visual ${i} placeholder`} className="w-full h-full object-cover" />
+                </div>
+              ))}
             </div>
           </div>
 
@@ -473,6 +511,13 @@ const SystemThinking = () => {
                   <li>Minimal training and effort to deploy</li>
                 </ul>
               </div>
+            </div>
+            <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-3">
+              {[1,2].map((i)=> (
+                <div key={i} className="aspect-[16/9] rounded-lg overflow-hidden border">
+                  <img src="/placeholder.svg" alt={`Flood barrier visual ${i} placeholder`} className="w-full h-full object-cover" />
+                </div>
+              ))}
             </div>
           </div>
         </div>
