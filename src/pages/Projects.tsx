@@ -308,8 +308,8 @@ const Projects = () => {
     {
       id: 12,
       title: "System Thinking",
-      category: "interactive",
-      categoryLabel: "Case Study",
+      category: "research",
+      categoryLabel: "Research",
       description:
         "Mapping interdependencies, feedback loops, and leverage points in complex problems.",
       longDescription:
@@ -326,7 +326,7 @@ const Projects = () => {
     {
       id: 13,
       title: "Ethnography",
-      category: "interactive",
+      category: "research",
       categoryLabel: "Research",
       description:
         "Qualitative field study capturing behaviors, contexts, and insights.",
@@ -347,6 +347,7 @@ const Projects = () => {
     { id: "all", label: "All Projects", icon: Filter },
     { id: "vr", label: "VR & Spatial", icon: Headphones },
     { id: "interactive", label: "Interactive & Games", icon: Smartphone },
+    { id: "research", label: "Research", icon: Microscope },
     { id: "3d-art", label: "3D Environment", icon: MonitorSpeaker },
   ];
 
