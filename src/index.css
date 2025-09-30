@@ -68,10 +68,20 @@
   body {
     @apply bg-background text-foreground;
     background-image:
-      radial-gradient(circle at 5% 10%, hsl(var(--minimal-warm) / 0.28) 0, transparent 55%),
-      radial-gradient(circle at 95% 90%, hsl(var(--minimal-cool) / 0.24) 0, transparent 60%);
+      radial-gradient(
+        circle at 5% 10%,
+        hsl(var(--minimal-warm) / 0.28) 0,
+        transparent 55%
+      ),
+      radial-gradient(
+        circle at 95% 90%,
+        hsl(var(--minimal-cool) / 0.24) 0,
+        transparent 60%
+      );
     background-repeat: no-repeat;
-    background-size: 60% 60%, 55% 55%;
+    background-size:
+      60% 60%,
+      55% 55%;
     background-attachment: fixed;
     font-family:
       "Inter",

@@ -69,8 +69,9 @@ const MinimalistHero: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.55 }}
           >
-            Designing purposeful immersive experiences that balance storytelling,
-            functionality, and craftsmanship across XR, interactive media, and 3D worlds.
+            Designing purposeful immersive experiences that balance
+            storytelling, functionality, and craftsmanship across XR,
+            interactive media, and 3D worlds.
           </motion.p>
 
           <motion.div
@@ -105,7 +106,11 @@ const MinimalistHero: React.FC = () => {
             <motion.div
               className="w-px h-14 bg-gradient-to-b from-muted-foreground/80 to-transparent"
               animate={{ scaleY: [1, 0.75, 1] }}
-              transition={{ duration: 2.2, repeat: Infinity, ease: "easeInOut" }}
+              transition={{
+                duration: 2.2,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }}
             />
           </motion.div>
         </motion.div>

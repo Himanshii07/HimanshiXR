@@ -285,8 +285,7 @@ const Projects = () => {
         "VR-based pre-flight maintenance training with guided inspection and independent practice in a safe, immersive environment.",
       longDescription:
         "We designed a VR-based pre-flight maintenance simulation to replace costly, risky traditional training. Trainees first complete a guided inspection with real-time feedback, then practice independently to build confidence safely.",
-      image:
-        "/Photos/Flight/8.png",
+      image: "/Photos/Flight/8.png",
       tags: [
         "VR",
         "Training Simulation",
