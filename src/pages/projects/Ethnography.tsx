@@ -29,10 +29,14 @@ const Ethnography = () => {
                 Back to Projects
               </Link>
             </Button>
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">Ethnography</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">
+              Ethnography: Tiffin Services at MIT College
+            </h1>
             <p className="text-lg text-muted-foreground mb-8 max-w-3xl mx-auto">
-              Qualitative field research to understand people, practices, and
-              context—observations, interviews, and artifacts.
+              This research explores the tiffin scene at MIT College, focusing on
+              student preferences, meal quality, and the performance of current
+              services, to identify what defines a great tiffin experience on
+              campus.
             </p>
             <div className="flex flex-wrap justify-center gap-3 mb-8">
               <Badge variant="outline" className="text-sm">
@@ -41,16 +45,16 @@ const Ethnography = () => {
               </Badge>
               <Badge variant="outline" className="text-sm">
                 <Users className="w-3 h-3 mr-1" />
-                Research
+                Team of 3
               </Badge>
               <Badge variant="outline" className="text-sm">
                 <FileText className="w-3 h-3 mr-1" />
-                Methods
+                Duration: 2 weeks
               </Badge>
             </div>
             <div className="aspect-video max-w-4xl mx-auto rounded-xl overflow-hidden border border-border/50 bg-card/50">
               <img
-                src="/Photos/life/1.jpeg"
+                src="Photos/Ethnography/2.jpg"
                 alt="Ethnographic field context"
                 className="w-full h-full object-cover"
               />
@@ -60,25 +64,169 @@ const Ethnography = () => {
       </section>
 
       <section className="py-16">
+        <div className="container mx-auto px-4 grid gap-8 max-w-8xl">
+          {/* Research Timeline */}
+        <section className="py-16 bg-blue-50">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <div>
-              <h2 className="text-xl font-semibold mb-2">Context</h2>
-              <p className="text-sm text-muted-foreground">
-                Setting, participants, and research questions guiding the study.
+          <div className="max-w-6xl mx-auto text-center mb-10">
+            <h2 className="text-3xl font-bold mb-4">Research Timeline</h2>
+            <p className="text-lg text-muted-foreground mb-6">
+              Before adding any interactions, we carefully planned and discussed
+              each step to ensure a smooth and intuitive user experience in VR.
+            </p>
+            <img
+              src="/Photos/Flight/8.jpg"
+              alt="Checklist for interaction planning"
+              className="rounded-xl shadow-lg w-full object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
+          {/* Methodology */}
+          <div className="bg-card rounded-xl shadow p-6 flex flex-col md:flex-row gap-6 items-center">
+            <div className="flex-1">
+              <h2 className="text-xl font-semibold mb-2">Methodology</h2>
+              <p className="text-sm text-muted-foreground mb-4">
+                Shadowing, semi-structured interviews, artifact walk-throughs, and
+                user journey mapping.
               </p>
+              {/* Add info/description here */}
             </div>
-            <div>
-              <h2 className="text-xl font-semibold mb-2">Methods</h2>
-              <p className="text-sm text-muted-foreground">
-                Shadowing, semi-structured interviews, artifact walk-throughs.
-              </p>
+            <div className="w-full md:w-1/3 flex justify-center">
+              {/* Diagram/Image placeholder */}
+              <div className="aspect-video w-full max-w-xs bg-muted rounded-lg flex items-center justify-center text-muted-foreground">
+                Add methodology diagram/image
+              </div>
             </div>
-            <div>
-              <h2 className="text-xl font-semibold mb-2">Insights</h2>
-              <p className="text-sm text-muted-foreground">
-                Behavioral patterns, pain points, and opportunity areas.
+          </div>
+
+          {/* Interviews */}
+          <div className="bg-card rounded-xl shadow p-6 flex flex-col md:flex-row gap-6 items-center">
+            <div className="flex-1">
+              <h2 className="text-xl font-semibold mb-2">Interviews</h2>
+              <p className="text-sm text-muted-foreground mb-4">
+                Conducted with students and tiffin providers to understand needs,
+                expectations, and challenges.
               </p>
+              {/* Add info/description here */}
+            </div>
+            <div className="w-full md:w-1/3 flex justify-center">
+              {/* Diagram/Image placeholder */}
+              <div className="aspect-video w-full max-w-xs bg-muted rounded-lg flex items-center justify-center text-muted-foreground">
+                Add interview image
+              </div>
+            </div>
+          </div>
+
+          {/* User Analysis */}
+          <div className="bg-card rounded-xl shadow p-6 flex flex-col md:flex-row gap-6 items-center">
+            <div className="flex-1">
+              <h2 className="text-xl font-semibold mb-2">User Analysis</h2>
+              <p className="text-sm text-muted-foreground mb-4">
+                Identified user segments based on preferences, budget, and dietary
+                requirements.
+              </p>
+              {/* Add info/description here */}
+            </div>
+            <div className="w-full md:w-1/3 flex justify-center">
+              {/* Diagram/Image placeholder */}
+              <div className="aspect-video w-full max-w-xs bg-muted rounded-lg flex items-center justify-center text-muted-foreground">
+                Add user analysis diagram/image
+              </div>
+            </div>
+          </div>
+
+          {/* User Journey */}
+          <div className="bg-card rounded-xl shadow p-6 flex flex-col md:flex-row gap-6 items-center">
+            <div className="flex-1">
+              <h2 className="text-xl font-semibold mb-2">User Journey</h2>
+              <p className="text-sm text-muted-foreground mb-4">
+                Mapped the end-to-end experience from searching for tiffin services
+                to daily meal consumption.
+              </p>
+              {/* Add info/description here */}
+            </div>
+            <div className="w-full md:w-1/3 flex justify-center">
+              {/* Diagram/Image placeholder */}
+              <div className="aspect-video w-full max-w-xs bg-muted rounded-lg flex items-center justify-center text-muted-foreground">
+                Add user journey diagram/image
+              </div>
+            </div>
+          </div>
+
+          {/* Analysis of Tiffin Providers */}
+          <div className="bg-card rounded-xl shadow p-6 flex flex-col md:flex-row gap-6 items-center">
+            <div className="flex-1">
+              <h2 className="text-xl font-semibold mb-2">Analysis of Tiffin Providers</h2>
+              <p className="text-sm text-muted-foreground mb-4">
+                Compared providers on meal quality, punctuality, variety, and customer
+                service.
+              </p>
+              {/* Add info/description here */}
+            </div>
+            <div className="w-full md:w-1/3 flex justify-center">
+              {/* Diagram/Image placeholder */}
+              <div className="aspect-video w-full max-w-xs bg-muted rounded-lg flex items-center justify-center text-muted-foreground">
+                Add provider analysis diagram/image
+              </div>
+            </div>
+          </div>
+
+          {/* Key Insights */}
+          <div className="bg-card rounded-xl shadow p-6 flex flex-col md:flex-row gap-6 items-center">
+            <div className="flex-1">
+              <h2 className="text-xl font-semibold mb-2">Key Insights</h2>
+              <ul className="text-sm text-muted-foreground list-disc ml-4 mb-4">
+                <li>Students value taste, hygiene, and timely delivery.</li>
+                <li>Flexibility in meal plans is highly desired.</li>
+                <li>Word-of-mouth is the main channel for provider discovery.</li>
+              </ul>
+              {/* Add info/description here */}
+            </div>
+            <div className="w-full md:w-1/3 flex justify-center">
+              {/* Diagram/Image placeholder */}
+              <div className="aspect-video w-full max-w-xs bg-muted rounded-lg flex items-center justify-center text-muted-foreground">
+                Add insights diagram/image
+              </div>
+            </div>
+          </div>
+
+          {/* Pain Points */}
+          <div className="bg-card rounded-xl shadow p-6 flex flex-col md:flex-row gap-6 items-center">
+            <div className="flex-1">
+              <h2 className="text-xl font-semibold mb-2">Pain Points</h2>
+              <ul className="text-sm text-muted-foreground list-disc ml-4 mb-4">
+                <li>Inconsistent meal quality and quantity.</li>
+                <li>Lack of transparency in pricing and menu.</li>
+                <li>Poor communication during delays or issues.</li>
+              </ul>
+              {/* Add info/description here */}
+            </div>
+            <div className="w-full md:w-1/3 flex justify-center">
+              {/* Diagram/Image placeholder */}
+              <div className="aspect-video w-full max-w-xs bg-muted rounded-lg flex items-center justify-center text-muted-foreground">
+                Add pain points diagram/image
+              </div>
+            </div>
+          </div>
+
+          {/* Recommendations */}
+          <div className="bg-card rounded-xl shadow p-6 flex flex-col md:flex-row gap-6 items-center">
+            <div className="flex-1">
+              <h2 className="text-xl font-semibold mb-2">Recommendations</h2>
+              <ul className="text-sm text-muted-foreground list-disc ml-4 mb-4">
+                <li>Standardize meal quality and portion sizes.</li>
+                <li>Improve communication and feedback channels.</li>
+                <li>Offer customizable meal plans and transparent pricing.</li>
+              </ul>
+              {/* Add info/description here */}
+            </div>
+            <div className="w-full md:w-1/3 flex justify-center">
+              {/* Diagram/Image placeholder */}
+              <div className="aspect-video w-full max-w-xs bg-muted rounded-lg flex items-center justify-center text-muted-foreground">
+                Add recommendations diagram/image
+              </div>
             </div>
           </div>
         </div>

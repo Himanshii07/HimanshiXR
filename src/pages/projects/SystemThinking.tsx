@@ -144,7 +144,7 @@ const SystemThinking = () => {
       <section className="relative py-24 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-emerald-900/10" />
         <div className="relative container mx-auto px-4">
-          <div className="max-w-5xl mx-auto text-center">
+          <div className="max-w-8xl mx-auto text-center">
             <Button
               asChild
               variant="ghost"
@@ -177,20 +177,14 @@ const SystemThinking = () => {
                 Systems
               </Badge>
             </div>
-            <div className="aspect-video max-w-4xl mx-auto rounded-xl overflow-hidden border border-border/50 bg-card/50">
-              <img
-                src="/Photos/pune/3.jpg"
-                alt="Systems map visualization placeholder"
-                className="w-full h-full object-cover"
-              />
-            </div>
+         
           </div>
         </div>
       </section>
 
       {/* Aim + Methodology */}
       <section className="py-12">
-        <div className="container mx-auto px-4 max-w-5xl">
+        <div className="container mx-auto px-4 max-w-7xl">
           <div className="grid md:grid-cols-2 gap-8">
             <div>
               <h2 className="text-2xl font-semibold mb-3">Project Aim</h2>
@@ -238,7 +232,7 @@ const SystemThinking = () => {
 
       {/* Initial & Secondary Research (structured, not screenshots) */}
       <section className="py-8">
-        <div className="container mx-auto px-4 max-w-6xl grid lg:grid-cols-1 gap-6">
+        <div className="container mx-auto px-4 max-w-8xl grid lg:grid-cols-2 gap-6">
           <div className="rounded-xl border border-border/60 bg-card/40 p-5">
             <h3 className="text-xl font-semibold mb-3">Initial Research</h3>
             <ul className="list-disc pl-5 space-y-1 text-sm text-muted-foreground mb-4">
@@ -270,15 +264,15 @@ const SystemThinking = () => {
                 </span>
               ))}
             </div>
-            <div className="mt-4 aspect-[16/9] rounded-lg overflow-hidden border">
+            <div className="mt-4 aspect-2/3 rounded-lg overflow-hidden border ">
               <img
                 src="/Photos/pune/1.jpg"
                 alt="Initial research visual placeholder"
-                className="w-full h-full object-cover aspect-16/9"
+                className="w-full h-full object-fit aspect-4/3"
               />
             </div>
           </div>
-          <div className="rounded-xl border border-border/60 bg-card/40 p-5 grid md:grid-cols-2 gap-6 ">
+          <div className="rounded-xl border border-border/60 bg-card/40 p-5 max-w-4xl mx-auto ">
             <h3 className="text-xl font-semibold mb-3">Secondary Research</h3>
             <ul className="list-disc pl-5 space-y-1 text-sm text-muted-foreground">
               <li>STANDARD OPERATING PROCEDURE (state/city)</li>
@@ -286,11 +280,11 @@ const SystemThinking = () => {
               <li>Journal for Geographic Studies</li>
               <li>News articles about past Pune flood events</li>
             </ul>
-            <div className="mt-4 aspect-[16/9] rounded-lg overflow-hidden border">
+            <div className="mt-4 aspect-2/3 rounded-lg overflow-hidden border">
               <img
                 src="/Photos/pune/5.jpg"
                 alt="Secondary research visual placeholder"
-                className="w-full h-full object-cover aspect-9/16"
+                className="w-full h-auto object-fit aspect-2/3"
               />
             </div>
           </div>
@@ -300,7 +294,7 @@ const SystemThinking = () => {
        {/* Communication Loop */}
       <section className="py-16 bg-white-50">
         <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto text-center mb-10 gap-8">
+          <div className="max-w-8xl mx-auto text-center mb-10 gap-8">
             
             <img
               src="/Photos/pune/9.jpg"
@@ -313,34 +307,52 @@ const SystemThinking = () => {
 
       {/* Major Causes (text cards) */}
       <section className="py-12">
-        <div className="container mx-auto px-4 max-w-6xl">
+        <div className="container mx-auto px-4 max-w-8xl">
           <h2 className="text-3xl font-bold mb-6">Major Causes</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {majorCauses.map((c) => (
-              <div
-                key={c.title}
-                className="rounded-xl overflow-hidden border border-border/60 bg-card/40"
-              >
-                <div className="aspect-[4/3] overflow-hidden">
-                  <img
-                    src="/placeholder.svg"
-                    alt={`${c.title} placeholder`}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="p-4">
-                  <h3 className="font-semibold mb-1">{c.title}</h3>
-                  <p className="text-sm text-muted-foreground">{c.caption}</p>
-                </div>
+            <div className="rounded-xl overflow-hidden border border-border/60 bg-card/40">
+              <div className="aspect-[4/3] overflow-hidden">
+                <img src="/Photos/pune/causes-1.jpg" alt="Urban Waterlogging" className="w-full h-full object-cover" />
               </div>
-            ))}
+              <div className="p-4">
+                <h3 className="font-semibold mb-1">Urban Waterlogging</h3>
+                <p className="text-sm text-muted-foreground">Intense monsoon showers overwhelm storm drains; garbage and silt block outflows.</p>
+              </div>
+            </div>
+            <div className="rounded-xl overflow-hidden border border-border/60 bg-card/40">
+              <div className="aspect-[4/3] overflow-hidden">
+                <img src="/Photos/pune/7.png" alt="Dam Discharge" className="w-full h-full object-cover" />
+              </div>
+              <div className="p-4">
+                <h3 className="font-semibold mb-1">Dam Discharge</h3>
+                <p className="text-sm text-muted-foreground">Sudden or high-volume releases increase downstream levels across the city.</p>
+              </div>
+            </div>
+            <div className="rounded-xl overflow-hidden border border-border/60 bg-card/40">
+              <div className="aspect-[4/3] overflow-hidden">
+                <img src="/Photos/pune/5.png" alt="Riverside Encroachment" className="w-full h-full object-cover" />
+              </div>
+              <div className="p-4">
+                <h3 className="font-semibold mb-1">Riverside Encroachment</h3>
+                <p className="text-sm text-muted-foreground">Construction near riverbanks reduces floodplains and narrows water pathways.</p>
+              </div>
+            </div>
+            <div className="rounded-xl overflow-hidden border border-border/60 bg-card/40">
+              <div className="aspect-[4/3] overflow-hidden">
+                <img src="/Photos/pune/6.png" alt="Heavy Rainfall Events" className="w-full h-full object-cover" />
+              </div>
+              <div className="p-4">
+                <h3 className="font-semibold mb-1">Heavy Rainfall Events</h3>
+                <p className="text-sm text-muted-foreground">Short, high-intensity rainfall leads to flash flooding in low-lying neighborhoods.</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Primary Research (structured) */}
       <section className="py-12">
-        <div className="container mx-auto px-4 max-w-6xl">
+        <div className="container mx-auto px-4 max-w-8xl">
           <h2 className="text-3xl font-bold mb-4">Primary Research</h2>
           <div className="grid md:grid-cols-3 gap-6">
             <div className="rounded-xl border border-border/60 bg-card/40 p-4">
@@ -350,6 +362,7 @@ const SystemThinking = () => {
                 <li>Pune Flood Control Center (forecasting & alerts)</li>
                 <li>Khadakwasla Dam vicinity (discharge context)</li>
               </ul>
+              <img src="/Photos/pune/14.jpg" alt="Field Visits" className="mt-4 rounded-lg w-full object-cover aspect-square" />
             </div>
             <div className="rounded-xl border border-border/60 bg-card/40 p-4">
               <h3 className="font-semibold mb-2">Interviews</h3>
@@ -358,6 +371,7 @@ const SystemThinking = () => {
                 <li>Residents from flood-prone neighborhoods</li>
                 <li>Local authorities/ward staff</li>
               </ul>
+              <img src="/Photos/pune/15.jpg" alt="Interviews" className="mt-4 rounded-lg w-full object-cover aspect-square" />
             </div>
             <div className="rounded-xl border border-border/60 bg-card/40 p-4">
               <h3 className="font-semibold mb-2">Community Interaction</h3>
@@ -366,58 +380,34 @@ const SystemThinking = () => {
                 <li>Barriers to timely evacuation</li>
                 <li>Preferred communication channels</li>
               </ul>
+              <img src="/Photos/pune/16.jpg" alt="Community Interaction" className="mt-4 rounded-lg w-full object-fill aspect-square" />
             </div>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-6">
-            {[1, 2, 3].map((i) => (
-              <div
-                key={i}
-                className="aspect-[16/9] rounded-lg overflow-hidden border"
-              >
-                <img
-                  src="/placeholder.svg"
-                  alt={`Primary research photo ${i} placeholder`}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            ))}
+        </div>
+      </section>
+
+      {/* Communication Loop */}
+      <section className="py-16 bg-white-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-8xl mx-auto text-center mb-10 gap-8">
+            
+            <img
+              src="/Photos/pune/12.jpg"
+              alt="Human Factors reference"
+              className="rounded-xl w-full object-cover"
+            />
           </div>
         </div>
       </section>
 
       {/* Communication Loop + Wards */}
       <section className="py-12">
-        <div className="container mx-auto px-4 max-w-6xl">
-          <div className="grid lg:grid-cols-2 gap-10 items-start">
-            <div>
-              <h2 className="text-3xl font-bold mb-4">Communication Loop</h2>
-              <div className="grid grid-cols-3 sm:grid-cols-6 gap-4 text-center">
-                {[
-                  { icon: CloudRain, label: "IMD" },
-                  { icon: Megaphone, label: "PFCC" },
-                  { icon: Building2, label: "PMC" },
-                  { icon: MapPin, label: "Wards" },
-                  { icon: Phone, label: "Alerts" },
-                  { icon: Users, label: "Residents" },
-                ].map(({ icon: Icon, label }) => (
-                  <div
-                    key={label}
-                    className="rounded-lg border border-border/60 bg-card/40 p-4 flex flex-col items-center gap-2"
-                  >
-                    <Icon className="w-6 h-6 text-emerald-600" />
-                    <span className="text-sm font-medium">{label}</span>
-                  </div>
-                ))}
-              </div>
-              <p className="text-xs text-muted-foreground mt-3">
-                Forecasts and discharge data flow from agencies to wards; alerts
-                reach residents via WhatsApp/SMS, ward staff and media. Feedback
-                loops inform next updates.
-              </p>
-            </div>
+        <div className="container mx-auto px-4 max-w-8xl">
+          <div className="grid lg:grid-cols-1 gap-10 items-start">
+         
             <div>
               <h2 className="text-3xl font-bold mb-4">15 wards in Pune</h2>
-              <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-3">
+              <div className="grid sm:grid-cols-3 md:grid-cols-3 gap-6">
                 {wardNames.map((w) => (
                   <div
                     key={w}
@@ -434,13 +424,18 @@ const SystemThinking = () => {
 
       {/* Flood‑Prone Areas & Shelters */}
       <section className="py-12">
-        <div className="container mx-auto px-4 max-w-6xl space-y-8">
+        <div className="container mx-auto px-4 max-w-4xl space-y-8 grid grid-cols-1 gap-6">
           <div>
             <h2 className="text-3xl font-bold mb-3">Flood‑Prone Areas</h2>
             <div className="rounded-xl border border-border/60 bg-card/40 p-5 text-sm text-muted-foreground">
               Share the list of specific neighborhoods/streets so I can add
               filters by ward and risk level.
             </div>
+            <img
+              src="/Photos/pune/18.jpg"
+              alt="flood prone areas map"
+              className="rounded-xl shadow-lg w-full object-fit aspect-2/3"
+            />
           </div>
           <div>
             <h2 className="text-3xl font-bold mb-3">
@@ -473,9 +468,38 @@ const SystemThinking = () => {
         </div>
       </section>
 
+       {/* Communication Loop */}
+      <section className="py-16 bg-white-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-8xl mx-auto text-center mb-10 gap-8">
+            
+            <img
+              src="/Photos/pune/13.jpg"
+              alt="Human Factors reference"
+              className="rounded-xl w-full object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
+
+       {/* Communication Loop */}
+      <section className="py-16 bg-white-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-8xl mx-auto text-center mb-10 gap-8">
+            
+            <img
+              src="/Photos/pune/19.jpg"
+              alt="Human Factors reference"
+              className="rounded-xl w-full object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* Affinity Mapping */}
       <section className="py-12">
-        <div className="container mx-auto px-4 max-w-7xl">
+        <div className="container mx-auto px-4 max-w-8xl">
           <h2 className="text-3xl font-bold mb-6">Affinity Mapping</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {affinityBuckets.map((b) => (
@@ -497,10 +521,10 @@ const SystemThinking = () => {
 
       {/* Problem Statement */}
       <section className="py-12">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <div className="rounded-xl border border-border/60 bg-emerald-950/30 p-6">
-            <h2 className="text-3xl font-bold mb-3">Problem Statement</h2>
-            <p className="text-base">
+        <div className="container mx-auto px-4 max-w-8xl">
+          <div className="rounded-xl border border-border/60 bg-emerald-700/80 p-6">
+            <h2 className="text-3xl text-white font-bold mb-3">Problem Statement</h2>
+            <p className="text-base text-white">
               Lack of timely communication, preparedness, and effective barriers
               leads to severe property damage and chaos during floods, leaving
               residents vulnerable and unprepared for evacuation or protection
@@ -512,7 +536,7 @@ const SystemThinking = () => {
 
       {/* Insights */}
       <section className="py-12">
-        <div className="container mx-auto px-4 max-w-6xl">
+        <div className="container mx-auto px-4 max-w-8xl">
           <h2 className="text-3xl font-bold mb-4">
             Critical behavioral observed during floods
           </h2>
@@ -565,9 +589,9 @@ const SystemThinking = () => {
                 </ul>
               </div>
             </div>
-            <div className="mt-4 aspect-[16/9] rounded-lg overflow-hidden border">
+            <div className="mt-4 aspect-16/9 rounded-lg overflow-hidden border">
               <img
-                src="/placeholder.svg"
+                src="/Photos/pune/22.jpg"
                 alt="WhatsApp alerts mockups placeholder"
                 className="w-full h-full object-cover"
               />
@@ -586,17 +610,15 @@ const SystemThinking = () => {
                   <li>Functions as a compact bamboo table/tray at home</li>
                   <li>Lightweight and durable for daily use</li>
                 </ul>
+                <img src="/Photos/pune/bamboo-1.jpg" alt="Bamboo Floatable Year-round" className="mt-4 rounded-lg w-full object-cover aspect-[16/9]" />
               </div>
               <div>
                 <h4 className="font-semibold mb-2">During floods</h4>
                 <ul className="list-disc pl-5 space-y-1">
-                  <li>
-                    Top tray detaches and transforms into a floating device
-                  </li>
-                  <li>
-                    Waterproof layers and buoyant structure for essentials
-                  </li>
+                  <li>Top tray detaches and transforms into a floating device</li>
+                  <li>Waterproof layers and buoyant structure for essentials</li>
                 </ul>
+                <img src="/Photos/pune/bamboo-2.jpg" alt="Bamboo Floatable Floods" className="mt-4 rounded-lg w-full object-cover aspect-[16/9]" />
               </div>
               <div>
                 <h4 className="font-semibold mb-2">Ease of use</h4>
@@ -604,21 +626,8 @@ const SystemThinking = () => {
                   <li>Helps move through water without lifting heavy bags</li>
                   <li>Compact, easy to carry for children and elderly</li>
                 </ul>
+                <img src="/Photos/pune/bamboo-3.jpg" alt="Bamboo Floatable Ease of Use" className="mt-4 rounded-lg w-full object-cover aspect-[16/9]" />
               </div>
-            </div>
-            <div className="mt-4 grid grid-cols-2 md:grid-cols-3 gap-3">
-              {[1, 2, 3].map((i) => (
-                <div
-                  key={i}
-                  className="aspect-[16/9] rounded-lg overflow-hidden border"
-                >
-                  <img
-                    src="/placeholder.svg"
-                    alt={`Bamboo floatable visual ${i} placeholder`}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              ))}
             </div>
           </div>
 
@@ -629,16 +638,12 @@ const SystemThinking = () => {
             </h3>
             <div className="grid md:grid-cols-2 gap-6 text-sm text-muted-foreground">
               <div>
-                <h4 className="font-semibold mb-2">
-                  Detailed Shelter Information
-                </h4>
+                <h4 className="font-semibold mb-2">Detailed Shelter Information</h4>
                 <ul className="list-disc pl-5 space-y-1">
-                  <li>
-                    On search/scan, shows capacity, facilities, and current
-                    status
-                  </li>
+                  <li>On search/scan, shows capacity, facilities, and current status</li>
                   <li>Real‑time updates integrated in maps</li>
                 </ul>
+                <img src="/Photos/pune/ar-1.jpg" alt="AR Shelter Information" className="mt-4 rounded-lg w-full object-cover aspect-[16/9]" />
               </div>
               <div>
                 <h4 className="font-semibold mb-2">Interactive Navigation</h4>
@@ -646,21 +651,8 @@ const SystemThinking = () => {
                   <li>AR pathways guide users to the nearest safe shelter</li>
                   <li>Avoids flooded or dangerous areas using live routing</li>
                 </ul>
+                <img src="/Photos/pune/ar-2.jpg" alt="AR Navigation" className="mt-4 rounded-lg w-full object-cover aspect-[16/9]" />
               </div>
-            </div>
-            <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-3">
-              {[1, 2].map((i) => (
-                <div
-                  key={i}
-                  className="aspect-[16/9] rounded-lg overflow-hidden border"
-                >
-                  <img
-                    src="/placeholder.svg"
-                    alt={`AR concept visual ${i} placeholder`}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              ))}
             </div>
           </div>
 
@@ -676,6 +668,7 @@ const SystemThinking = () => {
                   <li>Lightweight, modular, easy to set up</li>
                   <li>Durable, water‑resistant materials for repeated use</li>
                 </ul>
+                <img src="/Photos/pune/24.png" alt="Flood Barrier Design" className="mt-4 rounded-lg w-full object-cover aspect-[16/9]" />
               </div>
               <div>
                 <h4 className="font-semibold mb-2">Setup Process</h4>
@@ -685,28 +678,8 @@ const SystemThinking = () => {
                   <li>Check edges for gaps</li>
                   <li>After floods, clean, fold, and store</li>
                 </ol>
+                <img src="/Photos/pune/23.jpg" alt="Flood Barrier Setup" className="mt-4 rounded-lg w-full object-cover aspect-[16/9]" />
               </div>
-              <div>
-                <h4 className="font-semibold mb-2">Emergency Buttons</h4>
-                <ul className="list-disc pl-5 space-y-1">
-                  <li>Cost‑effective for repeated monsoons</li>
-                  <li>Minimal training and effort to deploy</li>
-                </ul>
-              </div>
-            </div>
-            <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-3">
-              {[1, 2].map((i) => (
-                <div
-                  key={i}
-                  className="aspect-[16/9] rounded-lg overflow-hidden border"
-                >
-                  <img
-                    src="/placeholder.svg"
-                    alt={`Flood barrier visual ${i} placeholder`}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              ))}
             </div>
           </div>
         </div>
