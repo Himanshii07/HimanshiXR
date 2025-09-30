@@ -9,54 +9,54 @@
    * A different format will require also updating the theme in tailwind.config.ts.
   */
   :root {
-    --background: 0 0% 98%;
-    --foreground: 240 10% 15%;
+    --background: 33 70% 97%;
+    --foreground: 236 12% 18%;
 
     --card: 0 0% 100%;
-    --card-foreground: 240 10% 15%;
+    --card-foreground: 236 12% 18%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 15%;
+    --popover-foreground: 236 12% 18%;
 
-    --primary: 240 9% 20%;
+    --primary: 224 33% 28%;
     --primary-foreground: 0 0% 98%;
 
-    --secondary: 240 4.8% 95.9%;
-    --secondary-foreground: 240 5.9% 10%;
+    --secondary: 200 47% 96%;
+    --secondary-foreground: 222 35% 20%;
 
-    --muted: 240 4.8% 95.9%;
-    --muted-foreground: 240 3.8% 46.1%;
+    --muted: 195 38% 95%;
+    --muted-foreground: 210 20% 38%;
 
-    --accent: 240 4.8% 95.9%;
-    --accent-foreground: 240 5.9% 10%;
+    --accent: 334 55% 94%;
+    --accent-foreground: 334 45% 30%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 240 5.9% 90%;
-    --input: 240 5.9% 90%;
-    --ring: 240 9% 20%;
+    --border: 26 30% 86%;
+    --input: 26 30% 86%;
+    --ring: 210 45% 42%;
 
     --radius: 0.5rem;
 
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 9% 20%;
+    --sidebar-background: 33 70% 97%;
+    --sidebar-foreground: 236 12% 26%;
+    --sidebar-primary: 224 33% 28%;
     --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 240 5.9% 90%;
-    --sidebar-ring: 240 9% 20%;
+    --sidebar-accent: 200 47% 96%;
+    --sidebar-accent-foreground: 222 35% 20%;
+    --sidebar-border: 26 30% 86%;
+    --sidebar-ring: 210 45% 42%;
 
     /* Minimalist color accents */
-    --minimal-sage: 120 13% 70%;
-    --minimal-sage-foreground: 120 13% 20%;
-    --minimal-warm: 30 30% 75%;
-    --minimal-warm-foreground: 30 30% 25%;
-    --minimal-cool: 210 20% 75%;
-    --minimal-cool-foreground: 210 20% 25%;
-    --minimal-neutral: 0 0% 85%;
-    --minimal-neutral-foreground: 0 0% 35%;
+    --minimal-sage: 142 27% 73%;
+    --minimal-sage-foreground: 142 32% 20%;
+    --minimal-warm: 28 70% 74%;
+    --minimal-warm-foreground: 28 55% 24%;
+    --minimal-cool: 206 48% 76%;
+    --minimal-cool-foreground: 206 32% 24%;
+    --minimal-neutral: 210 24% 92%;
+    --minimal-neutral-foreground: 210 18% 30%;
   }
 }
 
@@ -67,6 +67,12 @@
 
   body {
     @apply bg-background text-foreground;
+    background-image:
+      radial-gradient(circle at 5% 10%, hsl(var(--minimal-warm) / 0.28) 0, transparent 55%),
+      radial-gradient(circle at 95% 90%, hsl(var(--minimal-cool) / 0.24) 0, transparent 60%);
+    background-repeat: no-repeat;
+    background-size: 60% 60%, 55% 55%;
+    background-attachment: fixed;
     font-family:
       "Inter",
       -apple-system,
