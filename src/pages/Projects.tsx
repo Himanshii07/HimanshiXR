@@ -397,7 +397,11 @@ const Projects = () => {
                       : "border-border/60 bg-white/70 text-muted-foreground hover:text-foreground hover:border-minimal-cool/60 hover:bg-white/90"
                   }`}
                 >
-                  <Icon className="w-4 h-4 mr-2" />
+                  <Icon
+                    className={`w-4 h-4 mr-2 transition-opacity duration-200 ${
+                      isActive ? "opacity-100" : "opacity-70"
+                    }`}
+                  />
                   {filter.label}
                 </Button>
               );
