@@ -18,22 +18,23 @@ const HandDrawnIllustrations: React.FC<HandDrawnIllustrationsProps> = ({
       message: "Placeholder text",
       svg: (
         <img
-          src="/Photos/illustrations/netflix.png" // <-- Update with your actual path
+          src="/Photos/illustrations/netflix.png"
           alt="Netflix Logo"
-          width={280}
+          width={180}
           height={350}
           className="object-contain"
         />
       ),
       position: { top: "5%", left: "54%" },
       color: "text-red-500",
+      tooltipPosition: { left: "52%", top: "5%", transform: "translateX(-50%)" },
     },
     {
       name: "chai",
-      message: "Placeholder text",
+      message: "Chai Addicted",
       svg: (
         <img
-          src="/Photos/illustrations/Chai.png" // <-- Update with your actual path
+          src="/Photos/illustrations/Chai.png"
           alt="Chai logo"
           width={220}
           height={280}
@@ -42,13 +43,14 @@ const HandDrawnIllustrations: React.FC<HandDrawnIllustrationsProps> = ({
       ),
       position: { top: "28%", right: "12%" },
       color: "text-amber-600",
+      tooltipPosition: { right: "0", top: "-48px" },
     },
     {
       name: "rajma-chawal",
       message: "Placeholder text",
       svg: (
         <img
-          src="/Photos/illustrations/shares.png" // <-- Update with your actual path
+          src="/Photos/illustrations/shares.png"
           alt="Chai logo"
           width={520}
           height={680}
@@ -57,28 +59,30 @@ const HandDrawnIllustrations: React.FC<HandDrawnIllustrationsProps> = ({
       ),
       position: { top: "30%", left: "12%" },
       color: "text-orange-600",
+      tooltipPosition: { left: "0", top: "-48px" },
     },
     {
       name: "dog",
-      message: "Placeholder text",
+      message: "She is a dog person",
       svg: (
         <img
-          src="/Photos/illustrations/dog.png" // <-- Update with your actual path
+          src="/Photos/illustrations/dog.png"
           alt="Chai logo"
           width={220}
           height={480}
           className="object-contain"
         />
       ),
-      position: { top: "58%", right: "38%" },
+      position: { top: "62%", right: "38%" },
       color: "text-blue-600",
+      tooltipPosition: { right: "0", top: "-48px" },
     },
     {
       name: "earphones",
       message: "Placeholder text",
       svg: (
         <img
-          src="/Photos/illustrations/plants.png" // <-- Update with your actual path
+          src="/Photos/illustrations/plants.png"
           alt="Chai logo"
           width={420}
           height={680}
@@ -87,13 +91,14 @@ const HandDrawnIllustrations: React.FC<HandDrawnIllustrationsProps> = ({
       ),
       position: { top: "54%", left: "8%" },
       color: "text-purple-600",
+      tooltipPosition: { left: "0", top: "-48px" },
     },
     {
       name: "swings",
       message: "Placeholder text",
       svg: (
         <img
-          src="/Photos/illustrations/swing.png" // <-- Update with your actual path
+          src="/Photos/illustrations/swing.png"
           alt="Chai logo"
           width={420}
           height={580}
@@ -102,13 +107,14 @@ const HandDrawnIllustrations: React.FC<HandDrawnIllustrationsProps> = ({
       ),
       position: { top: "-2%", left: "4%" },
       color: "text-green-600",
+      tooltipPosition: { left: "0", top: "-48px" },
     },
     {
       name: "travel",
       message: "Placeholder text",
       svg: (
         <img
-          src="/Photos/illustrations/travel.png" // <-- Update with your actual path
+          src="/Photos/illustrations/travel.png"
           alt="Chai logo"
           width={220}
           height={280}
@@ -117,6 +123,7 @@ const HandDrawnIllustrations: React.FC<HandDrawnIllustrationsProps> = ({
       ),
       position: { top: "50%", right: "5%" },
       color: "text-indigo-600",
+      tooltipPosition: { right: "0", top: "-48px" },
     },
   ];
 
@@ -129,15 +136,35 @@ const HandDrawnIllustrations: React.FC<HandDrawnIllustrationsProps> = ({
           style={{ ...illustration.position, pointerEvents: "auto", zIndex: 20 }}
           initial={{ opacity: 0, scale: 0, rotate: -10 }}
           animate={{ opacity: 1, scale: 1, rotate: Math.random() * 20 - 10 }}
-          transition={{ duration: 0.8, delay: 1 + index * 0.15, ease: "easeOut" }}
-          whileHover={{ scale: 1.1, rotate: 0 }}
+          transition={{ duration: 0.8, delay: 0 + index * 0.1, ease: "easeOut" }}
           onHoverStart={() => setHoveredIllustration(illustration.name)}
           onHoverEnd={() => setHoveredIllustration(null)}
         >
+          {/* Tooltip above illustration, position editable via tooltipPosition */}
+          {showTooltip && hoveredIllustration === illustration.name && (
+            <motion.div
+              className="absolute z-50 pointer-events-auto"
+              style={{ ...illustration.tooltipPosition }}
+              initial={{ opacity: 0, y: 10, scale: 0.8 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              transition={{ duration: 0.2 }}
+            >
+              <div className="bg-background/95 backdrop-blur border border-border rounded-lg px-3 py-2 shadow-lg whitespace-nowrap">
+                <p className="text-sm text-foreground font-semibold">
+                  {illustration.message}
+                </p>
+                <div className="absolute bottom-full left-1/2 transform -translate-x-1/2">
+                  <div className="w-2 h-2 bg-background border-l border-t border-border rotate-45 transform -translate-y-1"></div>
+                </div>
+              </div>
+            </motion.div>
+          )}
           <motion.div
             animate={{
               y: [0, -5, 0],
               rotate: [0, 2, 0],
+              scale: hoveredIllustration === illustration.name ? 1.1 : 1,
+              rotateZ: hoveredIllustration === illustration.name ? 0 : undefined,
             }}
             transition={{
               duration: 3 + Math.random() * 2,
@@ -149,25 +176,6 @@ const HandDrawnIllustrations: React.FC<HandDrawnIllustrationsProps> = ({
           >
             {illustration.svg}
           </motion.div>
-
-          {/* Tooltip */}
-          {showTooltip && hoveredIllustration === illustration.name && (
-            <motion.div
-              className="absolute -bottom-16 left-1/2 transform -translate-x-1/2 z-50 pointer-events-auto"
-              initial={{ opacity: 0, y: -10, scale: 0.8 }}
-              animate={{ opacity: 1, y: 0, scale: 1 }}
-              transition={{ duration: 0.2 }}
-            >
-              <div className="bg-background/95 backdrop-blur border border-border rounded-lg px-3 py-2 shadow-lg whitespace-nowrap">
-                <p className="text-sm text-foreground font-semibold">
-                  {illustration.message}
-                </p>
-                <div className="absolute top-full left-1/2 transform -translate-x-1/2">
-                  <div className="w-2 h-2 bg-background border-r border-b border-border rotate-45 transform translate-y-[-1px]"></div>
-                </div>
-              </div>
-            </motion.div>
-          )}
         </motion.div>
       ))}
     </div>

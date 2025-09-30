@@ -76,10 +76,25 @@ const Index = () => {
       description: "Short film created for Unreal Engine's cinematic challenge, focusing on lighting, camera, and storytelling.",
       slug: "unreal-cinematic",
     },
+     {
+      title: "Angry Birds Game",
+      category: "Interactive Game Design",
+      image: "/Photos/Angry birds.png",
+      description: "A 2D recreation of Angry Birds with physics-based gameplay, multiple levels, and engaging visual effects. ",
+      slug: "angry-birds",
+    },
   ];
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white relative">
+      {/* Mobile-only overlay */}
+      <div className="fixed inset-0 z-50 flex items-center justify-center bg-white/95 backdrop-blur-lg md:hidden">
+        <div className="text-center">
+          <h2 className="text-4xl font-bold text-red-600 mb-4">Opps!</h2>
+          <p className="text-lg text-muted-foreground">Open this website on a bigger screen!</p>
+        </div>
+      </div>
+
       <Navigation />
 
       {/* Minimalist Hero Section */}
@@ -101,8 +116,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Values Section */}
-      <ValuesSection />
+      
 
       {/* Recent Projects Preview */}
       <section className="py-24 bg-white/20">
@@ -186,16 +200,20 @@ const Index = () => {
       </section>
 
 
+      {/* Values Section */}
+      <ValuesSection />
+
+
 
       {/* Explored */}
       <section className="py-24 bg-white/20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-heading text-foreground mb-4">
-              Beyond Designing
+              Creative Explorations
             </h2>
             <p className="text-lg text-muted-foreground font-light">
-              Tools/softwares I have explored and worked with
+              A collection of small builds and prototypes created just for exploration.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-12xl mx-auto">

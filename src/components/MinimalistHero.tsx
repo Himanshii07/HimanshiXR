@@ -35,7 +35,7 @@ const MinimalistHero: React.FC = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="max-w-4xl mx-auto text-center"
         >
-          <motion.span
+          {/* <motion.span
             className="inline-flex items-center gap-2 rounded-full bg-white/70 px-4 py-2 text-xs sm:text-sm font-medium text-foreground/80 shadow-sm ring-1 ring-black/5 backdrop-blur mb-6"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
@@ -43,7 +43,7 @@ const MinimalistHero: React.FC = () => {
           >
             <span className="h-2 w-2 rounded-full bg-minimal-warm/80" />
             Immersive media designer & XR storyteller
-          </motion.span>
+          </motion.span>*/}
 
           <motion.h1
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-heading text-foreground mb-6 tracking-tight leading-tight"
@@ -90,7 +90,7 @@ const MinimalistHero: React.FC = () => {
             </span>
             <span className="inline-flex items-center gap-2 rounded-full bg-white/70 px-3 py-1 shadow-sm ring-1 ring-border/40">
               <span className="h-1.5 w-1.5 rounded-full bg-minimal-cool" />
-              Story-led systems
+              3D design & environments
             </span>
           </motion.div>
 
