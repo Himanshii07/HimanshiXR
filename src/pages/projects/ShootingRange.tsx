@@ -322,7 +322,7 @@ const ShootingRange = () => {
       </section>
 
       {/* Key Features */}
-      <section className="py-24">
+      <section className="py-24 bg-gradient-to-r from-red-60 via-red-200 to-white">
         <div className="container mx-auto px-4">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
@@ -357,6 +357,33 @@ const ShootingRange = () => {
                 );
               })}
             </div>
+          </div>
+        </div>
+      </section>
+
+       {/* Interaction Planning Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-7xl mx-auto text-center mb-10">
+            <img
+              src="/Photos/chem/7.jpg"
+              alt="Checklist for interaction planning"
+              className="rounded-xl shadow-lg w-full object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
+
+      {/* Interaction Planning Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-7xl mx-auto text-center mb-10">
+            <img
+              src="/Photos/chem/8.jpg"
+              alt="Checklist for interaction planning"
+              className="rounded-xl shadow-lg w-full object-cover"
+            />
           </div>
         </div>
       </section>
@@ -403,116 +430,7 @@ const ShootingRange = () => {
         </div>
       </section>
 
-      {/* Technical Achievements */}
-      <section className="py-24">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl text-red-800 font-bold mb-4">
-                Technical Innovations
-              </h2>
-              <p className="text-lg text-muted-foreground">
-                Breakthrough technologies that power the simulation
-              </p>
-            </div>
 
-            <div className="space-y-6">
-              {technicalAchievements.map((achievement, index) => (
-                <Card
-                  key={index}
-                  className="border-border/50 bg-card/50 backdrop-blur-sm hover:border-xr-cyber/50 transition-all duration-300"
-                >
-                  <CardContent className="p-6">
-                    <div className="flex items-start space-x-4">
-                      <div className="flex-shrink-0">
-                        <div className="w-10 h-10 rounded-lg bg-xr-cyber/10 flex items-center justify-center">
-                          <Zap className="h-5 w-5 text-xr-cyber" />
-                        </div>
-                      </div>
-                      <div>
-                        <h3 className="text-lg font-semibold mb-2 text-xr-cyber">
-                          {achievement.title}
-                        </h3>
-                        <p className="text-muted-foreground leading-relaxed">
-                          {achievement.description}
-                        </p>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Outcomes & Impact */}
-      <section className="py-24 bg-muted/20">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Training Impact
-              </h2>
-              <p className="text-lg text-muted-foreground">
-                Measuring effectiveness and user satisfaction
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-3 gap-8">
-              {outcomes.map((outcome, index) => (
-                <Card
-                  key={index}
-                  className="text-center border-border/50 bg-card/50 backdrop-blur-sm hover:border-xr-void/50 transition-all duration-300"
-                >
-                  <CardContent className="p-8">
-                    <div className="text-4xl font-bold text-xr-void mb-2">
-                      {outcome.metric}
-                    </div>
-                    <div className="text-lg font-semibold mb-2">
-                      {outcome.label}
-                    </div>
-                    <p className="text-sm text-muted-foreground">
-                      {outcome.description}
-                    </p>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-
-            {/* Additional Benefits */}
-            <div className="mt-16 grid md:grid-cols-2 gap-8">
-              <Card className="border-border/50 bg-card/50 backdrop-blur-sm">
-                <CardContent className="p-6">
-                  <div className="flex items-center mb-4">
-                    <TrendingUp className="h-6 w-6 text-xr-neon mr-3" />
-                    <h3 className="text-lg font-semibold">Cost Efficiency</h3>
-                  </div>
-                  <p className="text-muted-foreground text-sm">
-                    Reduced training costs by 60% compared to traditional live
-                    ammunition training, while maintaining the same level of
-                    effectiveness.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="border-border/50 bg-card/50 backdrop-blur-sm">
-                <CardContent className="p-6">
-                  <div className="flex items-center mb-4">
-                    <UsersIcon className="h-6 w-6 text-xr-cyber mr-3" />
-                    <h3 className="text-lg font-semibold">Scalability</h3>
-                  </div>
-                  <p className="text-muted-foreground text-sm">
-                    Successfully deployed across 15+ training facilities,
-                    supporting simultaneous training of multiple users with
-                    consistent quality.
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Navigation to Other Projects */}
       <section className="py-24 bg-gradient-to-r from-xr-void/10 via-background to-xr-neon/10">
