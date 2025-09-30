@@ -179,7 +179,7 @@ const SystemThinking = () => {
             </div>
             <div className="aspect-video max-w-4xl mx-auto rounded-xl overflow-hidden border border-border/50 bg-card/50">
               <img
-                src="/Photo/floods/6.jpg"
+                src="/Photos/pune/3.jpg"
                 alt="Systems map visualization placeholder"
                 className="w-full h-full object-cover"
               />
@@ -238,7 +238,7 @@ const SystemThinking = () => {
 
       {/* Initial & Secondary Research (structured, not screenshots) */}
       <section className="py-8">
-        <div className="container mx-auto px-4 max-w-6xl grid lg:grid-cols-2 gap-6">
+        <div className="container mx-auto px-4 max-w-6xl grid lg:grid-cols-1 gap-6">
           <div className="rounded-xl border border-border/60 bg-card/40 p-5">
             <h3 className="text-xl font-semibold mb-3">Initial Research</h3>
             <ul className="list-disc pl-5 space-y-1 text-sm text-muted-foreground mb-4">
@@ -272,13 +272,13 @@ const SystemThinking = () => {
             </div>
             <div className="mt-4 aspect-[16/9] rounded-lg overflow-hidden border">
               <img
-                src="/placeholder.svg"
+                src="/Photos/pune/1.jpg"
                 alt="Initial research visual placeholder"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover aspect-16/9"
               />
             </div>
           </div>
-          <div className="rounded-xl border border-border/60 bg-card/40 p-5">
+          <div className="rounded-xl border border-border/60 bg-card/40 p-5 grid md:grid-cols-2 gap-6 ">
             <h3 className="text-xl font-semibold mb-3">Secondary Research</h3>
             <ul className="list-disc pl-5 space-y-1 text-sm text-muted-foreground">
               <li>STANDARD OPERATING PROCEDURE (state/city)</li>
@@ -288,11 +288,25 @@ const SystemThinking = () => {
             </ul>
             <div className="mt-4 aspect-[16/9] rounded-lg overflow-hidden border">
               <img
-                src="/Photo/floods/1.jpg"
+                src="/Photos/pune/5.jpg"
                 alt="Secondary research visual placeholder"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover aspect-9/16"
               />
             </div>
+          </div>
+        </div>
+      </section>
+
+       {/* Communication Loop */}
+      <section className="py-16 bg-white-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto text-center mb-10 gap-8">
+            
+            <img
+              src="/Photos/pune/9.jpg"
+              alt="Human Factors reference"
+              className="rounded-xl w-full object-cover"
+            />
           </div>
         </div>
       </section>
