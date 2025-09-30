@@ -4,85 +4,120 @@ import HandDrawnIllustrations from "./HandDrawnIllustrations";
 
 const MinimalistHero: React.FC = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center bg-background relative overflow-hidden">
-      {/* Dotted diary background */}
-      <div
-        className="absolute inset-0 opacity-[1.08]"
-        style={{
-          backgroundImage: `
-            radial-gradient(circle at 1px 1px, hsl(var(--muted-foreground)) 0.5px, transparent 0)
-          `,
-          backgroundSize: "20px 20px",
-        }}
-      />
+    <section className="relative flex items-center overflow-hidden bg-gradient-to-br from-minimal-sage/35 via-background to-minimal-warm/30 py-24 md:py-32 min-h-[80vh] md:min-h-screen">
+      <div className="absolute inset-0 pointer-events-none">
+        <div
+          className="absolute inset-0 opacity-70"
+          style={{
+            backgroundImage: `
+              radial-gradient(circle at 1px 1px, hsl(var(--muted-foreground) / 0.2) 0.5px, transparent 0)
+            `,
+            backgroundSize: "20px 20px",
+          }}
+        />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_hsl(var(--minimal-cool)_/_0.25),_transparent_60%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom,_hsl(var(--minimal-warm)_/_0.25),_transparent_65%)]" />
+        <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-white/70 via-transparent to-transparent" />
+        <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-white/60 via-transparent to-transparent" />
+      </div>
 
-      {/* Subtle margin decoration */}
-      <div className="absolute left-12 top-0 bottom-0 w-px bg-red-200 opacity-30" />
-      <div className="absolute right-12 top-0 bottom-0 w-px bg-blue-200 opacity-20" />
+      <div className="absolute inset-y-0 left-8 hidden md:block w-px bg-minimal-cool/40" />
+      <div className="absolute inset-y-0 right-8 hidden md:block w-px bg-minimal-warm/35" />
 
-      {/* Hand-drawn illustrations */}
-      <HandDrawnIllustrations showTooltip={true} />
+      <div className="absolute inset-0 hidden md:block">
+        <HandDrawnIllustrations showTooltip />
+      </div>
 
-      <div className="container mx-auto px-4 text-center relative z-10">
+      <div className="container relative z-10 mx-auto px-5 sm:px-6 md:px-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="max-w-4xl mx-auto"
+          className="max-w-4xl mx-auto text-center"
         >
-          {/* Main heading */}
+          <motion.span
+            className="inline-flex items-center gap-2 rounded-full bg-white/70 px-4 py-2 text-xs sm:text-sm font-medium text-foreground/80 shadow-sm ring-1 ring-black/5 backdrop-blur mb-6"
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.15 }}
+          >
+            <span className="h-2 w-2 rounded-full bg-minimal-warm/80" />
+            Immersive media designer & XR storyteller
+          </motion.span>
+
           <motion.h1
-            className="text-4xl md:text-6xl lg:text-7xl font-heading text-foreground mb-6 tracking-tight"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-heading text-foreground mb-6 tracking-tight leading-tight"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            transition={{ duration: 0.8, delay: 0.25 }}
           >
-            himanshi
+            himanshi puri
           </motion.h1>
 
-          {/* Subtitle */}
           <motion.p
-            className="text-lg md:text-xl text-muted-foreground mb-4 font-light tracking-wide"
+            className="text-base sm:text-lg md:text-xl text-muted-foreground mb-4 font-light tracking-wide"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            curious + creative + consistent
+            curious • creative • consistent
           </motion.p>
 
-          {/* Description */}
           <motion.p
-            className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto mb-12 leading-relaxed font-normal"
+            className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed font-normal"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
+            transition={{ duration: 0.8, delay: 0.55 }}
           >
-            A designer who believes in designing with a purpose while balancing
-            functionality and aesthetics.
+            Designing purposeful immersive experiences that balance
+            storytelling, functionality, and craftsmanship across XR,
+            interactive media, and 3D worlds.
           </motion.p>
 
-          {/* Scroll indicator */}
           <motion.div
-            className="mt-20 flex flex-col items-center"
+            className="flex flex-wrap items-center justify-center gap-3 text-xs sm:text-sm text-muted-foreground/80"
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.7 }}
+          >
+            <span className="inline-flex items-center gap-2 rounded-full bg-white/70 px-3 py-1 shadow-sm ring-1 ring-border/40">
+              <span className="h-1.5 w-1.5 rounded-full bg-minimal-sage" />
+              Research-driven design
+            </span>
+            <span className="inline-flex items-center gap-2 rounded-full bg-white/70 px-3 py-1 shadow-sm ring-1 ring-border/40">
+              <span className="h-1.5 w-1.5 rounded-full bg-minimal-warm" />
+              XR prototyping
+            </span>
+            <span className="inline-flex items-center gap-2 rounded-full bg-white/70 px-3 py-1 shadow-sm ring-1 ring-border/40">
+              <span className="h-1.5 w-1.5 rounded-full bg-minimal-cool" />
+              Story-led systems
+            </span>
+          </motion.div>
+
+          <motion.div
+            className="mt-16 flex flex-col items-center"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 1.2 }}
+            transition={{ duration: 0.8, delay: 1 }}
           >
-            <span className="text-sm text-muted-foreground mb-4 font-light">
+            <span className="text-xs sm:text-sm text-muted-foreground mb-4 font-light uppercase tracking-[0.2em]">
               Scroll to explore
             </span>
             <motion.div
-              className="w-px h-16 bg-gradient-to-b from-muted-foreground to-transparent"
-              animate={{ scaleY: [1, 0.8, 1] }}
-              transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+              className="w-px h-14 bg-gradient-to-b from-muted-foreground/80 to-transparent"
+              animate={{ scaleY: [1, 0.75, 1] }}
+              transition={{
+                duration: 2.2,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }}
             />
           </motion.div>
         </motion.div>
       </div>
 
-      {/* Floating elements */}
       <motion.div
-        className="absolute top-20 left-20 w-2 h-2 bg-minimal-sage rounded-full"
+        className="hidden md:block absolute top-20 left-24 w-3 h-3 bg-minimal-sage rounded-full"
         animate={{
           y: [0, -20, 0],
           opacity: [0.3, 0.8, 0.3],
@@ -94,7 +129,7 @@ const MinimalistHero: React.FC = () => {
         }}
       />
       <motion.div
-        className="absolute bottom-32 right-32 w-3 h-3 bg-minimal-warm rounded-full"
+        className="hidden md:block absolute bottom-32 right-32 w-4 h-4 bg-minimal-warm rounded-full"
         animate={{
           y: [0, -15, 0],
           opacity: [0.4, 0.9, 0.4],
@@ -107,7 +142,7 @@ const MinimalistHero: React.FC = () => {
         }}
       />
       <motion.div
-        className="absolute top-1/2 left-10 w-1.5 h-1.5 bg-minimal-cool rounded-full"
+        className="hidden md:block absolute top-1/2 left-10 w-2 h-2 bg-minimal-cool rounded-full"
         animate={{
           y: [0, -10, 0],
           opacity: [0.2, 0.7, 0.2],

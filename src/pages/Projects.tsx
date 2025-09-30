@@ -8,6 +8,7 @@ import {
   Headphones,
   Smartphone,
   MonitorSpeaker,
+  Microscope,
   Eye,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -284,8 +285,7 @@ const Projects = () => {
         "VR-based pre-flight maintenance training with guided inspection and independent practice in a safe, immersive environment.",
       longDescription:
         "We designed a VR-based pre-flight maintenance simulation to replace costly, risky traditional training. Trainees first complete a guided inspection with real-time feedback, then practice independently to build confidence safely.",
-      image:
-        "/Photos/Flight/8.png",
+      image: "/Photos/Flight/8.png",
       tags: [
         "VR",
         "Training Simulation",
@@ -307,8 +307,8 @@ const Projects = () => {
     {
       id: 12,
       title: "System Thinking",
-      category: "interactive",
-      categoryLabel: "Case Study",
+      category: "research",
+      categoryLabel: "Research",
       description:
         "Mapping interdependencies, feedback loops, and leverage points in complex problems.",
       longDescription:
@@ -325,7 +325,7 @@ const Projects = () => {
     {
       id: 13,
       title: "Ethnography",
-      category: "interactive",
+      category: "research",
       categoryLabel: "Research",
       description:
         "Qualitative field study capturing behaviors, contexts, and insights.",
@@ -346,6 +346,7 @@ const Projects = () => {
     { id: "all", label: "All Projects", icon: Filter },
     { id: "vr", label: "VR & Spatial", icon: Headphones },
     { id: "interactive", label: "Interactive & Games", icon: Smartphone },
+    { id: "research", label: "Research", icon: Microscope },
     { id: "3d-art", label: "3D Environment", icon: MonitorSpeaker },
   ];
 
@@ -383,18 +384,23 @@ const Projects = () => {
           <div className="flex flex-wrap justify-center gap-4">
             {filters.map((filter) => {
               const Icon = filter.icon;
+              const isActive = activeFilter === filter.id;
               return (
                 <Button
                   key={filter.id}
-                  variant={activeFilter === filter.id ? "default" : "outline"}
+                  variant="outline"
                   onClick={() => setActiveFilter(filter.id)}
-                  className={`${
-                    activeFilter === filter.id
-                      ? "bg-xr-neon text-xr-neon-foreground hover:bg-xr-red/80"
-                      : "border-border hover:border-xr-neon/50 hover:text-xr-neon"
+                  className={`rounded-full px-5 py-2 text-sm font-medium transition-all duration-200 backdrop-blur ${
+                    isActive
+                      ? "border-transparent bg-gradient-to-r from-minimal-warm/80 to-minimal-sage/80 text-foreground shadow-lg shadow-minimal-warm/30"
+                      : "border-border/60 bg-white/70 text-muted-foreground hover:text-foreground hover:border-minimal-cool/60 hover:bg-white/90"
                   }`}
                 >
-                  <Icon className="w-4 h-4 mr-2" />
+                  <Icon
+                    className={`w-4 h-4 mr-2 transition-opacity duration-200 ${
+                      isActive ? "opacity-100" : "opacity-70"
+                    }`}
+                  />
                   {filter.label}
                 </Button>
               );
