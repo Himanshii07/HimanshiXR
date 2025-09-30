@@ -368,7 +368,7 @@ const SmartChemistry = () => {
       {/* Development Process */}
       <section className="py-24 bg-gradient-to-r from-blue-900/10 via-background to-purple-900/10">
         <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
+          <div className="max-w-8xl mx-auto">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold mb-4 text-blue-600">
                 🔬 How We Built It
@@ -377,16 +377,16 @@ const SmartChemistry = () => {
                 From idea to AI-powered chemistry tool, with lots of hands-on work
               </p>
             </div>
-            <div className="grid gap-8">
+            <div className="grid md:grid-cols-2 gap-6">
               {/* Add images for each step, update layout */}
               {developmentSteps.map((step, index) => {
                 const Icon = step.icon;
                 // Example image paths, replace with your actual images
                 const stepImages = [
-                  "/Photos/SmartChemistry/dev1.jpg",
-                  "/Photos/SmartChemistry/dev2.jpg",
-                  "/Photos/SmartChemistry/dev3.jpg",
-                  "/Photos/SmartChemistry/dev4.jpg",
+                  "/Photos/chem/3.jpg",
+                  "/Photos/chem/2.jpg",
+                  "/Photos/chem/4.jpg",
+                  "/Photos/chem/5.png",
                 ];
                 return (
                   <div
@@ -422,7 +422,7 @@ const SmartChemistry = () => {
                     <img
                       src={stepImages[index]}
                       alt={`Step ${step.step}`}
-                      className="rounded-lg shadow w-full max-w-xs"
+                      className="rounded-lg shadow w-full max-w-xs aspect-square object-cover"
                     />
                   </div>
                 );
@@ -441,16 +441,11 @@ const SmartChemistry = () => {
               Here's what our Smart Chemistry tool looks like in action!
             </p>
           </div>
-          <div className="grid md:grid-cols-2 gap-8 justify-center">
+          <div className="grid md:grid-cols-1 gap-8 justify-center">
             {/* Example result images, replace with your actual result images */}
             <img
-              src="/Photos/SmartChemistry/result1.jpg"
+              src="/Photos/chem/1.jpg"
               alt="Result 1"
-              className="rounded-xl shadow w-full object-cover"
-            />
-            <img
-              src="/Photos/SmartChemistry/result2.jpg"
-              alt="Result 2"
               className="rounded-xl shadow w-full object-cover"
             />
           </div>
@@ -538,6 +533,20 @@ const SmartChemistry = () => {
           </div>
         </div>
       </section>
+
+       {/* Interaction Planning Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto text-center mb-10">
+            <img
+              src="/Photos/chem/6.jpg"
+              alt="Checklist for interaction planning"
+              className="rounded-xl shadow-lg w-full object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
 
       {/* Learning Outcomes */}
       <section className="py-24">

@@ -136,6 +136,8 @@ const Ethnography = () => {
         </div>
       </section>
 
+      
+
 
 
       {/* Pain Points Section - Casual Style */}
@@ -259,6 +261,49 @@ const Ethnography = () => {
               {/* Diagram/Image placeholder */}
               <div className="aspect-video w-full max-w-xs bg-muted rounded-lg flex items-center justify-center text-muted-foreground">
                 Add recommendations diagram/image
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Outcomes & Impact - moved from ShootingRange */}
+      <section className="py-24 bg-gradient-to-r from-pink-100 via-background to-blue-100">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-blue-400">
+                Analysis
+              </h2>
+              <p className="text-lg text-muted-foreground">
+                Measuring effectiveness and user satisfaction from our ethnography research
+              </p>
+            </div>
+            <div className="grid md:grid-cols-3 gap-8 mb-12">
+              <div className="bg-white rounded-xl p-8 shadow text-center">
+                <div className="text-4xl font-bold text-blue-400 mb-2">55%</div>
+                <div className="text-lg font-semibold mb-2">Students of MIT Design Institute takes tiffin service</div>
+                <p className="text-sm text-muted-foreground">Rapid fieldwork and analysis</p>
+              </div>
+              <div className="bg-white rounded-xl p-8 shadow text-center">
+                <div className="text-4xl font-bold text-blue-400 mb-2">42%</div>
+                <div className="text-lg font-semibold mb-2">students uses tiffin services daily</div>
+                <p className="text-sm text-muted-foreground">Collaborative research and interviews</p>
+              </div>
+              <div className="bg-white rounded-xl p-8 shadow text-center">
+                <div className="text-4xl font-bold text-blue-400 mb-2">Rs. 50 - 80</div>
+                <div className="text-lg font-semibold mb-2">On Campus Life</div>
+                <p className="text-sm text-muted-foreground">Amount for single tiffin meal </p>
+              </div>
+            </div>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="bg-white rounded-xl p-8 shadow">
+                <h3 className="text-xl font-bold text-blue-400 mb-2">Opportunity for Improvement</h3>
+                <p className="text-muted-foreground text-sm">A student-focused app could streamline ordering, customize meal plans, and gather real-time feedback to improve service satisfaction.</p>
+              </div>
+              <div className="bg-white rounded-xl p-8 shadow">
+                <h3 className="text-xl font-bold text-blue-400 mb-2">Collaboration Potential </h3>
+                <p className="text-muted-foreground text-sm">Strengthen communication between students and the tiffin provider to address specific needs (diet preferences, delivery timings) and reduce meal-related hassles for students.</p>
               </div>
             </div>
           </div>

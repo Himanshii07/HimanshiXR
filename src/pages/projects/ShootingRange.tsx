@@ -153,7 +153,7 @@ const ShootingRange = () => {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative py-24 overflow-hidden">
+      <section className="relative py-24 overflow-hidden max-w-8xl mx-auto ">
         <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-xr-void/5" />
 
         {/* Animated background elements */}
@@ -190,7 +190,7 @@ const ShootingRange = () => {
                 </span>
               </div>
 
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-foreground to-xr-void bg-clip-text text-transparent">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-red-900 via-red-800 to-black bg-clip-text text-transparent">
                 {projectDetails.title}
               </h1>
 
@@ -217,7 +217,7 @@ const ShootingRange = () => {
                 </Badge>
               </div>
 
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center ">
                 <Button
                   size="lg"
                   className="bg-xr-void text-xr-void-foreground hover:bg-xr-void/80"
@@ -236,12 +236,15 @@ const ShootingRange = () => {
               </div>
             </div>
 
-            {/* Project Image/Video */}
-            <CustomVideoPlayer
+            <div className="max-w-8xl mx-auto gap-4 justify-center  ">
+              <CustomVideoPlayer
               src="https://www.youtube.com/embed/UqiK5qqsfwE?mute=0"
               title="Shootin Range VR Experience"
               className="aspect-video mb-16"
             />
+
+
+            </div>
           </div>
         </div>
       </section>
@@ -249,7 +252,7 @@ const ShootingRange = () => {
       {/* Project Overview */}
       <section className="py-24 bg-muted/20">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-5xl mx-auto">
             <div className="grid md:grid-cols-2 gap-12 mb-16">
               <div>
                 <h2 className="text-3xl font-bold mb-6">Project Overview</h2>
@@ -321,9 +324,9 @@ const ShootingRange = () => {
       {/* Key Features */}
       <section className="py-24">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              <h2 className="text-3xl md:text-4xl text-red-800 font-bold mb-4">
                 Core Features
               </h2>
               <p className="text-lg text-muted-foreground">
@@ -361,9 +364,9 @@ const ShootingRange = () => {
       {/* Feature Breakdown */}
       <section className="py-24 bg-muted/20">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              <h2 className="text-3xl md:text-4xl text-red-800 font-bold mb-4">
                 Feature Breakdown
               </h2>
               <p className="text-lg text-muted-foreground">
@@ -371,7 +374,7 @@ const ShootingRange = () => {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-4 gap-0">
               {keyFeatures.map((category, index) => (
                 <Card
                   key={index}
@@ -405,7 +408,7 @@ const ShootingRange = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              <h2 className="text-3xl md:text-4xl text-red-800 font-bold mb-4">
                 Technical Innovations
               </h2>
               <p className="text-lg text-muted-foreground">

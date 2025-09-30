@@ -331,7 +331,7 @@ const Projects = () => {
         "Qualitative field study capturing behaviors, contexts, and insights.",
       longDescription:
         "Research project using observations and interviews to surface needs, constraints, and design opportunities.",
-      image: "Photos/Ethnography/2.jpg",
+      image: "Photos/1.jpg",
       tags: ["Research", "Interviews", "Observation", "Synthesis"],
       featured: false,
       year: "2025",
