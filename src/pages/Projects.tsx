@@ -385,6 +385,7 @@ const Projects = () => {
           <div className="flex flex-wrap justify-center gap-4">
             {filters.map((filter) => {
               const Icon = filter.icon;
+              const isActive = activeFilter === filter.id;
               return (
                 <Button
                   key={filter.id}
