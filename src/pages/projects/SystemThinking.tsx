@@ -179,7 +179,7 @@ const SystemThinking = () => {
             </div>
             <div className="aspect-video max-w-4xl mx-auto rounded-xl overflow-hidden border border-border/50 bg-card/50">
               <img
-                src="/placeholder.svg"
+                src="/Photo/floods/6.jpg"
                 alt="Systems map visualization placeholder"
                 className="w-full h-full object-cover"
               />
@@ -288,7 +288,7 @@ const SystemThinking = () => {
             </ul>
             <div className="mt-4 aspect-[16/9] rounded-lg overflow-hidden border">
               <img
-                src="/placeholder.svg"
+                src="/Photo/floods/1.jpg"
                 alt="Secondary research visual placeholder"
                 className="w-full h-full object-cover"
               />
