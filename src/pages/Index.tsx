@@ -90,8 +90,8 @@ const Index = () => {
       {/* Mobile-only overlay */}
       <div className="fixed inset-0 z-50 flex items-center justify-center bg-white/95 backdrop-blur-lg md:hidden">
         <div className="text-center">
-          <h2 className="text-4xl font-bold text-red-600 mb-4">Opps!</h2>
-          <p className="text-lg text-muted-foreground">Open this website on a bigger screen!</p>
+          <h2 className="text-2xl md:text-3xl text-red-200 font-heading text-foreground mb-4">Uh-oh!</h2>
+          <p className="text-lg text-muted-foreground">Tiny screens can't handle all this creativity.</p>
         </div>
       </div>
 
@@ -104,8 +104,8 @@ const Index = () => {
       <section className="py-24 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-heading text-foreground mb-4">
-              What I Do
+            <h2 className="text-3xl md:text-4xl font-heading text-red-700 text-foreground mb-4">
+              What I Do 
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto font-light">
               Hover over the cards to see more details
