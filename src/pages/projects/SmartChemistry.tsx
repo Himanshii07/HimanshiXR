@@ -366,60 +366,93 @@ const SmartChemistry = () => {
       </section>
 
       {/* Development Process */}
-      <section className="py-24">
+      <section className="py-24 bg-gradient-to-r from-blue-900/10 via-background to-purple-900/10">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                🔬 Development Process
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-blue-600">
+                🔬 How We Built It
               </h2>
               <p className="text-lg text-muted-foreground">
-                From concept to AI-powered chemistry education tool
+                From idea to AI-powered chemistry tool, with lots of hands-on work
               </p>
             </div>
-
             <div className="grid gap-8">
+              {/* Add images for each step, update layout */}
               {developmentSteps.map((step, index) => {
                 const Icon = step.icon;
+                // Example image paths, replace with your actual images
+                const stepImages = [
+                  "/Photos/SmartChemistry/dev1.jpg",
+                  "/Photos/SmartChemistry/dev2.jpg",
+                  "/Photos/SmartChemistry/dev3.jpg",
+                  "/Photos/SmartChemistry/dev4.jpg",
+                ];
                 return (
-                  <Card
+                  <div
                     key={index}
-                    className="border-border/50 bg-card/50 backdrop-blur-sm hover:border-green-400/50 transition-all duration-300"
+                    className="flex flex-col md:flex-row items-center bg-white rounded-xl shadow p-6 gap-8"
                   >
-                    <CardContent className="p-8">
-                      <div className="flex items-center mb-4">
-                        <div className="w-16 h-16 bg-gradient-to-r from-green-400 to-blue-400 rounded-full flex items-center justify-center mr-6">
-                          <span className="text-xl font-bold text-white">
-                            {step.step}
-                          </span>
+                    <div className="flex-1">
+                      <div className="flex items-center mb-2">
+                        <div className="w-12 h-12 bg-blue-400/20 rounded-full flex items-center justify-center mr-4">
+                          <Icon className="w-6 h-6 text-blue-600" />
                         </div>
-                        <div className="flex-1">
-                          <div className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold mb-2">
-                            Process {step.step}
-                          </div>
-                          <h3 className="text-2xl font-semibold text-green-400 mb-2">
-                            {step.title}
-                          </h3>
-                          <p className="text-muted-foreground leading-relaxed mb-4">
-                            {step.description}
-                          </p>
-                          <div className="flex flex-wrap gap-2">
-                            {step.tools.map((tool, toolIndex) => (
-                              <div
-                                key={toolIndex}
-                                className="inline-flex items-center rounded-full bg-secondary text-secondary-foreground px-2.5 py-0.5 text-xs font-semibold"
-                              >
-                                {tool}
-                              </div>
-                            ))}
-                          </div>
-                        </div>
+                        <span className="text-xl font-bold text-blue-600">
+                          {step.step}
+                        </span>
                       </div>
-                    </CardContent>
-                  </Card>
+                      <h3 className="text-xl font-semibold text-blue-600 mb-2">
+                        {step.title}
+                      </h3>
+                      <p className="text-muted-foreground leading-relaxed mb-2">
+                        {step.description}
+                      </p>
+                      <div className="flex flex-wrap gap-2 mb-2">
+                        {step.tools.map((tool, toolIndex) => (
+                          <span
+                            key={toolIndex}
+                            className="inline-flex items-center rounded-full bg-blue-100 text-blue-600 px-2.5 py-0.5 text-xs font-semibold"
+                          >
+                            {tool}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                    <img
+                      src={stepImages[index]}
+                      alt={`Step ${step.step}`}
+                      className="rounded-lg shadow w-full max-w-xs"
+                    />
+                  </div>
                 );
               })}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Results Section */}
+      <section className="py-24 bg-gradient-to-r from-blue-400/10 via-background to-purple-400/10">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto text-center mb-12">
+            <h2 className="text-3xl font-bold mb-4 text-purple-600">Results</h2>
+            <p className="text-lg text-muted-foreground mb-6">
+              Here's what our Smart Chemistry tool looks like in action!
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-8 justify-center">
+            {/* Example result images, replace with your actual result images */}
+            <img
+              src="/Photos/SmartChemistry/result1.jpg"
+              alt="Result 1"
+              className="rounded-xl shadow w-full object-cover"
+            />
+            <img
+              src="/Photos/SmartChemistry/result2.jpg"
+              alt="Result 2"
+              className="rounded-xl shadow w-full object-cover"
+            />
           </div>
         </div>
       </section>
@@ -458,38 +491,49 @@ const SmartChemistry = () => {
         </div>
       </section>
 
-      {/* Project Impact */}
-      <section className="py-24 bg-gradient-to-r from-green-900/10 via-background to-blue-900/10">
+      {/* Project Impact with unique icons */}
+      <section className="py-24 bg-gradient-to-r from-blue-900/10 via-background to-purple-900/10">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-blue-600">
                 📊 Educational Impact
               </h2>
               <p className="text-lg text-muted-foreground">
-                How Smart Chemistry transforms the learning experience
+                How Smart Chemistry makes learning better
               </p>
             </div>
-
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {projectImpact.map((impact, index) => (
-                <Card
-                  key={index}
-                  className="text-center border-border/50 bg-card/50 backdrop-blur-sm hover:border-green-400/50 transition-all duration-300"
-                >
-                  <CardContent className="p-6">
-                    <div className="w-12 h-12 bg-green-400/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <BarChart3 className="w-6 h-6 text-green-400" />
-                    </div>
-                    <h3 className="text-lg font-semibold mb-3 text-green-400">
-                      {impact.metric}
-                    </h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
-                      {impact.description}
-                    </p>
-                  </CardContent>
-                </Card>
-              ))}
+              {/* Assign unique icons for each impact */}
+              {[
+                { icon: Atom, color: "text-blue-600" },
+                { icon: Sparkles, color: "text-purple-600" },
+                { icon: Zap, color: "text-yellow-500" },
+                { icon: BookOpen, color: "text-pink-500" },
+              ].map((iconObj, idx) => {
+                const impact = projectImpact[idx];
+                const Icon = iconObj.icon;
+                return (
+                  <Card
+                    key={idx}
+                    className="text-center border-border/50 bg-white backdrop-blur-sm hover:border-blue-400/50 transition-all duration-300"
+                  >
+                    <CardContent className="p-6">
+                      <div
+                        className={`w-12 h-12 bg-blue-400/10 rounded-full flex items-center justify-center mx-auto mb-4 ${iconObj.color}`}
+                      >
+                        <Icon className="w-6 h-6" />
+                      </div>
+                      <h3 className="text-lg font-semibold mb-3 text-blue-600">
+                        {impact.metric}
+                      </h3>
+                      <p className="text-sm text-muted-foreground leading-relaxed">
+                        {impact.description}
+                      </p>
+                    </CardContent>
+                  </Card>
+                );
+              })}
             </div>
           </div>
         </div>

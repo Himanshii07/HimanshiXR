@@ -17,19 +17,19 @@ const Index = () => {
   const features = [
     {
       icon: Eye,
-      title: "Visual Design",
+      title: "XR Development",
       description:
-        "Creating beautiful and functional interfaces that delight users",
+        "I design engaging AR/VR experiences that merge storytelling, interaction, and technology to create meaningful virtual worlds.",
     },
     {
       icon: Layers3,
-      title: "User Experience",
-      description: "Crafting intuitive experiences that solve real problems",
+      title: "3D & Interaction Design",
+      description: "From prototyping in Unity and Unreal to modeling in Maya and Blender, I bring ideas to life with intuitive, interactive environments.",
     },
     {
       icon: Palette,
-      title: "Creative Direction",
-      description: "Bringing ideas to life through thoughtful design decisions",
+      title: "Research-Driven Approach",
+      description: "Experienced in conducting design research to inform concepts, usability, and immersive solutions.",
     },
   ];
 

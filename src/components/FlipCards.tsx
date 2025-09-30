@@ -82,23 +82,23 @@ const FlipCards: React.FC = () => {
   const cards = [
     {
       frontIcon: Eye,
-      frontTitle: "Visual Design",
+      frontTitle: "XR Development",
       frontDescription:
-        "Creating beautiful and functional interfaces that delight users",
+        "I design engaging AR/VR experiences that merge storytelling, interaction, and technology to create meaningful virtual worlds.",
       backContent: "Portfolio examples and design process showcase",
     },
     {
       frontIcon: Layers3,
-      frontTitle: "User Experience",
+      frontTitle: "3D and Interaction Design",
       frontDescription:
-        "Crafting intuitive experiences that solve real problems",
+        "From prototyping in Unity and Unreal to modeling in Maya and Blender, I bring ideas to life with intuitive, interactive environments.",
       backContent: "UX research methodologies and case studies",
     },
     {
       frontIcon: Palette,
-      frontTitle: "Creative Direction",
+      frontTitle: "Research-Driven Approach",
       frontDescription:
-        "Bringing ideas to life through thoughtful design decisions",
+        "Experienced in conducting design research to inform concepts, usability, and immersive solutions.",
       backContent: "Creative process videos and inspiration boards",
     },
   ];
