@@ -90,8 +90,8 @@ const Index = () => {
       {/* Mobile-only overlay */}
       <div className="fixed inset-0 z-50 flex items-center justify-center bg-white/95 backdrop-blur-lg md:hidden">
         <div className="text-center">
-          <h2 className="text-2xl md:text-3xl text-red-200 font-heading text-foreground mb-4">Uh-oh!</h2>
-          <p className="text-lg text-muted-foreground">Tiny screens can't handle all this creativity.</p>
+          <h2 className="text-2xl md:text-3xl text-red-700 font-heading text-foreground mb-4">Uh-oh!</h2>
+          <p className="text-2xl md:text-3xl text-muted-foreground">Open this website on a bigger screen!</p>
         </div>
       </div>
 
