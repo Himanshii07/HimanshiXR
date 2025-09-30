@@ -391,10 +391,10 @@ const Projects = () => {
                   key={filter.id}
                   variant="outline"
                   onClick={() => setActiveFilter(filter.id)}
-                  className={`${
-                    activeFilter === filter.id
-                      ? "bg-xr-neon text-xr-neon-foreground hover:bg-xr-red/80"
-                      : "border-border hover:border-xr-neon/50 hover:text-xr-neon"
+                  className={`rounded-full px-5 py-2 text-sm font-medium transition-all duration-200 backdrop-blur ${
+                    isActive
+                      ? "border-transparent bg-gradient-to-r from-minimal-warm/80 to-minimal-sage/80 text-foreground shadow-lg shadow-minimal-warm/30"
+                      : "border-border/60 bg-white/70 text-muted-foreground hover:text-foreground hover:border-minimal-cool/60 hover:bg-white/90"
                   }`}
                 >
                   <Icon className="w-4 h-4 mr-2" />
