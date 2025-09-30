@@ -305,24 +305,6 @@ const Projects = () => {
       },
     },
     {
-      id: 11,
-      title: "Samsung AI Agent",
-      category: "interactive",
-      categoryLabel: "Interactive Design",
-      description:
-        "Concept prototype for a proactive multimodal assistant across Samsung devices.",
-      longDescription:
-        "Exploration of context-aware assistance, privacy-preserving on-device intelligence, and helpful automation spanning phone, tablet, and wearable surfaces.",
-      image: "/Photos/illustrations/netflix.png",
-      tags: ["AI", "Assistant", "Prototyping", "Voice", "Multimodal"],
-      featured: false,
-      year: "2025",
-      client: "Concept Study",
-      duration: "1 week",
-      slug: "samsung-ai-agent",
-      links: { demo: "#", github: "#", live: "#" },
-    },
-    {
       id: 12,
       title: "System Thinking",
       category: "interactive",
@@ -331,7 +313,7 @@ const Projects = () => {
         "Mapping interdependencies, feedback loops, and leverage points in complex problems.",
       longDescription:
         "Case study applying systems thinking tools to reveal dynamics over time and identify intervention opportunities.",
-      image: "/Photos/illustrations/shares.png",
+      image: "/Photos/pune/3.jpg",
       tags: ["Systems", "Causal Loops", "Leverage Points", "Modeling"],
       featured: false,
       year: "2025",
@@ -349,7 +331,7 @@ const Projects = () => {
         "Qualitative field study capturing behaviors, contexts, and insights.",
       longDescription:
         "Research project using observations and interviews to surface needs, constraints, and design opportunities.",
-      image: "/Photos/life/1.jpeg",
+      image: "Photos/1.jpg",
       tags: ["Research", "Interviews", "Observation", "Synthesis"],
       featured: false,
       year: "2025",
@@ -408,7 +390,7 @@ const Projects = () => {
                   onClick={() => setActiveFilter(filter.id)}
                   className={`${
                     activeFilter === filter.id
-                      ? "bg-xr-neon text-xr-neon-foreground hover:bg-xr-neon/80"
+                      ? "bg-xr-neon text-xr-neon-foreground hover:bg-xr-red/80"
                       : "border-border hover:border-xr-neon/50 hover:text-xr-neon"
                   }`}
                 >
