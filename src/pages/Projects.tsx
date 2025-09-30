@@ -389,7 +389,7 @@ const Projects = () => {
               return (
                 <Button
                   key={filter.id}
-                  variant={activeFilter === filter.id ? "default" : "outline"}
+                  variant="outline"
                   onClick={() => setActiveFilter(filter.id)}
                   className={`${
                     activeFilter === filter.id
