@@ -60,8 +60,8 @@ const Index = () => {
     },
   ];
 
+  // Only show Stormy Ocean and Unreal Cinematic Challenge in exploredProjects
   const exploredProjects = [
-    ...recentProjects,
     {
       title: "Stormy Ocean",
       category: "Simulation & VFX",
@@ -189,23 +189,21 @@ const Index = () => {
 
       {/* Explored */}
       <section className="py-24 bg-white/20">
-        <div className=" container mx-auto px-4">
+        <div className="container mx-auto px-4">
           <div className="text-center mb-16 max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-heading text-foreground mb-4">
-                 Beyond Designing
+              Beyond Designing
             </h2>
-               <p className="text-lg text-muted-foreground font-light">
-                  Tools/softwares I hacve explored and worked with
-               </p>
-           </div>
-
-          <div className="grid md:grid-cols-3 gap-8 max-w-12xl mx-auto">
+            <p className="text-lg text-muted-foreground font-light">
+              Tools/softwares I have explored and worked with
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-12xl mx-auto">
             {exploredProjects.map((project, index) => {
               const colors = ["minimal-sage", "minimal-warm", "minimal-cool"];
               const currentColor = colors[index % 3];
-
               return (
-                <Link key={index} to={`/projects/${project.slug}`}>
+                <Link key={index} to={`/projects/${project.slug}`} className="block">
                   <Card className="group cursor-pointer overflow-hidden border border-border/50 bg-card hover:border-border transition-all duration-300 hover:shadow-lg hover:shadow-black/5">
                     <div
                       className={`aspect-video relative overflow-hidden ${
@@ -216,20 +214,16 @@ const Index = () => {
                             : "bg-minimal-cool/10"
                       }`}
                     >
-                      {/* Project Image */}
                       <img
                         src={project.image}
                         alt={project.title}
                         className="absolute inset-0 w-full h-full object-cover object-center z-0"
                       />
-                      {/* Project category badge */}
                       <div className="absolute top-4 left-4 z-10">
                         <span className="text-xs font-normal text-muted-foreground bg-background/80 backdrop-blur-sm px-3 py-1 rounded-full border border-border/50">
                           {project.category}
                         </span>
                       </div>
-
-                      {/* Simple accent dot */}
                       <div
                         className={`absolute bottom-4 right-4 w-3 h-3 rounded-full z-10 ${
                           currentColor === "minimal-sage"
@@ -240,7 +234,6 @@ const Index = () => {
                         }`}
                       />
                     </div>
-
                     <CardContent className="p-6">
                       <h3 className="text-xl font-normal text-foreground mb-2 group-hover:text-foreground/80 transition-colors duration-300">
                         {project.title}
