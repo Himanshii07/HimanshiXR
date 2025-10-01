@@ -147,13 +147,13 @@ const SystemThinking = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-gradient-to-br from-sky-50 via-emerald-50 to-slate-50">
       {/* Mobile-only overlay */}
       <MobileOverlay />
       <Navigation />
 
       <section className="relative py-24 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-emerald-900/10" />
+        <div className="absolute inset-0 bg-gradient-to-br from-white via-sky-50 to-emerald-100/40" />
         <div className="relative container mx-auto px-4">
           <div className="max-w-8xl mx-auto text-center">
             <Button
