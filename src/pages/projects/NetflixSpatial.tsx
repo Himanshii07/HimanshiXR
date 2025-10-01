@@ -95,13 +95,13 @@ const NetflixSpatial = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-rose-50">
       {/* Mobile-only overlay */}
       <MobileOverlay />
       <Navigation />
 
       {/* Header */}
-      <section className="py-12 bg-gradient-to-br from-background to-red-500/5 relative overflow-hidden">
+      <section className="py-12 bg-gradient-to-br from-white via-slate-50 to-rose-100/30 relative overflow-hidden">
         {/* Animated background elements */}
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-red-500/10 rounded-full blur-3xl animate-float" />
