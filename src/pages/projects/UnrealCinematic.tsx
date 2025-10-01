@@ -154,14 +154,14 @@ const UnrealCinematic = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-gradient-to-br from-slate-900/10 via-slate-800/5 to-indigo-950/10">
       {/* Mobile-only overlay */}
       <MobileOverlay />
       <Navigation />
 
       {/* Hero Section */}
       <section className="relative py-24 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-xr-neon/5" />
+        <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-slate-900/5 to-indigo-900/10" />
 
         {/* Animated background elements */}
         <div className="absolute inset-0 overflow-hidden">
