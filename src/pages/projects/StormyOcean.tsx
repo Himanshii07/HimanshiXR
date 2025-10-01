@@ -175,14 +175,14 @@ const StormyOcean = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-sky-50 to-blue-100">
       {/* Mobile-only overlay */}
       <MobileOverlay />
       <Navigation />
 
       {/* Hero Section with Ocean Theme */}
       <section className="relative py-24 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-blue-900/20" />
+        <div className="absolute inset-0 bg-gradient-to-br from-white via-sky-50 to-blue-200/40" />
 
         {/* Animated ocean elements */}
         <div className="absolute inset-0 overflow-hidden">
