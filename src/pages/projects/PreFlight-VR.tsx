@@ -34,13 +34,13 @@ const PreFlightVR = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-blue-100 to-blue-200">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-sky-100">
       {/* Mobile-only overlay */}
       <MobileOverlay />
       <Navigation />
 
       {/* Hero Section - concise summary, visual */}
-      <section className="relative py-24 bg-gradient-to-br from-background via-blue-100 to-blue-200 overflow-hidden">
+      <section className="relative py-24 bg-gradient-to-br from-white via-blue-50 to-sky-100 overflow-hidden">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto text-center">
             <Button
