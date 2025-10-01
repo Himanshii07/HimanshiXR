@@ -266,14 +266,14 @@ const KedarnathVR = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-gradient-to-br from-amber-50 via-orange-50 to-rose-50">
       {/* Mobile-only overlay */}
       <MobileOverlay />
       <Navigation />
 
       {/* Hero Section with Spiritual Theme */}
       <section className="relative py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-orange-900/20" />
+        <div className="absolute inset-0 bg-gradient-to-br from-white via-amber-50 to-rose-100/40" />
 
         {/* Spiritual floating elements */}
         <div className="absolute inset-0 overflow-hidden">
@@ -379,7 +379,7 @@ const KedarnathVR = () => {
       </section>
 
       {/* Problem Statement & Opportunity */}
-      <section className="py-24 bg-gradient-to-r from-orange-900/10 via-background to-red-900/10">
+      <section className="py-24 bg-gradient-to-r from-amber-100/40 via-white to-rose-100/40">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
@@ -629,7 +629,7 @@ const KedarnathVR = () => {
       </section>
 
       {/* Target Audience */}
-      <section className="py-24 bg-gradient-to-r from-orange-900/10 via-background to-red-900/10">
+      <section className="py-24 bg-gradient-to-r from-amber-100/40 via-white to-rose-100/40">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
@@ -793,7 +793,7 @@ const KedarnathVR = () => {
       </section>
 
       {/* User Interactions */}
-      <section className="py-24 bg-gradient-to-r from-orange-900/10 via-background to-red-900/10">
+      <section className="py-24 bg-gradient-to-r from-amber-100/40 via-white to-rose-100/40">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
@@ -892,7 +892,7 @@ const KedarnathVR = () => {
       </section>
 
       {/* Development Process */}
-      <section className="py-24 bg-gradient-to-r from-orange-900/10 via-background to-red-900/10">
+      <section className="py-24 bg-gradient-to-r from-amber-100/40 via-white to-rose-100/40">
         <div className="container mx-auto px-4">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
