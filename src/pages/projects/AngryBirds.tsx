@@ -80,14 +80,14 @@ const AngryBirds = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-red-100 via-pink-100 to-red-400">
+    <div className="min-h-screen bg-gradient-to-br from-rose-50 via-orange-50 to-amber-100">
       {/* Mobile-only overlay */}
       <MobileOverlay />
       <Navigation />
 
       {/* Hero Section - Updated to match Mushroom House style */}
       <section className="relative py-24 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-red-50" />
+        <div className="absolute inset-0 bg-gradient-to-br from-white via-rose-50 to-amber-100/50" />
         <div className="relative container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             {/* Back Button */}
@@ -153,7 +153,7 @@ const AngryBirds = () => {
       </section>
 
       {/* Project Overview Section */}
-      <section className="py-24 bg-gradient-to-r from-red-50 via-background to-pink-50">
+      <section className="py-24 bg-gradient-to-r from-rose-50 via-white to-amber-50">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
