@@ -15,7 +15,7 @@ const HandDrawnIllustrations: React.FC<HandDrawnIllustrationsProps> = ({
   const illustrations = [
     {
       name: "netflix",
-      message: "Placeholder text",
+      message: "Binge-watching counts as research, right?",
       svg: (
         <img
           src="/Photos/illustrations/netflix.png"
@@ -27,7 +27,7 @@ const HandDrawnIllustrations: React.FC<HandDrawnIllustrationsProps> = ({
       ),
       position: { top: "5%", left: "54%" },
       color: "text-red-500",
-      tooltipPosition: { left: "52%", top: "5%", transform: "translateX(-50%)" },
+      tooltipPosition: { left: "55px", top: "2%", transform: "translateX(-0%)" },
     },
     {
       name: "chai",
@@ -63,7 +63,7 @@ const HandDrawnIllustrations: React.FC<HandDrawnIllustrationsProps> = ({
     },
     {
       name: "dog",
-      message: "She is a dog person",
+      message: "Heart stolen by every dog on the street",
       svg: (
         <img
           src="/Photos/illustrations/dog.png"
