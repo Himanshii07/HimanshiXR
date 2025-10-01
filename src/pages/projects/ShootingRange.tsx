@@ -26,8 +26,12 @@ import CustomVideoPlayer from "@/components/ui/VideoPlayer";
 const MobileOverlay = () => (
   <div className="fixed inset-0 z-50 flex items-center justify-center bg-white/95 backdrop-blur-lg md:hidden">
     <div className="text-center">
-      <h2 className="text-2xl md:text-3xl text-red-700 font-heading text-foreground mb-4">Uh-oh!</h2>
-      <p className="text-sm text-muted-foreground max-w-2xl mx-auto font-light">Open this website on a bigger screen!</p>
+      <h2 className="text-2xl md:text-3xl text-red-700 font-heading text-foreground mb-4">
+        Uh-oh!
+      </h2>
+      <p className="text-sm text-muted-foreground max-w-2xl mx-auto font-light">
+        Open this website on a bigger screen!
+      </p>
     </div>
   </div>
 );
@@ -158,14 +162,14 @@ const ShootingRange = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-xr-void via-background to-xr-neon/10">
+    <div className="min-h-screen bg-gradient-to-br from-slate-900/10 via-slate-900/5 to-blue-900/10">
       {/* Mobile-only overlay */}
       <MobileOverlay />
       <Navigation />
 
       {/* Hero Section */}
       <section className="relative py-24 overflow-hidden max-w-8xl mx-auto">
-        <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-xr-void/5" />
+        <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-slate-900/5 to-blue-900/10" />
 
         {/* Animated background elements */}
         <div className="absolute inset-0 overflow-hidden">
@@ -249,12 +253,10 @@ const ShootingRange = () => {
 
             <div className="max-w-8xl mx-auto gap-4 justify-center  ">
               <CustomVideoPlayer
-              src="https://www.youtube.com/embed/UqiK5qqsfwE?mute=0"
-              title="Shootin Range VR Experience"
-              className="aspect-video mb-16"
-            />
-
-
+                src="https://www.youtube.com/embed/UqiK5qqsfwE?mute=0"
+                title="Shootin Range VR Experience"
+                className="aspect-video mb-16"
+              />
             </div>
           </div>
         </div>
@@ -372,7 +374,7 @@ const ShootingRange = () => {
         </div>
       </section>
 
-       {/* Interaction Planning Section */}
+      {/* Interaction Planning Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-7xl mx-auto text-center mb-10">
@@ -384,7 +386,6 @@ const ShootingRange = () => {
           </div>
         </div>
       </section>
-
 
       {/* Interaction Planning Section */}
       <section className="py-16 bg-white">
@@ -440,8 +441,6 @@ const ShootingRange = () => {
           </div>
         </div>
       </section>
-
-
 
       {/* Navigation to Other Projects */}
       <section className="py-24 bg-gradient-to-r from-xr-void/10 via-background to-xr-neon/10">

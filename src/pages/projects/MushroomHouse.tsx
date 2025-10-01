@@ -29,8 +29,12 @@ import CustomVideoPlayer from "@/components/ui/VideoPlayer";
 const MobileOverlay = () => (
   <div className="fixed inset-0 z-50 flex items-center justify-center bg-white/95 backdrop-blur-lg md:hidden">
     <div className="text-center">
-      <h2 className="text-2xl md:text-3xl text-red-700 font-heading text-foreground mb-4">Uh-oh!</h2>
-      <p className="text-sm text-muted-foreground max-w-2xl mx-auto font-light">Open this website on a bigger screen!</p>
+      <h2 className="text-2xl md:text-3xl text-red-700 font-heading text-foreground mb-4">
+        Uh-oh!
+      </h2>
+      <p className="text-sm text-muted-foreground max-w-2xl mx-auto font-light">
+        Open this website on a bigger screen!
+      </p>
     </div>
   </div>
 );
@@ -164,15 +168,15 @@ const MushroomHouse = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-background to-purple-100">
+    <div className="min-h-screen bg-gradient-to-br from-rose-50 via-purple-50 to-sky-100">
       {/* Mobile-only overlay */}
       <MobileOverlay />
       <Navigation />
 
       {/* Hero Section - subtle fantasy theme, more visuals */}
-      <section className="relative py-24 overflow-hidden bg-gradient-to-br from-background via-background to-purple-100">
-        <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-purple-400/20 rounded-full blur-2xl" />
-        <div className="absolute bottom-1/3 right-1/4 w-32 h-32 bg-pink-400/20 rounded-full blur-2xl" />
+      <section className="relative py-24 overflow-hidden bg-gradient-to-br from-white via-rose-50 to-sky-100/60">
+        <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-purple-300/20 rounded-full blur-2xl" />
+        <div className="absolute bottom-1/3 right-1/4 w-32 h-32 bg-pink-300/20 rounded-full blur-2xl" />
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto text-center">
             <Button
@@ -248,11 +252,11 @@ const MushroomHouse = () => {
             <p className="text-lg text-muted-foreground mb-8">
               Modeling, texturing, rigging, and environment building
             </p>
-              <img
-                src="/Photos/Mushroom/1.png"
-                alt="Modeling in Maya"
-                className="rounded-lg shadow w-full object-cover aspect-16/9"
-              />
+            <img
+              src="/Photos/Mushroom/1.png"
+              alt="Modeling in Maya"
+              className="rounded-lg shadow w-full object-cover aspect-16/9"
+            />
           </div>
         </div>
       </section>
@@ -278,7 +282,8 @@ const MushroomHouse = () => {
                 />
                 <h3 className="font-bold mb-2">Magical Mushroom House</h3>
                 <p className="text-sm text-muted-foreground">
-                  Glowing windows and chimney create a warm, inviting atmosphere.
+                  Glowing windows and chimney create a warm, inviting
+                  atmosphere.
                 </p>
               </div>
               <div className="bg-pink-50 p-4 rounded-xl shadow">
@@ -287,7 +292,9 @@ const MushroomHouse = () => {
                   alt="Detailed Pathways & Boundaries"
                   className="rounded-lg mb-4 w-full object-cover aspect-square"
                 />
-                <h3 className="font-bold mb-2">Detailed Pathways & Boundaries</h3>
+                <h3 className="font-bold mb-2">
+                  Detailed Pathways & Boundaries
+                </h3>
                 <p className="text-sm text-muted-foreground">
                   Stone tile footpath and wooden fence for clear spatial
                   definition.
@@ -301,7 +308,8 @@ const MushroomHouse = () => {
                 />
                 <h3 className="font-bold mb-2">Realistic Props & Details</h3>
                 <p className="text-sm text-muted-foreground">
-                  Sacks, logs, pots, and lanterns for environmental storytelling.
+                  Sacks, logs, pots, and lanterns for environmental
+                  storytelling.
                 </p>
               </div>
               <div className="bg-green-50 p-4 rounded-xl shadow">
@@ -330,8 +338,8 @@ const MushroomHouse = () => {
               <div className="bg-purple-50 p-4 rounded-xl shadow aspect-auto">
                 <h3 className="font-bold mb-2">3D Pipeline Mastery</h3>
                 <p className="text-sm text-muted-foreground">
-                  Modeling, texturing, rigging, and real-time rendering in Unreal
-                  Engine 5.
+                  Modeling, texturing, rigging, and real-time rendering in
+                  Unreal Engine 5.
                 </p>
               </div>
               <div className="bg-pink-50 p-4 rounded-xl shadow">

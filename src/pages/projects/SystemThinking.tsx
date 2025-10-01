@@ -23,8 +23,12 @@ import { Button } from "@/components/ui/button";
 const MobileOverlay = () => (
   <div className="fixed inset-0 z-50 flex items-center justify-center bg-white/95 backdrop-blur-lg md:hidden">
     <div className="text-center">
-      <h2 className="text-2xl md:text-3xl text-red-700 font-heading text-foreground mb-4">Uh-oh!</h2>
-      <p className="text-sm text-muted-foreground max-w-2xl mx-auto font-light">Open this website on a bigger screen!</p>
+      <h2 className="text-2xl md:text-3xl text-red-700 font-heading text-foreground mb-4">
+        Uh-oh!
+      </h2>
+      <p className="text-sm text-muted-foreground max-w-2xl mx-auto font-light">
+        Open this website on a bigger screen!
+      </p>
     </div>
   </div>
 );
@@ -147,13 +151,13 @@ const SystemThinking = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-gradient-to-br from-sky-50 via-emerald-50 to-slate-50">
       {/* Mobile-only overlay */}
       <MobileOverlay />
       <Navigation />
 
       <section className="relative py-24 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-emerald-900/10" />
+        <div className="absolute inset-0 bg-gradient-to-br from-white via-sky-50 to-emerald-100/40" />
         <div className="relative container mx-auto px-4">
           <div className="max-w-8xl mx-auto text-center">
             <Button
@@ -188,7 +192,6 @@ const SystemThinking = () => {
                 Systems
               </Badge>
             </div>
-         
           </div>
         </div>
       </section>
@@ -302,11 +305,10 @@ const SystemThinking = () => {
         </div>
       </section>
 
-       {/* Communication Loop */}
+      {/* Communication Loop */}
       <section className="py-16 bg-white-50">
         <div className="container mx-auto px-4">
           <div className="max-w-8xl mx-auto text-center mb-10 gap-8">
-            
             <img
               src="/Photos/pune/9.jpg"
               alt="Human Factors reference"
@@ -323,38 +325,66 @@ const SystemThinking = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="rounded-xl overflow-hidden border border-border/60 bg-card/40">
               <div className="aspect-[4/3] overflow-hidden">
-                <img src="/Photos/pune/causes-1.jpg" alt="Urban Waterlogging" className="w-full h-full object-cover" />
+                <img
+                  src="/Photos/pune/causes-1.jpg"
+                  alt="Urban Waterlogging"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="p-4">
                 <h3 className="font-semibold mb-1">Urban Waterlogging</h3>
-                <p className="text-sm text-muted-foreground">Intense monsoon showers overwhelm storm drains; garbage and silt block outflows.</p>
+                <p className="text-sm text-muted-foreground">
+                  Intense monsoon showers overwhelm storm drains; garbage and
+                  silt block outflows.
+                </p>
               </div>
             </div>
             <div className="rounded-xl overflow-hidden border border-border/60 bg-card/40">
               <div className="aspect-[4/3] overflow-hidden">
-                <img src="/Photos/pune/7.png" alt="Dam Discharge" className="w-full h-full object-cover" />
+                <img
+                  src="/Photos/pune/7.png"
+                  alt="Dam Discharge"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="p-4">
                 <h3 className="font-semibold mb-1">Dam Discharge</h3>
-                <p className="text-sm text-muted-foreground">Sudden or high-volume releases increase downstream levels across the city.</p>
+                <p className="text-sm text-muted-foreground">
+                  Sudden or high-volume releases increase downstream levels
+                  across the city.
+                </p>
               </div>
             </div>
             <div className="rounded-xl overflow-hidden border border-border/60 bg-card/40">
               <div className="aspect-[4/3] overflow-hidden">
-                <img src="/Photos/pune/5.png" alt="Riverside Encroachment" className="w-full h-full object-cover" />
+                <img
+                  src="/Photos/pune/5.png"
+                  alt="Riverside Encroachment"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="p-4">
                 <h3 className="font-semibold mb-1">Riverside Encroachment</h3>
-                <p className="text-sm text-muted-foreground">Construction near riverbanks reduces floodplains and narrows water pathways.</p>
+                <p className="text-sm text-muted-foreground">
+                  Construction near riverbanks reduces floodplains and narrows
+                  water pathways.
+                </p>
               </div>
             </div>
             <div className="rounded-xl overflow-hidden border border-border/60 bg-card/40">
               <div className="aspect-[4/3] overflow-hidden">
-                <img src="/Photos/pune/6.png" alt="Heavy Rainfall Events" className="w-full h-full object-cover" />
+                <img
+                  src="/Photos/pune/6.png"
+                  alt="Heavy Rainfall Events"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="p-4">
                 <h3 className="font-semibold mb-1">Heavy Rainfall Events</h3>
-                <p className="text-sm text-muted-foreground">Short, high-intensity rainfall leads to flash flooding in low-lying neighborhoods.</p>
+                <p className="text-sm text-muted-foreground">
+                  Short, high-intensity rainfall leads to flash flooding in
+                  low-lying neighborhoods.
+                </p>
               </div>
             </div>
           </div>
@@ -373,7 +403,11 @@ const SystemThinking = () => {
                 <li>Pune Flood Control Center (forecasting & alerts)</li>
                 <li>Khadakwasla Dam vicinity (discharge context)</li>
               </ul>
-              <img src="/Photos/pune/14.jpg" alt="Field Visits" className="mt-4 rounded-lg w-full object-cover aspect-square" />
+              <img
+                src="/Photos/pune/14.jpg"
+                alt="Field Visits"
+                className="mt-4 rounded-lg w-full object-cover aspect-square"
+              />
             </div>
             <div className="rounded-xl border border-border/60 bg-card/40 p-4">
               <h3 className="font-semibold mb-2">Interviews</h3>
@@ -382,7 +416,11 @@ const SystemThinking = () => {
                 <li>Residents from flood-prone neighborhoods</li>
                 <li>Local authorities/ward staff</li>
               </ul>
-              <img src="/Photos/pune/15.jpg" alt="Interviews" className="mt-4 rounded-lg w-full object-cover aspect-square" />
+              <img
+                src="/Photos/pune/15.jpg"
+                alt="Interviews"
+                className="mt-4 rounded-lg w-full object-cover aspect-square"
+              />
             </div>
             <div className="rounded-xl border border-border/60 bg-card/40 p-4">
               <h3 className="font-semibold mb-2">Community Interaction</h3>
@@ -391,7 +429,11 @@ const SystemThinking = () => {
                 <li>Barriers to timely evacuation</li>
                 <li>Preferred communication channels</li>
               </ul>
-              <img src="/Photos/pune/16.jpg" alt="Community Interaction" className="mt-4 rounded-lg w-full object-fill aspect-square" />
+              <img
+                src="/Photos/pune/16.jpg"
+                alt="Community Interaction"
+                className="mt-4 rounded-lg w-full object-fill aspect-square"
+              />
             </div>
           </div>
         </div>
@@ -401,7 +443,6 @@ const SystemThinking = () => {
       <section className="py-16 bg-white-50">
         <div className="container mx-auto px-4">
           <div className="max-w-8xl mx-auto text-center mb-10 gap-8">
-            
             <img
               src="/Photos/pune/12.jpg"
               alt="Human Factors reference"
@@ -415,7 +456,6 @@ const SystemThinking = () => {
       <section className="py-12">
         <div className="container mx-auto px-4 max-w-8xl">
           <div className="grid lg:grid-cols-1 gap-10 items-start">
-         
             <div>
               <h2 className="text-3xl font-bold mb-4">15 wards in Pune</h2>
               <div className="grid sm:grid-cols-3 md:grid-cols-3 gap-6">
@@ -479,11 +519,10 @@ const SystemThinking = () => {
         </div>
       </section>
 
-       {/* Communication Loop */}
+      {/* Communication Loop */}
       <section className="py-16 bg-white-50">
         <div className="container mx-auto px-4">
           <div className="max-w-8xl mx-auto text-center mb-10 gap-8">
-            
             <img
               src="/Photos/pune/13.jpg"
               alt="Human Factors reference"
@@ -493,12 +532,10 @@ const SystemThinking = () => {
         </div>
       </section>
 
-
-       {/* Communication Loop */}
+      {/* Communication Loop */}
       <section className="py-16 bg-white-50">
         <div className="container mx-auto px-4">
           <div className="max-w-8xl mx-auto text-center mb-10 gap-8">
-            
             <img
               src="/Photos/pune/19.jpg"
               alt="Human Factors reference"
@@ -534,7 +571,9 @@ const SystemThinking = () => {
       <section className="py-12">
         <div className="container mx-auto px-4 max-w-8xl">
           <div className="rounded-xl border border-border/60 bg-emerald-700/80 p-6">
-            <h2 className="text-3xl text-white font-bold mb-3">Problem Statement</h2>
+            <h2 className="text-3xl text-white font-bold mb-3">
+              Problem Statement
+            </h2>
             <p className="text-base text-white">
               Lack of timely communication, preparedness, and effective barriers
               leads to severe property damage and chaos during floods, leaving
@@ -621,15 +660,27 @@ const SystemThinking = () => {
                   <li>Functions as a compact bamboo table/tray at home</li>
                   <li>Lightweight and durable for daily use</li>
                 </ul>
-                <img src="/Photos/pune/bamboo-1.jpg" alt="Bamboo Floatable Year-round" className="mt-4 rounded-lg w-full object-cover aspect-[16/9]" />
+                <img
+                  src="/Photos/pune/bamboo-1.jpg"
+                  alt="Bamboo Floatable Year-round"
+                  className="mt-4 rounded-lg w-full object-cover aspect-[16/9]"
+                />
               </div>
               <div>
                 <h4 className="font-semibold mb-2">During floods</h4>
                 <ul className="list-disc pl-5 space-y-1">
-                  <li>Top tray detaches and transforms into a floating device</li>
-                  <li>Waterproof layers and buoyant structure for essentials</li>
+                  <li>
+                    Top tray detaches and transforms into a floating device
+                  </li>
+                  <li>
+                    Waterproof layers and buoyant structure for essentials
+                  </li>
                 </ul>
-                <img src="/Photos/pune/bamboo-2.jpg" alt="Bamboo Floatable Floods" className="mt-4 rounded-lg w-full object-cover aspect-[16/9]" />
+                <img
+                  src="/Photos/pune/bamboo-2.jpg"
+                  alt="Bamboo Floatable Floods"
+                  className="mt-4 rounded-lg w-full object-cover aspect-[16/9]"
+                />
               </div>
               <div>
                 <h4 className="font-semibold mb-2">Ease of use</h4>
@@ -637,7 +688,11 @@ const SystemThinking = () => {
                   <li>Helps move through water without lifting heavy bags</li>
                   <li>Compact, easy to carry for children and elderly</li>
                 </ul>
-                <img src="/Photos/pune/bamboo-3.jpg" alt="Bamboo Floatable Ease of Use" className="mt-4 rounded-lg w-full object-cover aspect-[16/9]" />
+                <img
+                  src="/Photos/pune/bamboo-3.jpg"
+                  alt="Bamboo Floatable Ease of Use"
+                  className="mt-4 rounded-lg w-full object-cover aspect-[16/9]"
+                />
               </div>
             </div>
           </div>
@@ -649,12 +704,21 @@ const SystemThinking = () => {
             </h3>
             <div className="grid md:grid-cols-2 gap-6 text-sm text-muted-foreground">
               <div>
-                <h4 className="font-semibold mb-2">Detailed Shelter Information</h4>
+                <h4 className="font-semibold mb-2">
+                  Detailed Shelter Information
+                </h4>
                 <ul className="list-disc pl-5 space-y-1">
-                  <li>On search/scan, shows capacity, facilities, and current status</li>
+                  <li>
+                    On search/scan, shows capacity, facilities, and current
+                    status
+                  </li>
                   <li>Real‑time updates integrated in maps</li>
                 </ul>
-                <img src="/Photos/pune/ar-1.jpg" alt="AR Shelter Information" className="mt-4 rounded-lg w-full object-cover aspect-[16/9]" />
+                <img
+                  src="/Photos/pune/ar-1.jpg"
+                  alt="AR Shelter Information"
+                  className="mt-4 rounded-lg w-full object-cover aspect-[16/9]"
+                />
               </div>
               <div>
                 <h4 className="font-semibold mb-2">Interactive Navigation</h4>
@@ -662,7 +726,11 @@ const SystemThinking = () => {
                   <li>AR pathways guide users to the nearest safe shelter</li>
                   <li>Avoids flooded or dangerous areas using live routing</li>
                 </ul>
-                <img src="/Photos/pune/ar-2.jpg" alt="AR Navigation" className="mt-4 rounded-lg w-full object-cover aspect-[16/9]" />
+                <img
+                  src="/Photos/pune/ar-2.jpg"
+                  alt="AR Navigation"
+                  className="mt-4 rounded-lg w-full object-cover aspect-[16/9]"
+                />
               </div>
             </div>
           </div>
@@ -679,7 +747,11 @@ const SystemThinking = () => {
                   <li>Lightweight, modular, easy to set up</li>
                   <li>Durable, water‑resistant materials for repeated use</li>
                 </ul>
-                <img src="/Photos/pune/24.png" alt="Flood Barrier Design" className="mt-4 rounded-lg w-full object-cover aspect-[16/9]" />
+                <img
+                  src="/Photos/pune/24.png"
+                  alt="Flood Barrier Design"
+                  className="mt-4 rounded-lg w-full object-cover aspect-[16/9]"
+                />
               </div>
               <div>
                 <h4 className="font-semibold mb-2">Setup Process</h4>
@@ -689,7 +761,11 @@ const SystemThinking = () => {
                   <li>Check edges for gaps</li>
                   <li>After floods, clean, fold, and store</li>
                 </ol>
-                <img src="/Photos/pune/23.jpg" alt="Flood Barrier Setup" className="mt-4 rounded-lg w-full object-cover aspect-[16/9]" />
+                <img
+                  src="/Photos/pune/23.jpg"
+                  alt="Flood Barrier Setup"
+                  className="mt-4 rounded-lg w-full object-cover aspect-[16/9]"
+                />
               </div>
             </div>
           </div>

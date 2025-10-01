@@ -24,12 +24,15 @@ import CustomVideoPlayer from "@/components/ui/VideoPlayer";
 const MobileOverlay = () => (
   <div className="fixed inset-0 z-50 flex items-center justify-center bg-white/95 backdrop-blur-lg md:hidden">
     <div className="text-center">
-      <h2 className="text-2xl md:text-3xl text-red-700 font-heading text-foreground mb-4">Uh-oh!</h2>
-      <p className="text-sm text-muted-foreground max-w-2xl mx-auto font-light">Open this website on a bigger screen!</p>
+      <h2 className="text-2xl md:text-3xl text-red-700 font-heading text-foreground mb-4">
+        Uh-oh!
+      </h2>
+      <p className="text-sm text-muted-foreground max-w-2xl mx-auto font-light">
+        Open this website on a bigger screen!
+      </p>
     </div>
   </div>
 );
-
 
 const AngryBirds = () => {
   useEffect(() => {
@@ -80,14 +83,14 @@ const AngryBirds = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-red-100 via-pink-100 to-red-400">
+    <div className="min-h-screen bg-gradient-to-br from-rose-50 via-orange-50 to-amber-100">
       {/* Mobile-only overlay */}
       <MobileOverlay />
       <Navigation />
 
       {/* Hero Section - Updated to match Mushroom House style */}
       <section className="relative py-24 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-red-50" />
+        <div className="absolute inset-0 bg-gradient-to-br from-white via-rose-50 to-amber-100/50" />
         <div className="relative container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             {/* Back Button */}
@@ -115,28 +118,50 @@ const AngryBirds = () => {
                 {projectDetails.title}
               </h1>
               <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed mb-8">
-                As part of the Introduction to Coding course, I developed a 2D version of Angry Birds using Unity. The project involved designing levels, scripting physics-based interactions, and creating an engaging user interface with a home screen. With three distinct levels, the game combined strategy and fun, showcasing gameplay mechanics and visual aesthetics inspired by the classic Angry Birds experience.
+                As part of the Introduction to Coding course, I developed a 2D
+                version of Angry Birds using Unity. The project involved
+                designing levels, scripting physics-based interactions, and
+                creating an engaging user interface with a home screen. With
+                three distinct levels, the game combined strategy and fun,
+                showcasing gameplay mechanics and visual aesthetics inspired by
+                the classic Angry Birds experience.
               </p>
               <div className="flex flex-wrap justify-center gap-4 mb-8">
-                <Badge variant="outline" className="text-sm border-red-400 text-red-600">
+                <Badge
+                  variant="outline"
+                  className="text-sm border-red-400 text-red-600"
+                >
                   <Calendar className="w-3 h-3 mr-1" />
                   {projectDetails.year}
                 </Badge>
-                <Badge variant="outline" className="text-sm border-pink-400 text-pink-600">
+                <Badge
+                  variant="outline"
+                  className="text-sm border-pink-400 text-pink-600"
+                >
                   <Clock className="w-3 h-3 mr-1" />
                   {projectDetails.duration}
                 </Badge>
-                <Badge variant="outline" className="text-sm border-red-400 text-red-600">
+                <Badge
+                  variant="outline"
+                  className="text-sm border-red-400 text-red-600"
+                >
                   <User className="w-3 h-3 mr-1" />
                   {projectDetails.client}
                 </Badge>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" className="bg-gradient-to-r from-red-600 to-pink-400 text-white hover:from-red-700 hover:to-pink-500">
+                <Button
+                  size="lg"
+                  className="bg-gradient-to-r from-red-600 to-pink-400 text-white hover:from-red-700 hover:to-pink-500"
+                >
                   <Play className="mr-2 h-4 w-4" />
                   View Gameplay Demo
                 </Button>
-                <Button variant="outline" size="lg" className="border-red-400 text-pink-600 hover:bg-pink-400 hover:text-black">
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="border-red-400 text-pink-600 hover:bg-pink-400 hover:text-black"
+                >
                   <Github className="mr-2 h-4 w-4" />
                   Source Code
                 </Button>
@@ -153,36 +178,56 @@ const AngryBirds = () => {
       </section>
 
       {/* Project Overview Section */}
-      <section className="py-24 bg-gradient-to-r from-red-50 via-background to-pink-50">
+      <section className="py-24 bg-gradient-to-r from-rose-50 via-white to-amber-50">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div>
                 <h2 className="text-3xl font-bold mb-6">Project Overview</h2>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  This project was a hands-on introduction to 2D game development, focusing on physics-based gameplay and level design. The goal was to recreate the core mechanics and fun of Angry Birds using Unity and C#.
+                  This project was a hands-on introduction to 2D game
+                  development, focusing on physics-based gameplay and level
+                  design. The goal was to recreate the core mechanics and fun of
+                  Angry Birds using Unity and C#.
                 </p>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  I designed three unique levels, implemented slingshot mechanics, and added visual polish with particle effects and UI screens. The project helped me master Unity's physics engine and game scripting fundamentals.
+                  I designed three unique levels, implemented slingshot
+                  mechanics, and added visual polish with particle effects and
+                  UI screens. The project helped me master Unity's physics
+                  engine and game scripting fundamentals.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
-                  The final result is a simple but engaging game that demonstrates my ability to build interactive experiences and manage a complete game development pipeline.
+                  The final result is a simple but engaging game that
+                  demonstrates my ability to build interactive experiences and
+                  manage a complete game development pipeline.
                 </p>
               </div>
               <div className="space-y-6">
                 <div>
                   <h3 className="font-semibold text-foreground mb-2">Focus</h3>
-                  <p className="text-muted-foreground">Physics-based 2D game development</p>
+                  <p className="text-muted-foreground">
+                    Physics-based 2D game development
+                  </p>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-foreground mb-2">Primary Tools</h3>
-                  <p className="text-muted-foreground">Unity → C# → Physics Engine</p>
+                  <h3 className="font-semibold text-foreground mb-2">
+                    Primary Tools
+                  </h3>
+                  <p className="text-muted-foreground">
+                    Unity → C# → Physics Engine
+                  </p>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-foreground mb-2">Key Skills</h3>
+                  <h3 className="font-semibold text-foreground mb-2">
+                    Key Skills
+                  </h3>
                   <div className="flex flex-wrap gap-2">
                     {projectDetails.tools.map((tool, index) => (
-                      <Badge key={index} variant="secondary" className="text-xs">
+                      <Badge
+                        key={index}
+                        variant="secondary"
+                        className="text-xs"
+                      >
                         {tool}
                       </Badge>
                     ))}

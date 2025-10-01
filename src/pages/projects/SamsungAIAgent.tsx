@@ -9,8 +9,12 @@ import { Button } from "@/components/ui/button";
 const MobileOverlay = () => (
   <div className="fixed inset-0 z-50 flex items-center justify-center bg-white/95 backdrop-blur-lg md:hidden">
     <div className="text-center">
-      <h2 className="text-2xl md:text-3xl text-red-700 font-heading text-foreground mb-4">Uh-oh!</h2>
-      <p className="text-sm text-muted-foreground max-w-2xl mx-auto font-light">Open this website on a bigger screen!</p>
+      <h2 className="text-2xl md:text-3xl text-red-700 font-heading text-foreground mb-4">
+        Uh-oh!
+      </h2>
+      <p className="text-sm text-muted-foreground max-w-2xl mx-auto font-light">
+        Open this website on a bigger screen!
+      </p>
     </div>
   </div>
 );
@@ -21,13 +25,13 @@ const SamsungAIAgent = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-blue-100 to-blue-900/10">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-sky-50 to-blue-100">
       {/* Mobile-only overlay */}
       <MobileOverlay />
       <Navigation />
 
       <section className="relative py-24 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-blue-900/10" />
+        <div className="absolute inset-0 bg-gradient-to-br from-white via-slate-50 to-blue-200/40" />
         <div className="relative container mx-auto px-4">
           <div className="max-w-5xl mx-auto text-center">
             <Button

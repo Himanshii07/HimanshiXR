@@ -45,8 +45,12 @@ import CustomVideoPlayer from "@/components/ui/VideoPlayer";
 const MobileOverlay = () => (
   <div className="fixed inset-0 z-50 flex items-center justify-center bg-white/95 backdrop-blur-lg md:hidden">
     <div className="text-center">
-      <h2 className="text-2xl md:text-3xl text-red-700 font-heading text-foreground mb-4">Uh-oh!</h2>
-      <p className="text-sm text-muted-foreground max-w-2xl mx-auto font-light">Open this website on a bigger screen!</p>
+      <h2 className="text-2xl md:text-3xl text-red-700 font-heading text-foreground mb-4">
+        Uh-oh!
+      </h2>
+      <p className="text-sm text-muted-foreground max-w-2xl mx-auto font-light">
+        Open this website on a bigger screen!
+      </p>
     </div>
   </div>
 );
@@ -266,14 +270,14 @@ const KedarnathVR = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-gradient-to-br from-amber-50 via-orange-50 to-rose-50">
       {/* Mobile-only overlay */}
       <MobileOverlay />
       <Navigation />
 
       {/* Hero Section with Spiritual Theme */}
       <section className="relative py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-orange-900/20" />
+        <div className="absolute inset-0 bg-gradient-to-br from-white via-amber-50 to-rose-100/40" />
 
         {/* Spiritual floating elements */}
         <div className="absolute inset-0 overflow-hidden">
@@ -379,7 +383,7 @@ const KedarnathVR = () => {
       </section>
 
       {/* Problem Statement & Opportunity */}
-      <section className="py-24 bg-gradient-to-r from-orange-900/10 via-background to-red-900/10">
+      <section className="py-24 bg-gradient-to-r from-amber-100/40 via-white to-rose-100/40">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
@@ -517,9 +521,7 @@ const KedarnathVR = () => {
                     >
                       <CardContent className="p-6">
                         <div className="w-12 h-12 bg-orange-400/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                          <Icon
-                            className={`w-8 h-8 text-orange-400`}
-                          />
+                          <Icon className={`w-8 h-8 text-orange-400`} />
                         </div>
                         <h4 className="font-semibold mb-3 text-orange-400">
                           {item.title}
@@ -629,7 +631,7 @@ const KedarnathVR = () => {
       </section>
 
       {/* Target Audience */}
-      <section className="py-24 bg-gradient-to-r from-orange-900/10 via-background to-red-900/10">
+      <section className="py-24 bg-gradient-to-r from-amber-100/40 via-white to-rose-100/40">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
@@ -793,7 +795,7 @@ const KedarnathVR = () => {
       </section>
 
       {/* User Interactions */}
-      <section className="py-24 bg-gradient-to-r from-orange-900/10 via-background to-red-900/10">
+      <section className="py-24 bg-gradient-to-r from-amber-100/40 via-white to-rose-100/40">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
@@ -892,7 +894,7 @@ const KedarnathVR = () => {
       </section>
 
       {/* Development Process */}
-      <section className="py-24 bg-gradient-to-r from-orange-900/10 via-background to-red-900/10">
+      <section className="py-24 bg-gradient-to-r from-amber-100/40 via-white to-rose-100/40">
         <div className="container mx-auto px-4">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">

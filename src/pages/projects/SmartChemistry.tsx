@@ -36,8 +36,12 @@ import CustomVideoPlayer from "@/components/ui/VideoPlayer";
 const MobileOverlay = () => (
   <div className="fixed inset-0 z-50 flex items-center justify-center bg-white/95 backdrop-blur-lg md:hidden">
     <div className="text-center">
-      <h2 className="text-2xl md:text-3xl text-red-700 font-heading text-foreground mb-4">Uh-oh!</h2>
-      <p className="text-sm text-muted-foreground max-w-2xl mx-auto font-light">Open this website on a bigger screen!</p>
+      <h2 className="text-2xl md:text-3xl text-red-700 font-heading text-foreground mb-4">
+        Uh-oh!
+      </h2>
+      <p className="text-sm text-muted-foreground max-w-2xl mx-auto font-light">
+        Open this website on a bigger screen!
+      </p>
     </div>
   </div>
 );
@@ -204,14 +208,14 @@ const SmartChemistry = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-gradient-to-br from-sky-50 via-emerald-50 to-white">
       {/* Mobile-only overlay */}
       <MobileOverlay />
       <Navigation />
 
       {/* Hero Section with Chemistry Theme */}
       <section className="relative py-24 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-green-900/20" />
+        <div className="absolute inset-0 bg-gradient-to-br from-white via-sky-50 to-emerald-100/40" />
 
         {/* Floating chemistry elements */}
         <div className="absolute inset-0 overflow-hidden">
@@ -317,7 +321,7 @@ const SmartChemistry = () => {
       </section>
 
       {/* Problem Statement */}
-      <section className="py-24 bg-gradient-to-r from-green-900/10 via-background to-blue-900/10">
+      <section className="py-24 bg-gradient-to-r from-emerald-100/40 via-white to-sky-100/40">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
@@ -377,7 +381,7 @@ const SmartChemistry = () => {
       </section>
 
       {/* Development Process */}
-      <section className="py-24 bg-gradient-to-r from-blue-900/10 via-background to-purple-900/10">
+      <section className="py-24 bg-gradient-to-r from-sky-100/40 via-white to-indigo-100/40">
         <div className="container mx-auto px-4">
           <div className="max-w-8xl mx-auto">
             <div className="text-center mb-16">
@@ -385,7 +389,8 @@ const SmartChemistry = () => {
                 🔬 How We Built It
               </h2>
               <p className="text-lg text-muted-foreground">
-                From idea to AI-powered chemistry tool, with lots of hands-on work
+                From idea to AI-powered chemistry tool, with lots of hands-on
+                work
               </p>
             </div>
             <div className="grid md:grid-cols-2 gap-6">
@@ -444,7 +449,7 @@ const SmartChemistry = () => {
       </section>
 
       {/* Results Section */}
-      <section className="py-24 bg-gradient-to-r from-blue-400/10 via-background to-purple-400/10">
+      <section className="py-24 bg-gradient-to-r from-sky-100/30 via-white to-indigo-100/30">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto text-center mb-12">
             <h2 className="text-3xl font-bold mb-4 text-purple-600">Results</h2>
@@ -498,7 +503,7 @@ const SmartChemistry = () => {
       </section>
 
       {/* Project Impact with unique icons */}
-      <section className="py-24 bg-gradient-to-r from-blue-900/10 via-background to-purple-900/10">
+      <section className="py-24 bg-gradient-to-r from-sky-100/40 via-white to-indigo-100/40">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
@@ -545,7 +550,7 @@ const SmartChemistry = () => {
         </div>
       </section>
 
-       {/* Interaction Planning Section */}
+      {/* Interaction Planning Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto text-center mb-10">
@@ -557,7 +562,6 @@ const SmartChemistry = () => {
           </div>
         </div>
       </section>
-
 
       {/* Learning Outcomes */}
       <section className="py-24">
@@ -614,7 +618,7 @@ const SmartChemistry = () => {
       </section>
 
       {/* Project Navigation */}
-      <section className="py-24 bg-gradient-to-r from-green-400/10 via-background to-blue-400/10">
+      <section className="py-24 bg-gradient-to-r from-emerald-50 via-white to-sky-50">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Explore More Educational Innovations

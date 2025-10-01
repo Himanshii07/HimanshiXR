@@ -22,8 +22,12 @@ import Navigation from "@/components/Navigation";
 const MobileOverlay = () => (
   <div className="fixed inset-0 z-50 flex items-center justify-center bg-white/95 backdrop-blur-lg md:hidden">
     <div className="text-center">
-      <h2 className="text-2xl md:text-3xl text-red-700 font-heading text-foreground mb-4">Uh-oh!</h2>
-      <p className="text-sm text-muted-foreground max-w-2xl mx-auto font-light">Open this website on a bigger screen!</p>
+      <h2 className="text-2xl md:text-3xl text-red-700 font-heading text-foreground mb-4">
+        Uh-oh!
+      </h2>
+      <p className="text-sm text-muted-foreground max-w-2xl mx-auto font-light">
+        Open this website on a bigger screen!
+      </p>
     </div>
   </div>
 );
@@ -34,13 +38,13 @@ const PreFlightVR = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-blue-100 to-blue-200">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-sky-100">
       {/* Mobile-only overlay */}
       <MobileOverlay />
       <Navigation />
 
       {/* Hero Section - concise summary, visual */}
-      <section className="relative py-24 bg-gradient-to-br from-background via-blue-100 to-blue-200 overflow-hidden">
+      <section className="relative py-24 bg-gradient-to-br from-white via-blue-50 to-sky-100 overflow-hidden">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto text-center">
             <Button
@@ -58,9 +62,9 @@ const PreFlightVR = () => {
             </h1>
             <p className="text-lg text-muted-foreground mb-8">
               VR-based pre-flight maintenance training simulation to address
-              costly, risky, and hands-off traditional methods. Guided inspection
-              and independent practice in a safe, immersive environment with
-              real-time feedback.
+              costly, risky, and hands-off traditional methods. Guided
+              inspection and independent practice in a safe, immersive
+              environment with real-time feedback.
             </p>
             <div className="flex flex-wrap justify-center gap-4 mb-8">
               <Badge
@@ -102,8 +106,9 @@ const PreFlightVR = () => {
           <div className="max-w-6xl mx-auto text-center mb-10">
             <h2 className="text-3xl font-bold mb-4">Bodystorming</h2>
             <p className="text-lg text-muted-foreground mb-6">
-              We bodystormed the VR training by scripting interactions, creating a
-              plane model, and filming the process to refine inspections and UI.
+              We bodystormed the VR training by scripting interactions, creating
+              a plane model, and filming the process to refine inspections and
+              UI.
             </p>
             <img
               src="/Photos/Flight/1.png"
@@ -166,7 +171,6 @@ const PreFlightVR = () => {
       <section className="py-16 bg-blue-50">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto text-center mb-10 gap-8">
-            
             <img
               src="/Photos/Flight/6.jpg"
               alt="Human Factors reference"
@@ -180,7 +184,6 @@ const PreFlightVR = () => {
       <section className="py-16 bg-blue-50">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto text-center mb-10 gap-8">
-            
             <img
               src="/Photos/Flight/7.jpg"
               alt="XR Design Heuristics reference"

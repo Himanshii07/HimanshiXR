@@ -29,8 +29,12 @@ import CustomVideoPlayer from "@/components/ui/VideoPlayer";
 const MobileOverlay = () => (
   <div className="fixed inset-0 z-50 flex items-center justify-center bg-white/95 backdrop-blur-lg md:hidden">
     <div className="text-center">
-      <h2 className="text-2xl md:text-3xl text-red-700 font-heading text-foreground mb-4">Uh-oh!</h2>
-      <p className="text-sm text-muted-foreground max-w-2xl mx-auto font-light">Open this website on a bigger screen!</p>
+      <h2 className="text-2xl md:text-3xl text-red-700 font-heading text-foreground mb-4">
+        Uh-oh!
+      </h2>
+      <p className="text-sm text-muted-foreground max-w-2xl mx-auto font-light">
+        Open this website on a bigger screen!
+      </p>
     </div>
   </div>
 );
@@ -154,14 +158,14 @@ const UnrealCinematic = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-gradient-to-br from-slate-900/10 via-slate-800/5 to-indigo-950/10">
       {/* Mobile-only overlay */}
       <MobileOverlay />
       <Navigation />
 
       {/* Hero Section */}
       <section className="relative py-24 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-xr-neon/5" />
+        <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-slate-900/5 to-indigo-900/10" />
 
         {/* Animated background elements */}
         <div className="absolute inset-0 overflow-hidden">
@@ -244,7 +248,7 @@ const UnrealCinematic = () => {
             </div>
 
             {/* Project Image/Video */}
-            <CustomVideoPlayer 
+            <CustomVideoPlayer
               src="https://www.youtube.com/embed/NzAuL5I77Vc?mute=0"
               title="Cinematic Envirnonment Showcase"
               className="aspect-video mb-16"
