@@ -27,12 +27,15 @@ import { Badge } from "@/components/ui/badge";
 import Navigation from "@/components/Navigation";
 import CustomVideoPlayer from "@/components/ui/VideoPlayer";
 
-
 const MobileOverlay = () => (
   <div className="fixed inset-0 z-50 flex items-center justify-center bg-white/95 backdrop-blur-lg md:hidden">
     <div className="text-center">
-      <h2 className="text-2xl md:text-3xl text-red-700 font-heading text-foreground mb-4">Uh-oh!</h2>
-      <p className="text-sm text-muted-foreground max-w-2xl mx-auto font-light">Open this website on a bigger screen!</p>
+      <h2 className="text-2xl md:text-3xl text-red-700 font-heading text-foreground mb-4">
+        Uh-oh!
+      </h2>
+      <p className="text-sm text-muted-foreground max-w-2xl mx-auto font-light">
+        Open this website on a bigger screen!
+      </p>
     </div>
   </div>
 );
@@ -299,17 +302,16 @@ const StormyOcean = () => {
               simulation and atmospheric rendering.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              What started as a simple tutorial follow-along became an
-              intensive learning experience about Blender's simulation
-              tools, lighting systems, and rendering pipeline. The project
-              taught me patience - watching 8 hours of rendering for just 8
-              seconds of animation!
+              What started as a simple tutorial follow-along became an intensive
+              learning experience about Blender's simulation tools, lighting
+              systems, and rendering pipeline. The project taught me patience -
+              watching 8 hours of rendering for just 8 seconds of animation!
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              The final result was a dramatic stormy ocean scene that
-              captured the mood and power of nature, while giving me
-              invaluable hands-on experience with one of the industry's most
-              powerful 3D software packages.
+              The final result was a dramatic stormy ocean scene that captured
+              the mood and power of nature, while giving me invaluable hands-on
+              experience with one of the industry's most powerful 3D software
+              packages.
             </p>
           </div>
 
@@ -344,11 +346,7 @@ const StormyOcean = () => {
               </h3>
               <div className="flex flex-wrap gap-2">
                 {technologies.slice(0, 6).map((tech, index) => (
-                  <Badge
-                    key={index}
-                    variant="secondary"
-                    className="text-xs"
-                  >
+                  <Badge key={index} variant="secondary" className="text-xs">
                     {tech}
                   </Badge>
                 ))}
@@ -607,8 +605,7 @@ const StormyOcean = () => {
             technology
           </p>
 
-          <div>
-          </div>
+          <div></div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               asChild
@@ -636,6 +633,6 @@ const StormyOcean = () => {
       </section>
     </div>
   );
-}
+};
 
 export default StormyOcean;

@@ -36,8 +36,12 @@ import CustomVideoPlayer from "@/components/ui/VideoPlayer";
 const MobileOverlay = () => (
   <div className="fixed inset-0 z-50 flex items-center justify-center bg-white/95 backdrop-blur-lg md:hidden">
     <div className="text-center">
-      <h2 className="text-2xl md:text-3xl text-red-700 font-heading text-foreground mb-4">Uh-oh!</h2>
-      <p className="text-sm text-muted-foreground max-w-2xl mx-auto font-light">Open this website on a bigger screen!</p>
+      <h2 className="text-2xl md:text-3xl text-red-700 font-heading text-foreground mb-4">
+        Uh-oh!
+      </h2>
+      <p className="text-sm text-muted-foreground max-w-2xl mx-auto font-light">
+        Open this website on a bigger screen!
+      </p>
     </div>
   </div>
 );
@@ -385,7 +389,8 @@ const SmartChemistry = () => {
                 🔬 How We Built It
               </h2>
               <p className="text-lg text-muted-foreground">
-                From idea to AI-powered chemistry tool, with lots of hands-on work
+                From idea to AI-powered chemistry tool, with lots of hands-on
+                work
               </p>
             </div>
             <div className="grid md:grid-cols-2 gap-6">
@@ -545,7 +550,7 @@ const SmartChemistry = () => {
         </div>
       </section>
 
-       {/* Interaction Planning Section */}
+      {/* Interaction Planning Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto text-center mb-10">
@@ -557,7 +562,6 @@ const SmartChemistry = () => {
           </div>
         </div>
       </section>
-
 
       {/* Learning Outcomes */}
       <section className="py-24">

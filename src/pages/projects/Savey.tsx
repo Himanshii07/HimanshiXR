@@ -34,8 +34,12 @@ import CustomVideoPlayer from "@/components/ui/VideoPlayer";
 const MobileOverlay = () => (
   <div className="fixed inset-0 z-50 flex items-center justify-center bg-white/95 backdrop-blur-lg md:hidden">
     <div className="text-center">
-      <h2 className="text-2xl md:text-3xl text-red-700 font-heading text-foreground mb-4">Uh-oh!</h2>
-      <p className="text-sm text-muted-foreground max-w-2xl mx-auto font-light">Open this website on a bigger screen!</p>
+      <h2 className="text-2xl md:text-3xl text-red-700 font-heading text-foreground mb-4">
+        Uh-oh!
+      </h2>
+      <p className="text-sm text-muted-foreground max-w-2xl mx-auto font-light">
+        Open this website on a bigger screen!
+      </p>
     </div>
   </div>
 );
@@ -187,15 +191,28 @@ const Savey = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-white via-amber-50 to-sky-50" />
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-yellow-400/10 rounded-full blur-2xl animate-float" />
-          <div className="absolute top-1/3 right-1/3 w-24 h-24 bg-pink-400/10 rounded-full blur-xl animate-float" style={{ animationDelay: "0.5s" }} />
-          <div className="absolute bottom-1/4 left-1/3 w-40 h-40 bg-green-400/10 rounded-full blur-3xl animate-float" style={{ animationDelay: "1s" }} />
-          <div className="absolute bottom-1/3 right-1/4 w-28 h-28 bg-blue-400/10 rounded-full blur-xl animate-float" style={{ animationDelay: "1.5s" }} />
+          <div
+            className="absolute top-1/3 right-1/3 w-24 h-24 bg-pink-400/10 rounded-full blur-xl animate-float"
+            style={{ animationDelay: "0.5s" }}
+          />
+          <div
+            className="absolute bottom-1/4 left-1/3 w-40 h-40 bg-green-400/10 rounded-full blur-3xl animate-float"
+            style={{ animationDelay: "1s" }}
+          />
+          <div
+            className="absolute bottom-1/3 right-1/4 w-28 h-28 bg-blue-400/10 rounded-full blur-xl animate-float"
+            style={{ animationDelay: "1.5s" }}
+          />
         </div>
         <div className="relative container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             {/* Back Button */}
             <div className="mb-8">
-              <Button asChild variant="ghost" className="text-muted-foreground hover:text-foreground">
+              <Button
+                asChild
+                variant="ghost"
+                className="text-muted-foreground hover:text-foreground"
+              >
                 <Link to="/projects">
                   <ArrowLeft className="w-4 h-4 mr-2" />
                   Back to Projects
@@ -206,7 +223,9 @@ const Savey = () => {
             <div className="text-center mb-16">
               <div className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-yellow-400/10 to-pink-400/10 border border-yellow-400/20 mb-6">
                 <Heart className="w-4 h-4 mr-2 text-pink-400" />
-                <span className="text-sm font-medium text-pink-400">Interactive Hardware Design</span>
+                <span className="text-sm font-medium text-pink-400">
+                  Interactive Hardware Design
+                </span>
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-yellow-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">
                 {projectDetails.title}
@@ -215,29 +234,48 @@ const Savey = () => {
                 {projectDetails.subtitle}
               </p>
               <div className="flex flex-wrap justify-center gap-4 mb-8">
-                <Badge variant="outline" className="text-sm border-yellow-400 text-yellow-400">
+                <Badge
+                  variant="outline"
+                  className="text-sm border-yellow-400 text-yellow-400"
+                >
                   <Calendar className="w-3 h-3 mr-1" />
                   {projectDetails.year}
                 </Badge>
-                <Badge variant="outline" className="text-sm border-pink-400 text-pink-400">
+                <Badge
+                  variant="outline"
+                  className="text-sm border-pink-400 text-pink-400"
+                >
                   <Clock className="w-3 h-3 mr-1" />
                   {projectDetails.duration}
                 </Badge>
-                <Badge variant="outline" className="text-sm border-blue-400 text-blue-400">
+                <Badge
+                  variant="outline"
+                  className="text-sm border-blue-400 text-blue-400"
+                >
                   <Users className="w-3 h-3 mr-1" />
                   {projectDetails.team}
                 </Badge>
-                <Badge variant="outline" className="text-sm border-green-400 text-green-400">
+                <Badge
+                  variant="outline"
+                  className="text-sm border-green-400 text-green-400"
+                >
                   <Award className="w-3 h-3 mr-1" />
                   {projectDetails.status}
                 </Badge>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" className="bg-gradient-to-r from-yellow-400 to-pink-400 text-black hover:from-yellow-500 hover:to-pink-500">
+                <Button
+                  size="lg"
+                  className="bg-gradient-to-r from-yellow-400 to-pink-400 text-black hover:from-yellow-500 hover:to-pink-500"
+                >
                   <Play className="mr-2 h-4 w-4" />
                   Watch User Testing
                 </Button>
-                <Button variant="outline" size="lg" className="border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white">
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white"
+                >
                   <Github className="mr-2 h-4 w-4" />
                   View Documentation
                 </Button>
@@ -249,7 +287,6 @@ const Savey = () => {
               alt="Kids playing with Savey"
               className="rounded-lg shadow w-full grid md:grid-cols-1 gap-1 aspect-16/9 max-w-14xl mx-auto"
             />
-            
           </div>
         </div>
       </section>
@@ -266,26 +303,37 @@ const Savey = () => {
             <div className="grid md:grid-cols-3 gap-8">
               <Card className="border-yellow-200 bg-yellow-50/30 backdrop-blur-sm">
                 <CardContent className="p-8">
-                  <h3 className="text-xl font-semibold mb-3 text-yellow-700">The Problem</h3>
+                  <h3 className="text-xl font-semibold mb-3 text-yellow-700">
+                    The Problem
+                  </h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    Kids don't understand the importance of savings. Traditional piggy banks are passive and don't engage children.
+                    Kids don't understand the importance of savings. Traditional
+                    piggy banks are passive and don't engage children.
                   </p>
                 </CardContent>
               </Card>
               <Card className="border-pink-200 bg-pink-50/30 backdrop-blur-sm">
                 <CardContent className="p-8">
-                  <h3 className="text-xl font-semibold mb-3 text-pink-700">Our Solution</h3>
+                  <h3 className="text-xl font-semibold mb-3 text-pink-700">
+                    Our Solution
+                  </h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    Savey is an interactive piggy bank that turns saving into a game. It reacts, responds, and rewards kids for saving.
+                    Savey is an interactive piggy bank that turns saving into a
+                    game. It reacts, responds, and rewards kids for saving.
                   </p>
                 </CardContent>
               </Card>
               <Card className="border-blue-200 bg-blue-50/30 backdrop-blur-sm">
                 <CardContent className="p-8">
-                  <h3 className="text-xl font-semibold mb-3 text-blue-700">Key Benefits</h3>
+                  <h3 className="text-xl font-semibold mb-3 text-blue-700">
+                    Key Benefits
+                  </h3>
                   <ul className="space-y-2">
                     {problemSolution.benefits.map((benefit, index) => (
-                      <li key={index} className="flex items-center text-muted-foreground">
+                      <li
+                        key={index}
+                        className="flex items-center text-muted-foreground"
+                      >
                         <ChevronRight className="w-4 h-4 mr-2 text-blue-400" />
                         {benefit}
                       </li>
@@ -389,10 +437,13 @@ const Savey = () => {
           <div className="max-w-3xl mx-auto text-center mb-10">
             <h2 className="text-3xl font-bold mb-4">
               Kids treated Savey like a{" "}
-              <span className="bg-orange-400 text-white px-2 rounded">friend, not a money box</span>
+              <span className="bg-orange-400 text-white px-2 rounded">
+                friend, not a money box
+              </span>
             </h2>
             <p className="text-lg text-muted-foreground mb-6">
-              Kids smiled, giggled, and kept coming back — Savey felt alive to them.
+              Kids smiled, giggled, and kept coming back — Savey felt alive to
+              them.
             </p>
           </div>
           <div className="grid md:grid-cols-1 gap-1 aspect-3/4 max-w-2xl mx-auto">
@@ -401,7 +452,6 @@ const Savey = () => {
               alt="Kids playing with Savey"
               className="rounded-lg shadow w-full object-cover aspect-square"
             />
-            
           </div>
         </div>
       </section>

@@ -45,8 +45,12 @@ import CustomVideoPlayer from "@/components/ui/VideoPlayer";
 const MobileOverlay = () => (
   <div className="fixed inset-0 z-50 flex items-center justify-center bg-white/95 backdrop-blur-lg md:hidden">
     <div className="text-center">
-      <h2 className="text-2xl md:text-3xl text-red-700 font-heading text-foreground mb-4">Uh-oh!</h2>
-      <p className="text-sm text-muted-foreground max-w-2xl mx-auto font-light">Open this website on a bigger screen!</p>
+      <h2 className="text-2xl md:text-3xl text-red-700 font-heading text-foreground mb-4">
+        Uh-oh!
+      </h2>
+      <p className="text-sm text-muted-foreground max-w-2xl mx-auto font-light">
+        Open this website on a bigger screen!
+      </p>
     </div>
   </div>
 );
@@ -517,9 +521,7 @@ const KedarnathVR = () => {
                     >
                       <CardContent className="p-6">
                         <div className="w-12 h-12 bg-orange-400/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                          <Icon
-                            className={`w-8 h-8 text-orange-400`}
-                          />
+                          <Icon className={`w-8 h-8 text-orange-400`} />
                         </div>
                         <h4 className="font-semibold mb-3 text-orange-400">
                           {item.title}
