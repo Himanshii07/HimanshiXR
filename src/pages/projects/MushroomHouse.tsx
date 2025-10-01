@@ -164,15 +164,15 @@ const MushroomHouse = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-background to-purple-100">
+    <div className="min-h-screen bg-gradient-to-br from-rose-50 via-purple-50 to-sky-100">
       {/* Mobile-only overlay */}
       <MobileOverlay />
       <Navigation />
 
       {/* Hero Section - subtle fantasy theme, more visuals */}
-      <section className="relative py-24 overflow-hidden bg-gradient-to-br from-background via-background to-purple-100">
-        <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-purple-400/20 rounded-full blur-2xl" />
-        <div className="absolute bottom-1/3 right-1/4 w-32 h-32 bg-pink-400/20 rounded-full blur-2xl" />
+      <section className="relative py-24 overflow-hidden bg-gradient-to-br from-white via-rose-50 to-sky-100/60">
+        <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-purple-300/20 rounded-full blur-2xl" />
+        <div className="absolute bottom-1/3 right-1/4 w-32 h-32 bg-pink-300/20 rounded-full blur-2xl" />
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto text-center">
             <Button
