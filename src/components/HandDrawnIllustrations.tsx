@@ -15,12 +15,12 @@ const HandDrawnIllustrations: React.FC<HandDrawnIllustrationsProps> = ({
   const illustrations = [
     {
       name: "netflix",
-      message: "Placeholder text",
+      message: "Binge-watching counts as research, right?",
       svg: (
         <img
-          src="/Photos/illustrations/netflix.png" // <-- Update with your actual path
+          src="/Photos/illustrations/netflix.png"
           alt="Netflix Logo"
-          width={280}
+          width={180}
           height={350}
           className="object-contain"
         />
@@ -30,92 +30,122 @@ const HandDrawnIllustrations: React.FC<HandDrawnIllustrationsProps> = ({
     },
     {
       name: "chai",
-      message: "Placeholder text",
+      message: "Chai Addicted",
       svg: (
         <img
-          src="/Photos/illustrations/Chai.png" // <-- Update with your actual path
+          src="/Photos/illustrations/8.png"
           alt="Chai logo"
           width={220}
           height={280}
           className="object-contain"
         />
       ),
-      position: { top: "28%", right: "12%" },
+      position: { top: "28%", right: "24%" },
       color: "text-amber-600",
     },
     {
       name: "rajma-chawal",
-      message: "Placeholder text",
+      message: "Comfort food",
       svg: (
         <img
-          src="/Photos/illustrations/shares.png" // <-- Update with your actual path
+          src="/Photos/illustrations/13.png"
           alt="Chai logo"
-          width={520}
-          height={680}
+          width={220}
+          height={180}
           className="object-contain"
         />
       ),
-      position: { top: "30%", left: "12%" },
+      position: { top: "37%", left: "22%" },
       color: "text-orange-600",
     },
     {
       name: "dog",
-      message: "Placeholder text",
+      message: "Heart stolen by every dog on the street",
       svg: (
         <img
-          src="/Photos/illustrations/dog.png" // <-- Update with your actual path
+          src="/Photos/illustrations/11.png"
           alt="Chai logo"
-          width={220}
-          height={480}
+          width={240}
+          height={180}
           className="object-contain"
         />
       ),
-      position: { top: "58%", right: "38%" },
+      position: { top: "62%", right: "31%" },
       color: "text-blue-600",
     },
     {
-      name: "earphones",
-      message: "Placeholder text",
+      name: "Plants",
+      message: "Plant Parent",
       svg: (
         <img
-          src="/Photos/illustrations/plants.png" // <-- Update with your actual path
+          src="/Photos/illustrations/10.png"
           alt="Chai logo"
           width={420}
           height={680}
           className="object-contain"
         />
       ),
-      position: { top: "54%", left: "8%" },
+      position: { top: "60%", left: "34%" },
       color: "text-purple-600",
     },
     {
-      name: "swings",
-      message: "Placeholder text",
+      name: "VR Headset",
+      message: "Living in multiple realities.",
       svg: (
         <img
-          src="/Photos/illustrations/swing.png" // <-- Update with your actual path
+          src="/Photos/illustrations/12.png"
           alt="Chai logo"
-          width={420}
-          height={580}
+          width={220}
+          height={380}
           className="object-contain"
         />
       ),
-      position: { top: "-2%", left: "4%" },
+      position: { top: "25%", left: "30%" },
       color: "text-green-600",
     },
     {
-      name: "travel",
-      message: "Placeholder text",
+      name: "to do list",
+      message: "Daily task manager",
       svg: (
         <img
-          src="/Photos/illustrations/travel.png" // <-- Update with your actual path
+          src="/Photos/illustrations/2.png"
           alt="Chai logo"
           width={220}
           height={280}
           className="object-contain"
         />
       ),
-      position: { top: "50%", right: "5%" },
+      position: { top: "47%", right: "22%" },
+      color: "text-indigo-600",
+    },
+    {
+      name: "clock",
+      message: "124 Alarms set, 120 snoozed",
+      svg: (
+        <img
+          src="/Photos/illustrations/3.png"
+          alt="Chai logo"
+          width={180}
+          height={120}
+          className="object-contain"
+        />
+      ),
+      position: { top: "18%", right: "51%" },
+      color: "text-indigo-600",
+    },
+    {
+      name: "Stock Market",
+      message: "Investing wisely",
+      svg: (
+        <img
+          src="/Photos/illustrations/5.png"
+          alt="Chai logo"
+          width={260}
+          height={320}
+          className="object-contain"
+        />
+      ),
+      position: { top: "52%", left: "25%" },
       color: "text-indigo-600",
     },
   ];
@@ -127,34 +157,18 @@ const HandDrawnIllustrations: React.FC<HandDrawnIllustrationsProps> = ({
           key={illustration.name}
           className={`absolute ${illustration.color} cursor-pointer`}
           style={{ ...illustration.position, pointerEvents: "auto", zIndex: 20 }}
-          initial={{ opacity: 0, scale: 0, rotate: -10 }}
-          animate={{ opacity: 1, scale: 1, rotate: Math.random() * 20 - 10 }}
-          transition={{ duration: 0.8, delay: 1 + index * 0.15, ease: "easeOut" }}
-          whileHover={{ scale: 1.1, rotate: 0 }}
+          initial={{ opacity: 0, scale: 0, rotate: 0 }}
+          animate={{ opacity: 1, scale: 1, rotate: 0 }}
+          transition={{ duration: 0.8, delay: 0 + index * 0.1, ease: "easeOut" }}
           onHoverStart={() => setHoveredIllustration(illustration.name)}
           onHoverEnd={() => setHoveredIllustration(null)}
         >
-          <motion.div
-            animate={{
-              y: [0, -5, 0],
-              rotate: [0, 2, 0],
-            }}
-            transition={{
-              duration: 3 + Math.random() * 2,
-              repeat: Infinity,
-              ease: "easeInOut",
-              delay: Math.random() * 2,
-            }}
-            style={{ filter: "drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.1))" }}
-          >
-            {illustration.svg}
-          </motion.div>
-
-          {/* Tooltip */}
+          {/* Tooltip above illustration, consistent gap */}
           {showTooltip && hoveredIllustration === illustration.name && (
             <motion.div
-              className="absolute -bottom-16 left-1/2 transform -translate-x-1/2 z-50 pointer-events-auto"
-              initial={{ opacity: 0, y: -10, scale: 0.8 }}
+              className="absolute left-1/2 -translate-x-1/2 z-50 pointer-events-auto"
+              style={{ top: "-2.5rem" }}
+              initial={{ opacity: 0, y: 0, scale: 0.8 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
               transition={{ duration: 0.2 }}
             >
@@ -162,12 +176,36 @@ const HandDrawnIllustrations: React.FC<HandDrawnIllustrationsProps> = ({
                 <p className="text-sm text-foreground font-semibold">
                   {illustration.message}
                 </p>
-                <div className="absolute top-full left-1/2 transform -translate-x-1/2">
-                  <div className="w-2 h-2 bg-background border-r border-b border-border rotate-45 transform translate-y-[-1px]"></div>
+                <div className="absolute bottom-full left-1/2 transform -translate-x-1/2">
+                  <div className="w-2 h-2 bg-background border-l border-t border-border rotate-45 transform -translate-y-1"></div>
                 </div>
               </div>
             </motion.div>
           )}
+          <motion.div
+            animate={
+              hoveredIllustration === illustration.name
+                ? {
+                    y: [0, -5, 0],
+                    rotate: [0, 2, 0],
+                    scale: 1.1,
+                    rotateZ: 0,
+                  }
+                : { y: 0, rotate: 0, scale: 1, rotateZ: 0 }
+            }
+            transition={
+              hoveredIllustration === illustration.name
+                ? {
+                    duration: 1.2,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                  }
+                : { duration: 0 }
+            }
+            style={{ filter: "drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.1))" }}
+          >
+            {illustration.svg}
+          </motion.div>
         </motion.div>
       ))}
     </div>

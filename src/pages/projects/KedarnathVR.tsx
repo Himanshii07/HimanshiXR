@@ -42,6 +42,15 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import CustomVideoPlayer from "@/components/ui/VideoPlayer";
 
+const MobileOverlay = () => (
+  <div className="fixed inset-0 z-50 flex items-center justify-center bg-white/95 backdrop-blur-lg md:hidden">
+    <div className="text-center">
+      <h2 className="text-2xl md:text-3xl text-red-700 font-heading text-foreground mb-4">Uh-oh!</h2>
+      <p className="text-sm text-muted-foreground max-w-2xl mx-auto font-light">Open this website on a bigger screen!</p>
+    </div>
+  </div>
+);
+
 const KedarnathVR = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -258,6 +267,8 @@ const KedarnathVR = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      {/* Mobile-only overlay */}
+      <MobileOverlay />
       <Navigation />
 
       {/* Hero Section with Spiritual Theme */}

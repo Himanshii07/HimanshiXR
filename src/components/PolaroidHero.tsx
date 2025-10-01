@@ -5,7 +5,7 @@ const PolaroidHero: React.FC = () => {
   return (
     <section className="py-24 md:py-32 bg-background">
       <div className="container mx-auto px-4">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Polaroid Photo */}
             <motion.div
@@ -19,7 +19,7 @@ const PolaroidHero: React.FC = () => {
               <div className="absolute -top-3 right-4 w-12 h-6 bg-yellow-200/60 rounded-sm -rotate-6 z-10 border border-yellow-300/30"></div>
 
               {/* Polaroid frame */}
-              <div className="bg-white p-3 pb-16 shadow-2xl transform rotate-2 hover:rotate-0 transition-transform duration-500">
+              <div className="bg-white p-3 pb-16 shadow-2xl transform rotate-2 hover:rotate-0 transition-transform duration-500 ">
                 <div className="aspect-3/4 relative overflow-hidden bg-gray-100">
                   <img
                     src="/Photos/me.jpg"
