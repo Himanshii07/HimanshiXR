@@ -21,13 +21,13 @@ const Ethnography = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-pink-50 to-white">
+    <div className="min-h-screen bg-gradient-to-br from-sky-50 via-white to-rose-50">
       {/* Mobile-only overlay */}
       <MobileOverlay />
       <Navigation />
 
       <section className="relative py-24 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-rose-900/10" />
+        <div className="absolute inset-0 bg-gradient-to-br from-white via-sky-50 to-rose-100/40" />
         <div className="relative container mx-auto px-4">
           <div className="max-w-5xl mx-auto text-center">
             <Button
@@ -279,7 +279,7 @@ const Ethnography = () => {
       </section>
 
       {/* Outcomes & Impact - moved from ShootingRange */}
-      <section className="py-24 bg-gradient-to-r from-pink-100 via-background to-blue-100">
+      <section className="py-24 bg-gradient-to-r from-sky-50 via-white to-rose-50">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-16">
