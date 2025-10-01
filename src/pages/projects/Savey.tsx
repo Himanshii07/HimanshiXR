@@ -177,14 +177,14 @@ const Savey = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-gradient-to-br from-amber-50 via-pink-50 to-sky-50">
       {/* Mobile-only overlay */}
       <MobileOverlay />
       <Navigation />
 
       {/* Hero Section with Playful Design (same as other projects) */}
       <section className="relative py-24 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-xr-cyber/5" />
+        <div className="absolute inset-0 bg-gradient-to-br from-white via-amber-50 to-sky-50" />
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-yellow-400/10 rounded-full blur-2xl animate-float" />
           <div className="absolute top-1/3 right-1/3 w-24 h-24 bg-pink-400/10 rounded-full blur-xl animate-float" style={{ animationDelay: "0.5s" }} />
@@ -255,7 +255,7 @@ const Savey = () => {
       </section>
 
       {/* Solution Section with 3 Cards */}
-      <section className="py-24 bg-gradient-to-r from-yellow-400/5 via-pink-400/5 to-blue-400/5">
+      <section className="py-24 bg-gradient-to-r from-amber-50 via-rose-50 to-sky-50">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
