@@ -292,7 +292,7 @@ const Savey = () => {
       </section>
 
       {/* Solution Section with 3 Cards */}
-      <section className="py-24 bg-gradient-to-r from-amber-50 via-rose-50 to-sky-50">
+      <section className="py-24 bg-gradient-to-r from-amber-50 via-rose-20 to-sky-50">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
@@ -347,7 +347,7 @@ const Savey = () => {
       </section>
 
       {/* Features Section - grid, minimal text, more images */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-gradient-to-br from-amber-50 via-pink-50 to-sky-50">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-10">
             <h2 className="text-3xl font-bold mb-4">
@@ -371,7 +371,7 @@ const Savey = () => {
             </div>
             <div className="bg-pink-50 p-4 rounded-xl shadow">
               <img
-                src="/Photos/savey/image.png"
+                src="/Photos/savey/Rectangle 4.png"
                 alt="Playful Sound Cues"
                 className="rounded-lg mb-4 w-full object-cover aspect-square"
               />
@@ -418,12 +418,12 @@ const Savey = () => {
               className="rounded-lg shadow w-full object-cover aspect-square"
             />
             <img
-              src="/Photos/savey/Rectangle 4.png"
+              src="/Photos/savey/10.png"
               alt="Circuit design"
               className="rounded-lg shadow w-full object-cover aspect-square"
             />
             <img
-              src="/Photos/savey/10.png"
+              src="/Photos/savey/1.png"
               alt="Testing"
               className="rounded-lg shadow w-full object-cover aspect-square"
             />
@@ -432,7 +432,7 @@ const Savey = () => {
       </section>
 
       {/* User Testing Section - grid, minimal text, more images */}
-      <section className="py-16 bg-orange-50">
+      <section className="py-16 bg-gradient-to-br from-amber-50 via-pink-50 to-sky-50">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-10">
             <h2 className="text-3xl font-bold mb-4">

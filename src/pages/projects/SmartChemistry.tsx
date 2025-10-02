@@ -208,7 +208,7 @@ const SmartChemistry = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-sky-50 via-emerald-50 to-white">
+    <div className="min-h-screen bg-gradient-to-br from-white via-sky-50 to-emerald-100/40 text-blue-600">
       {/* Mobile-only overlay */}
       <MobileOverlay />
       <Navigation />
@@ -452,7 +452,7 @@ const SmartChemistry = () => {
       <section className="py-24 bg-gradient-to-r from-sky-100/30 via-white to-indigo-100/30">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4 text-purple-600">Results</h2>
+            <h2 className="text-3xl font-bold mb-4  text-blue-600">Results</h2>
             <p className="text-lg text-muted-foreground mb-6">
               Here's what our Smart Chemistry tool looks like in action!
             </p>

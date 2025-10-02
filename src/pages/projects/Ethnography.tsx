@@ -141,6 +141,50 @@ const Ethnography = () => {
             </div>
           </section>
 
+
+          {/* Key Insights Map Section */}
+          <div className="mb-16 rounded-3xl shadow bg-gray-50 p-8">
+            <h2 className="text-2xl font-bold mb-4">Key Insights Map</h2>
+            <div className="grid md:grid-cols-5 gap-4 mb-6">
+              <div className="bg-orange-500 text-white rounded-xl p-6 font-bold flex flex-col items-center">
+                  <img src="/Photos/Ethnography/insight-icon1.png" alt="icon1" className="w-12 h-12" />
+                Affordability & Value <span className="text-xs mt-2">₹50-80 per meal is the sweet spot</span>
+                </div>
+              <div className="bg-white text-gray-900 rounded-xl p-6 font-bold flex flex-col items-center">   
+                <img src="/Photos/Ethnography/insight-icon1.png" alt="icon1" className="w-12 h-12" />
+              Quality & Hygiene 
+                <span className="text-xs mt-2 text-gray-500">Inconsistency across providers</span></div>
+              <div className="bg-black text-white rounded-xl p-6 font-bold flex flex-col items-center">Variety & Customization 
+                <span className="text-xs mt-2 text-gray-300">Students want options beyond routine</span></div>
+              <div className="bg-white text-gray-900 rounded-xl p-6 font-bold flex flex-col items-center">Logistics & Timeliness 
+                <span className="text-xs mt-2 text-gray-500">Irregular delivery times, Poor communication</span></div>
+              <div className="bg-orange-500 text-white rounded-xl p-6 font-bold flex flex-col items-center">Trust & Transparency 
+                <span className="text-xs mt-2">Payment + Credibility issues</span></div>
+            </div>
+            <div className="flex justify-center gap-4 mb-4">
+              <img src="/Photos/Ethnography/insight-icon1.png" alt="icon1" className="w-12 h-12" />
+              <img src="/Photos/Ethnography/insight-icon2.png" alt="icon2" className="w-12 h-12" />
+              <img src="/Photos/Ethnography/insight-icon3.png" alt="icon3" className="w-12 h-12" />
+              <img src="/Photos/Ethnography/insight-icon4.png" alt="icon4" className="w-12 h-12" />
+            </div>
+            <div className="text-center text-lg italic text-gray-700">“Value and trust outweigh variety and timeliness in students’ food preferences.”</div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
           {/* Pain Points Section - Casual Style */}
           <div className="bg-pink-50 rounded-xl shadow p-8 flex flex-col md:flex-row gap-8 items-center">
             <div className="flex-1">
@@ -273,6 +317,130 @@ const Ethnography = () => {
         </div>
       </section>
 
+
+
+      {/* Research Sections - New UI */}
+      <section className="py-24 bg-gradient-to-r from-sky-50 via-white to-rose-50">
+        <div className="container mx-auto px-6">
+          <h2 className="text-3xl font-bold text-center mb-8">Research</h2>
+          {/* 1. Interviews and Surveys */}
+          <div className="mb-16">
+            <h3 className="text-xl font-semibold text-center mb-2">
+              1. Interviews and Surveys
+            </h3>
+            <p className="text-center text-muted-foreground mb-8 max-w-3xl mx-auto">
+              We interviewed students from different departments and living situations to capture their food habits, challenges, and opinions on mess food, tiffin services, and outside options.
+            </p>
+            <div className="grid md:grid-cols-3 gap-8 justify-center max-w-4xl mx-auto ">
+              {/* Example cards, add more as needed */}
+              <div className="bg-blue-50 rounded-xl shadow p-6 flex flex-col items-start">
+                <div className="font-bold text-lg mb-1">Karnika</div>
+                <div className="text-xs text-muted-foreground mb-2">
+                  Second-Year Student (Film dept.)
+                </div>
+                <div className="text-sm text-muted-foreground">
+                  "There was a news about food poisoning from the hostel mess last year. After that, the food quality dropped badly, and many of us started shifting to tiffin services."
+                </div>
+              </div>
+              <div className="bg-blue-50 rounded-xl shadow p-6 flex flex-col items-start">
+                <div className="font-bold text-lg mb-1">Vanshika</div>
+                <div className="text-xs text-muted-foreground mb-2">PG Student (Design Dept.) </div>
+                <div className="text-sm text-muted-foreground">
+                  "I stay in a PG. Our mess is manageable, but I still prefer Magar Tiffin sometimes—it feels more homely than the PG food. "
+                </div>
+              </div>
+              <div className="bg-blue-50 rounded-xl shadow p-6 flex flex-col items-start">
+                <div className="font-bold text-lg mb-1">Akshita</div>
+                <div className="text-xs text-muted-foreground mb-2">
+                 Hostel Student (Design Dept.)
+                </div>
+                <div className="text-sm text-muted-foreground">
+                  "Mess food is always too oily, and there's no non-veg at all. Sometimes we feel FOMO when our friends go out and eat good food while we’re stuck with the same thalis" 
+                </div>
+              </div>
+              <div className="bg-blue-50 rounded-xl shadow p-6 flex flex-col items-start">
+                <div className="font-bold text-lg mb-1">Mani</div>
+                <div className="text-xs text-muted-foreground mb-2">Hostel Student (Design Dept.)</div>
+                <div className="text-sm text-muted-foreground">
+                  "We don’t really have a choice—mess food is compulsory for us. Sometimes it’s okay, but we still crave variety and outside options."
+                </div>
+              </div>
+              <div className="bg-blue-50 rounded-xl shadow p-6 flex flex-col items-start">
+                <div className="font-bold text-lg mb-1">Pratham</div>
+                <div className="text-xs text-muted-foreground mb-2">Rental Apartment (Architecture Dept.)</div>
+                <div className="text-sm text-muted-foreground">
+                  "I used to manage with a local cook at my rented flat, but it wasn’t consistent. Some days she wouldn’t come, and I had to depend on outside food. That’s when I started tiffin service—it’s more reliable."
+                </div>
+              </div>
+              <div className="bg-blue-50 rounded-xl shadow p-6 flex flex-col items-start">
+                <div className="font-bold text-lg mb-1">Karthik</div>
+                <div className="text-xs text-muted-foreground mb-2">Pg Student (Engineering Dept.) </div>
+                <div className="text-sm text-muted-foreground">
+                 "We barely get 45 minutes to eat, so the college canteen is my go-to. The food is delicious and affordable. I've never used a tiffin service, it feels unnecessary because our canteen covers everything."
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* 2. Secondary Research */}
+          <div className="mb-16 max-w-3xl mx-auto ">
+            <h3 className="text-xl font-semibold text-center mb-2">
+              2. Secondary Research
+            </h3> <div className="text-sm text-muted-foreground">
+                 <h2 className="text-center text-muted-foreground mb-8 max-w-3xl mx-auto">   </h2>
+                </div>
+
+            <div className="flex flex-col md:flex-row gap-8 justify-center mb-8">
+              <div className="bg-blue-50 rounded-3xl shadow p-8 flex-1">
+                <div className="font-bold mb-4">In the textbooks</div>
+                <ul className="list-disc ml-4 text-sm text-muted-foreground">
+                  <li>
+                    Understanding what is taught to 8-10 yr old's in school
+                  </li>
+                  <li>How is this not enough for them</li>
+                  <li>
+                    How this kit can seamlessly integrate with the curriculum
+                  </li>
+                </ul>
+              </div>
+              <div className="bg-blue-50 rounded-3xl shadow p-8 flex-1">
+                <div className="font-bold mb-4">Market Study</div>
+                <ul className="list-disc ml-4 text-sm text-muted-foreground">
+                  <li>Studying pre-existing products</li>
+                  <li>Building a clear USP</li>
+                  <li>
+                    Understanding what they are lacking and adding it to this kit
+                  </li>
+                </ul>
+              </div>
+            </div>
+            {/* Insights container */}
+            <div className="bg-blue-100 rounded-3xl shadow p-8 flex flex-col items-center">
+              <div className="font-bold text-center mb-6 text-gray-700">
+                INSIGHTS
+              </div>
+              <div className="grid md:grid-cols-2 gap-4 w-full max-w-2xl">
+                <div className="bg-white rounded-xl px-6 py-4 shadow text-center text-gray-700">
+                  Should be fun and entertaining—having a character could be
+                  helpful
+                </div>
+                <div className="bg-white rounded-xl px-6 py-4 shadow text-center text-gray-700">
+                  Making it a DIY kit and using discard school supply material
+                </div>
+                <div className="bg-white rounded-xl px-6 py-4 shadow text-center text-gray-700">
+                  Journaling the growth of the plant can be helpful to retain
+                  interest
+                </div>
+                <div className="bg-white rounded-xl px-6 py-4 shadow text-center text-gray-700">
+                  Bringing in the concept of eating what you grow should be
+                  incorporated
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Outcomes & Impact - moved from ShootingRange */}
       <section className="py-24 bg-gradient-to-r from-sky-50 via-white to-rose-50">
         <div className="container mx-auto px-4">
@@ -337,6 +505,151 @@ const Ethnography = () => {
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+
+      {/* Custom Research Sections - Visual Ethnography */}
+      <section className="py-24 bg-white">
+        <div className="container mx-auto px-4">
+          {/* Explore Section */}
+          <div className="mb-16 rounded-3xl shadow bg-gray-50 p-8">
+            <h2 className="text-3xl font-bold text-center mb-4">Explore</h2>
+            <div className="relative flex flex-col items-center justify-center">
+              <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-[90%] h-[350px] pointer-events-none">
+                {/* Arc of keywords */}
+                <div className="absolute w-full h-full flex flex-wrap justify-center items-center text-sm text-gray-500" style={{top:0}}>
+                  <span className="absolute left-0">Expectations</span>
+                  <span className="absolute right-0">Challenges</span>
+                  <span className="absolute top-0 left-1/4">Experience</span>
+                  <span className="absolute top-0 right-1/4">Meal Preference</span>
+                  <span className="absolute bottom-0 left-1/4">Convenience</span>
+                  <span className="absolute bottom-0 right-1/4">Routine</span>
+                  <span className="absolute top-1/2 left-0">Improve</span>
+                  <span className="absolute top-1/2 right-0">Hygiene</span>
+                  <span className="absolute top-1/2 left-1/2 transform -translate-x-1/2">Cost</span>
+                  <span className="absolute top-1/3 left-1/3">Quality</span>
+                  <span className="absolute top-2/3 right-1/3">Taste</span>
+                  <span className="absolute bottom-1/3 left-1/3">Nutritional Value</span>
+                  <span className="absolute bottom-2/3 right-1/3">Variety</span>
+                  <span className="absolute bottom-1/2 left-1/2 transform -translate-x-1/2">Time</span>
+                </div>
+              </div>
+              <div className="relative z-10 flex flex-col items-center justify-center">
+                <img src="/Photos/Ethnography/explore-illustration.png" alt="Explore illustration" className="w-72 h-72 object-contain mb-2" />
+              </div>
+            </div>
+          </div>
+
+          {/* Stakeholders Section */}
+          <div className="mb-16 rounded-3xl shadow bg-white p-8">
+            <h2 className="text-2xl font-bold mb-4">Stakeholders</h2>
+            <div className="relative flex flex-col items-center justify-center">
+              <img src="/Photos/Ethnography/stakeholders-illustration.png" alt="Stakeholders illustration" className="w-full max-w-xl object-contain mb-4" />
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm text-gray-700 mt-4">
+                <div className="bg-gray-100 rounded-lg p-3">Working Professionals</div>
+                <div className="bg-gray-100 rounded-lg p-3">Bachelors</div>
+                <div className="bg-gray-100 rounded-lg p-3">Patients & Convalescents</div>
+                <div className="bg-gray-100 rounded-lg p-3">Travelers</div>
+                <div className="bg-gray-100 rounded-lg p-3">Event Attendees</div>
+                <div className="bg-gray-100 rounded-lg p-3">Senior Citizens</div>
+                <div className="bg-blue-100 rounded-lg p-3">Hostel & PG Residents</div>
+                <div className="bg-blue-100 rounded-lg p-3">Students</div>
+              </div>
+            </div>
+          </div>
+
+          {/* Timeline Section */}
+          <div className="mb-16 rounded-3xl shadow bg-white p-8">
+            <h2 className="text-2xl font-bold mb-4">Timeline</h2>
+            <img src="/Photos/Ethnography/timeline-illustration.png" alt="Timeline illustration" className="w-full max-w-2xl mx-auto object-contain mb-4" />
+            <div className="flex flex-col md:flex-row justify-center items-center gap-4 text-sm text-gray-700">
+              <div className="bg-gray-100 rounded-lg p-3">Week 1: Topic Selection, Defining research purpose and stakeholders</div>
+              <div className="bg-gray-100 rounded-lg p-3">Week 2: Reviewing findings, Categorizing observations, Editing video & documentation</div>
+              <div className="bg-gray-100 rounded-lg p-3">Presentation</div>
+            </div>
+          </div>
+
+          {/* Key Insights Map Section */}
+          <div className="mb-16 rounded-3xl shadow bg-gray-50 p-8">
+            <h2 className="text-2xl font-bold mb-4">Key Insights Map</h2>
+            <div className="grid md:grid-cols-5 gap-4 mb-6">
+              <div className="bg-orange-500 text-white rounded-xl p-6 font-bold flex flex-col items-center">Affordability & Value <span className="text-xs mt-2">₹50-80 per meal is the sweet spot</span></div>
+              <div className="bg-white text-gray-900 rounded-xl p-6 font-bold flex flex-col items-center">Quality & Hygiene <span className="text-xs mt-2 text-gray-500">Inconsistency across providers</span></div>
+              <div className="bg-black text-white rounded-xl p-6 font-bold flex flex-col items-center">Variety & Customization <span className="text-xs mt-2 text-gray-300">Students want options beyond routine</span></div>
+              <div className="bg-white text-gray-900 rounded-xl p-6 font-bold flex flex-col items-center">Logistics & Timeliness <span className="text-xs mt-2 text-gray-500">Irregular delivery times, Poor communication</span></div>
+              <div className="bg-orange-500 text-white rounded-xl p-6 font-bold flex flex-col items-center">Trust & Transparency <span className="text-xs mt-2">Payment + Credibility issues</span></div>
+            </div>
+            <div className="flex justify-center gap-4 mb-4">
+              <img src="/Photos/Ethnography/insight-icon1.png" alt="icon1" className="w-12 h-12" />
+              <img src="/Photos/Ethnography/insight-icon2.png" alt="icon2" className="w-12 h-12" />
+              <img src="/Photos/Ethnography/insight-icon3.png" alt="icon3" className="w-12 h-12" />
+              <img src="/Photos/Ethnography/insight-icon4.png" alt="icon4" className="w-12 h-12" />
+            </div>
+            <div className="text-center text-lg italic text-gray-700">“Value and trust outweigh variety and timeliness in students’ food preferences.”</div>
+          </div>
+
+          {/* Pain Points Section */}
+          <div className="mb-16 rounded-3xl shadow bg-white p-8 flex flex-col md:flex-row gap-8">
+            <div className="flex-1 bg-white rounded-xl p-8 shadow">
+              <h3 className="text-xl font-bold mb-4">Students</h3>
+              <ul className="list-disc ml-4 text-sm text-gray-700">
+                <li>Affordability</li>
+                <li>Limited options</li>
+                <li>Inconsistent quality</li>
+                <li>Lack of customization</li>
+                <li>Subscription and commitment issues</li>
+                <li>Lack of a centralized platform</li>
+                <li>Irregular timings</li>
+                <li>Poor communication</li>
+                <li>Payment options and trust</li>
+                <li>Cultural and taste differences</li>
+              </ul>
+            </div>
+            <div className="flex-1 bg-black rounded-xl p-8 shadow text-white">
+              <h3 className="text-xl font-bold mb-4">Tiffin Providers</h3>
+              <ul className="list-disc ml-4 text-sm">
+                <li>Market visibility</li>
+                <li>Marketing and promotion costs</li>
+                <li>Maintaining consistent quality</li>
+                <li>Customer retention</li>
+                <li>Logistics and delivery challenges</li>
+                <li>Understanding customer preferences</li>
+                <li>Payment issues</li>
+                <li>Building trust and credibility</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Opportunities Section */}
+          <div className="mb-16 rounded-3xl shadow bg-orange-500 p-12 text-white text-center">
+            <h2 className="text-2xl font-bold mb-6">A centralized platform that ensures</h2>
+            <div className="flex flex-wrap justify-center gap-4 mb-6">
+              <div className="bg-black rounded-full px-6 py-2 font-semibold">Connection</div>
+              <div className="bg-black rounded-full px-6 py-2 font-semibold">Feedback</div>
+              <div className="bg-black rounded-full px-6 py-2 font-semibold">Flexibility</div>
+              <div className="bg-black rounded-full px-6 py-2 font-semibold">Trust</div>
+            </div>
+            <div className="text-2xl font-bold mt-4">between students and providers.</div>
+          </div>
+
+          {/* Concept Section */}
+          <div className="mb-16 rounded-3xl shadow bg-orange-500 p-12 text-white">
+            <h2 className="text-xl font-bold mb-2">Concept</h2>
+            <div className="mb-4 font-bold">Our Approach</div>
+            <div className="mb-4">Introducing the MIT Tiffin finder app - <span className="font-bold">Desi Dabba</span><br />A one-stop solution for students to explore, review, and choose the best tiffin services nearby.<br />Discover home-like meals, compare options, and order with ease!</div>
+            <div className="text-4xl font-bold mb-6">Explore.Customize.<br />Order <span className="inline-block align-middle"><img src="/Photos/Ethnography/refresh-icon.png" alt="refresh" className="inline w-6 h-6" /></span></div>
+            <div className="flex flex-col md:flex-row gap-8 items-center justify-center mb-8">
+              <img src="/Photos/Ethnography/app-ui1.png" alt="App UI 1" className="w-64 rounded-xl shadow" />
+              <img src="/Photos/Ethnography/app-ui2.png" alt="App UI 2" className="w-64 rounded-xl shadow" />
+              <img src="/Photos/Ethnography/app-ui3.png" alt="App UI 3" className="w-64 rounded-xl shadow" />
+            </div>
+            <div className="flex flex-col md:flex-row gap-8 justify-center mb-8 text-white text-lg">
+              <div className="flex-1 text-center">Explore local tiffin services with reviews, ratings, and clear insights on affordability, hygiene, and variety.</div>
+              <div className="flex-1 text-center">Customize meals to dietary needs, place orders easily, and track deliveries with flexible payments.</div>
+            </div>
+            <div className="text-center text-xl italic mt-8">“Good food made simple: affordable, clean, on time, and trusted.”</div>
           </div>
         </div>
       </section>

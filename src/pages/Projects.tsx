@@ -140,63 +140,8 @@ const Projects = () => {
         live: "#",
       },
     },
-    {
-      id: 5,
-      title: "Unreal Cinematic Challenge",
-      category: "3d-art",
-      categoryLabel: "Cinematic Design",
-      description:
-        "A dark, atmospheric castle environment designed around fixed cinematic camera movements, featuring gothic architecture, moody lighting, and a warrior character narrative.",
-      longDescription:
-        "An extracurricular exploration beyond coursework, this Unreal Engine challenge involved creating a 3D environment around predetermined camera sequences. I designed a dark castle with gothic architecture, dramatic lighting, and replaced the original character with a warrior figure to enhance the mysterious, battle-worn storyline.",
-      image: "/Photos/Unreal.png",
-      tags: [
-        "Unreal Engine 5",
-        "Environment Design",
-        "Cinematic Lighting",
-        "Gothic Architecture",
-        "Character Integration",
-      ],
-      featured: true,
-      year: "2025",
-      client: "Personal Challenge",
-      duration: "1 day",
-      slug: "unreal-cinematic",
-      links: {
-        demo: "#",
-        github: "#",
-        live: "#",
-      },
-    },
-    {
-      id: 6,
-      title: "Stormy Ocean Scene",
-      category: "3d-art",
-      categoryLabel: "3D Animation",
-      description:
-        "A Blender learning project exploring ocean simulation and atmospheric rendering. An 8-second stormy ocean animation that took 8 hours to render, marking my first journey into 3D animation.",
-      longDescription:
-        "Out of personal interest, I explored Blender by following a YouTube tutorial and recreated a stormy ocean scene. This self-initiated project helped me understand the basics of Blender's simulation tools, lighting, materials, and camera work. It was an exciting first step into 3D animation and environment creation, giving me a feel for cinematic visuals and mood-building through motion and texture.",
-      image: "/Photos/Stormy Ocean.png",
-      tags: [
-        "Blender 3D",
-        "Ocean Simulation",
-        "Atmospheric Lighting",
-        "Tutorial Learning",
-        "First Project",
-        "Cycles Renderer",
-      ],
-      featured: false,
-      year: "2025",
-      client: "Personal Learning",
-      duration: "One Day Project",
-      slug: "stormy-ocean",
-      links: {
-        demo: "#",
-        github: "#",
-        live: "#",
-      },
-    },
+    
+   
     {
       id: 7,
       title: "Smart Chemistry",
@@ -226,64 +171,7 @@ const Projects = () => {
         live: "#",
       },
     },
-    {
-      id: 8,
-      title: "Angry Birds Recreation",
-      category: "interactive",
-      categoryLabel: "Game Development",
-      description:
-        "A 2D recreation of Angry Birds using Unity with physics-based gameplay, multiple levels, and engaging visual effects. Created as part of Introduction to Coding course.",
-      longDescription:
-        "As part of the Introduction to Coding course, I developed a 2D version of Angry Birds using Unity. The project involved designing levels, scripting physics-based interactions, and creating an engaging user interface with a home screen. With three distinct levels, the game combined strategy and fun, showcasing gameplay mechanics and visual aesthetics inspired by the classic Angry Birds experience.",
-      image: "/Photos/Angry birds.png",
-      tags: [
-        "Unity",
-        "C#",
-        "Game Development",
-        "Physics",
-        "UI Design",
-        "Individual Project",
-      ],
-      featured: false,
-      year: "2024",
-      client: "Individual Project",
-      duration: "2 weeks",
-      slug: "angry-birds",
-      links: {
-        demo: "#",
-        github: "#",
-        live: "#",
-      },
-    },
-    {
-      id: 9,
-      title: "Netflix Spatial UI Design",
-      category: "vr",
-      categoryLabel: "Spatial Design",
-      description:
-        "Redesigned Netflix app for immersive environments like Apple Vision Pro, creating adaptive interfaces for various physical spaces with spatial awareness.",
-      longDescription:
-        "Driven by a passion to understand spatial UI design, I embarked on redesigning the Netflix app for immersive environments. The goal was to create a user-friendly interface adaptable to various physical spaces, offering an engaging streaming platform. This project leveraged spatial awareness and interactive design to transform the way users interact with content.",
-      image: "/Photos/Netflix 1.png",
-      tags: [
-        "Spatial Design",
-        "Apple Vision Pro",
-        "Figma",
-        "UI/UX",
-        "Immersive Media",
-        "Individual Project",
-      ],
-      featured: true,
-      year: "2024",
-      client: "Individual Project",
-      duration: "1 week",
-      slug: "netflix-spatial",
-      links: {
-        demo: "#",
-        github: "#",
-        live: "#",
-      },
-    },
+    
     ,
     {
       id: 10,

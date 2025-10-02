@@ -168,7 +168,7 @@ const MushroomHouse = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-rose-50 via-purple-50 to-sky-100">
+    <div className="min-h-screen bg-gradient-to-br from-rose-50 via-purple-50 to-sky-100 text-black">
       {/* Mobile-only overlay */}
       <MobileOverlay />
       <Navigation />
@@ -238,14 +238,14 @@ const MushroomHouse = () => {
             <img
               src="/Photos/Mushroom/2.png"
               alt="Mushroom House Moodboard"
-              className="rounded-xl shadow-lg w-full object-cover"
+              className="rounded-xl shadow-lg w-full object-cover bg-white p-10"
             />
           </div>
         </div>
       </section>
 
       {/* 3D Pipeline Section - short, more images, no cards */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-gradient-to-br from-rose-50 via-purple-50 to-sky-100">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto text-center mb-10">
             <h2 className="text-3xl font-bold mb-4">3D Production Pipeline</h2>
@@ -255,7 +255,7 @@ const MushroomHouse = () => {
             <img
               src="/Photos/Mushroom/1.png"
               alt="Modeling in Maya"
-              className="rounded-lg shadow w-full object-cover aspect-16/9"
+              className="rounded-lg shadow w-full object-cover aspect-16/9 bg-white p-10"
             />
           </div>
         </div>
@@ -264,7 +264,7 @@ const MushroomHouse = () => {
       {/* Fantasy Environment Features - add images */}
       <section className="py-16 bg-gradient-to-r from-purple-100 via-background to-pink-100">
         <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
+          <div className="max-w-6xl mx-auto ">
             <div className="text-center mb-10">
               <h2 className="text-3xl font-bold mb-4">
                 Fantasy Environment Features
@@ -274,7 +274,7 @@ const MushroomHouse = () => {
               </p>
             </div>
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-purple-50 p-4 rounded-xl shadow">
+              <div className="bg-white p-10 rounded-xl shadow ">
                 <img
                   src="/Photos/Mushroom/5.png"
                   alt="Magical Mushroom House"
@@ -286,7 +286,7 @@ const MushroomHouse = () => {
                   atmosphere.
                 </p>
               </div>
-              <div className="bg-pink-50 p-4 rounded-xl shadow">
+              <div className="bg-white p-10 rounded-xl shadow">
                 <img
                   src="/Photos/Mushroom/6.png"
                   alt="Detailed Pathways & Boundaries"
@@ -300,7 +300,7 @@ const MushroomHouse = () => {
                   definition.
                 </p>
               </div>
-              <div className="bg-yellow-50 p-4 rounded-xl shadow">
+              <div className="bg-white p-10 rounded-xl shadow">
                 <img
                   src="/Photos/Mushroom/8.png"
                   alt="Realistic Props & Details"
@@ -312,7 +312,7 @@ const MushroomHouse = () => {
                   storytelling.
                 </p>
               </div>
-              <div className="bg-green-50 p-4 rounded-xl shadow">
+              <div className="bg-white p-10 rounded-xl shadow">
                 <img
                   src="/Photos/Mushroom/9.png"
                   alt="Natural Flora & Landscape"
@@ -330,11 +330,11 @@ const MushroomHouse = () => {
       </section>
 
       {/* Technical Achievements - short, visual */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-gradient-to-r from-purple-100 via-background to-pink-100">
         <div className="container mx-auto px-8">
-          <div className="max-w-3xl mx-auto text-center grid md:grid-cols-1 gap-8 mb-16">
-            <h2 className="text-3xl font-bold mb-4">Technical Achievements</h2>
-            <div className="grid md:grid-cols-2 gap-8">
+          <div className="max-w-5xl mx-auto text-center grid md:grid-cols-1 gap-8 mb-16">
+            <h2 className="text-4xl font-bold mb-4">Technical Achievements</h2>
+            <div className="grid md:grid-cols-2 gap-8 bg-white p-10 rounded-xl shadow">
               <div className="bg-purple-50 p-4 rounded-xl shadow aspect-auto">
                 <h3 className="font-bold mb-2">3D Pipeline Mastery</h3>
                 <p className="text-sm text-muted-foreground">

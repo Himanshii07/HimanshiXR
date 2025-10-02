@@ -158,7 +158,7 @@ const UnrealCinematic = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900/10 via-slate-800/5 to-indigo-950/10">
+    <div className="min-h-screen bg-white text-blue-900">
       {/* Mobile-only overlay */}
       <MobileOverlay />
       <Navigation />
@@ -201,7 +201,7 @@ const UnrealCinematic = () => {
                 </span>
               </div>
 
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-foreground to-xr-neon bg-clip-text text-transparent">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-foreground to-xr-neon bg-clip-text text-blue-900">
                 {projectDetails.title}
               </h1>
 

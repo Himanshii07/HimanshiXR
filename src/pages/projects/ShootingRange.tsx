@@ -162,7 +162,7 @@ const ShootingRange = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900/10 via-slate-900/5 to-blue-900/10">
+    <div className="min-h-screen bg-white text-red-900">
       {/* Mobile-only overlay */}
       <MobileOverlay />
       <Navigation />
