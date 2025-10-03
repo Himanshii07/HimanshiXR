@@ -151,7 +151,7 @@ const SystemThinking = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-sky-50 via-emerald-50 to-slate-50">
+    <div className="min-h-screen bg-white">
       {/* Mobile-only overlay */}
       <MobileOverlay />
       <Navigation />
@@ -246,7 +246,7 @@ const SystemThinking = () => {
 
       {/* Initial & Secondary Research (structured, not screenshots) */}
       <section className="py-8">
-        <div className="container mx-auto px-4 max-w-8xl grid lg:grid-cols-2 gap-6">
+        <div className="container mx-auto px-4 max-w-7xl grid lg:grid-cols-2 gap-6">
           <div className="rounded-xl border border-border/60 bg-card/40 p-5">
             <h3 className="text-xl font-semibold mb-3">Initial Research</h3>
             <ul className="list-disc pl-5 space-y-1 text-sm text-muted-foreground mb-4">
@@ -308,7 +308,7 @@ const SystemThinking = () => {
       {/* Communication Loop */}
       <section className="py-16 bg-white-50">
         <div className="container mx-auto px-4">
-          <div className="max-w-8xl mx-auto text-center mb-10 gap-8">
+          <div className="max-w-7xl mx-auto text-center mb-10 gap-8">
             <img
               src="/Photos/pune/9.jpg"
               alt="Human Factors reference"
@@ -320,7 +320,7 @@ const SystemThinking = () => {
 
       {/* Major Causes (text cards) */}
       <section className="py-12">
-        <div className="container mx-auto px-4 max-w-8xl">
+        <div className="container mx-auto px-4 max-w-7xl">
           <h2 className="text-3xl font-bold mb-6">Major Causes</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="rounded-xl overflow-hidden border border-border/60 bg-card/40">
@@ -393,7 +393,7 @@ const SystemThinking = () => {
 
       {/* Primary Research (structured) */}
       <section className="py-12">
-        <div className="container mx-auto px-4 max-w-8xl">
+        <div className="container mx-auto px-4 max-w-7xl">
           <h2 className="text-3xl font-bold mb-4">Primary Research</h2>
           <div className="grid md:grid-cols-3 gap-6">
             <div className="rounded-xl border border-border/60 bg-card/40 p-4">
@@ -442,7 +442,7 @@ const SystemThinking = () => {
       {/* Communication Loop */}
       <section className="py-16 bg-white-50">
         <div className="container mx-auto px-4">
-          <div className="max-w-8xl mx-auto text-center mb-10 gap-8">
+          <div className="max-w-7xl mx-auto text-center mb-10 gap-8">
             <img
               src="/Photos/pune/12.jpg"
               alt="Human Factors reference"
@@ -454,7 +454,7 @@ const SystemThinking = () => {
 
       {/* Communication Loop + Wards */}
       <section className="py-12">
-        <div className="container mx-auto px-4 max-w-8xl">
+        <div className="container mx-auto px-4 max-w-7xl">
           <div className="grid lg:grid-cols-1 gap-10 items-start">
             <div>
               <h2 className="text-3xl font-bold mb-4">15 wards in Pune</h2>
@@ -475,7 +475,7 @@ const SystemThinking = () => {
 
       {/* Flood‑Prone Areas & Shelters */}
       <section className="py-12">
-        <div className="container mx-auto px-4 max-w-4xl space-y-8 grid grid-cols-1 gap-6">
+        <div className="container mx-auto px-4 max-w-7xl space-y-8 grid grid-cols-2 gap-6">
           <div>
             <h2 className="text-3xl font-bold mb-3">Flood‑Prone Areas</h2>
             <div className="rounded-xl border border-border/60 bg-card/40 p-5 text-sm text-muted-foreground">
@@ -489,7 +489,7 @@ const SystemThinking = () => {
             />
           </div>
           <div>
-            <h2 className="text-3xl font-bold mb-3">
+            <h2 className="text-2xl font-semibold mb-3">
               Evacuation Shelters & Capacity
             </h2>
             <div className="rounded-xl border border-border/60 overflow-hidden">
@@ -522,7 +522,7 @@ const SystemThinking = () => {
       {/* Communication Loop */}
       <section className="py-16 bg-white-50">
         <div className="container mx-auto px-4">
-          <div className="max-w-8xl mx-auto text-center mb-10 gap-8">
+          <div className="max-w-7xl mx-auto text-center mb-10 gap-8">
             <img
               src="/Photos/pune/13.jpg"
               alt="Human Factors reference"
@@ -535,7 +535,7 @@ const SystemThinking = () => {
       {/* Communication Loop */}
       <section className="py-16 bg-white-50">
         <div className="container mx-auto px-4">
-          <div className="max-w-8xl mx-auto text-center mb-10 gap-8">
+          <div className="max-w-7xl mx-auto text-center mb-10 gap-8">
             <img
               src="/Photos/pune/19.jpg"
               alt="Human Factors reference"
@@ -547,7 +547,7 @@ const SystemThinking = () => {
 
       {/* Affinity Mapping */}
       <section className="py-12">
-        <div className="container mx-auto px-4 max-w-8xl">
+        <div className="container mx-auto px-4 max-w-7xl">
           <h2 className="text-3xl font-bold mb-6">Affinity Mapping</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {affinityBuckets.map((b) => (
@@ -569,8 +569,8 @@ const SystemThinking = () => {
 
       {/* Problem Statement */}
       <section className="py-12">
-        <div className="container mx-auto px-4 max-w-8xl">
-          <div className="rounded-xl border border-border/60 bg-emerald-700/80 p-6">
+        <div className="container mx-auto px-4 max-w-7xl">
+          <div className="rounded-xl border border-border/60 bg-emerald-700 p-6">
             <h2 className="text-3xl text-white font-bold mb-3">
               Problem Statement
             </h2>
@@ -586,7 +586,7 @@ const SystemThinking = () => {
 
       {/* Insights */}
       <section className="py-12">
-        <div className="container mx-auto px-4 max-w-8xl">
+        <div className="container mx-auto px-4 max-w-7xl">
           <h2 className="text-3xl font-bold mb-4">
             Critical behavioral observed during floods
           </h2>
@@ -605,7 +605,7 @@ const SystemThinking = () => {
 
       {/* Concept Solutions (structured, not screenshots) */}
       <section className="py-12">
-        <div className="container mx-auto px-4 max-w-6xl space-y-10">
+        <div className="container mx-auto px-4 max-w-7xl space-y-10">
           <div className="rounded-xl border border-border/60 bg-card/40 p-6">
             <h3 className="text-2xl font-semibold mb-4 flex items-center gap-2">
               <Megaphone className="w-5 h-5" />
@@ -639,8 +639,13 @@ const SystemThinking = () => {
                 </ul>
               </div>
             </div>
-            <div className="mt-4 aspect-16/9 rounded-lg overflow-hidden border">
+            <div className="mt-4 grid md:grid-cols-2 gap-3  aspect-16/9 rounded-lg overflow-hidden border">
               <img
+                src="/Photos/pune/21.jpg"
+                alt="WhatsApp alerts mockups placeholder"
+                className="w-full h-full object-cover"
+              />
+               <img
                 src="/Photos/pune/22.jpg"
                 alt="WhatsApp alerts mockups placeholder"
                 className="w-full h-full object-cover"
