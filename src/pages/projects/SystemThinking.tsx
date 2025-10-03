@@ -257,7 +257,7 @@ const SystemThinking = () => {
               <li>Mind-mapped causes, impacts, and leverage points</li>
               <li>Identified primary stakeholders</li>
             </ul>
-            <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-2">
+            {/*<div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-2">
               {[
                 "IMD",
                 "PFCC",
@@ -277,8 +277,8 @@ const SystemThinking = () => {
                   {t}
                 </span>
               ))}
-            </div>
-            <div className="mt-4 aspect-2/3 rounded-lg overflow-hidden border ">
+            </div>*/}
+            <div className="mt-4 aspect-2/3 rounded-lg overflow-hidden">
               <img
                 src="/Photos/pune/1.jpg"
                 alt="Initial research visual placeholder"
@@ -307,7 +307,7 @@ const SystemThinking = () => {
 
       {/* Communication Loop */}
       <section className="py-16 bg-white-50">
-        <div className="container mx-auto px-4">
+        <div className="container max-w-7xl mx-auto px-4 rounded-xl shadow-lg overflow-hidden">
           <div className="max-w-7xl mx-auto text-center mb-10 gap-8">
             <img
               src="/Photos/pune/9.jpg"
@@ -584,6 +584,76 @@ const SystemThinking = () => {
         </div>
       </section>
 
+    
+
+       {/* solutions */}
+      <section className="py-16 bg-white-50">
+        <div className="container mx-auto px-4 rounded-xl shadow-lg overflow-hidden">
+          <div className="max-w-7xl mx-auto text-center mb-10 gap-8">
+            <img
+              src="/Photos/pune/6 copy.png"
+              alt="Human Factors reference"
+              className="rounded-xl w-full object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
+         {/* solutions */}
+      <section className="py-16 bg-white-50">
+        <div className="container mx-auto px-4 rounded-xl shadow-lg overflow-hidden">
+          <div className="max-w-7xl mx-auto text-center mb-10 gap-8">
+            <img
+              src="/Photos/pune/9.png"
+              alt="Human Factors reference"
+              className="rounded-xl w-full object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* solutions */}
+      <section className="py-16 bg-white-50">
+        <div className="container mx-auto px-4 rounded-xl shadow-lg overflow-hidden">
+          <div className="max-w-7xl mx-auto text-center mb-10 gap-8">
+            <img
+              src="/Photos/pune/11.png"
+              alt="Human Factors reference"
+              className="rounded-xl w-full object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
+        {/* Communication Loop */}
+      <section className="py-16 bg-white-50">
+        <div className="container mx-auto px-4 rounded-xl shadow-lg overflow-hidden">
+          <div className="max-w-7xl mx-auto text-center mb-10 gap-8">
+            <img
+              src="/Photos/pune/1.png"
+              alt="Human Factors reference"
+              className="rounded-xl w-full object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
+       {/* solutions */}
+      <section className="py-16 bg-white-50">
+        <div className="container mx-auto px-4 rounded-xl shadow-lg overflow-hidden border">
+          <div className="max-w-7xl mx-auto text-center mb-10 gap-8">
+            <img
+              src="/Photos/pune/2.png"
+              alt="Human Factors reference"
+              className="rounded-xl w-full object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
+
+
+
       {/* Insights */}
       <section className="py-12">
         <div className="container mx-auto px-4 max-w-7xl">
@@ -603,207 +673,7 @@ const SystemThinking = () => {
         </div>
       </section>
 
-      {/* Concept Solutions (structured, not screenshots) */}
-      <section className="py-12">
-        <div className="container mx-auto px-4 max-w-7xl space-y-10">
-          <div className="rounded-xl border border-border/60 bg-card/40 p-6">
-            <h3 className="text-2xl font-semibold mb-4 flex items-center gap-2">
-              <Megaphone className="w-5 h-5" />
-              Concept 1 — WhatsApp Alerts
-            </h3>
-            <div className="grid md:grid-cols-2 gap-6">
-              <div>
-                <h4 className="font-semibold mb-2">How it works</h4>
-                <ul className="list-disc pl-5 space-y-1 text-sm text-muted-foreground">
-                  <li>
-                    City‑wide alerts via WhatsApp, not limited to flood‑prone
-                    areas
-                  </li>
-                  <li>
-                    Alerts pinned at top of chats until situation resolves
-                  </li>
-                  <li>
-                    Regular updates: rainfall, dam discharge, expected impact,
-                    shelter locations
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <h4 className="font-semibold mb-2">
-                  Prioritizing safety and urgency
-                </h4>
-                <ul className="list-disc pl-5 space-y-1 text-sm text-muted-foreground">
-                  <li>Quick buttons for emergency numbers</li>
-                  <li>Evacuation guidance / First‑Aid tutorials</li>
-                  <li>Nearby shelter locations and live weather</li>
-                </ul>
-              </div>
-            </div>
-            <div className="mt-4 grid md:grid-cols-2 gap-3  aspect-16/9 rounded-lg overflow-hidden border">
-              <img
-                src="/Photos/pune/21.jpg"
-                alt="WhatsApp alerts mockups placeholder"
-                className="w-full h-full object-cover"
-              />
-               <img
-                src="/Photos/pune/22.jpg"
-                alt="WhatsApp alerts mockups placeholder"
-                className="w-full h-full object-cover"
-              />
-            </div>
-          </div>
-
-          <div className="rounded-xl border border-border/60 bg-card/40 p-6">
-            <h3 className="text-2xl font-semibold mb-4 flex items-center gap-2">
-              <Layers className="w-5 h-5" />
-              Concept 2 — Bamboo Floatable
-            </h3>
-            <div className="grid md:grid-cols-3 gap-6 text-sm text-muted-foreground">
-              <div>
-                <h4 className="font-semibold mb-2">Year‑round usage</h4>
-                <ul className="list-disc pl-5 space-y-1">
-                  <li>Functions as a compact bamboo table/tray at home</li>
-                  <li>Lightweight and durable for daily use</li>
-                </ul>
-                <img
-                  src="/Photos/pune/bamboo-1.jpg"
-                  alt="Bamboo Floatable Year-round"
-                  className="mt-4 rounded-lg w-full object-cover aspect-[16/9]"
-                />
-              </div>
-              <div>
-                <h4 className="font-semibold mb-2">During floods</h4>
-                <ul className="list-disc pl-5 space-y-1">
-                  <li>
-                    Top tray detaches and transforms into a floating device
-                  </li>
-                  <li>
-                    Waterproof layers and buoyant structure for essentials
-                  </li>
-                </ul>
-                <img
-                  src="/Photos/pune/bamboo-2.jpg"
-                  alt="Bamboo Floatable Floods"
-                  className="mt-4 rounded-lg w-full object-cover aspect-[16/9]"
-                />
-              </div>
-              <div>
-                <h4 className="font-semibold mb-2">Ease of use</h4>
-                <ul className="list-disc pl-5 space-y-1">
-                  <li>Helps move through water without lifting heavy bags</li>
-                  <li>Compact, easy to carry for children and elderly</li>
-                </ul>
-                <img
-                  src="/Photos/pune/bamboo-3.jpg"
-                  alt="Bamboo Floatable Ease of Use"
-                  className="mt-4 rounded-lg w-full object-cover aspect-[16/9]"
-                />
-              </div>
-            </div>
-          </div>
-
-          <div className="rounded-xl border border-border/60 bg-card/40 p-6">
-            <h3 className="text-2xl font-semibold mb-4 flex items-center gap-2">
-              <NavIcon className="w-5 h-5" />
-              Concept 3 — Integrating Evacuation Shelter Details with AR
-            </h3>
-            <div className="grid md:grid-cols-2 gap-6 text-sm text-muted-foreground">
-              <div>
-                <h4 className="font-semibold mb-2">
-                  Detailed Shelter Information
-                </h4>
-                <ul className="list-disc pl-5 space-y-1">
-                  <li>
-                    On search/scan, shows capacity, facilities, and current
-                    status
-                  </li>
-                  <li>Real‑time updates integrated in maps</li>
-                </ul>
-                <img
-                  src="/Photos/pune/ar-1.jpg"
-                  alt="AR Shelter Information"
-                  className="mt-4 rounded-lg w-full object-cover aspect-[16/9]"
-                />
-              </div>
-              <div>
-                <h4 className="font-semibold mb-2">Interactive Navigation</h4>
-                <ul className="list-disc pl-5 space-y-1">
-                  <li>AR pathways guide users to the nearest safe shelter</li>
-                  <li>Avoids flooded or dangerous areas using live routing</li>
-                </ul>
-                <img
-                  src="/Photos/pune/ar-2.jpg"
-                  alt="AR Navigation"
-                  className="mt-4 rounded-lg w-full object-cover aspect-[16/9]"
-                />
-              </div>
-            </div>
-          </div>
-
-          <div className="rounded-xl border border-border/60 bg-card/40 p-6">
-            <h3 className="text-2xl font-semibold mb-4 flex items-center gap-2">
-              <Shield className="w-5 h-5" />
-              Concept 4 — Flood Barrier
-            </h3>
-            <div className="grid md:grid-cols-3 gap-6 text-sm text-muted-foreground">
-              <div>
-                <h4 className="font-semibold mb-2">Design</h4>
-                <ul className="list-disc pl-5 space-y-1">
-                  <li>Lightweight, modular, easy to set up</li>
-                  <li>Durable, water‑resistant materials for repeated use</li>
-                </ul>
-                <img
-                  src="/Photos/pune/24.png"
-                  alt="Flood Barrier Design"
-                  className="mt-4 rounded-lg w-full object-cover aspect-[16/9]"
-                />
-              </div>
-              <div>
-                <h4 className="font-semibold mb-2">Setup Process</h4>
-                <ol className="list-decimal pl-5 space-y-1">
-                  <li>Place the frame at entry points</li>
-                  <li>Lift panel upright and lock</li>
-                  <li>Check edges for gaps</li>
-                  <li>After floods, clean, fold, and store</li>
-                </ol>
-                <img
-                  src="/Photos/pune/23.jpg"
-                  alt="Flood Barrier Setup"
-                  className="mt-4 rounded-lg w-full object-cover aspect-[16/9]"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* System framing */}
-      <section className="py-16">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <div>
-              <h2 className="text-xl font-semibold mb-2">Problem Context</h2>
-              <p className="text-sm text-muted-foreground">
-                Scope, boundaries, and stakeholder goals anchoring the system
-                definition.
-              </p>
-            </div>
-            <div>
-              <h2 className="text-xl font-semibold mb-2">Causal Loops</h2>
-              <p className="text-sm text-muted-foreground">
-                Reinforcing and balancing loops revealing dynamics over time.
-              </p>
-            </div>
-            <div>
-              <h2 className="text-xl font-semibold mb-2">Leverage Points</h2>
-              <p className="text-sm text-muted-foreground">
-                Interventions where small changes can lead to meaningful shifts.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      {/* Back to Projects */}
       <section className="py-12">
         <div className="container mx-auto px-4 text-center">
           <Button asChild size="lg" variant="outline">
