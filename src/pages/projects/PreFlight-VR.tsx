@@ -44,23 +44,23 @@ const PreFlightVR = () => {
       <Navigation />
 
       {/* Hero Section - concise summary, visual */}
-      <section className="relative py-24 bg-gradient-to-br from-white via-blue-50 to-sky-100 overflow-hidden">
+      <section className="relative py-24 bg-gradient-to-br from-slate-900 via-teal-900 to-black text-white overflow-hidden">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto text-center">
             <Button
               asChild
               variant="ghost"
-              className="mb-8 text-muted-foreground hover:text-foreground"
+              className="mb-8 text-muted-white hover:text-foreground"
             >
               <Link to="/projects">
                 <ArrowLeft className="w-4 h-4 mr-2" />
                 Back to Projects
               </Link>
             </Button>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-blue-400 to-blue-300 bg-clip-text text-transparent">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
               Preflight Maintenance Check VR
             </h1>
-            <p className="text-lg text-muted-foreground mb-8">
+            <p className="text-lg text-white mb-8">
               VR-based pre-flight maintenance training simulation to address
               costly, risky, and hands-off traditional methods. Guided
               inspection and independent practice in a safe, immersive
@@ -69,24 +69,24 @@ const PreFlightVR = () => {
             <div className="flex flex-wrap justify-center gap-4 mb-8">
               <Badge
                 variant="outline"
-                className="text-sm border-blue-400 text-blue-600"
+                className="text-sm border-green-600 text-green-400"
               >
                 <Calendar className="w-3 h-3 mr-1" />
                 2025
               </Badge>
               <Badge
                 variant="outline"
-                className="text-sm border-blue-400 text-blue-600"
+                className="text-sm border-green-600 text-green-400"
               >
                 <Users className="w-3 h-3 mr-1" />
                 Team Project
               </Badge>
               <Badge
                 variant="outline"
-                className="text-sm border-green-400 text-green-600"
+                className="text-sm border-green-600 text-green-400"
               >
                 <Award className="w-3 h-3 mr-1" />
-                Completed
+                2 Weeks
               </Badge>
             </div>
             <div className="flex justify-center mb-8">
@@ -111,7 +111,7 @@ const PreFlightVR = () => {
               UI.
             </p>
             <img
-              src="/Photos/Flight/1.png"
+              src="/Photos/Flight/1 copy.png"
               alt="Bodystorming with sticky notes and team"
               className="rounded-xl shadow-lg w-full object-cover"
             />
