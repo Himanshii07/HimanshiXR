@@ -116,6 +116,31 @@ const PreFlightVR = () => {
       </section>
 
 
+      {/* Aim + Methodology */}
+      <section className="py-12 bg-slate-900 text-white">
+        <div className="container mx-auto px-4 max-w-7xl">
+          <div className="grid md:grid-cols-2 gap-8">
+            <div>
+              <h2 className="text-2xl font-semibold mb-3">Project Aim</h2>
+              <p className="text-sm text-muted-white">
+                Our project set out to design a VR-based pre-flight maintenance experience that streamlines inspections and repair procedures while keeping human factors at the center of design. The aim was not just to create an immersive VR simulation, but to analyze how each interaction aligns with ergonomics, XR design heuristics, and human-centered principles. By applying methods such as the GOMS model and heuristic evaluation, our goal was to demonstrate how VR can reduce errors, improve efficiency, and enhance user comfort and safety in critical aviation maintenance tasks.
+              </p>
+            </div>
+            <div>
+              <h2 className="text-2xl font-semibold mb-3">
+                Research Methodology
+              </h2>
+              <img
+              src="/Photos/Flight/13.png"
+              alt="Bodystorming with sticky notes and team"
+              className="rounded-xl shadow-lg w-full object-cover"
+            />
+            </div>
+          </div>
+        </div>
+      </section>
+
+
 
 
 
@@ -165,21 +190,21 @@ const PreFlightVR = () => {
               Visualizing the trainee journey from guided session to independent
               practice.
             </p>
-            <div className="grid md:grid-cols-1 gap-6">
+            <div className="grid md:grid-cols-1 gap-12 bg-white py-24 px-14 rounded-lg">
               <img
                 src="/Photos/Flight/10.png"
                 alt="Storyboard sketch details"
-                className="rounded-lg shadow w-full object-cover aspect-16/9"
+                className="rounded-lg  w-full object-cover aspect-16/9"
               />
               <img
                 src="/Photos/Flight/11.png"
                 alt="Journey mapping with sticky notes"
-                className="rounded-lg shadow w-full object-cover aspect-16/9"
+                className="rounded-lg w-full object-cover aspect-16/9"
               />
               <img
                 src="/Photos/Flight/12.png"
                 alt="Desk setup for sketching"
-                className="rounded-lg shadow w-full object-cover aspect-16/9"
+                className="rounded-lg w-full object-cover aspect-16/9"
               />
             </div>
           </div>
