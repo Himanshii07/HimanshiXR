@@ -44,7 +44,7 @@ const PreFlightVR = () => {
       <Navigation />
 
       {/* Hero Section - concise summary, visual */}
-      <section className="relative py-24 bg-gradient-to-br from-slate-900 via-teal-900 to-black text-white overflow-hidden">
+      <section className="relative py-24 bg-slate-900 text-white overflow-hidden">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto text-center">
             <Button
@@ -91,7 +91,7 @@ const PreFlightVR = () => {
             </div>
             <div className="flex justify-center mb-8">
               <img
-                src="/Photos/Flight/8.png"
+                src="/Photos/Flight/6.png"
                 alt="Aircraft maintenance hangar"
                 className="rounded-lg shadow w-full grid md:grid-cols-1 gap-1 aspect-16/9 max-w-14xl mx-auto"
               />
@@ -100,8 +100,27 @@ const PreFlightVR = () => {
         </div>
       </section>
 
+
+      {/* Problem Statement */}
+      <section className="py-12 bg-slate-900 text-white">
+        <div className="container mx-auto px-4 max-w-7xl">
+          <div className="rounded-xl border border-border/60 bg-slate-100 p-6 items-center shadow-lg">
+            <h2 className="text-3xl text-blue-900 font-bold mb-3 text-center">
+              Problem Statement
+            </h2>
+            <p className="text-base text-blue-900 text-center">
+              Aviation maintenance crews and engineers are responsible for conducting pre-flight inspections and repairs—tasks that are time-critical, highly detailed, and essential for ensuring flight safety and compliance with regulations. However, traditional manual inspections are often time-consuming, physically demanding, and prone to human error. Even small mistakes can compromise safety and efficiency, making it necessary to explore solutions that support crews in performing these checks with accuracy, speed, and reduced strain.
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
       {/* Bodystorming Section - process, scripting, modeling, filming */}
-      <section className="py-16 bg-white">
+      <section className="py-16  bg-slate-900 text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto text-center mb-10">
             <h2 className="text-3xl font-bold mb-4">Bodystorming</h2>
@@ -111,7 +130,7 @@ const PreFlightVR = () => {
               UI.
             </p>
             <img
-              src="/Photos/Flight/1 copy.png"
+              src="/Photos/Flight/1.png"
               alt="Bodystorming with sticky notes and team"
               className="rounded-xl shadow-lg w-full object-cover"
             />
@@ -120,7 +139,7 @@ const PreFlightVR = () => {
       </section>
 
       {/* Interaction Planning Section */}
-      <section className="py-16 bg-blue-50">
+      <section className="py-16 bg-slate-900 text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto text-center mb-10">
             <h2 className="text-3xl font-bold mb-4">GOMS Model</h2>
@@ -138,7 +157,7 @@ const PreFlightVR = () => {
       </section>
 
       {/* Storyboarding Section - images only */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-slate-900 text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto text-center mb-10">
             <h2 className="text-3xl font-bold mb-4">Storyboarding</h2>
@@ -148,17 +167,17 @@ const PreFlightVR = () => {
             </p>
             <div className="grid md:grid-cols-1 gap-6">
               <img
-                src="/Photos/Flight/3.png"
+                src="/Photos/Flight/10.png"
                 alt="Storyboard sketch details"
                 className="rounded-lg shadow w-full object-cover aspect-16/9"
               />
               <img
-                src="/Photos/Flight/4.png"
+                src="/Photos/Flight/11.png"
                 alt="Journey mapping with sticky notes"
                 className="rounded-lg shadow w-full object-cover aspect-16/9"
               />
               <img
-                src="/Photos/Flight/5.png"
+                src="/Photos/Flight/12.png"
                 alt="Desk setup for sketching"
                 className="rounded-lg shadow w-full object-cover aspect-16/9"
               />
@@ -168,7 +187,7 @@ const PreFlightVR = () => {
       </section>
 
       {/* Human Factors Section - reference image only */}
-      <section className="py-16 bg-blue-50">
+      <section className="py-16 bg-slate-900 text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto text-center mb-10 gap-8">
             <img
@@ -181,7 +200,7 @@ const PreFlightVR = () => {
       </section>
 
       {/* XR Design Heuristics Section - reference image only */}
-      <section className="py-16 bg-blue-50">
+      <section className="py-16 bg-slate-900 text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto text-center mb-10 gap-8">
             <img
@@ -194,7 +213,7 @@ const PreFlightVR = () => {
       </section>
 
       {/* Skills & Learnings Section */}
-      <section className="py-16 bg-blue-100">
+      <section className="py-16 bg-slate-900 text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto text-center mb-10">
             <h2 className="text-3xl font-bold mb-4">Skills & Learnings</h2>
