@@ -38,7 +38,7 @@ import CustomVideoPlayer from "@/components/ui/VideoPlayer";
 const MobileOverlay = () => (
   <div className="fixed inset-0 z-50 flex items-center justify-center bg-white/95 backdrop-blur-lg md:hidden">
     <div className="text-center">
-      <h2 className="text-2xl md:text-3xl font-heading text-emerald-700 mb-4">Uh-oh!</h2>
+      <h2 className="text-2xl md:text-3xl font-heading text-blue-700 mb-4">Uh-oh!</h2>
       <p className="text-sm text-muted-foreground max-w-2xl mx-auto font-light">
         Open this website on a bigger screen!
       </p>
