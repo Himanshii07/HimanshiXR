@@ -38,7 +38,9 @@ import CustomVideoPlayer from "@/components/ui/VideoPlayer";
 const MobileOverlay = () => (
   <div className="fixed inset-0 z-50 flex items-center justify-center bg-white/95 backdrop-blur-lg md:hidden">
     <div className="text-center">
-      <h2 className="text-2xl md:text-3xl font-heading text-blue-700 mb-4">Uh-oh!</h2>
+      <h2 className="text-2xl md:text-3xl font-heading text-blue-700 mb-4">
+        Uh-oh!
+      </h2>
       <p className="text-sm text-muted-foreground max-w-2xl mx-auto font-light">
         Open this website on a bigger screen!
       </p>
@@ -95,7 +97,11 @@ const KedarnathVR = () => {
 
   const audienceAccents = [
     { iconBg: "bg-sky-100", icon: "text-sky-700", accent: "text-sky-700" },
-    { iconBg: "bg-indigo-100", icon: "text-indigo-700", accent: "text-indigo-700" },
+    {
+      iconBg: "bg-indigo-100",
+      icon: "text-indigo-700",
+      accent: "text-indigo-700",
+    },
     { iconBg: "bg-blue-100", icon: "text-blue-700", accent: "text-blue-700" },
   ];
 
@@ -104,7 +110,8 @@ const KedarnathVR = () => {
       {
         step: "01",
         title: "Arrival at Kedarnath Temple",
-        description: "Enter the sacred virtual space and feel the divine presence",
+        description:
+          "Enter the sacred virtual space and feel the divine presence",
         icon: Mountain,
       },
       {
@@ -145,24 +152,21 @@ const KedarnathVR = () => {
   const storyboardFrames = [
     {
       image: "/Photos/Frame 1.png",
-      alt:
-        "Storyboard frame depicting pilgrims standing before Kedarnath temple with gentle snowfall",
+      alt: "Storyboard frame depicting pilgrims standing before Kedarnath temple with gentle snowfall",
       title: "Prologue: Pilgrims Arrive",
       description:
         "Establishing shots welcome the user with soft morning light and chants to set a reverent tone.",
     },
     {
       image: "/Photos/Frame 2.png",
-      alt:
-        "Storyboard frame capturing a guardian guiding the main character into the temple interior",
+      alt: "Storyboard frame capturing a guardian guiding the main character into the temple interior",
       title: "Guided Entry",
       description:
         "A guardian character invites the user to cross the mandapa, introducing the mythic transition.",
     },
     {
       image: "/Photos/kedar 7.png",
-      alt:
-        "Storyboard artwork highlighting the mythological retelling inside a glowing sacred hall",
+      alt: "Storyboard artwork highlighting the mythological retelling inside a glowing sacred hall",
       title: "Mythic Reveal",
       description:
         "The narrative shifts into vibrant story panels that animate key moments from the legend.",
@@ -284,7 +288,8 @@ const KedarnathVR = () => {
     },
     {
       phase: "Environment Design",
-      description: "Created the environment and level design in Unreal Engine 5",
+      description:
+        "Created the environment and level design in Unreal Engine 5",
       icon: Mountain,
     },
     {
@@ -301,7 +306,8 @@ const KedarnathVR = () => {
     },
     {
       phase: "Testing & Validation",
-      description: "Conducted comprehensive user testing for experience optimization",
+      description:
+        "Conducted comprehensive user testing for experience optimization",
       icon: TestTube,
     },
   ];
@@ -509,7 +515,12 @@ const KedarnathVR = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground leading-relaxed text-base">
-                    Many young people today are disconnected from the rich mythological stories and spiritual wisdom that shaped Indian culture. Sacred texts like the Bhagavad Gita or Shiv Puran are often unread or unfamiliar to them, not due to lack of interest, but because of changing lifestyles, shorter attention spans, and a world dominated by screens and tech.
+                    Many young people today are disconnected from the rich
+                    mythological stories and spiritual wisdom that shaped Indian
+                    culture. Sacred texts like the Bhagavad Gita or Shiv Puran
+                    are often unread or unfamiliar to them, not due to lack of
+                    interest, but because of changing lifestyles, shorter
+                    attention spans, and a world dominated by screens and tech.
                   </p>
                 </CardContent>
               </Card>
@@ -523,17 +534,24 @@ const KedarnathVR = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground leading-relaxed text-base mb-4">
-                    In a time when ancient temples are being reduced to photo-ops, and spiritual stories are fading from collective memory, there is a unique opportunity to reconnect people with India's sacred heritage in a way that is immersive, respectful, and relevant:
+                    In a time when ancient temples are being reduced to
+                    photo-ops, and spiritual stories are fading from collective
+                    memory, there is a unique opportunity to reconnect people
+                    with India's sacred heritage in a way that is immersive,
+                    respectful, and relevant:
                   </p>
                   <ul className="text-muted-foreground space-y-2 text-sm">
                     <li>
-                      • <strong>Reviving Sacred Narratives</strong> - Presenting mythology as living stories
+                      • <strong>Reviving Sacred Narratives</strong> - Presenting
+                      mythology as living stories
                     </li>
                     <li>
-                      • <strong>Reclaiming Reverence Through Innovation</strong> - Using technology respectfully
+                      • <strong>Reclaiming Reverence Through Innovation</strong>{" "}
+                      - Using technology respectfully
                     </li>
                     <li>
-                      • <strong>A Scalable, Replicable Model</strong> - Expandable to other sacred sites
+                      • <strong>A Scalable, Replicable Model</strong> -
+                      Expandable to other sacred sites
                     </li>
                   </ul>
                 </CardContent>
@@ -548,7 +566,13 @@ const KedarnathVR = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground leading-relaxed text-base">
-                    A deeply immersive VR experience that lets users step inside Kedarnath temple, engage in rituals, discover mythological stories, and reconnect with India's sacred heritage. Users need an engaging and immersive way to experience Indian mythological stories because traditional storytelling methods no longer capture their interest due to language barriers and decreasing attention spans.
+                    A deeply immersive VR experience that lets users step inside
+                    Kedarnath temple, engage in rituals, discover mythological
+                    stories, and reconnect with India's sacred heritage. Users
+                    need an engaging and immersive way to experience Indian
+                    mythological stories because traditional storytelling
+                    methods no longer capture their interest due to language
+                    barriers and decreasing attention spans.
                   </p>
                 </CardContent>
               </Card>
@@ -607,8 +631,12 @@ const KedarnathVR = () => {
                         <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                           <Icon className="w-7 h-7 text-blue-700" />
                         </div>
-                        <h4 className="font-semibold mb-3 text-blue-700">{item.title}</h4>
-                        <p className="text-muted-foreground text-sm leading-relaxed">{item.desc}</p>
+                        <h4 className="font-semibold mb-3 text-blue-700">
+                          {item.title}
+                        </h4>
+                        <p className="text-muted-foreground text-sm leading-relaxed">
+                          {item.desc}
+                        </p>
                       </CardContent>
                     </Card>
                   );
@@ -622,16 +650,26 @@ const KedarnathVR = () => {
       <section className="py-24">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl font-bold mb-8 text-blue-700">Why Kedarnath?</h2>
+            <h2 className="text-4xl font-bold mb-8 text-blue-700">
+              Why Kedarnath?
+            </h2>
             <div className="space-y-6 text-md text-muted-foreground leading-relaxed">
               <p>
-                Explored multiple <strong>Jyotirlingas</strong> before choosing Kedarnath due to its spiritual depth and challenging accessibility.
+                Explored multiple <strong>Jyotirlingas</strong> before choosing
+                Kedarnath due to its spiritual depth and challenging
+                accessibility.
               </p>
               <p>
-                Studied <strong>rituals, temple architecture, and mythological stories</strong> from books, documentaries, and trusted websites.
+                Studied{" "}
+                <strong>
+                  rituals, temple architecture, and mythological stories
+                </strong>{" "}
+                from books, documentaries, and trusted websites.
               </p>
               <p>
-                Noticed how <strong>many visitors today focus more on social media</strong> than spiritual connection.
+                Noticed how{" "}
+                <strong>many visitors today focus more on social media</strong>{" "}
+                than spiritual connection.
               </p>
             </div>
 
@@ -698,7 +736,9 @@ const KedarnathVR = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold mb-6 text-blue-700">Target Audience</h2>
+              <h2 className="text-4xl font-bold mb-6 text-blue-700">
+                Target Audience
+              </h2>
               <p className="text-xl text-muted-foreground">
                 Understanding who needs this sacred connection
               </p>
@@ -724,7 +764,10 @@ const KedarnathVR = () => {
                         <h3 className="text-2xl font-bold mb-2 text-blue-700">
                           {audience.name}
                         </h3>
-                        <Badge variant="outline" className="text-sm border-blue-200 text-blue-700">
+                        <Badge
+                          variant="outline"
+                          className="text-sm border-blue-200 text-blue-700"
+                        >
                           {audience.age}
                         </Badge>
                       </div>
@@ -760,7 +803,9 @@ const KedarnathVR = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold mb-6 text-blue-700">Experience Flow</h2>
+              <h2 className="text-4xl font-bold mb-6 text-blue-700">
+                Experience Flow
+              </h2>
               <p className="text-xl text-muted-foreground mb-8">
                 Two immersive levels of spiritual journey
               </p>
@@ -803,10 +848,14 @@ const KedarnathVR = () => {
                       >
                         <CardContent className="p-8">
                           <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
-                            <span className="text-xl font-bold text-white">{step.step}</span>
+                            <span className="text-xl font-bold text-white">
+                              {step.step}
+                            </span>
                           </div>
                           <Icon className="w-8 h-8 text-blue-700 mx-auto mb-4" />
-                          <h4 className="text-lg font-semibold mb-3 text-blue-700">{step.title}</h4>
+                          <h4 className="text-lg font-semibold mb-3 text-blue-700">
+                            {step.title}
+                          </h4>
                           <p className="text-muted-foreground text-sm leading-relaxed">
                             {step.description}
                           </p>
@@ -828,10 +877,14 @@ const KedarnathVR = () => {
                       >
                         <CardContent className="p-8">
                           <div className="w-16 h-16 bg-sky-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
-                            <span className="text-xl font-bold text-white">{step.step}</span>
+                            <span className="text-xl font-bold text-white">
+                              {step.step}
+                            </span>
                           </div>
                           <Icon className="w-8 h-8 text-sky-700 mx-auto mb-4" />
-                          <h4 className="text-lg font-semibold mb-3 text-sky-700">{step.title}</h4>
+                          <h4 className="text-lg font-semibold mb-3 text-sky-700">
+                            {step.title}
+                          </h4>
                           <p className="text-muted-foreground text-sm leading-relaxed">
                             {step.description}
                           </p>
@@ -858,19 +911,29 @@ const KedarnathVR = () => {
                   Visualizing the Pilgrim Narrative
                 </h2>
                 <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                  Each storyboard frame acted as a meditative checkpoint—carefully mapping how users transition from the physical world into a reverent mythological space, then return with renewed understanding. The visual language balances quiet devotion with moments of awe.
+                  Each storyboard frame acted as a meditative
+                  checkpoint—carefully mapping how users transition from the
+                  physical world into a reverent mythological space, then return
+                  with renewed understanding. The visual language balances quiet
+                  devotion with moments of awe.
                 </p>
                 <div className="grid sm:grid-cols-2 gap-4 text-sm text-muted-foreground">
                   <div className="rounded-xl border border-blue-200/60 bg-white/70 p-4 shadow-sm">
-                    <h3 className="text-blue-700 font-semibold mb-2">Intentional Rhythm</h3>
+                    <h3 className="text-blue-700 font-semibold mb-2">
+                      Intentional Rhythm
+                    </h3>
                     <p>
-                      Slow camera movements and soft lighting cues keep the experience contemplative while guiding focus.
+                      Slow camera movements and soft lighting cues keep the
+                      experience contemplative while guiding focus.
                     </p>
                   </div>
                   <div className="rounded-xl border border-sky-200/60 bg-white/70 p-4 shadow-sm">
-                    <h3 className="text-sky-700 font-semibold mb-2">Mythic Highlights</h3>
+                    <h3 className="text-sky-700 font-semibold mb-2">
+                      Mythic Highlights
+                    </h3>
                     <p>
-                      Panels emphasize key legend moments that transition users seamlessly into interactive sequences.
+                      Panels emphasize key legend moments that transition users
+                      seamlessly into interactive sequences.
                     </p>
                   </div>
                 </div>
@@ -878,9 +941,16 @@ const KedarnathVR = () => {
 
               <div className="grid sm:grid-cols-2 gap-6">
                 {storyboardFrames.map((frame, index) => (
-                  <Card key={index} className="overflow-hidden border border-border/40 bg-card/70 shadow-lg">
+                  <Card
+                    key={index}
+                    className="overflow-hidden border border-border/40 bg-card/70 shadow-lg"
+                  >
                     <div className="relative aspect-[4/3] overflow-hidden">
-                      <img src={frame.image} alt={frame.alt} className="w-full h-full object-cover" />
+                      <img
+                        src={frame.image}
+                        alt={frame.alt}
+                        className="w-full h-full object-cover"
+                      />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
                       <span className="absolute bottom-4 left-4 text-xs font-semibold tracking-wide uppercase text-white/80">
                         Frame {index + 1}
@@ -1012,7 +1082,8 @@ const KedarnathVR = () => {
                 Development Process
               </h2>
               <p className="text-xl text-muted-foreground">
-                From research to final experience - a comprehensive 2-month journey
+                From research to final experience - a comprehensive 2-month
+                journey
               </p>
             </div>
 
@@ -1066,8 +1137,15 @@ const KedarnathVR = () => {
 
               <div className="grid sm:grid-cols-2 gap-6">
                 {developmentGallery.map((item, index) => (
-                  <div key={index} className="relative overflow-hidden rounded-3xl shadow-lg group">
-                    <img src={item.image} alt={item.alt} className="w-full h-full object-cover aspect-[4/5]" />
+                  <div
+                    key={index}
+                    className="relative overflow-hidden rounded-3xl shadow-lg group"
+                  >
+                    <img
+                      src={item.image}
+                      alt={item.alt}
+                      className="w-full h-full object-cover aspect-[4/5]"
+                    />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent opacity-90 group-hover:opacity-100 transition-opacity duration-300" />
                     <div className="absolute bottom-4 left-4 right-4 text-sm text-white leading-relaxed">
                       <p className="font-semibold mb-1">{item.caption}</p>
@@ -1089,7 +1167,8 @@ const KedarnathVR = () => {
                 Learning Outcomes & Skills Acquired
               </h2>
               <p className="text-xl text-muted-foreground">
-                Key competencies and insights gained through this comprehensive VR project
+                Key competencies and insights gained through this comprehensive
+                VR project
               </p>
             </div>
 
@@ -1104,7 +1183,9 @@ const KedarnathVR = () => {
                 <CardContent>
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
-                      <h4 className="font-semibold text-blue-700 mb-3">3D Development</h4>
+                      <h4 className="font-semibold text-blue-700 mb-3">
+                        3D Development
+                      </h4>
                       <ul className="text-muted-foreground space-y-2 text-sm">
                         <li>• Maya 3D modeling and animation</li>
                         <li>• Character rigging and animation</li>
@@ -1113,7 +1194,9 @@ const KedarnathVR = () => {
                       </ul>
                     </div>
                     <div>
-                      <h4 className="font-semibold text-blue-700 mb-3">VR Development</h4>
+                      <h4 className="font-semibold text-blue-700 mb-3">
+                        VR Development
+                      </h4>
                       <ul className="text-muted-foreground space-y-2 text-sm">
                         <li>• Unreal Engine 5 mastery</li>
                         <li>• Blueprint visual scripting</li>
@@ -1135,7 +1218,9 @@ const KedarnathVR = () => {
                 <CardContent>
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
-                      <h4 className="font-semibold text-sky-700 mb-3">Cultural Research</h4>
+                      <h4 className="font-semibold text-sky-700 mb-3">
+                        Cultural Research
+                      </h4>
                       <ul className="text-muted-foreground space-y-2 text-sm">
                         <li>• Mythological story analysis</li>
                         <li>• Sacred architecture study</li>
@@ -1144,7 +1229,9 @@ const KedarnathVR = () => {
                       </ul>
                     </div>
                     <div>
-                      <h4 className="font-semibold text-sky-700 mb-3">Experience Design</h4>
+                      <h4 className="font-semibold text-sky-700 mb-3">
+                        Experience Design
+                      </h4>
                       <ul className="text-muted-foreground space-y-2 text-sm">
                         <li>• Immersive storytelling</li>
                         <li>• User experience flow design</li>
@@ -1189,7 +1276,13 @@ const KedarnathVR = () => {
                   Key Project Insight
                 </h3>
                 <p className="text-lg text-muted-foreground leading-relaxed max-w-4xl mx-auto">
-                  This project taught me that technology is not just about innovation—it's about preservation, connection, and respect. By creating an immersive VR experience of Kedarnath, I learned how to bridge the gap between ancient wisdom and modern minds, ensuring that sacred stories continue to inspire and educate future generations in ways that feel both authentic and accessible.
+                  This project taught me that technology is not just about
+                  innovation—it's about preservation, connection, and respect.
+                  By creating an immersive VR experience of Kedarnath, I learned
+                  how to bridge the gap between ancient wisdom and modern minds,
+                  ensuring that sacred stories continue to inspire and educate
+                  future generations in ways that feel both authentic and
+                  accessible.
                 </p>
               </CardContent>
             </Card>
@@ -1203,7 +1296,8 @@ const KedarnathVR = () => {
             Explore More Sacred Innovations
           </h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-            Discover other projects that showcase the intersection of technology, culture, and meaningful experiences
+            Discover other projects that showcase the intersection of
+            technology, culture, and meaningful experiences
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
