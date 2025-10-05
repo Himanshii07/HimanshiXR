@@ -151,19 +151,13 @@ const KedarnathVR = () => {
 
   const storyboardFrames = [
     {
-      image: "/Photos/Frame 1.png",
+      image: "/Photos/kedar/11.png",
       alt: "Storyboard frame depicting pilgrims standing before Kedarnath temple with gentle snowfall",
-      title: "Prologue: Pilgrims Arrive",
+      title: "The untold story of Kedarnath",
       description:
-        "Establishing shots welcome the user with soft morning light and chants to set a reverent tone.",
+        "Users experience the untold story of Kedarnath, from the Pandavas’ search for forgiveness to Lord Shiva’s transformation into Nandi and the birth of the sacred Jyotirlinga. Through immersive visuals, voiceovers, and interactions, the experience brings faith, mythology, and divine symbolism to life inside the virtual temple.",
     },
-    {
-      image: "/Photos/Frame 2.png",
-      alt: "Storyboard frame capturing a guardian guiding the main character into the temple interior",
-      title: "Guided Entry",
-      description:
-        "A guardian character invites the user to cross the mandapa, introducing the mythic transition.",
-    },
+    
 
   ];
 
@@ -904,13 +898,9 @@ const KedarnathVR = () => {
                   Visualizing the Pilgrim Narrative
                 </h2>
                 <p className="text-muted-foreground text-sm leading-relaxed mb-6 text-center">
-                  Each storyboard frame acted as a meditative
-                  checkpoint—carefully mapping how users transition from the
-                  physical world into a reverent mythological space, then return
-                  with renewed understanding. The visual language balances quiet
-                  devotion with moments of awe.
+                   Before beginning development, I created a detailed storyboard to map out the entire user journey and mythological narrative.
                 </p>
-                <div className="grid sm:grid-cols-2 gap-4 text-sm text-muted-foreground">
+                {/*<div className="grid sm:grid-cols-2 gap-4 text-sm text-muted-foreground">
                   <div className="rounded-xl border border-blue-200/60 bg-white/70 p-4 shadow-sm">
                     <h3 className="text-blue-700 font-semibold mb-2">
                       Intentional Rhythm
@@ -929,16 +919,16 @@ const KedarnathVR = () => {
                       seamlessly into interactive sequences.
                     </p>
                   </div>
-                </div>
+                </div>*/}
               </div>
 
-              <div className="grid sm:grid-cols-2 gap-6">
+              <div className="grid sm:grid-cols-1 gap-6">
                 {storyboardFrames.map((frame, index) => (
                   <Card
                     key={index}
                     className="overflow-hidden border border-border/40 bg-card/70 shadow-lg"
                   >
-                    <div className="relative aspect-[4/3] overflow-hidden">
+                    <div className="relative aspect-16/9 overflow-hidden">
                       <img
                         src={frame.image}
                         alt={frame.alt}
@@ -946,7 +936,7 @@ const KedarnathVR = () => {
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
                       <span className="absolute bottom-4 left-4 text-xs font-semibold tracking-wide uppercase text-white/80">
-                        Frame {index + 1}
+                        
                       </span>
                     </div>
                     <CardContent className="p-6">
