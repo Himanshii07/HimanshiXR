@@ -255,29 +255,37 @@ const Savey = () => {
                   <Users className="w-3 h-3 mr-1" />
                   {projectDetails.team}
                 </Badge>
-                <Badge
-                  variant="outline"
-                  className="text-sm border-green-400 text-green-400"
-                >
-                  <Award className="w-3 h-3 mr-1" />
-                  {projectDetails.status}
-                </Badge>
+              
               </div>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button
+                  asChild
                   size="lg"
                   className="bg-gradient-to-r from-yellow-400 to-pink-400 text-black hover:from-yellow-500 hover:to-pink-500"
                 >
-                  <Play className="mr-2 h-4 w-4" />
-                  Watch User Testing
+                  <a
+                    href="https://youtu.be/a_lNpr5PO_A"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Play className="mr-2 h-4 w-4" />
+                    Watch User Testing
+                  </a>
                 </Button>
                 <Button
+                  asChild
                   variant="outline"
                   size="lg"
                   className="border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white"
                 >
-                  <Github className="mr-2 h-4 w-4" />
-                  View Documentation
+                  <a
+                    href="https://your-documentation-link.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Github className="mr-2 h-4 w-4" />
+                    View Documentation
+                  </a>
                 </Button>
               </div>
             </div>
@@ -423,7 +431,7 @@ const Savey = () => {
               className="rounded-lg shadow w-full object-cover aspect-square"
             />
             <img
-              src="/Photos/savey/1.png"
+              src="/Photos/savey/.png"
               alt="Testing"
               className="rounded-lg shadow w-full object-cover aspect-square"
             />

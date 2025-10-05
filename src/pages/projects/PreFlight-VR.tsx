@@ -69,21 +69,21 @@ const PreFlightVR = () => {
             <div className="flex flex-wrap justify-center gap-4 mb-8">
               <Badge
                 variant="outline"
-                className="text-sm border-green-600 text-green-400"
+                className="text-sm border-white text-blue-200"
               >
                 <Calendar className="w-3 h-3 mr-1" />
                 2025
               </Badge>
               <Badge
                 variant="outline"
-                className="text-sm border-green-600 text-green-400"
+                className="text-sm border-white text-blue-200"
               >
                 <Users className="w-3 h-3 mr-1" />
                 Team Project
               </Badge>
               <Badge
                 variant="outline"
-                className="text-sm border-green-600 text-green-400"
+                className="text-sm border-white text-blue-200"
               >
                 <Award className="w-3 h-3 mr-1" />
                 2 Weeks
