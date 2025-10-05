@@ -420,14 +420,14 @@ const KedarnathVR = () => {
             </div>
 
             <div className="text-center mb-20">
-              <div className="inline-flex items-center px-6 py-3 rounded-full bg-gradient-to-r from-emerald-100/60 to-sky-100/60 border border-blue-200/60 mb-8">
+              <div className="inline-flex items-center px-6 py-3 rounded-full bg-gradient-to-r from-sky-100/60 via-indigo-100/60 to-blue-100/60 border border-blue-200/60 mb-8">
                 <Building2 className="w-5 h-5 mr-3 text-blue-700" />
                 <span className="text-base font-medium text-blue-700">
                   Main Project • Cultural Heritage VR
                 </span>
               </div>
 
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 bg-gradient-to-r from-emerald-700 via-teal-700 to-sky-700 bg-clip-text text-transparent">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 bg-gradient-to-r from-blue-800 via-indigo-700 to-sky-600 bg-clip-text text-transparent">
                 {projectDetails.title}
               </h1>
 
@@ -555,7 +555,7 @@ const KedarnathVR = () => {
             </div>
 
             <div className="mt-20 mb-16">
-              <Card className="border-blue-200/60 bg-gradient-to-r from-emerald-50 to-sky-50 max-w-4xl mx-auto">
+              <Card className="border-blue-200/60 bg-gradient-to-r from-sky-50 via-indigo-50 to-blue-50 max-w-4xl mx-auto">
                 <CardContent className="p-8">
                   <Quote className="w-8 h-8 text-blue-700 mb-4 mx-auto" />
                   <p className="text-2xl font-medium text-center italic text-blue-700">
@@ -636,7 +636,7 @@ const KedarnathVR = () => {
             </div>
 
             <div className="mt-12 mb-8">
-              <Card className="border-blue-200/60 bg-gradient-to-r from-emerald-50 to-sky-50">
+              <Card className="border-blue-200/60 bg-gradient-to-r from-sky-50 via-indigo-50 to-blue-50">
                 <CardContent className="p-8">
                   <Quote className="w-6 h-6 text-blue-700 mb-4 mx-auto" />
                   <p className="text-xl font-medium text-center text-blue-700 mb-6">
@@ -799,7 +799,7 @@ const KedarnathVR = () => {
                     return (
                       <Card
                         key={index}
-                        className="text-center border-blue-200 bg-gradient-to-br from-emerald-50 to-teal-50 backdrop-blur-sm hover:border-blue-300 transition-all duration-300 transform hover:-translate-y-1"
+                        className="text-center border-blue-200 bg-gradient-to-br from-sky-50 via-indigo-50 to-blue-50 backdrop-blur-sm hover:border-blue-300 transition-all duration-300 transform hover:-translate-y-1"
                       >
                         <CardContent className="p-8">
                           <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
@@ -1019,7 +1019,7 @@ const KedarnathVR = () => {
             <div className="grid xl:grid-cols-[1.1fr_0.9fr] gap-16 items-start">
               <div className="relative">
                 <div className="absolute left-4 top-0 bottom-0 hidden lg:block">
-                  <div className="w-px h-full bg-gradient-to-b from-emerald-200 via-sky-200 to-teal-200" />
+                  <div className="w-px h-full bg-gradient-to-b from-blue-200 via-sky-200 to-indigo-200" />
                 </div>
 
                 <div className="space-y-6">
@@ -1037,7 +1037,7 @@ const KedarnathVR = () => {
                                 {index + 1}
                               </div>
                               {index !== developmentProcess.length - 1 && (
-                                <span className="hidden lg:block w-px flex-1 bg-gradient-to-b from-emerald-200 via-sky-200 to-transparent" />
+                                <span className="hidden lg:block w-px flex-1 bg-gradient-to-b from-blue-200 via-sky-200 to-transparent" />
                               )}
                             </div>
                             <div>
@@ -1183,7 +1183,7 @@ const KedarnathVR = () => {
               })}
             </div>
 
-            <Card className="border-blue-200/60 bg-gradient-to-r from-emerald-50 to-sky-50">
+            <Card className="border-blue-200/60 bg-gradient-to-r from-sky-50 via-indigo-50 to-blue-50">
               <CardContent className="p-8 text-center">
                 <h3 className="text-2xl font-semibold mb-4 text-blue-700">
                   Key Project Insight
@@ -1197,7 +1197,7 @@ const KedarnathVR = () => {
         </div>
       </section>
 
-      <section className="py-24 bg-gradient-to-r from-emerald-100/60 via-background to-sky-100/60">
+      <section className="py-24 bg-gradient-to-r from-sky-100/60 via-background to-indigo-100/60">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold mb-6 text-blue-700">
             Explore More Sacred Innovations
