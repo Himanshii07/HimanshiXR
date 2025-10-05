@@ -94,9 +94,9 @@ const KedarnathVR = () => {
   ];
 
   const audienceAccents = [
-    { iconBg: "bg-emerald-100", icon: "text-emerald-700", accent: "text-emerald-700" },
     { iconBg: "bg-sky-100", icon: "text-sky-700", accent: "text-sky-700" },
-    { iconBg: "bg-teal-100", icon: "text-teal-700", accent: "text-teal-700" },
+    { iconBg: "bg-indigo-100", icon: "text-indigo-700", accent: "text-indigo-700" },
+    { iconBg: "bg-blue-100", icon: "text-blue-700", accent: "text-blue-700" },
   ];
 
   const experienceFlow = {
@@ -335,8 +335,8 @@ const KedarnathVR = () => {
       description:
         "Mastered the complete pipeline from Maya to Substance Painter to Unreal Engine 5, understanding how different tools work together.",
       icon: Layers,
-      iconWrapper: "bg-emerald-100",
-      iconColor: "text-emerald-700",
+      iconWrapper: "bg-sky-100",
+      iconColor: "text-sky-700",
     },
     {
       title: "Cultural Technology Bridge",
@@ -351,8 +351,8 @@ const KedarnathVR = () => {
       description:
         "Developed creative solutions for technical challenges while maintaining cultural authenticity and spiritual reverence.",
       icon: Lightbulb,
-      iconWrapper: "bg-teal-100",
-      iconColor: "text-teal-700",
+      iconWrapper: "bg-blue-100",
+      iconColor: "text-blue-700",
     },
     {
       title: "User-Centered Design",
@@ -367,8 +367,8 @@ const KedarnathVR = () => {
       description:
         "Successfully managed a complex 2-month solo project from concept to completion, balancing multiple technical and creative aspects.",
       icon: Target,
-      iconWrapper: "bg-emerald-100",
-      iconColor: "text-emerald-700",
+      iconWrapper: "bg-indigo-100",
+      iconColor: "text-indigo-700",
     },
     {
       title: "Cinematic Storytelling",
