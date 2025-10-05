@@ -185,42 +185,42 @@ const KedarnathVR = () => {
       title: "Locomotion",
       description: "Easy navigation through the sacred environment",
       icon: NavigationIcon,
-      image: "/Photos/Kedarnath.png",
+      image: "/Photos/kedar/1.png",
       alt: "3D render of Kedarnath temple environment inside the VR build",
     },
     {
       title: "Performing Rituals",
       description: "Interactive participation in traditional ceremonies",
       icon: Hand,
-      image: "/Photos/Kedarnath 1.png",
+      image: "/Photos/kedar/2.png",
       alt: "Close-up of ritual setup with diya lamps and offerings inside the temple scene",
     },
     {
       title: "Interacting with Sculptures & Deities",
       description: "Engage with sacred art and divine representations",
       icon: Palette,
-      image: "/Photos/kedar 6.png",
+      image: "/Photos/kedar/3.png",
       alt: "Detailed sculpture render prepared for the virtual experience",
     },
     {
       title: "Exploring the Sacred Book",
       description: "Discover ancient texts and mythological knowledge",
       icon: BookOpen,
-      image: "/Photos/kedar 3.png",
+      image: "/Photos/kedar/4.png",
       alt: "Storyboard plate showing sacred scripture within the VR interface",
     },
     {
       title: "Visual & Audio Feedback",
       description: "Immersive sensory responses to user actions",
       icon: Volume2,
-      image: "/Photos/Unreal.png",
+      image: "/Photos/kedar/5.png",
       alt: "Unreal Engine shot showing audio and lighting curves for feedback",
     },
     {
       title: "Timed UI Appearance",
       description: "Context-sensitive interface elements",
       icon: Timer,
-      image: "/Photos/kedar 5.png",
+      image: "/Photos/kedar/6.png",
       alt: "In-engine capture of timed UI prompts appearing during the ritual sequence",
     },
   ];
@@ -467,19 +467,33 @@ const KedarnathVR = () => {
 
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
                 <Button
+                  asChild
                   size="lg"
                   className="text-lg px-8 py-4 bg-blue-600 text-white hover:bg-blue-700"
                 >
-                  <Play className="mr-3 h-5 w-5" />
-                  Watch Process Video
+                  <a
+                    href="https://youtu.be/8cRfjMoWuek"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Play className="mr-3 h-5 w-5" />
+                    Watch Process Video
+                  </a>
                 </Button>
                 <Button
+                  asChild
                   variant="outline"
                   size="lg"
                   className="text-lg px-8 py-4 border-sky-200 text-sky-700 hover:bg-sky-100/60"
                 >
-                  <Headphones className="mr-3 h-5 w-5" />
-                  Experience Preview
+                  <a
+                    href="https://youtu.be/906BghZnUN4"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Headphones className="mr-3 h-5 w-5" />
+                    Experience Preview
+                  </a>
                 </Button>
               </div>
             </div>
@@ -496,15 +510,6 @@ const KedarnathVR = () => {
       <section className="py-24 bg-gradient-to-r from-white via-slate-50 to-blue-50/60">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-blue-700">
-                The Sacred Challenge
-              </h2>
-              <p className="text-xl text-muted-foreground">
-                Bridging ancient wisdom with modern hearts
-              </p>
-            </div>
-
             <div className="grid lg:grid-cols-3 gap-10">
               <Card className="border-border/50 bg-card/60 backdrop-blur-sm hover:border-blue-300/60 transition-all duration-300">
                 <CardHeader>
@@ -578,21 +583,34 @@ const KedarnathVR = () => {
               </Card>
             </div>
 
-            <div className="mt-20 mb-16">
+            {/*<div className="mt-20 mb-16">
               <Card className="border-blue-200/60 bg-gradient-to-r from-sky-50 via-indigo-50 to-blue-50 max-w-4xl mx-auto">
-                <CardContent className="p-8">
-                  <Quote className="w-8 h-8 text-blue-700 mb-4 mx-auto" />
+                <CardContent className="p-8"> 
                   <p className="text-2xl font-medium text-center italic text-blue-700">
                     "Story from the past, but as an experience in the present"
                   </p>
                 </CardContent>
               </Card>
-            </div>
+            </div>*/}
 
             <div className="mt-20">
-              <h3 className="text-3xl font-bold text-center mb-12 text-blue-700">
-                Why This Experience Matters
+              <h3 className="text-xl font-bold text-center mb-8 text-blue-900">
+                Why This Experience Matters?
               </h3>
+
+               <div className="mt-12 mb-8">
+              <Card className="border-blue-200/60 bg-gradient-to-r from-cyan-50 via-indigo-50 to-blue-50 max-w-4xl mx-auto">
+                <CardContent className="p-8">
+                  <p className="text-2xl font-medium text-center italic text-cyan-700">
+                    "Because Faith is fading under fame."
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+
+
+
+
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {[
                   {
@@ -649,7 +667,7 @@ const KedarnathVR = () => {
 
       <section className="py-24">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
+          <div className="max-w-7xl mx-auto text-center bg-gradient-to-r from-white via-slate-50 to-blue-50/60 p-12 rounded-3xl shadow-lg">
             <h2 className="text-4xl font-bold mb-8 text-blue-700">
               Why Kedarnath?
             </h2>
@@ -673,16 +691,7 @@ const KedarnathVR = () => {
               </p>
             </div>
 
-            <div className="mt-12 mb-8">
-              <Card className="border-blue-200/60 bg-gradient-to-r from-sky-50 via-indigo-50 to-blue-50">
-                <CardContent className="p-8">
-                  <Quote className="w-6 h-6 text-blue-700 mb-4 mx-auto" />
-                  <p className="text-xl font-medium text-center text-blue-700 mb-6">
-                    "Because Faith is fading under fame."
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
+           
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-12">
               <div>
@@ -756,20 +765,17 @@ const KedarnathVR = () => {
                   >
                     <CardContent className="p-8">
                       <div className="text-center mb-6">
-                        <div
+                       {/* <div
                           className={`w-16 h-16 ${accent.iconBg} rounded-full flex items-center justify-center mx-auto mb-4`}
                         >
                           <Icon className={`w-8 h-8 ${accent.icon}`} />
-                        </div>
+                        </div> */}
                         <h3 className="text-2xl font-bold mb-2 text-blue-700">
                           {audience.name}
                         </h3>
-                        <Badge
-                          variant="outline"
-                          className="text-sm border-blue-200 text-blue-700"
-                        >
+                         <h3 className="text-sm font-light mb-2 text-blue-700">
                           {audience.age}
-                        </Badge>
+                        </h3>
                       </div>
 
                       <div className="space-y-4">
@@ -1001,14 +1007,7 @@ const KedarnathVR = () => {
                             className="w-full h-full object-cover"
                           />
                           <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent" />
-                          <div className="absolute top-4 left-4 flex items-center gap-2">
-                            <div className="w-10 h-10 bg-white/80 backdrop-blur rounded-full flex items-center justify-center">
-                              <Icon className="w-5 h-5 text-blue-700" />
-                            </div>
-                            <span className="text-xs font-semibold uppercase tracking-wide text-white">
-                              {interaction.title}
-                            </span>
-                          </div>
+                        
                         </div>
                         <div>
                           <h3 className="text-lg font-semibold mb-3 text-blue-700">
@@ -1113,9 +1112,7 @@ const KedarnathVR = () => {
                             </div>
                             <div>
                               <div className="flex items-center gap-3 mb-2">
-                                <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center">
-                                  <Icon className="w-5 h-5 text-blue-700" />
-                                </div>
+                                
                                 <span className="text-xs font-semibold uppercase tracking-wide text-blue-700">
                                   Phase {index + 1}
                                 </span>
