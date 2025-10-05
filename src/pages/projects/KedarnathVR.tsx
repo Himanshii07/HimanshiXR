@@ -420,7 +420,7 @@ const KedarnathVR = () => {
             </div>
 
             <div className="text-center mb-20">
-              <div className="inline-flex items-center px-6 py-3 rounded-full bg-gradient-to-r from-emerald-100/60 to-sky-100/60 border border-emerald-200/60 mb-8">
+              <div className="inline-flex items-center px-6 py-3 rounded-full bg-gradient-to-r from-emerald-100/60 to-sky-100/60 border border-blue-200/60 mb-8">
                 <Building2 className="w-5 h-5 mr-3 text-blue-700" />
                 <span className="text-base font-medium text-blue-700">
                   Main Project • Cultural Heritage VR
@@ -438,7 +438,7 @@ const KedarnathVR = () => {
               <div className="flex flex-wrap justify-center gap-6 mb-10">
                 <Badge
                   variant="outline"
-                  className="text-base py-2 px-4 border-emerald-200 text-blue-700"
+                  className="text-base py-2 px-4 border-blue-200 text-blue-700"
                 >
                   <Calendar className="w-4 h-4 mr-2" />
                   {projectDetails.year}
@@ -500,7 +500,7 @@ const KedarnathVR = () => {
             </div>
 
             <div className="grid lg:grid-cols-3 gap-10">
-              <Card className="border-border/50 bg-card/60 backdrop-blur-sm hover:border-emerald-300/60 transition-all duration-300">
+              <Card className="border-border/50 bg-card/60 backdrop-blur-sm hover:border-blue-300/60 transition-all duration-300">
                 <CardHeader>
                   <CardTitle className="flex items-center text-blue-700 text-xl">
                     <Target className="w-6 h-6 mr-3" />
@@ -555,7 +555,7 @@ const KedarnathVR = () => {
             </div>
 
             <div className="mt-20 mb-16">
-              <Card className="border-emerald-200/60 bg-gradient-to-r from-emerald-50 to-sky-50 max-w-4xl mx-auto">
+              <Card className="border-blue-200/60 bg-gradient-to-r from-emerald-50 to-sky-50 max-w-4xl mx-auto">
                 <CardContent className="p-8">
                   <Quote className="w-8 h-8 text-blue-700 mb-4 mx-auto" />
                   <p className="text-2xl font-medium text-center italic text-blue-700">
@@ -601,7 +601,7 @@ const KedarnathVR = () => {
                   return (
                     <Card
                       key={index}
-                      className="text-center border-border/50 bg-card/60 backdrop-blur-sm hover:border-emerald-300/60 transition-all duration-300"
+                      className="text-center border-border/50 bg-card/60 backdrop-blur-sm hover:border-blue-300/60 transition-all duration-300"
                     >
                       <CardContent className="p-6">
                         <div className="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -636,7 +636,7 @@ const KedarnathVR = () => {
             </div>
 
             <div className="mt-12 mb-8">
-              <Card className="border-emerald-200/60 bg-gradient-to-r from-emerald-50 to-sky-50">
+              <Card className="border-blue-200/60 bg-gradient-to-r from-emerald-50 to-sky-50">
                 <CardContent className="p-8">
                   <Quote className="w-6 h-6 text-blue-700 mb-4 mx-auto" />
                   <p className="text-xl font-medium text-center text-blue-700 mb-6">
@@ -712,7 +712,7 @@ const KedarnathVR = () => {
                 return (
                   <Card
                     key={index}
-                    className="border-border/50 bg-card/60 backdrop-blur-sm hover:border-emerald-300/60 transition-all duration-300"
+                    className="border-border/50 bg-card/60 backdrop-blur-sm hover:border-blue-300/60 transition-all duration-300"
                   >
                     <CardContent className="p-8">
                       <div className="text-center mb-6">
@@ -724,7 +724,7 @@ const KedarnathVR = () => {
                         <h3 className="text-2xl font-bold mb-2 text-blue-700">
                           {audience.name}
                         </h3>
-                        <Badge variant="outline" className="text-sm border-emerald-200 text-blue-700">
+                        <Badge variant="outline" className="text-sm border-blue-200 text-blue-700">
                           {audience.age}
                         </Badge>
                       </div>
@@ -771,7 +771,7 @@ const KedarnathVR = () => {
                   className={`text-lg py-3 px-8 transition-colors ${
                     activeLevel === "level1"
                       ? "bg-emerald-600 text-white hover:bg-emerald-700"
-                      : "bg-transparent border-emerald-300 text-blue-700 hover:bg-emerald-100/60"
+                      : "bg-transparent border-blue-300 text-blue-700 hover:bg-emerald-100/60"
                   }`}
                   variant={activeLevel === "level1" ? "default" : "outline"}
                 >
@@ -799,7 +799,7 @@ const KedarnathVR = () => {
                     return (
                       <Card
                         key={index}
-                        className="text-center border-emerald-200 bg-gradient-to-br from-emerald-50 to-teal-50 backdrop-blur-sm hover:border-emerald-300 transition-all duration-300 transform hover:-translate-y-1"
+                        className="text-center border-blue-200 bg-gradient-to-br from-emerald-50 to-teal-50 backdrop-blur-sm hover:border-blue-300 transition-all duration-300 transform hover:-translate-y-1"
                       >
                         <CardContent className="p-8">
                           <div className="w-16 h-16 bg-emerald-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
@@ -861,7 +861,7 @@ const KedarnathVR = () => {
                   Each storyboard frame acted as a meditative checkpoint—carefully mapping how users transition from the physical world into a reverent mythological space, then return with renewed understanding. The visual language balances quiet devotion with moments of awe.
                 </p>
                 <div className="grid sm:grid-cols-2 gap-4 text-sm text-muted-foreground">
-                  <div className="rounded-xl border border-emerald-200/60 bg-white/70 p-4 shadow-sm">
+                  <div className="rounded-xl border border-blue-200/60 bg-white/70 p-4 shadow-sm">
                     <h3 className="text-blue-700 font-semibold mb-2">Intentional Rhythm</h3>
                     <p>
                       Slow camera movements and soft lighting cues keep the experience contemplative while guiding focus.
@@ -920,7 +920,7 @@ const KedarnathVR = () => {
                 return (
                   <Card
                     key={index}
-                    className="border-border/50 bg-card/70 backdrop-blur-sm hover:border-emerald-300/60 transition-all duration-300"
+                    className="border-border/50 bg-card/70 backdrop-blur-sm hover:border-blue-300/60 transition-all duration-300"
                   >
                     <CardContent className="p-6">
                       <div className="grid sm:grid-cols-[180px_1fr] gap-6 items-center">
@@ -974,7 +974,7 @@ const KedarnathVR = () => {
               {challenges.map((challenge, index) => (
                 <Card
                   key={index}
-                  className="group border-border/50 bg-card/70 backdrop-blur-sm hover:border-emerald-300/60 transition-all duration-300"
+                  className="group border-border/50 bg-card/70 backdrop-blur-sm hover:border-blue-300/60 transition-all duration-300"
                 >
                   <CardContent className="p-8">
                     <div className="grid md:grid-cols-2 gap-8 relative">
@@ -1028,7 +1028,7 @@ const KedarnathVR = () => {
                     return (
                       <Card
                         key={index}
-                        className="relative border-border/50 bg-card/70 backdrop-blur-sm hover:border-emerald-300/60 transition-all duration-300"
+                        className="relative border-border/50 bg-card/70 backdrop-blur-sm hover:border-blue-300/60 transition-all duration-300"
                       >
                         <CardContent className="p-6">
                           <div className="flex gap-4">
@@ -1163,7 +1163,7 @@ const KedarnathVR = () => {
                 return (
                   <Card
                     key={index}
-                    className="text-center border-border/50 bg-card/70 backdrop-blur-sm hover:border-emerald-300/60 transition-all duration-300"
+                    className="text-center border-border/50 bg-card/70 backdrop-blur-sm hover:border-blue-300/60 transition-all duration-300"
                   >
                     <CardContent className="p-6">
                       <div
@@ -1183,7 +1183,7 @@ const KedarnathVR = () => {
               })}
             </div>
 
-            <Card className="border-emerald-200/60 bg-gradient-to-r from-emerald-50 to-sky-50">
+            <Card className="border-blue-200/60 bg-gradient-to-r from-emerald-50 to-sky-50">
               <CardContent className="p-8 text-center">
                 <h3 className="text-2xl font-semibold mb-4 text-blue-700">
                   Key Project Insight
@@ -1211,7 +1211,7 @@ const KedarnathVR = () => {
               asChild
               size="lg"
               variant="outline"
-              className="text-lg px-8 py-4 border-emerald-300 text-blue-700 hover:bg-emerald-100/60"
+              className="text-lg px-8 py-4 border-blue-300 text-blue-700 hover:bg-emerald-100/60"
             >
               <Link to="/projects/savey">Next: Savey Interactive Learning</Link>
             </Button>
