@@ -410,7 +410,7 @@ const KedarnathVR = () => {
               <Button
                 asChild
                 variant="ghost"
-                className="text-muted-foreground hover:text-emerald-700"
+                className="text-muted-foreground hover:text-blue-700"
               >
                 <Link to="/projects">
                   <ArrowLeft className="w-4 h-4 mr-2" />
@@ -421,8 +421,8 @@ const KedarnathVR = () => {
 
             <div className="text-center mb-20">
               <div className="inline-flex items-center px-6 py-3 rounded-full bg-gradient-to-r from-emerald-100/60 to-sky-100/60 border border-emerald-200/60 mb-8">
-                <Building2 className="w-5 h-5 mr-3 text-emerald-700" />
-                <span className="text-base font-medium text-emerald-700">
+                <Building2 className="w-5 h-5 mr-3 text-blue-700" />
+                <span className="text-base font-medium text-blue-700">
                   Main Project • Cultural Heritage VR
                 </span>
               </div>
@@ -438,7 +438,7 @@ const KedarnathVR = () => {
               <div className="flex flex-wrap justify-center gap-6 mb-10">
                 <Badge
                   variant="outline"
-                  className="text-base py-2 px-4 border-emerald-200 text-emerald-700"
+                  className="text-base py-2 px-4 border-emerald-200 text-blue-700"
                 >
                   <Calendar className="w-4 h-4 mr-2" />
                   {projectDetails.year}
@@ -491,7 +491,7 @@ const KedarnathVR = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-emerald-700">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-blue-700">
                 The Sacred Challenge
               </h2>
               <p className="text-xl text-muted-foreground">
@@ -502,7 +502,7 @@ const KedarnathVR = () => {
             <div className="grid lg:grid-cols-3 gap-10">
               <Card className="border-border/50 bg-card/60 backdrop-blur-sm hover:border-emerald-300/60 transition-all duration-300">
                 <CardHeader>
-                  <CardTitle className="flex items-center text-emerald-700 text-xl">
+                  <CardTitle className="flex items-center text-blue-700 text-xl">
                     <Target className="w-6 h-6 mr-3" />
                     The Problem
                   </CardTitle>
@@ -557,8 +557,8 @@ const KedarnathVR = () => {
             <div className="mt-20 mb-16">
               <Card className="border-emerald-200/60 bg-gradient-to-r from-emerald-50 to-sky-50 max-w-4xl mx-auto">
                 <CardContent className="p-8">
-                  <Quote className="w-8 h-8 text-emerald-700 mb-4 mx-auto" />
-                  <p className="text-2xl font-medium text-center italic text-emerald-700">
+                  <Quote className="w-8 h-8 text-blue-700 mb-4 mx-auto" />
+                  <p className="text-2xl font-medium text-center italic text-blue-700">
                     "Story from the past, but as an experience in the present"
                   </p>
                 </CardContent>
@@ -566,7 +566,7 @@ const KedarnathVR = () => {
             </div>
 
             <div className="mt-20">
-              <h3 className="text-3xl font-bold text-center mb-12 text-emerald-700">
+              <h3 className="text-3xl font-bold text-center mb-12 text-blue-700">
                 Why This Experience Matters
               </h3>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -605,9 +605,9 @@ const KedarnathVR = () => {
                     >
                       <CardContent className="p-6">
                         <div className="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                          <Icon className="w-7 h-7 text-emerald-700" />
+                          <Icon className="w-7 h-7 text-blue-700" />
                         </div>
-                        <h4 className="font-semibold mb-3 text-emerald-700">{item.title}</h4>
+                        <h4 className="font-semibold mb-3 text-blue-700">{item.title}</h4>
                         <p className="text-muted-foreground text-sm leading-relaxed">{item.desc}</p>
                       </CardContent>
                     </Card>
@@ -622,7 +622,7 @@ const KedarnathVR = () => {
       <section className="py-24">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl font-bold mb-8 text-emerald-700">Why Kedarnath?</h2>
+            <h2 className="text-4xl font-bold mb-8 text-blue-700">Why Kedarnath?</h2>
             <div className="space-y-6 text-md text-muted-foreground leading-relaxed">
               <p>
                 Explored multiple <strong>Jyotirlingas</strong> before choosing Kedarnath due to its spiritual depth and challenging accessibility.
@@ -638,8 +638,8 @@ const KedarnathVR = () => {
             <div className="mt-12 mb-8">
               <Card className="border-emerald-200/60 bg-gradient-to-r from-emerald-50 to-sky-50">
                 <CardContent className="p-8">
-                  <Quote className="w-6 h-6 text-emerald-700 mb-4 mx-auto" />
-                  <p className="text-xl font-medium text-center text-emerald-700 mb-6">
+                  <Quote className="w-6 h-6 text-blue-700 mb-4 mx-auto" />
+                  <p className="text-xl font-medium text-center text-blue-700 mb-6">
                     "Because Faith is fading under fame."
                   </p>
                 </CardContent>
@@ -698,7 +698,7 @@ const KedarnathVR = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold mb-6 text-emerald-700">Target Audience</h2>
+              <h2 className="text-4xl font-bold mb-6 text-blue-700">Target Audience</h2>
               <p className="text-xl text-muted-foreground">
                 Understanding who needs this sacred connection
               </p>
@@ -721,17 +721,17 @@ const KedarnathVR = () => {
                         >
                           <Icon className={`w-8 h-8 ${accent.icon}`} />
                         </div>
-                        <h3 className="text-2xl font-bold mb-2 text-emerald-700">
+                        <h3 className="text-2xl font-bold mb-2 text-blue-700">
                           {audience.name}
                         </h3>
-                        <Badge variant="outline" className="text-sm border-emerald-200 text-emerald-700">
+                        <Badge variant="outline" className="text-sm border-emerald-200 text-blue-700">
                           {audience.age}
                         </Badge>
                       </div>
 
                       <div className="space-y-4">
                         <div>
-                          <h4 className="font-semibold text-xs tracking-widest text-emerald-700 mb-2">
+                          <h4 className="font-semibold text-xs tracking-widest text-blue-700 mb-2">
                             CHARACTERISTICS
                           </h4>
                           <p className="text-muted-foreground text-sm leading-relaxed">
@@ -760,7 +760,7 @@ const KedarnathVR = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold mb-6 text-emerald-700">Experience Flow</h2>
+              <h2 className="text-4xl font-bold mb-6 text-blue-700">Experience Flow</h2>
               <p className="text-xl text-muted-foreground mb-8">
                 Two immersive levels of spiritual journey
               </p>
@@ -771,7 +771,7 @@ const KedarnathVR = () => {
                   className={`text-lg py-3 px-8 transition-colors ${
                     activeLevel === "level1"
                       ? "bg-emerald-600 text-white hover:bg-emerald-700"
-                      : "bg-transparent border-emerald-300 text-emerald-700 hover:bg-emerald-100/60"
+                      : "bg-transparent border-emerald-300 text-blue-700 hover:bg-emerald-100/60"
                   }`}
                   variant={activeLevel === "level1" ? "default" : "outline"}
                 >
@@ -805,8 +805,8 @@ const KedarnathVR = () => {
                           <div className="w-16 h-16 bg-emerald-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
                             <span className="text-xl font-bold text-white">{step.step}</span>
                           </div>
-                          <Icon className="w-8 h-8 text-emerald-700 mx-auto mb-4" />
-                          <h4 className="text-lg font-semibold mb-3 text-emerald-700">{step.title}</h4>
+                          <Icon className="w-8 h-8 text-blue-700 mx-auto mb-4" />
+                          <h4 className="text-lg font-semibold mb-3 text-blue-700">{step.title}</h4>
                           <p className="text-muted-foreground text-sm leading-relaxed">
                             {step.description}
                           </p>
@@ -851,10 +851,10 @@ const KedarnathVR = () => {
           <div className="max-w-6xl mx-auto">
             <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-12 items-center">
               <div>
-                <Badge className="mb-6 bg-emerald-100 text-emerald-700 hover:bg-emerald-100">
+                <Badge className="mb-6 bg-emerald-100 text-blue-700 hover:bg-emerald-100">
                   Storyboarding Journey
                 </Badge>
-                <h2 className="text-4xl font-bold mb-6 text-emerald-700">
+                <h2 className="text-4xl font-bold mb-6 text-blue-700">
                   Visualizing the Pilgrim Narrative
                 </h2>
                 <p className="text-muted-foreground text-lg leading-relaxed mb-6">
@@ -862,7 +862,7 @@ const KedarnathVR = () => {
                 </p>
                 <div className="grid sm:grid-cols-2 gap-4 text-sm text-muted-foreground">
                   <div className="rounded-xl border border-emerald-200/60 bg-white/70 p-4 shadow-sm">
-                    <h3 className="text-emerald-700 font-semibold mb-2">Intentional Rhythm</h3>
+                    <h3 className="text-blue-700 font-semibold mb-2">Intentional Rhythm</h3>
                     <p>
                       Slow camera movements and soft lighting cues keep the experience contemplative while guiding focus.
                     </p>
@@ -887,7 +887,7 @@ const KedarnathVR = () => {
                       </span>
                     </div>
                     <CardContent className="p-6">
-                      <h3 className="text-lg font-semibold text-emerald-700 mb-2">
+                      <h3 className="text-lg font-semibold text-blue-700 mb-2">
                         {frame.title}
                       </h3>
                       <p className="text-muted-foreground text-sm leading-relaxed">
@@ -906,7 +906,7 @@ const KedarnathVR = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold mb-6 text-emerald-700">
+              <h2 className="text-4xl font-bold mb-6 text-blue-700">
                 User Actions & Interactions
               </h2>
               <p className="text-xl text-muted-foreground">
@@ -933,7 +933,7 @@ const KedarnathVR = () => {
                           <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent" />
                           <div className="absolute top-4 left-4 flex items-center gap-2">
                             <div className="w-10 h-10 bg-white/80 backdrop-blur rounded-full flex items-center justify-center">
-                              <Icon className="w-5 h-5 text-emerald-700" />
+                              <Icon className="w-5 h-5 text-blue-700" />
                             </div>
                             <span className="text-xs font-semibold uppercase tracking-wide text-white">
                               {interaction.title}
@@ -941,7 +941,7 @@ const KedarnathVR = () => {
                           </div>
                         </div>
                         <div>
-                          <h3 className="text-lg font-semibold mb-3 text-emerald-700">
+                          <h3 className="text-lg font-semibold mb-3 text-blue-700">
                             {interaction.title}
                           </h3>
                           <p className="text-muted-foreground text-sm leading-relaxed">
@@ -962,7 +962,7 @@ const KedarnathVR = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold mb-6 text-emerald-700">
+              <h2 className="text-4xl font-bold mb-6 text-blue-700">
                 Development Challenges
               </h2>
               <p className="text-xl text-muted-foreground">
@@ -979,7 +979,7 @@ const KedarnathVR = () => {
                   <CardContent className="p-8">
                     <div className="grid md:grid-cols-2 gap-8 relative">
                       <div className="group-hover:translate-x-1 transition-transform duration-300">
-                        <h3 className="text-xl font-semibold mb-3 text-emerald-700">
+                        <h3 className="text-xl font-semibold mb-3 text-blue-700">
                           Challenge: {challenge.title}
                         </h3>
                         <p className="text-muted-foreground leading-relaxed">
@@ -1008,7 +1008,7 @@ const KedarnathVR = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold mb-6 text-emerald-700">
+              <h2 className="text-4xl font-bold mb-6 text-blue-700">
                 Development Process
               </h2>
               <p className="text-xl text-muted-foreground">
@@ -1043,13 +1043,13 @@ const KedarnathVR = () => {
                             <div>
                               <div className="flex items-center gap-3 mb-2">
                                 <div className="w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center">
-                                  <Icon className="w-5 h-5 text-emerald-700" />
+                                  <Icon className="w-5 h-5 text-blue-700" />
                                 </div>
-                                <span className="text-xs font-semibold uppercase tracking-wide text-emerald-700">
+                                <span className="text-xs font-semibold uppercase tracking-wide text-blue-700">
                                   Phase {index + 1}
                                 </span>
                               </div>
-                              <h3 className="text-lg font-semibold text-emerald-700 mb-2">
+                              <h3 className="text-lg font-semibold text-blue-700 mb-2">
                                 {process.phase}
                               </h3>
                               <p className="text-muted-foreground text-sm leading-relaxed">
@@ -1085,7 +1085,7 @@ const KedarnathVR = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold mb-6 text-emerald-700">
+              <h2 className="text-4xl font-bold mb-6 text-blue-700">
                 Learning Outcomes & Skills Acquired
               </h2>
               <p className="text-xl text-muted-foreground">
@@ -1096,7 +1096,7 @@ const KedarnathVR = () => {
             <div className="grid lg:grid-cols-2 gap-12 mb-16">
               <Card className="border-border/50 bg-card/70 backdrop-blur-sm">
                 <CardHeader>
-                  <CardTitle className="flex items-center text-emerald-700 text-2xl">
+                  <CardTitle className="flex items-center text-blue-700 text-2xl">
                     <Layers className="w-6 h-6 mr-3" />
                     Technical Skills
                   </CardTitle>
@@ -1104,7 +1104,7 @@ const KedarnathVR = () => {
                 <CardContent>
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
-                      <h4 className="font-semibold text-emerald-700 mb-3">3D Development</h4>
+                      <h4 className="font-semibold text-blue-700 mb-3">3D Development</h4>
                       <ul className="text-muted-foreground space-y-2 text-sm">
                         <li>• Maya 3D modeling and animation</li>
                         <li>• Character rigging and animation</li>
@@ -1113,7 +1113,7 @@ const KedarnathVR = () => {
                       </ul>
                     </div>
                     <div>
-                      <h4 className="font-semibold text-emerald-700 mb-3">VR Development</h4>
+                      <h4 className="font-semibold text-blue-700 mb-3">VR Development</h4>
                       <ul className="text-muted-foreground space-y-2 text-sm">
                         <li>• Unreal Engine 5 mastery</li>
                         <li>• Blueprint visual scripting</li>
@@ -1171,7 +1171,7 @@ const KedarnathVR = () => {
                       >
                         <Icon className={`w-6 h-6 ${insight.iconColor}`} />
                       </div>
-                      <h3 className="font-semibold mb-3 text-emerald-700">
+                      <h3 className="font-semibold mb-3 text-blue-700">
                         {insight.title}
                       </h3>
                       <p className="text-muted-foreground text-sm leading-relaxed">
@@ -1185,7 +1185,7 @@ const KedarnathVR = () => {
 
             <Card className="border-emerald-200/60 bg-gradient-to-r from-emerald-50 to-sky-50">
               <CardContent className="p-8 text-center">
-                <h3 className="text-2xl font-semibold mb-4 text-emerald-700">
+                <h3 className="text-2xl font-semibold mb-4 text-blue-700">
                   Key Project Insight
                 </h3>
                 <p className="text-lg text-muted-foreground leading-relaxed max-w-4xl mx-auto">
@@ -1199,7 +1199,7 @@ const KedarnathVR = () => {
 
       <section className="py-24 bg-gradient-to-r from-emerald-100/60 via-background to-sky-100/60">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold mb-6 text-emerald-700">
+          <h2 className="text-4xl font-bold mb-6 text-blue-700">
             Explore More Sacred Innovations
           </h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
@@ -1211,7 +1211,7 @@ const KedarnathVR = () => {
               asChild
               size="lg"
               variant="outline"
-              className="text-lg px-8 py-4 border-emerald-300 text-emerald-700 hover:bg-emerald-100/60"
+              className="text-lg px-8 py-4 border-emerald-300 text-blue-700 hover:bg-emerald-100/60"
             >
               <Link to="/projects/savey">Next: Savey Interactive Learning</Link>
             </Button>
