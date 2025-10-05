@@ -58,7 +58,7 @@ const KedarnathVR = () => {
   const projectDetails = {
     title: "Kedarnath Mythological Story",
     subtitle: "Immersive Spiritual Journey Through Ancient Sacred Tales",
-    duration: "2 months",
+    duration: "6 Weeks",
     year: "2025",
     client: "Individual Project",
     team: "Solo Developer",
@@ -164,20 +164,7 @@ const KedarnathVR = () => {
       description:
         "A guardian character invites the user to cross the mandapa, introducing the mythic transition.",
     },
-    {
-      image: "/Photos/kedar 7.png",
-      alt: "Storyboard artwork highlighting the mythological retelling inside a glowing sacred hall",
-      title: "Mythic Reveal",
-      description:
-        "The narrative shifts into vibrant story panels that animate key moments from the legend.",
-    },
-    {
-      image: "/Photos/kedar 8.png",
-      alt: "Storyboard frame showing the return to present with offerings placed before the deity",
-      title: "Returning with Offering",
-      description:
-        "Users complete their journey by performing a gentle ritual that bridges past and present.",
-    },
+
   ];
 
   const userInteractions = [
@@ -908,15 +895,15 @@ const KedarnathVR = () => {
       <section className="py-24 bg-gradient-to-r from-white via-slate-50 to-blue-50/60">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-12 items-center">
+            <div className="grid lg:grid-cols-1 gap-12 items-center text-center">
               <div>
-                <Badge className="mb-6 bg-blue-100 text-blue-700 hover:bg-blue-100">
+                <Badge className="mb-6 bg-blue-100 text-blue-700 hover:bg-blue-100 text-center">
                   Storyboarding Journey
                 </Badge>
-                <h2 className="text-4xl font-bold mb-6 text-blue-700">
+                <h2 className="text-4xl font-bold mb-6 text-sky-700 text-center">
                   Visualizing the Pilgrim Narrative
                 </h2>
-                <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+                <p className="text-muted-foreground text-sm leading-relaxed mb-6 text-center">
                   Each storyboard frame acted as a meditative
                   checkpoint—carefully mapping how users transition from the
                   physical world into a reverent mythological space, then return

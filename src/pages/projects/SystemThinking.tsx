@@ -181,15 +181,15 @@ const SystemThinking = () => {
             <div className="flex flex-wrap justify-center gap-3 mb-8">
               <Badge variant="outline" className="text-sm">
                 <Calendar className="w-3 h-3 mr-1" />
-                2025
+                2024
               </Badge>
               <Badge variant="outline" className="text-sm">
                 <Users className="w-3 h-3 mr-1" />
-                Case Study
+                Individual Project
               </Badge>
               <Badge variant="outline" className="text-sm">
                 <Share2 className="w-3 h-3 mr-1" />
-                Systems
+                4 weeks
               </Badge>
             </div>
           </div>
@@ -654,7 +654,7 @@ const SystemThinking = () => {
 
 
 
-      {/* Insights */}
+      {/* Insights 
       <section className="py-12">
         <div className="container mx-auto px-4 max-w-7xl">
           <h2 className="text-3xl font-bold mb-4">
@@ -671,7 +671,7 @@ const SystemThinking = () => {
             ))}
           </ul>
         </div>
-      </section>
+      </section> */}
 
       {/* Back to Projects */}
       <section className="py-12">

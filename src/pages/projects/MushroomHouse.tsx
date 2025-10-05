@@ -50,7 +50,7 @@ const MushroomHouse = () => {
     duration: "2 weeks",
     year: "2025",
     client: "3D Art Portfolio",
-    team: "Solo Artist",
+    team: "Solo Development",
     role: "3D Artist & Environment Designer",
     status: "Completed",
   };
@@ -215,7 +215,7 @@ const MushroomHouse = () => {
                 className="text-sm border-yellow-400 text-yellow-400"
               >
                 <Award className="w-3 h-3 mr-1" />
-                {projectDetails.status}
+                {projectDetails.duration}
               </Badge>
             </div>
             <CustomVideoPlayer
