@@ -452,7 +452,7 @@ const KedarnathVR = () => {
                 </Badge>
                 <Badge
                   variant="outline"
-                  className="text-base py-2 px-4 border-teal-200 text-teal-700"
+                  className="text-base py-2 px-4 border-indigo-200 text-indigo-700"
                 >
                   <Users className="w-4 h-4 mr-2" />
                   {projectDetails.team}
@@ -539,9 +539,9 @@ const KedarnathVR = () => {
                 </CardContent>
               </Card>
 
-              <Card className="border-border/50 bg-card/60 backdrop-blur-sm hover:border-teal-300/60 transition-all duration-300">
+              <Card className="border-border/50 bg-card/60 backdrop-blur-sm hover:border-indigo-300/60 transition-all duration-300">
                 <CardHeader>
-                  <CardTitle className="flex items-center text-teal-700 text-xl">
+                  <CardTitle className="flex items-center text-indigo-700 text-xl">
                     <Sparkles className="w-6 h-6 mr-3" />
                     The Solution
                   </CardTitle>
@@ -824,7 +824,7 @@ const KedarnathVR = () => {
                     return (
                       <Card
                         key={index}
-                        className="text-center border-sky-200 bg-gradient-to-br from-sky-50 to-teal-50 backdrop-blur-sm hover:border-sky-300 transition-all duration-300 transform hover:-translate-y-1"
+                        className="text-center border-sky-200 bg-gradient-to-br from-sky-50 via-indigo-50 to-blue-50 backdrop-blur-sm hover:border-sky-300 transition-all duration-300 transform hover:-translate-y-1"
                       >
                         <CardContent className="p-8">
                           <div className="w-16 h-16 bg-sky-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
