@@ -462,7 +462,7 @@ const KedarnathVR = () => {
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
                 <Button
                   size="lg"
-                  className="text-lg px-8 py-4 bg-emerald-600 text-white hover:bg-emerald-700"
+                  className="text-lg px-8 py-4 bg-blue-600 text-white hover:bg-blue-700"
                 >
                   <Play className="mr-3 h-5 w-5" />
                   Watch Process Video
@@ -604,7 +604,7 @@ const KedarnathVR = () => {
                       className="text-center border-border/50 bg-card/60 backdrop-blur-sm hover:border-blue-300/60 transition-all duration-300"
                     >
                       <CardContent className="p-6">
-                        <div className="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                           <Icon className="w-7 h-7 text-blue-700" />
                         </div>
                         <h4 className="font-semibold mb-3 text-blue-700">{item.title}</h4>
@@ -770,8 +770,8 @@ const KedarnathVR = () => {
                   onClick={() => setActiveLevel("level1")}
                   className={`text-lg py-3 px-8 transition-colors ${
                     activeLevel === "level1"
-                      ? "bg-emerald-600 text-white hover:bg-emerald-700"
-                      : "bg-transparent border-blue-300 text-blue-700 hover:bg-emerald-100/60"
+                      ? "bg-blue-600 text-white hover:bg-blue-700"
+                      : "bg-transparent border-blue-300 text-blue-700 hover:bg-blue-100/60"
                   }`}
                   variant={activeLevel === "level1" ? "default" : "outline"}
                 >
@@ -802,7 +802,7 @@ const KedarnathVR = () => {
                         className="text-center border-blue-200 bg-gradient-to-br from-emerald-50 to-teal-50 backdrop-blur-sm hover:border-blue-300 transition-all duration-300 transform hover:-translate-y-1"
                       >
                         <CardContent className="p-8">
-                          <div className="w-16 h-16 bg-emerald-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                          <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
                             <span className="text-xl font-bold text-white">{step.step}</span>
                           </div>
                           <Icon className="w-8 h-8 text-blue-700 mx-auto mb-4" />
@@ -851,7 +851,7 @@ const KedarnathVR = () => {
           <div className="max-w-6xl mx-auto">
             <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-12 items-center">
               <div>
-                <Badge className="mb-6 bg-emerald-100 text-blue-700 hover:bg-emerald-100">
+                <Badge className="mb-6 bg-blue-100 text-blue-700 hover:bg-blue-100">
                   Storyboarding Journey
                 </Badge>
                 <h2 className="text-4xl font-bold mb-6 text-blue-700">
@@ -1033,7 +1033,7 @@ const KedarnathVR = () => {
                         <CardContent className="p-6">
                           <div className="flex gap-4">
                             <div className="flex flex-col items-center">
-                              <div className="w-10 h-10 rounded-full bg-emerald-600 text-white flex items-center justify-center font-semibold">
+                              <div className="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center font-semibold">
                                 {index + 1}
                               </div>
                               {index !== developmentProcess.length - 1 && (
@@ -1042,7 +1042,7 @@ const KedarnathVR = () => {
                             </div>
                             <div>
                               <div className="flex items-center gap-3 mb-2">
-                                <div className="w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center">
+                                <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center">
                                   <Icon className="w-5 h-5 text-blue-700" />
                                 </div>
                                 <span className="text-xs font-semibold uppercase tracking-wide text-blue-700">
@@ -1211,7 +1211,7 @@ const KedarnathVR = () => {
               asChild
               size="lg"
               variant="outline"
-              className="text-lg px-8 py-4 border-blue-300 text-blue-700 hover:bg-emerald-100/60"
+              className="text-lg px-8 py-4 border-blue-300 text-blue-700 hover:bg-blue-100/60"
             >
               <Link to="/projects/savey">Next: Savey Interactive Learning</Link>
             </Button>
@@ -1219,7 +1219,7 @@ const KedarnathVR = () => {
             <Button
               asChild
               size="lg"
-              className="text-lg px-8 py-4 bg-emerald-600 text-white hover:bg-emerald-700"
+              className="text-lg px-8 py-4 bg-blue-600 text-white hover:bg-blue-700"
             >
               <Link to="/projects">
                 <Eye className="mr-3 h-5 w-5" />
