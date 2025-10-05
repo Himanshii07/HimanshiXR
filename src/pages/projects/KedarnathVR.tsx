@@ -487,7 +487,7 @@ const KedarnathVR = () => {
         </div>
       </section>
 
-      <section className="py-24 bg-gradient-to-r from-white via-minimal-sage/10 to-minimal-cool/10">
+      <section className="py-24 bg-gradient-to-r from-white via-slate-50 to-blue-50/60">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
@@ -694,7 +694,7 @@ const KedarnathVR = () => {
         </div>
       </section>
 
-      <section className="py-24 bg-gradient-to-r from-white via-minimal-sage/10 to-minimal-cool/10">
+      <section className="py-24 bg-gradient-to-r from-white via-slate-50 to-blue-50/60">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
@@ -846,7 +846,7 @@ const KedarnathVR = () => {
         </div>
       </section>
 
-      <section className="py-24 bg-gradient-to-r from-white via-minimal-sage/10 to-minimal-cool/10">
+      <section className="py-24 bg-gradient-to-r from-white via-slate-50 to-blue-50/60">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-12 items-center">
@@ -958,7 +958,7 @@ const KedarnathVR = () => {
         </div>
       </section>
 
-      <section className="py-24 bg-gradient-to-r from-white via-minimal-sage/10 to-minimal-cool/10">
+      <section className="py-24 bg-gradient-to-r from-white via-slate-50 to-blue-50/60">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
@@ -1081,7 +1081,7 @@ const KedarnathVR = () => {
         </div>
       </section>
 
-      <section className="py-24 bg-gradient-to-r from-white via-minimal-sage/10 to-minimal-cool/10">
+      <section className="py-24 bg-gradient-to-r from-white via-slate-50 to-blue-50/60">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
