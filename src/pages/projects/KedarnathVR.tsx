@@ -1031,7 +1031,7 @@ const KedarnathVR = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold mb-6 text-blue-700">
+              <h2 className="text-4xl font-bold mb-6 text-sky-700">
                 Development Challenges
               </h2>
               <p className="text-xl text-muted-foreground">
@@ -1077,7 +1077,7 @@ const KedarnathVR = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold mb-6 text-blue-700">
+              <h2 className="text-4xl font-bold mb-6 text-sky-700">
                 Development Process
               </h2>
               <p className="text-xl text-muted-foreground">
@@ -1103,7 +1103,7 @@ const KedarnathVR = () => {
                         <CardContent className="p-6">
                           <div className="flex gap-4">
                             <div className="flex flex-col items-center">
-                              <div className="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center font-semibold">
+                              <div className="w-10 h-10 rounded-full bg-sky-600 text-white flex items-center justify-center font-semibold">
                                 {index + 1}
                               </div>
                               {index !== developmentProcess.length - 1 && (
@@ -1113,11 +1113,11 @@ const KedarnathVR = () => {
                             <div>
                               <div className="flex items-center gap-3 mb-2">
                                 
-                                <span className="text-xs font-semibold uppercase tracking-wide text-blue-700">
+                                <span className="text-xs font-semibold uppercase tracking-wide text-sky-700">
                                   Phase {index + 1}
                                 </span>
                               </div>
-                              <h3 className="text-lg font-semibold text-blue-700 mb-2">
+                              <h3 className="text-lg font-semibold text-sky-700 mb-2">
                                 {process.phase}
                               </h3>
                               <p className="text-muted-foreground text-sm leading-relaxed">
@@ -1160,7 +1160,7 @@ const KedarnathVR = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold mb-6 text-blue-700">
+              <h2 className="text-4xl font-bold mb-6 text-sky-700">
                 Learning Outcomes & Skills Acquired
               </h2>
               <p className="text-xl text-muted-foreground">
@@ -1191,7 +1191,7 @@ const KedarnathVR = () => {
                       </ul>
                     </div>
                     <div>
-                      <h4 className="font-semibold text-blue-700 mb-3">
+                      <h4 className="font-semibold text-sky-700 mb-3">
                         VR Development
                       </h4>
                       <ul className="text-muted-foreground space-y-2 text-sm">
