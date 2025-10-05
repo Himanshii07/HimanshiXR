@@ -381,25 +381,25 @@ const KedarnathVR = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-minimal-sage/20 via-white to-minimal-cool/30">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50">
       <MobileOverlay />
       <Navigation />
 
       <section className="relative py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-white via-minimal-sage/20 to-minimal-cool/30" />
+        <div className="absolute inset-0 bg-gradient-to-br from-white via-slate-50 to-blue-50/70" />
 
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-1/4 left-1/4 w-24 h-24 bg-emerald-200/20 rounded-full blur-xl animate-pulse" />
+          <div className="absolute top-1/4 left-1/4 w-24 h-24 bg-sky-200/25 rounded-full blur-xl animate-pulse" />
           <div
-            className="absolute top-1/3 right-1/3 w-20 h-20 bg-sky-200/20 rounded-full blur-lg animate-pulse"
+            className="absolute top-1/3 right-1/3 w-20 h-20 bg-blue-200/25 rounded-full blur-lg animate-pulse"
             style={{ animationDelay: "0.5s" }}
           />
           <div
-            className="absolute bottom-1/4 left-1/3 w-28 h-28 bg-teal-200/20 rounded-full blur-xl animate-pulse"
+            className="absolute bottom-1/4 left-1/3 w-28 h-28 bg-indigo-200/25 rounded-full blur-xl animate-pulse"
             style={{ animationDelay: "1s" }}
           />
           <div
-            className="absolute bottom-1/3 right-1/4 w-20 h-20 bg-emerald-300/20 rounded-full blur-lg animate-pulse"
+            className="absolute bottom-1/3 right-1/4 w-20 h-20 bg-slate-200/25 rounded-full blur-lg animate-pulse"
             style={{ animationDelay: "1.5s" }}
           />
         </div>
