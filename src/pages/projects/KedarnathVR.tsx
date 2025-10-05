@@ -23,8 +23,6 @@ import {
   Timer,
   Volume2,
   Quote,
-  ChevronRight,
-  ArrowRight,
   Layers,
   Camera,
   User,
