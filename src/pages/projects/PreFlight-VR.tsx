@@ -44,7 +44,7 @@ const PreFlightVR = () => {
       <Navigation />
 
       {/* Hero Section - concise summary, visual */}
-      <section className="relative py-24 bg-slate-900 text-white overflow-hidden">
+      <section className="relative py-24 bg-slate-900 text-white overflow-hidden text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto text-center">
             <Button
@@ -101,7 +101,32 @@ const PreFlightVR = () => {
       </section>
 
 
-      {/* Problem Statement */}
+     
+
+
+      {/* Aim + Methodology */}
+      <section className="py-12 bg-slate-900 text-white">
+        <div className="container mx-auto px-4 max-w-7xl">
+          <div className="grid md:grid-cols-2 gap-8">
+            <div>
+              <h2 className="text-2xl font-semibold mb-3 ">Human Factors and Ergonomics</h2>
+              <p className="text-sm text-muted-white">
+                The course focused on understanding how people interact with systems and environments, and how thoughtful design can enhance comfort, safety, and performance. It studies how humans think, move, and perceive, and applies that understanding to create safe, efficient, and comfortable experiences. In this course, we explored how these principles apply to Extended Reality (XR), learning to minimize discomfort through the right transition techniques, design interactions that closely mimic real-world movement, and help users build spatial awareness by understanding how their actions shape the environment. We also studied how our senses and cognition work differently in virtual spaces, how to manage cognitive load, and how to apply UX heuristics to XR design for a more natural and user-centered experience.
+              </p>
+            </div>
+            <div>
+              <img
+              src="/Photos/Flight/13.png"
+              alt="Bodystorming with sticky notes and team"
+              className="rounded-xl shadow-lg w-full object-cover"
+            />
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+       {/* Problem Statement */}
       <section className="py-12 bg-slate-900 text-white">
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="rounded-xl border border-border/60 bg-slate-100 p-6 items-center shadow-lg">
@@ -116,31 +141,6 @@ const PreFlightVR = () => {
       </section>
 
 
-      {/* Aim + Methodology */}
-      <section className="py-12 bg-slate-900 text-white">
-        <div className="container mx-auto px-4 max-w-7xl">
-          <div className="grid md:grid-cols-2 gap-8">
-            <div>
-              <h2 className="text-2xl font-semibold mb-3">Project Aim</h2>
-              <p className="text-sm text-muted-white">
-                Our project set out to design a VR-based pre-flight maintenance experience that streamlines inspections and repair procedures while keeping human factors at the center of design. The aim was not just to create an immersive VR simulation, but to analyze how each interaction aligns with ergonomics, XR design heuristics, and human-centered principles. By applying methods such as the GOMS model and heuristic evaluation, our goal was to demonstrate how VR can reduce errors, improve efficiency, and enhance user comfort and safety in critical aviation maintenance tasks.
-              </p>
-            </div>
-            <div>
-              <h2 className="text-2xl font-semibold mb-3">
-                Research Methodology
-              </h2>
-              <img
-              src="/Photos/Flight/13.png"
-              alt="Bodystorming with sticky notes and team"
-              className="rounded-xl shadow-lg w-full object-cover"
-            />
-            </div>
-          </div>
-        </div>
-      </section>
-
-
 
 
 
@@ -149,7 +149,7 @@ const PreFlightVR = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto text-center mb-10">
             <h2 className="text-3xl font-bold mb-4">Bodystorming</h2>
-            <p className="text-lg text-muted-foreground mb-6">
+            <p className="text-lg text-muted-grey mb-6 font-light">
               We bodystormed the VR training by scripting interactions, creating
               a plane model, and filming the process to refine inspections and
               UI.
@@ -168,7 +168,7 @@ const PreFlightVR = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto text-center mb-10">
             <h2 className="text-3xl font-bold mb-4">GOMS Model</h2>
-            <p className="text-lg text-muted-foreground mb-6">
+            <p className="text-lg text-muted-grey font-light mb-6">
               Before adding any interactions, we carefully planned and discussed
               each step to ensure a smooth and intuitive user experience in VR.
             </p>
@@ -186,7 +186,7 @@ const PreFlightVR = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto text-center mb-10">
             <h2 className="text-3xl font-bold mb-4">Storyboarding</h2>
-            <p className="text-lg text-muted-foreground mb-6">
+            <p className="text-lg text-muted-grey font-light mb-6">
               Visualizing the trainee journey from guided session to independent
               practice.
             </p>
