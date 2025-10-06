@@ -56,7 +56,7 @@ const KedarnathVR = () => {
   const [activeLevel, setActiveLevel] = useState("level1");
 
   const projectDetails = {
-    title: "Kedarnath Mythological Story",
+    title: "Mahakatha VR Experience",
     subtitle: "Immersive Spiritual Journey Through Ancient Sacred Tales",
     duration: "6 Weeks",
     year: "2025",
@@ -467,10 +467,10 @@ const KedarnathVR = () => {
         </div>
       </section>
 
-      <section className="py-24 bg-gradient-to-r from-white via-slate-50 to-blue-50/60">
-        <div className="container mx-auto px-4">
+      <section className="py-6 bg-white ">
+        <div className="container mx-auto px-4 shadow bg-slate-200  py-12">
           <div className="max-w-6xl mx-auto">
-            <div className="grid lg:grid-cols-3 gap-10">
+            <div className="grid lg:grid-cols-3 gap-10 mb-8">
               <Card className="border-border/50 bg-card/60 backdrop-blur-sm hover:border-blue-300/60 transition-all duration-300">
                 <CardHeader>
                   <CardTitle className="flex items-center text-sky-700 text-xl">
@@ -553,25 +553,27 @@ const KedarnathVR = () => {
               </Card>
             </div>*/}
 
-            <div className="mt-20">
-              <h3 className="text-xl font-bold text-center mb-8 text-blue-900">
-                Why This Experience Matters?
-              </h3>
-
-               <div className="mt-12 mb-8">
-              <Card className="border-blue-200/60 bg-gradient-to-r from-cyan-50 via-indigo-50 to-blue-50 max-w-4xl mx-auto">
-                <CardContent className="p-8">
-                  <p className="text-2xl font-medium text-center italic text-cyan-700">
-                    "Because Faith is fading under fame."
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
 
 
-
-
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                 <section className="py-16 max-w-22xl text-white">
+                    <div className="container mx-auto px-4">
+                     <div className="max-w-5xl mx-auto text-center mb-16">
+                        <div className="inline-flex items-center gap-2 mb-4">
+                          
+                          <h2 className="text-3xl md:text-4xl font-bold text-cyan-700">
+                            Faith is fathing under the fame
+                          </h2>
+                        </div>
+                        <p className="text-base text-slate-900 mb-1">
+                          In a world where devotion is replaced by digital validation, this experience revives faith through meaningful immersion.
+                        </p>
+                        {/*<div className="text-6xl font-bold text-orange-400 mb-2">Impact</div>
+                        <div className="text-base text-slate-200 mb-8">
+                          Behavior (B) = Motivation (M) × Ability (A) × Prompt (P)
+                        </div>*/}
+                      </div>
+                     </div>
+                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 items-center jus">
                 {[
                   {
                     title: "Mythology Made Accessible",
@@ -603,13 +605,13 @@ const KedarnathVR = () => {
                   return (
                     <Card
                       key={index}
-                      className="text-center border-border/50 bg-card/60 backdrop-blur-sm hover:border-blue-300/60 transition-all duration-300"
+                      className="text-center justify-center border-border/50 bg-card/60 backdrop-blur-sm hover:border-cyan-300/60 transition-all duration-300"
                     >
                       <CardContent className="p-6">
-                        <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                          <Icon className="w-7 h-7 text-blue-700" />
+                        <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center mx-auto mb-4">
+                          <Icon className="w-7 h-7 text-cyan-700" />
                         </div>
-                        <h4 className="font-semibold mb-3 text-blue-700">
+                        <h4 className="font-semibold mb-3 text-cyan-700">
                           {item.title}
                         </h4>
                         <p className="text-muted-foreground text-sm leading-relaxed">
@@ -620,7 +622,11 @@ const KedarnathVR = () => {
                   );
                 })}
               </div>
-            </div>
+            </section>
+
+
+
+
           </div>
         </div>
       </section>
@@ -628,26 +634,15 @@ const KedarnathVR = () => {
       <section className="py-24">
         <div className="container mx-auto px-4">
           <div className="max-w-7xl mx-auto text-center bg-gradient-to-r from-white via-slate-50 to-blue-50/60 p-12 rounded-3xl shadow-lg">
-            <h2 className="text-4xl font-bold mb-8 text-sky-700">
+            <h2 className="text-4xl font-bold mb-2 text-sky-700">
               Why Kedarnath?
             </h2>
-            <div className="space-y-6 text-md text-muted-foreground leading-relaxed">
+            <div className="space-y-6 text-md text-muted-foreground leading-relaxed max-w-5xl mx-auto mb-12">
               <p>
-                Explored multiple <strong>Jyotirlingas</strong> before choosing
+                Explored multiple <strong>Jyotirlings, Temples and Indian Heritage Sites</strong> before choosing
                 Kedarnath due to its spiritual depth and challenging
-                accessibility.
-              </p>
-              <p>
-                Studied{" "}
-                <strong>
-                  rituals, temple architecture, and mythological stories
-                </strong>{" "}
-                from books, documentaries, and trusted websites.
-              </p>
-              <p>
-                Noticed how{" "}
-                <strong>many visitors today focus more on social media</strong>{" "}
-                than spiritual connection.
+                accessibility. Studied rituals, temple architecture, and mythological stories 
+                from books, documentaries, and trusted websites. Noticed how many visitors today focus more on social media than spiritual connection.
               </p>
             </div>
 
@@ -769,7 +764,7 @@ const KedarnathVR = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold mb-6 text-sky-700">
+              <h2 className="text-4xl font-bold mb-2 text-sky-700">
                 Experience Flow
               </h2>
               <p className="text-xl text-muted-foreground mb-8">
@@ -781,8 +776,8 @@ const KedarnathVR = () => {
                   onClick={() => setActiveLevel("level1")}
                   className={`text-lg py-3 px-8 transition-colors ${
                     activeLevel === "level1"
-                      ? "bg-blue-600 text-white hover:bg-blue-700"
-                      : "bg-transparent border-blue-300 text-blue-700 hover:bg-blue-100/60"
+                      ? "bg-cyan-600 text-white hover:bg-cyan-700"
+                      : "bg-transparent border-cyan-300 text-cyan-700 hover:bg-cyan-100/60"
                   }`}
                   variant={activeLevel === "level1" ? "default" : "outline"}
                 >
@@ -810,16 +805,16 @@ const KedarnathVR = () => {
                     return (
                       <Card
                         key={index}
-                        className="text-center border-blue-200 bg-gradient-to-br from-sky-50 via-indigo-50 to-blue-50 backdrop-blur-sm hover:border-blue-300 transition-all duration-300 transform hover:-translate-y-1"
+                        className="text-center border-cyan-600 bg-gradient-to-br from-sky-50 via-indigo-50 to-blue-50 backdrop-blur-sm hover:border-cyan-300 transition-all duration-300 transform hover:-translate-y-1"
                       >
                         <CardContent className="p-8">
-                          <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                          <div className="w-16 h-16 bg-cyan-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
                             <span className="text-xl font-bold text-white">
                               {step.step}
                             </span>
                           </div>
-                          <Icon className="w-8 h-8 text-blue-700 mx-auto mb-4" />
-                          <h4 className="text-lg font-semibold mb-3 text-blue-700">
+                          
+                          <h4 className="text-lg font-semibold mb-3 text-cyan-700">
                             {step.title}
                           </h4>
                           <p className="text-muted-foreground text-sm leading-relaxed">
@@ -847,7 +842,7 @@ const KedarnathVR = () => {
                               {step.step}
                             </span>
                           </div>
-                          <Icon className="w-8 h-8 text-sky-700 mx-auto mb-4" />
+                         
                           <h4 className="text-lg font-semibold mb-3 text-sky-700">
                             {step.title}
                           </h4>
@@ -1001,7 +996,7 @@ const KedarnathVR = () => {
                   <CardContent className="p-8">
                     <div className="grid md:grid-cols-2 gap-8 relative">
                       <div className="group-hover:translate-x-1 transition-transform duration-300">
-                        <h3 className="text-xl font-semibold mb-3 text-blue-700">
+                        <h3 className="text-xl font-semibold mb-3 text-cyan-700">
                           Challenge: {challenge.title}
                         </h3>
                         <p className="text-muted-foreground leading-relaxed">

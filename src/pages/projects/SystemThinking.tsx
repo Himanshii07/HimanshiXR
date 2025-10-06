@@ -193,6 +193,12 @@ const SystemThinking = () => {
               </Badge>
             </div>
           </div>
+          {/* Hero Video 
+            <img
+              src="/Photos/pune/28.png"
+              alt="Kids playing with Savey"
+              className="rounded-lg shadow w-full gap-1 aspect-16/9 max-w-7xl mx-auto"
+            />*/}
         </div>
       </section>
 
@@ -296,7 +302,7 @@ const SystemThinking = () => {
             </ul>
             <div className="mt-4 aspect-2/3 rounded-lg overflow-hidden border">
               <img
-                src="/Photos/pune/5.jpg"
+                src="/Photos/pune/20 copy.jpg"
                 alt="Secondary research visual placeholder"
                 className="w-full h-auto object-fit aspect-2/3"
               />
@@ -326,7 +332,7 @@ const SystemThinking = () => {
             <div className="rounded-xl overflow-hidden border border-border/60 bg-card/40">
               <div className="aspect-[4/3] overflow-hidden">
                 <img
-                  src="/Photos/pune/causes-1.jpg"
+                  src="/Photos/pune/30.webp"
                   alt="Urban Waterlogging"
                   className="w-full h-full object-cover"
                 />
@@ -444,7 +450,7 @@ const SystemThinking = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-7xl mx-auto text-center mb-10 gap-8">
             <img
-              src="/Photos/pune/12.jpg"
+              src="/Photos/pune/24.jpg"
               alt="Human Factors reference"
               className="rounded-xl w-full object-cover"
             />
@@ -524,7 +530,7 @@ const SystemThinking = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-7xl mx-auto text-center mb-10 gap-8">
             <img
-              src="/Photos/pune/13.jpg"
+              src="/Photos/pune/26.jpg"
               alt="Human Factors reference"
               className="rounded-xl w-full object-cover"
             />
