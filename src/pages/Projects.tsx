@@ -84,35 +84,8 @@ const Projects = () => {
         live: "#",
       },
     },
-    {
-      id: 3,
-      title: "Shooting Range in VR",
-      category: "vr",
-      categoryLabel: "Virtual Reality",
-      description:
-        "A realistic virtual reality shooting simulation that provides safe training environment with physics-based mechanics and multiple weapon systems.",
-      longDescription:
-        "This VR shooting simulation offers a comprehensive training experience with realistic ballistics, multiple weapon types, and various challenging scenarios. Built with safety and education in mind, it provides an immersive environment for skill development without real-world risks.",
-      image: "/Photos/Shooting range 1.png",
-      tags: [
-        "Unreal Engine 5",
-        "VR",
-        "Physics Simulation",
-        "Training",
-        "Haptic Feedback",
-      ],
-      featured: true,
-      year: "2025",
-      client: "Individual Project",
-      duration: "2 weeks",
-      slug: "shooting-range",
-      links: {
-        demo: "#",
-        github: "#",
-        live: "#",
-      },
-    },
-    {
+
+        {
       id: 4,
       title: "The Mushroom House",
       category: "3d-art",
@@ -140,6 +113,12 @@ const Projects = () => {
         live: "#",
       },
     },
+
+
+
+
+
+  
     
    
     {
@@ -237,6 +216,42 @@ const Projects = () => {
       slug: "ethnography",
       links: { demo: "#", github: "#", live: "#" },
     },
+
+      {
+      id: 3,
+      title: "Shooting Range in VR",
+      category: "vr",
+      categoryLabel: "Virtual Reality",
+      description:
+        "A realistic virtual reality shooting simulation that provides safe training environment with physics-based mechanics and multiple weapon systems.",
+      longDescription:
+        "This VR shooting simulation offers a comprehensive training experience with realistic ballistics, multiple weapon types, and various challenging scenarios. Built with safety and education in mind, it provides an immersive environment for skill development without real-world risks.",
+      image: "/Photos/Shooting range 1.png",
+      tags: [
+        "Unreal Engine 5",
+        "VR",
+        "Physics Simulation",
+        "Training",
+        "Haptic Feedback",
+      ],
+      featured: true,
+      year: "2025",
+      client: "Individual Project",
+      duration: "2 weeks",
+      slug: "shooting-range",
+      links: {
+        demo: "#",
+        github: "#",
+        live: "#",
+      },
+    },
+   
+
+
+
+
+
+
   ];
 
   const filters = [
