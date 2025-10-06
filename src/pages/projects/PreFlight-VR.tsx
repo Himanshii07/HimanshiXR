@@ -110,7 +110,7 @@ const PreFlightVR = () => {
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="grid md:grid-cols-2 gap-8">
             <div>
-              <h2 className="text-2xl font-semibold text-cyan-400 mb-3 ">
+              <h2 className="text-3xl font-bold text-[#8DB2D6] mb-3 ">
                 Human Factors and Ergonomics
               </h2>
               <p className="text-sm text-muted-white">
@@ -149,7 +149,7 @@ const PreFlightVR = () => {
             </h2>
             <p className="text-base text-blue-900 text-center">
               Aviation maintenance crews and engineers are responsible for conducting
-              pre-flight inspections and repairs—tasks that are time-critical, highly
+              pre-flight inspections and tasks that are time-critical, highly
               detailed, and essential for ensuring flight safety and compliance with
               regulations. However, traditional manual inspections are often
               time-consuming, physically demanding, and prone to human error. Even
@@ -162,90 +162,12 @@ const PreFlightVR = () => {
       </section>
 
 
-      {/* Default Bias Section */}
-      <section className="py-24 bg-slate-900 text-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center mb-12">
-            <h3 className="text-lg font-semibold mb-4 text-slate-200">
-              What is Cognitive Human Factors?
-            </h3>
-            <p className="text-2xl font-semibold mb-6 text-orange-400">
-             Cognitive human factors focus on how people perceive, process, and respond to information while interacting with systems.
-            
-            </p>
-          </div>
-          <div className="max-w-3xl mx-auto bg-slate-800/80 rounded-xl p-8 shadow-xl">
-            <h4 className="text-xl font-bold mb-3 text-white">How It Was Applied in the Project</h4>
-            <p className="text-slate-200 mb-2">
-            Critical information (tool status, inspection alerts) placed within the primary visual field for faster comprehension. 
-            <span className="font-bold text-cyan-400">Sequential task flow</span>.
-             used to minimize memory load and guide users step-by-step. 
-           Added visual and audio feedback cues to confirm user actions and improve system understanding. 
-            <span className="font-bold text-cyan-400">Designed context-based menus and prompts</span>.
-             so users could focus on the maintenance process without distractions. Ensured all interactions followed cognitive ergonomics principles, improving focus, decision-making, and overall task accuracy.
-             {/* <span className="font-bold text-orange-400">
-                pre-configured or default settings
-              </span>
-            
-              <span className="font-bold text-orange-400">defaults</span>. They often
-              serve as the easiest path in a sea of choices, especially when we are
-              either{" "}
-              <span className="font-bold text-cyan-400">overwhelmed or uncertain</span>
-              .*/}
-            </p>
-          </div>
-        </div>
-      </section>
 
 
 
 
 
-
-      {/* Aim + Methodology */}
-      <section className="py-12 bg-slate-900 text-white">
-        <div className="container mx-auto px-4 max-w-5xl">
-          <div>
-            <h2 className="text-4xl font-bold mb-2 text-white text-center">
-              Cognitive Human Factors
-            </h2>
-            <p className="text-white font-light text-sm leading-relaxed mb-6 text-center">
-              Focus on how humans perceive, process and respond to information in
-              system interactions.
-            </p>
-            <div className="grid sm:grid-cols-2 gap-4 text-sm text-muted-foreground">
-              <div className="rounded-xl border border-blue-200/60 bg-slate-100 p-4 shadow-sm">
-                <h3 className="text-blue-900 font-semibold mb-2">
-                  What We Learned
-                </h3>
-                <p>
-                  Focuses on how humans perceive, process, and respond to information
-                  during system interactions. Involves understanding attention, memory,
-                  perception, and decision-making to design intuitive and error-free
-                  experiences. In XR, aims to reduce cognitive load, ensure clear
-                  feedback, and create information layouts that support quick
-                  recognition and response.
-                </p>
-              </div>
-              <div className="rounded-xl border border-sky-200/60 bg-slate-100 p-4 shadow-sm">
-                <h3 className="text-blue-900 font-semibold mb-2">
-                  How It Was Applied in the Project
-                </h3>
-                <p>
-                  Critical information (tool status, inspection alerts) placed within
-                  the primary visual field for faster comprehension. Sequential task
-                  flow used to minimize memory load and guide users step-by-step. Added
-                  visual and audio feedback cues to confirm user actions and improve
-                  system understanding. Designed context-based menus and prompts so
-                  users could focus on the maintenance process without distractions.
-                  Ensured all interactions followed cognitive ergonomics principles,
-                  improving focus, decision-making, and overall task accuracy.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      
 
       {/* Communication Loop */}
       <section className="py-16 bg-slate-900 text-white">
@@ -267,10 +189,50 @@ const PreFlightVR = () => {
         </div>
       </section>
 
+
+
+      {/* Default Bias Section */}
+      <section className="py-24 bg-slate-900 text-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto text-center mb-12">
+            <h3 className="text-lg font-semibold mb-4 text-slate-200">
+              What is Cognitive Human Factors?
+            </h3>
+            <p className="text-2xl font-semibold mb-6 text-orange-400">
+             Cognitive human factors focus on how people perceive, process, and respond to information while interacting with systems.
+            
+            </p>
+          </div>
+          <div className="max-w-7xl mx-auto bg-slate-800/80 rounded-xl p-8 shadow-xl">
+            <h4 className="text-xl font-bold mb-3 text-white">How It Was Applied in the Project</h4>
+            <p className="text-slate-200 mb-2">
+            Critical information (tool status, inspection alerts) placed within the primary visual field for faster comprehension. 
+            <span className="font-bold text-orange-200">Sequential task flow</span>.
+             used to minimize memory load and guide users step-by-step. 
+           Added visual and audio feedback cues to confirm user actions and improve system understanding. 
+            <span className="font-bold text-orange-200">Designed context-based menus and prompts</span>.
+             so users could focus on the maintenance process without distractions. Ensured all interactions followed cognitive ergonomics principles, improving focus, decision-making, and overall task accuracy.
+             {/* <span className="font-bold text-orange-400">
+                pre-configured or default settings
+              </span>
+            
+              <span className="font-bold text-orange-400">defaults</span>. They often
+              serve as the easiest path in a sea of choices, especially when we are
+              either{" "}
+              <span className="font-bold text-cyan-400">overwhelmed or uncertain</span>
+              .*/}
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+
+
       {/* Bodystorming Section - process, scripting, modeling, filming */}
       <section className="py-16  bg-slate-900 text-white">
         <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto text-center mb-10">
+          <div className="max-w-7xl mx-auto text-center mb-10">
             <h2 className="text-3xl font-bold mb-4">Bodystorming</h2>
             <p className="text-lg text-muted-grey mb-6 font-light">
               We bodystormed the VR training by scripting interactions, creating
@@ -289,7 +251,7 @@ const PreFlightVR = () => {
       {/* Interaction Planning Section */}
       <section className="py-16 bg-slate-900 text-white">
         <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto text-center mb-10">
+          <div className="max-w-7xl mx-auto text-center mb-10">
             <h2 className="text-3xl font-bold mb-4">GOMS Model</h2>
             <p className="text-lg text-muted-grey font-light mb-6">
               Before adding any interactions, we carefully planned and discussed
@@ -303,6 +265,62 @@ const PreFlightVR = () => {
           </div>
         </div>
       </section>
+
+      {/* Aim + Methodology */}
+      <section className="py-12 bg-slate-900 text-white">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <div>
+            <h2 className="text-4xl font-bold mb-2 text-white text-center">
+              VR Design Considerations
+            </h2>
+            <p className="text-white font-light text-sm leading-relaxed mb-6 text-center">
+              Focus on how humans perceive, process and respond to information in
+              system interactions.
+            </p>
+            <div className="grid sm:grid-cols-2 gap-4 text-sm text-muted-foreground">
+              <div className="rounded-xl border border-blue-200/60 bg-slate-100 p-4 shadow-sm">
+                <h3 className="text-blue-900 font-semibold mb-2">
+                  Natural Posture & Movement
+                </h3>
+                <p>
+                  Interactions were designed to align with natural human body mechanics, allowing users to reach, look, 
+                  and move comfortably without awkward or repetitive motions.
+                </p>
+              </div>
+              <div className="rounded-xl border border-sky-200/60 bg-slate-100 p-4 shadow-sm">
+                <h3 className="text-blue-900 font-semibold mb-2">
+                 Viewing Angle & Menu Placement
+                </h3>
+                <p>
+                  UI elements and menus were positioned 15–20° below eye level
+                   and within the primary field of view to prevent neck strain and reduce eye fatigue during longer sessions.
+                </p>
+              </div>
+               <div className="rounded-xl border border-sky-200/60 bg-slate-100 p-4 shadow-sm">
+                <h3 className="text-blue-900 font-semibold mb-2">
+                 Movement Comfort & Locomotion
+                </h3>
+                <p>
+                  Used teleportation and smooth joystick transitions instead of
+                   free movement to minimize motion sickness and maintain a stable visual experience.
+                </p>
+              </div>
+               <div className="rounded-xl border border-sky-200/60 bg-slate-100 p-4 shadow-sm">
+                <h3 className="text-blue-900 font-semibold mb-2">
+                Feedback & Responsiveness
+                </h3>
+                <p>
+                  Provided visual, audio, and haptic feedback for every action to reassure users that their input was registered, 
+                  enhancing confidence and reducing cognitive load.
+
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
 
       {/* Behavior Model Section */}
       <section className="py-24 bg-slate-900 text-white">
@@ -421,6 +439,7 @@ const PreFlightVR = () => {
       </section>
 
 
+
       {/* Principles Section */}
       <section className="py-24 bg-slate-900 text-white">
         <div className="container mx-auto px-4">
@@ -428,12 +447,101 @@ const PreFlightVR = () => {
             <div className="inline-flex items-center gap-2 mb-4">
               <BookOpen className="w-6 h-6 text-orange-400" />
               <h2 className="text-3xl md:text-4xl font-bold text-white">
-                Principles
+                Human Factors Considered 
               </h2>
             </div>
           </div>
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            <Card className="bg-slate-800/80 border-none shadow-xl">
+            <Card className="bg-slate-800/80 border-none shadow-xl rounded-xl">
+              <CardContent className="p-8">
+                <ul className="space-y-4 text-left">
+                  <li className="flex gap-3 items-start">
+                    <span className="text-orange-400 font-bold">1</span>
+                    
+                
+                    <span className="text-orange-400 text-lg font-bold">
+                     Cognitive Load
+                     <p className="font-light text-sm text-slate-200">
+                  We simplified the interface by limiting controls and visual clutter, reducing distractions and mental effort. 
+                  This helped users focus on the inspection tasks rather than figuring out how to use the system.
+                </p>
+                      
+                    </span>
+                  </li>
+                  <li className="flex gap-3 items-start">
+                    <span className="text-orange-400 font-bold">2</span>
+                    <span className="text-orange-400">
+                      Signaling Principle
+                       <p className="font-light text-sm text-slate-200">
+                 Color-coded cues (green for correct, yellow for pending, red for error) helped users identify task progress instantly, improving situational clarity and reducing confusion.
+                </p>
+                    </span>
+                  </li>
+                  <li className="flex gap-3 items-start">
+                    <span className="text-orange-400 font-bold">3</span>
+                    <span className="text-orange-400">
+                     Attention & Situational Awareness
+                     <p className="font-light text-sm text-slate-200">
+                 Guided cues and step-by-step instructions kept users oriented and focused on specific aircraft components,
+                  preventing missed inspection steps and ensuring better awareness of their surroundings.
+                </p>
+                    </span>
+                  </li>
+                  <li className="flex gap-3 items-start">
+                    <span className="text-orange-400 font-bold">4</span>
+                    <span className="text-orange-400">
+                     Memory & Recall
+                      <p className="font-light text-sm text-slate-200">
+                 Repetition of inspection procedures, along with the option to replay instructions, reinforced 
+                 learning and improved retention of maintenance sequences for future tasks.
+                </p>
+                    </span>
+                  </li>
+                  <li className="flex gap-3 items-start">
+                    <span className="text-orange-400 font-bold">5</span>
+                    <span className="text-orange-400">
+                      Perception
+                       <p className="font-light text-sm text-slate-200">
+                The VR environment is designed with realistic aircraft components, ensuring correct depth perception 
+                and instrument clarity for accurate inspections
+                </p>
+                    </span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+            <Card className="bg-slate-800/80 border-none shadow-xl flex items-center justify-center rounded-xl ">
+              <CardContent className="p-8 flex flex-col items-center justify-center">
+                <img
+                  src="/Photos/Flight/behavior-ui.png"
+                  alt="Behavior Model UI"
+                  className="rounded-xl shadow-lg mb-4 w-full object-cover"
+                />
+                <p className="text-slate-200 text-center">
+                  UI elements and toggles can visually reinforce default choices and
+                  prompt user action.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+
+
+      {/* Principles Section */}
+      <section className="py-24 bg-slate-900 text-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto text-center mb-16">
+            <div className="inline-flex items-center gap-2 mb-4">
+              <BookOpen className="w-6 h-6 text-orange-400" />
+              <h2 className="text-3xl md:text-4xl font-bold text-white">
+                XR Design Heuristics
+              </h2>
+            </div>
+          </div>
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <Card className="bg-slate-800/80 border-none shadow-xl rounded-xl">
               <CardContent className="p-8">
                 <ul className="space-y-4 text-left">
                   <li className="flex gap-3 items-start">
@@ -479,16 +587,17 @@ const PreFlightVR = () => {
                   <li className="flex gap-3 items-start">
                     <span className="text-orange-400 font-bold">5</span>
                     <span className="text-orange-400">
-                      Customers often{" "}
-                      <span className="font-bold">stick with the default</span> when
-                      the other option seems more difficult.
+                      Error Prevention & Recovery
+                      <p className="font-light text-sm text-slate-200">
+                Minimizing chances for mistakes (like pressing the report button) and offering easy ways to correct them.
+                </p>
                     </span>
                   </li>
                 </ul>
               </CardContent>
             </Card>
             <Card className="bg-slate-800/80 border-none shadow-xl flex items-center justify-center">
-              <CardContent className="p-8 flex flex-col items-center justify-center">
+              <CardContent className="p-8 flex flex-col items-center justify-center rounded-xl">
                 <img
                   src="/Photos/Flight/behavior-ui.png"
                   alt="Behavior Model UI"
@@ -505,7 +614,7 @@ const PreFlightVR = () => {
       </section>
 
 
-      {/* Human Factors Section - reference image only */}
+      {/* Human Factors Section - reference image only 
       <section className="py-16 bg-slate-900 text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-7xl mx-auto text-center mb-10 gap-8">
@@ -518,7 +627,7 @@ const PreFlightVR = () => {
         </div>
       </section>
 
-      {/* XR Design Heuristics Section - reference image only */}
+      {/* XR Design Heuristics Section - reference image only 
       <section className="py-16 bg-slate-900 text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto text-center mb-10 gap-8">
@@ -529,7 +638,7 @@ const PreFlightVR = () => {
             />
           </div>
         </div>
-      </section>
+      </section>*/}
 
       {/* Skills & Learnings Section */}
       <section className="py-16 bg-slate-900 text-white">
