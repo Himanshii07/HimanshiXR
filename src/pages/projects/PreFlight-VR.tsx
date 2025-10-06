@@ -44,9 +44,9 @@ const PreFlightVR = () => {
       <Navigation />
 
       {/* Hero Section - concise summary, visual */}
-      <section className="relative py-24 bg-slate-900 text-white overflow-hidden text-white">
+      <section className="relative py-24 bg-slate-900 text-white overflow-hidden text-white ">
         <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto text-center">
+          <div className="max-w-7xl mx-auto text-center">
             <Button
               asChild
               variant="ghost"
@@ -57,10 +57,10 @@ const PreFlightVR = () => {
                 Back to Projects
               </Link>
             </Button>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+            <h1 className="text-2xl md:text-5xl font-bold mb-6 text-white">
               Preflight Maintenance Check VR
             </h1>
-            <p className="text-lg text-white mb-8">
+            <p className="text-lg text-white max-w-5xl mx-auto leading-relaxed mb-8 font-light">
               VR-based pre-flight maintenance training simulation to address
               costly, risky, and hands-off traditional methods. Guided
               inspection and independent practice in a safe, immersive
@@ -140,6 +140,66 @@ const PreFlightVR = () => {
         </div>
       </section>
 
+      {/* Aim + Methodology */}
+      <section className="py-12 bg-slate-900 text-white">
+        <div className="container mx-auto px-4 max-w-7xl">
+       <div> 
+                <h2 className="text-4xl font-bold mb-2 text-white text-center">
+                  Cognitive Human Factors
+                </h2>
+                <p className="text-white font-light text-sm leading-relaxed mb-6 text-center">
+                   Focus on how humans perceive, process and respond to information in system interactions.
+                </p>
+                <div className="grid sm:grid-cols-2 gap-4 text-sm text-muted-foreground">
+                  <div className="rounded-xl border border-blue-200/60 bg-slate-100 p-4 shadow-sm">
+                    <h3 className="text-blue-900 font-semibold mb-2">
+                      What We Learned
+                    </h3>
+                    <p>
+                     Focuses on how humans perceive, process, and respond to information during system interactions.
+Involves understanding attention, memory, perception, and decision-making to design intuitive and error-free experiences.
+In XR, aims to reduce cognitive load, ensure clear feedback, and create information layouts that support quick recognition and response.
+                    </p>
+                  </div>
+                  <div className="rounded-xl border border-sky-200/60 bg-slate-100 p-4 shadow-sm">
+                    <h3 className="text-blue-900 font-semibold mb-2">
+                      How It Was Applied in the Project
+                    </h3>
+                    <p>
+                     Critical information (tool status, inspection alerts) placed within the primary visual field for faster comprehension.
+Sequential task flow used to minimize memory load and guide users step-by-step.
+Added visual and audio feedback cues to confirm user actions and improve system understanding.
+Designed context-based menus and prompts so users could focus on the maintenance process without distractions.
+Ensured all interactions followed cognitive ergonomics principles, improving focus, decision-making, and overall task accuracy.
+
+                    </p>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </section>
+
+
+       {/* Communication Loop */}
+      <section className="py-16 bg-slate-900 text-white">
+        <div className="container max-w-4xl mx-auto px-4 py-6 rounded-xl shadow-lg overflow-hidden bg-slate-900 grid sm:grid-cols-1 gap-4 ">
+          <div className="max-w-4xl mx-auto text-center mb-10 gap-8">
+            <img
+              src="/Photos/Flight/15.png"
+              alt="Human Factors reference"
+              className="rounded-xl aspect-16/9 object-fit"
+            />
+        </div>
+            {/* <div className="max-w-4xl mx-auto text-center mb-10 gap-8">
+            <img
+              src="/Photos/Flight/16.png"
+              alt="Human Factors reference"
+              className="rounded-xl aspect-16/9 object-fit"
+            />
+          </div>*/}
+        </div>
+      </section>
+
 
 
 
@@ -184,7 +244,7 @@ const PreFlightVR = () => {
       {/* Storyboarding Section - images only */}
       <section className="py-16 bg-slate-900 text-white">
         <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto text-center mb-10">
+          <div className="max-w-7xl mx-auto text-center mb-10">
             <h2 className="text-3xl font-bold mb-4">Storyboarding</h2>
             <p className="text-lg text-muted-grey font-light mb-6">
               Visualizing the trainee journey from guided session to independent
@@ -192,17 +252,17 @@ const PreFlightVR = () => {
             </p>
             <div className="grid md:grid-cols-1 gap-12 bg-white py-24 px-14 rounded-lg">
               <img
-                src="/Photos/Flight/10.png"
+                src="/Photos/Flight/14.png"
                 alt="Storyboard sketch details"
                 className="rounded-lg  w-full object-cover aspect-16/9"
               />
               <img
-                src="/Photos/Flight/11.png"
+                src="/Photos/Flight/3.png"
                 alt="Journey mapping with sticky notes"
                 className="rounded-lg w-full object-cover aspect-16/9"
               />
               <img
-                src="/Photos/Flight/12.png"
+                src="/Photos/Flight/4.png"
                 alt="Desk setup for sketching"
                 className="rounded-lg w-full object-cover aspect-16/9"
               />
@@ -214,7 +274,7 @@ const PreFlightVR = () => {
       {/* Human Factors Section - reference image only */}
       <section className="py-16 bg-slate-900 text-white">
         <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto text-center mb-10 gap-8">
+          <div className="max-w-7xl mx-auto text-center mb-10 gap-8">
             <img
               src="/Photos/Flight/6.jpg"
               alt="Human Factors reference"
