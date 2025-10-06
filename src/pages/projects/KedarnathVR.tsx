@@ -295,25 +295,10 @@ const KedarnathVR = () => {
 
   const developmentGallery = [
     {
-      image: "/Photos/kedar 4.jpg",
+      image: "/Photos/kedar/23.png",
       alt: "Atmospheric capture of Kedarnath valley inspiring the lighting palette",
       caption: "Atmospheric lighting references for the pilgrimage valley",
-    },
-    {
-      image: "/Photos/Kedar 2.png",
-      alt: "Greybox model of Kedarnath shrine inside Maya viewport",
-      caption: "Greybox iterations mapped in Maya before detailing",
-    },
-    {
-      image: "/Photos/Frame 2.png",
-      alt: "Storyboard panel highlighting narrative beat inside Unreal",
-      caption: "Sequencer storyboard guiding cinematic pacing",
-    },
-    {
-      image: "/Photos/Unreal.png",
-      alt: "Screenshot of Unreal Engine level showing environment layers",
-      caption: "Final environment pass assembled in Unreal Engine 5",
-    },
+    }
   ];
 
   const learningInsights = [
@@ -368,12 +353,12 @@ const KedarnathVR = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-sky-100">
       <MobileOverlay />
       <Navigation />
 
       <section className="relative py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-white via-slate-50 to-blue-50/70" />
+        <div className="absolute inset-0 bg-gradient-to-br from-white via-slate-50 to-sky-100/70" />
 
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute top-1/4 left-1/4 w-24 h-24 bg-sky-200/25 rounded-full blur-xl animate-pulse" />
@@ -397,67 +382,62 @@ const KedarnathVR = () => {
               <Button
                 asChild
                 variant="ghost"
-                className="text-muted-foreground hover:text-blue-700"
+                className="text-muted-foreground hover:text-sky-700"
               >
                 <Link to="/projects">
-                  <ArrowLeft className="w-4 h-4 mr-2" />
+                  <ArrowLeft className="w-4 h-4 mr-2 text-sky-700" />
                   Back to Projects
                 </Link>
               </Button>
             </div>
-
             <div className="text-center mb-20">
-              <div className="inline-flex items-center px-6 py-3 rounded-full bg-gradient-to-r from-sky-100/60 via-indigo-100/60 to-blue-100/60 border border-blue-200/60 mb-8">
-                <Building2 className="w-5 h-5 mr-3 text-blue-700" />
-                <span className="text-base font-medium text-blue-700">
+              <div className="inline-flex items-center px-6 py-3 rounded-full bg-gradient-to-r from-sky-100/60 via-cyan-100/60 to-indigo-100/60 border border-sky-200/60 mb-8">
+                <Building2 className="w-5 h-5 mr-3 text-sky-700" />
+                <span className="text-base font-medium text-sky-700">
                   Main Project • Cultural Heritage VR
                 </span>
               </div>
-
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 bg-gradient-to-r from-blue-800 via-indigo-700 to-sky-600 bg-clip-text text-transparent">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-4 bg-gradient-to-r from-sky-700 via-cyan-600 to-indigo-400 bg-clip-text text-transparent">
                 {projectDetails.title}
               </h1>
-
-              <p className="text-2xl text-muted-foreground max-w-5xl mx-auto leading-relaxed mb-10">
+              <p className="text-2xl text-muted-foreground max-w-5xl mx-auto leading-relaxed mb-12">
                 {projectDetails.subtitle}
               </p>
-
-              <div className="flex flex-wrap justify-center gap-6 mb-10">
-                <Badge
-                  variant="outline"
-                  className="text-base py-2 px-4 border-blue-200 text-blue-700"
-                >
-                  <Calendar className="w-4 h-4 mr-2" />
-                  {projectDetails.year}
-                </Badge>
+              <div className="flex flex-wrap justify-center gap-6 mb-4">
                 <Badge
                   variant="outline"
                   className="text-base py-2 px-4 border-sky-200 text-sky-700"
                 >
-                  <Clock className="w-4 h-4 mr-2" />
+                  <Calendar className="w-4 h-4 mr-2 text-sky-700" />
+                  {projectDetails.year}
+                </Badge>
+                <Badge
+                  variant="outline"
+                  className="text-base py-2 px-4 border-cyan-200 text-cyan-700"
+                >
+                  <Clock className="w-4 h-4 mr-2 text-cyan-700" />
                   {projectDetails.duration}
                 </Badge>
                 <Badge
                   variant="outline"
-                  className="text-base py-2 px-4 border-indigo-200 text-indigo-700"
+                  className="text-base py-2 px-4 border-indigo-200 text-sky-700"
                 >
-                  <Users className="w-4 h-4 mr-2" />
+                  <Users className="w-4 h-4 mr-2 text-sky-700" />
                   {projectDetails.team}
                 </Badge>
               </div>
-
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
                 <Button
                   asChild
                   size="lg"
-                  className="text-lg px-8 py-4 bg-blue-600 text-white hover:bg-blue-700"
+                  className="text-lg px-8 py-4 bg-sky-700 text-white hover:bg-cyan-600"
                 >
                   <a
                     href="https://youtu.be/8cRfjMoWuek"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Play className="mr-3 h-5 w-5" />
+                    <Play className="mr-3 h-5 w-5 text-white" />
                     Watch Process Video
                   </a>
                 </Button>
@@ -465,20 +445,19 @@ const KedarnathVR = () => {
                   asChild
                   variant="outline"
                   size="lg"
-                  className="text-lg px-8 py-4 border-sky-200 text-sky-700 hover:bg-sky-100/60"
+                  className="text-lg px-8 py-4 border-sky-200 text-sky-700 hover:bg-sky-100/60 text-sky-700"
                 >
                   <a
                     href="https://youtu.be/906BghZnUN4"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Headphones className="mr-3 h-5 w-5" />
+                    <Headphones className="mr-3 h-5 w-5 text-sky-700" />
                     Experience Preview
                   </a>
                 </Button>
               </div>
             </div>
-
             <CustomVideoPlayer
               src="https://youtu.be/7_hjT2z4-20"
               title="Immersive Experience of Kedarnath Temple | Trailer Video"
@@ -494,7 +473,7 @@ const KedarnathVR = () => {
             <div className="grid lg:grid-cols-3 gap-10">
               <Card className="border-border/50 bg-card/60 backdrop-blur-sm hover:border-blue-300/60 transition-all duration-300">
                 <CardHeader>
-                  <CardTitle className="flex items-center text-blue-700 text-xl">
+                  <CardTitle className="flex items-center text-sky-700 text-xl">
                     <Target className="w-6 h-6 mr-3" />
                     The Problem
                   </CardTitle>
@@ -545,7 +524,7 @@ const KedarnathVR = () => {
 
               <Card className="border-border/50 bg-card/60 backdrop-blur-sm hover:border-indigo-300/60 transition-all duration-300">
                 <CardHeader>
-                  <CardTitle className="flex items-center text-indigo-700 text-xl">
+                  <CardTitle className="flex items-center text-sky-700 text-xl">
                     <Sparkles className="w-6 h-6 mr-3" />
                     The Solution
                   </CardTitle>
@@ -649,7 +628,7 @@ const KedarnathVR = () => {
       <section className="py-24">
         <div className="container mx-auto px-4">
           <div className="max-w-7xl mx-auto text-center bg-gradient-to-r from-white via-slate-50 to-blue-50/60 p-12 rounded-3xl shadow-lg">
-            <h2 className="text-4xl font-bold mb-8 text-blue-700">
+            <h2 className="text-4xl font-bold mb-8 text-sky-700">
               Why Kedarnath?
             </h2>
             <div className="space-y-6 text-md text-muted-foreground leading-relaxed">
@@ -726,7 +705,7 @@ const KedarnathVR = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold mb-6 text-blue-700">
+              <h2 className="text-4xl font-bold mb-6 text-sky-700">
                 Target Audience
               </h2>
               <p className="text-xl text-muted-foreground">
@@ -751,17 +730,17 @@ const KedarnathVR = () => {
                         >
                           <Icon className={`w-8 h-8 ${accent.icon}`} />
                         </div> */}
-                        <h3 className="text-2xl font-bold mb-2 text-blue-700">
+                        <h3 className="text-2xl font-bold mb-2 text-sky-700">
                           {audience.name}
                         </h3>
-                         <h3 className="text-sm font-light mb-2 text-blue-700">
+                         <h3 className="text-sm font-bold mb-2 text-sky-700">
                           {audience.age}
                         </h3>
                       </div>
 
                       <div className="space-y-4">
                         <div>
-                          <h4 className="font-semibold text-xs tracking-widest text-blue-700 mb-2">
+                          <h4 className="font-semibold text-sm  text-sky-900 mb-2">
                             CHARACTERISTICS
                           </h4>
                           <p className="text-muted-foreground text-sm leading-relaxed">
@@ -769,7 +748,7 @@ const KedarnathVR = () => {
                           </p>
                         </div>
                         <div>
-                          <h4 className="font-semibold text-xs tracking-widest text-sky-700 mb-2">
+                          <h4 className="font-semibold text-sm text-sky-900 mb-2">
                             CHALLENGE
                           </h4>
                           <p className="text-muted-foreground text-sm leading-relaxed">
@@ -790,7 +769,7 @@ const KedarnathVR = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold mb-6 text-blue-700">
+              <h2 className="text-4xl font-bold mb-6 text-sky-700">
                 Experience Flow
               </h2>
               <p className="text-xl text-muted-foreground mb-8">
@@ -890,12 +869,9 @@ const KedarnathVR = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="grid lg:grid-cols-1 gap-12 items-center text-center">
-              <div>
-                <Badge className="mb-6 bg-blue-100 text-blue-700 hover:bg-blue-100 text-center">
-                  Storyboarding Journey
-                </Badge>
+              <div> 
                 <h2 className="text-4xl font-bold mb-6 text-sky-700 text-center">
-                  Visualizing the Pilgrim Narrative
+                  Visualizing the Experience
                 </h2>
                 <p className="text-muted-foreground text-sm leading-relaxed mb-6 text-center">
                    Before beginning development, I created a detailed storyboard to map out the entire user journey and mythological narrative.
@@ -940,7 +916,7 @@ const KedarnathVR = () => {
                       </span>
                     </div>
                     <CardContent className="p-6">
-                      <h3 className="text-lg font-semibold text-blue-700 mb-2">
+                      <h3 className="text-lg font-semibold text-sky-700 mb-2">
                         {frame.title}
                       </h3>
                       <p className="text-muted-foreground text-sm leading-relaxed">
@@ -959,7 +935,7 @@ const KedarnathVR = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold mb-6 text-blue-700">
+              <h2 className="text-4xl font-bold mb-6 text-sky-700">
                 User Actions & Interactions
               </h2>
               <p className="text-xl text-muted-foreground">
@@ -975,9 +951,9 @@ const KedarnathVR = () => {
                     key={index}
                     className="border-border/50 bg-card/70 backdrop-blur-sm hover:border-blue-300/60 transition-all duration-300"
                   >
-                    <CardContent className="p-6">
+                    <CardContent className="p-2">
                       <div className="grid sm:grid-cols-[180px_1fr] gap-6 items-center">
-                        <div className="relative overflow-hidden rounded-2xl aspect-[4/3] shadow-md">
+                        <div className="relative overflow-hidden rounded aspect-[4/3] shadow-md">
                           <img
                             src={interaction.image}
                             alt={interaction.alt}
@@ -987,7 +963,7 @@ const KedarnathVR = () => {
                         
                         </div>
                         <div>
-                          <h3 className="text-lg font-semibold mb-3 text-blue-700">
+                          <h3 className="text-lg font-semibold mb-1 text-sky-700">
                             {interaction.title}
                           </h3>
                           <p className="text-muted-foreground text-sm leading-relaxed">
@@ -1052,7 +1028,7 @@ const KedarnathVR = () => {
 
       <section className="py-24">
         <div className="container mx-auto px-4">
-          <div className="max-w-7xl mx-auto">
+          <div className="max-w-8xl mx-auto">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold mb-6 text-sky-700">
                 Development Process
@@ -1063,7 +1039,7 @@ const KedarnathVR = () => {
               </p>
             </div>
 
-            <div className="grid xl:grid-cols-[1.1fr_0.9fr] gap-16 items-start">
+            <div className="grid xl:grid-cols-2 gap-16 items-start">
               <div className="relative">
                 <div className="absolute left-4 top-0 bottom-0 hidden lg:block">
                   <div className="w-px h-full bg-gradient-to-b from-blue-200 via-sky-200 to-indigo-200" />
@@ -1109,22 +1085,22 @@ const KedarnathVR = () => {
                 </div>
               </div>
 
-              <div className="grid sm:grid-cols-2 gap-6">
+              <div className="grid sm:grid-cols-1 gap-6">
                 {developmentGallery.map((item, index) => (
                   <div
                     key={index}
-                    className="relative overflow-hidden rounded-3xl shadow-lg group"
+                    className="relative overflow-hidden shadow-lg group aspect-[9/16]"
                   >
                     <img
                       src={item.image}
                       alt={item.alt}
-                      className="w-full h-full object-cover aspect-[4/5]"
+                      className="w-full h-full object-cover aspect-9/16"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent opacity-90 group-hover:opacity-100 transition-opacity duration-300" />
-                    <div className="absolute bottom-4 left-4 right-4 text-sm text-white leading-relaxed">
+                   {/* <div className="absolute bottom-4 left-4 right-4 text-sm text-white leading-relaxed">
                       <p className="font-semibold mb-1">{item.caption}</p>
                       <p className="opacity-80">{item.alt}</p>
-                    </div>
+                    </div>*/}
                   </div>
                 ))}
               </div>
@@ -1141,15 +1117,14 @@ const KedarnathVR = () => {
                 Learning Outcomes & Skills Acquired
               </h2>
               <p className="text-xl text-muted-foreground">
-                Key competencies and insights gained through this comprehensive
-                VR project
+                Key competencies and insights gained through this comprehensive VR project
               </p>
             </div>
 
             <div className="grid lg:grid-cols-2 gap-12 mb-16">
               <Card className="border-border/50 bg-card/70 backdrop-blur-sm">
                 <CardHeader>
-                  <CardTitle className="flex items-center text-blue-700 text-2xl">
+                  <CardTitle className="flex items-center text-sky-700 text-2xl">
                     <Layers className="w-6 h-6 mr-3" />
                     Technical Skills
                   </CardTitle>
@@ -1157,7 +1132,7 @@ const KedarnathVR = () => {
                 <CardContent>
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
-                      <h4 className="font-semibold text-blue-700 mb-3">
+                      <h4 className="font-semibold text-sky-700 mb-3">
                         3D Development
                       </h4>
                       <ul className="text-muted-foreground space-y-2 text-sm">
@@ -1232,7 +1207,7 @@ const KedarnathVR = () => {
                       >
                         <Icon className={`w-6 h-6 ${insight.iconColor}`} />
                       </div>
-                      <h3 className="font-semibold mb-3 text-blue-700">
+                      <h3 className="font-semibold mb-3 text-sky-700">
                         {insight.title}
                       </h3>
                       <p className="text-muted-foreground text-sm leading-relaxed">
@@ -1266,7 +1241,7 @@ const KedarnathVR = () => {
 
       <section className="py-24 bg-gradient-to-r from-sky-100/60 via-background to-indigo-100/60">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold mb-6 text-blue-700">
+          <h2 className="text-4xl font-bold mb-6 text-sky-700">
             Explore More Sacred Innovations
           </h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
