@@ -16,6 +16,7 @@ import Footer from "@/components/Footer";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import CustomVideoPlayer from "@/components/ui/VideoPlayer";
 
 const MobileOverlay = () => (
   <div className="fixed inset-0 z-50 flex items-center justify-center bg-white/95 backdrop-blur-lg md:hidden">
@@ -33,25 +34,25 @@ const MobileOverlay = () => (
 const sensoryPrinciples = [
   {
     icon: Hand,
-    title: "Gesture-native navigation",
+    title: "Learning the Basics",
     description:
-      "Guided surfaces are sculpted to be read through touch. Swiping and pressing create gentle haptic pulses that confirm every move without visual overload.",
+      "Before diving into the tutorial, I explored the fundamentals of TouchDesigner, learning about nodes, CHOPs, and real-time rendering. This helped me get comfortable with the interface and how data flows through the network.",
     iconColor: "text-amber-600",
     background: "bg-amber-100",
   },
   {
     icon: Palette,
-    title: "Material storytelling",
+    title: "Following the Tutorial",
     description:
-      "Soft textile meshes, etched glass, and thermo-chromatic ink become interactive surfaces. Each texture signals purpose—guiding fingertips to explore new actions.",
+      "Using MediaPipe integration, I mapped hand landmarks to visual parameters. This step involved connecting real-time motion input to reactive visuals, turning gestures into design triggers.",
     iconColor: "text-rose-600",
     background: "bg-rose-100",
   },
   {
     icon: Sparkles,
-    title: "Micro moments of delight",
+    title: "Customizing the Output",
     description:
-      "Ambient lighting and sound respond to pressure. A light squeeze activates glows that bloom outward, rewarding curiosity and creating memorable rituals.",
+      "Following Torin Blankensmith’s tutorial, I constructed a dynamic interactive setup. I tweaked elements, adjusted parameters, and experimented with effects to make the visuals respond smoothly to hand movements.",
     iconColor: "text-sky-600",
     background: "bg-sky-100",
   },
@@ -79,9 +80,10 @@ const prototypes = [
 ];
 
 const collaborationInsights = [
-  "Co-designed with industrial designers to prototype soft-good housings that protect embedded sensors.",
-  "Mapped accessibility considerations with visually impaired storytellers, ensuring gestures can be learned through tone and pace.",
-  "Used iterative testing sessions to calibrate vibration intensity, avoiding sensory fatigue during extended use.",
+   
+  "I understood how data inputs like hand gestures can directly influence generative visuals, creating a sense of tangible interaction between human motion and digital space.",
+  "Working with CHOPs and TOPs taught me how to manage data flow efficiently, controlling everything from hand coordinates to visual effects using procedural logic.",
+  "This project wasn’t about perfecting a final piece but exploring how technology, motion, and visuals can blend seamlessly. It deepened my curiosity for interactive media and motion-based experiences."
 ];
 
 const TouchDesign = () => {
@@ -112,21 +114,13 @@ const TouchDesign = () => {
             </div>
 
             <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div>
-                <Badge
-                  variant="outline"
-                  className="mb-6 border-amber-400 text-amber-600"
-                >
-                  Tactile Interaction Study
-                </Badge>
+              <div> 
                 <h1 className="text-4xl md:text-5xl font-bold mb-5 text-foreground">
                   Touch Design Research Platform
                 </h1>
                 <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                  A suite of tactile-first prototypes exploring how surfaces,
-                  light, and sound respond to nuanced gestures. Built to help
-                  storytellers and facilitators host collaborative experiences
-                  without relying on screens.
+                  This project was a self-initiated exploration to understand real-time visual systems in TouchDesigner. I followed a tutorial by Torin Blankensmith, 
+                  integrating MediaPipe for hand tracking. Before beginning, I studied the fundamentals of nodes, CHOPs, and TOPs to understand how data flows through the software.
                 </p>
                 <div className="flex flex-wrap gap-3 mb-8">
                   <Badge
@@ -145,7 +139,7 @@ const TouchDesign = () => {
                     variant="secondary"
                     className="bg-sky-100 text-sky-700"
                   >
-                    Physical computing
+                    Hand Tracking Exploration
                   </Badge>
                 </div>
                 <div className="space-y-3 text-sm text-muted-foreground">
@@ -160,12 +154,12 @@ const TouchDesign = () => {
                 </div>
               </div>
               <div className="relative">
-                <div className="absolute -inset-4 rounded-3xl bg-gradient-to-r from-amber-200/40 via-white to-rose-200/40 blur-2xl" />
-                <div className="relative rounded-3xl overflow-hidden border border-amber-200/60 shadow-xl">
+                <div className="absolute -inset-4 rounded-2xl bg-gradient-to-r from-amber-200/40 via-white to-rose-200/40 blur-2xl" />
+                <div className="relative rounded-2xl overflow-hidden border border-amber-200/60 shadow-xl aspect-square">
                   <img
-                    src="/Photos/illustrations/8.png"
+                    src="/Photos/touchdesign1.png"
                     alt="Touch-sensitive prototype being tested"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover aspect-square"
                   />
                 </div>
               </div>
@@ -178,11 +172,10 @@ const TouchDesign = () => {
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-heading text-foreground mb-4">
-              Sensory Principles
+              Process & Learning Journey
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Every interaction was tuned to communicate through texture,
-              rhythm, and temperature before visuals.
+              Each step helped me understand TouchDesigner’s visual logic, how small changes in nodes can completely alter interaction.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
@@ -215,8 +208,18 @@ const TouchDesign = () => {
         </div>
       </section>
 
-      <section className="py-20 bg-amber-50/60">
+         <div className="container mx-auto px-4 max-w-6xl">
+        <CustomVideoPlayer
+              src="https://youtube.com/embed/PtXsCYxxC2Y?si=kyx4CFfyFB_SSow7"
+              title="Mushroom House YouTube Showcase"
+              className=" mb-16"
+            />
+            </div>
+
+      
+     {/*<section className="py-20 bg-amber-50/60">
         <div className="container mx-auto px-4 max-w-6xl">
+            
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl font-heading text-foreground mb-4">
@@ -271,19 +274,17 @@ const TouchDesign = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="py-20">
-        <div className="container mx-auto px-4 max-w-5xl">
+        <div className="container mx-auto px-4 max-w-6xl">
           <Card className="border border-rose-200/60 bg-white/80">
             <CardContent className="p-10">
               <h2 className="text-2xl font-heading text-foreground mb-4 text-center">
-                Collaboration Insights
+                What I Learned
               </h2>
               <p className="text-muted-foreground text-center mb-8">
-                Touch Design is a living platform that grows through
-                partnerships. These insights keep the work grounded in
-                real-world rituals.
+                
               </p>
               <div className="grid md:grid-cols-3 gap-6">
                 {collaborationInsights.map((insight, index) => (

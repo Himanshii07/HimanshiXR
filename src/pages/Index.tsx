@@ -104,7 +104,7 @@ const Index = () => {
     {
       title: "Touch Design",
       category: "Tactile Interface",
-      image: "/Photos/illustrations/5.png",
+      image: "/Photos/touchdesign1.png",
       description:
         "A sensory-driven platform that experiments with gestures, texture, and light to craft shared touch experiences.",
       slug: "touch-design",
