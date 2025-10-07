@@ -75,24 +75,42 @@ const Index = () => {
       title: "Stormy Ocean",
       category: "Simulation & VFX",
       image: "/Photos/Stormy Ocean.png",
-      description: "A dynamic ocean simulation project exploring water physics and visual effects in Unreal Engine.",
+      description:
+        "A dynamic ocean simulation project exploring water physics and visual effects in Unreal Engine.",
       slug: "stormy-ocean",
     },
     {
       title: "Unreal Cinematic Challenge",
       category: "Cinematic & Animation",
       image: "/Photos/Unreal.png",
-      description: "Short film created for Unreal Engine's cinematic challenge, focusing on lighting, camera, and storytelling.",
+      description:
+        "Short film created for Unreal Engine's cinematic challenge, focusing on lighting, camera, and storytelling.",
       slug: "unreal-cinematic",
     },
-     {
+    {
       title: "Angry Birds Game",
       category: "Interactive Game Design",
       image: "/Photos/Angry birds.png",
-      description: "A 2D recreation of Angry Birds with physics-based gameplay, multiple levels, and engaging visual effects. ",
+      description:
+        "A 2D recreation of Angry Birds with physics-based gameplay, multiple levels, and engaging visual effects.",
       slug: "angry-birds",
     },
-    
+    {
+      title: "Touch Design",
+      category: "Tactile Interface",
+      image: "/Photos/illustrations/5.png",
+      description:
+        "A sensory-driven platform that experiments with gestures, texture, and light to craft shared touch experiences.",
+      slug: "touch-design",
+    },
+    {
+      title: "Creative Coding Residency",
+      category: "Generative Art",
+      image: "/Photos/illustrations/10.png",
+      description:
+        "A year-long series translating code, sound, and projection into playful instruments for collaborative storytelling.",
+      slug: "creative-coding",
+    },
   ];
 
   return (
