@@ -92,6 +92,7 @@ const Index = () => {
       description: "A 2D recreation of Angry Birds with physics-based gameplay, multiple levels, and engaging visual effects. ",
       slug: "angry-birds",
     },
+    
   ];
 
   return (
