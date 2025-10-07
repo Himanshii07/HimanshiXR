@@ -31,7 +31,7 @@ const MobileOverlay = () => (
 
 const experiments = [
   {
-    icon: Code2,
+    icon: Sparkles,
     title: "Concept & Design",
     description:
       "I sketched and designed the Photo Booth interface in Figma, experimenting with layout, colors, and interactive elements.",
@@ -45,7 +45,7 @@ const experiments = [
     badge: "Physical computing",
   },
   {
-    icon: Sparkles,
+    icon: Code2,
     title: "Development",
     description:
       "I implemented the interactive features, such as capturing photos, applying effects, and downloading images, while keeping the experience playful and experimental.",
@@ -97,10 +97,18 @@ const CreativeCoding = () => {
         <div className="relative container mx-auto px-4">
           <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="mb-6 flex flex-wrap items-center gap-3">
+             
+              <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
+                Photo-booth Creative Coding Project
+              </h1>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+               I designed and developed an interactive Photo Booth website that allows users to capture, customize, and download their photos in a playful, engaging interface. 
+               The project blends creative coding techniques with web design to create a fun and immersive user experience.
+              </p>
+               <div className="mb-6 flex flex-wrap items-center gap-3">
                 <Badge
                   variant="outline"
-                  className="border-purple-400 text-purple-600"
+                  className="border-red-400 text-red-600"
                 >
                   Experimental Coding Lab
                 </Badge>
@@ -108,28 +116,20 @@ const CreativeCoding = () => {
                   Immersive media
                 </Badge>
               </div>
-              <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-                Creative Coding Residency Series
-              </h1>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-               I designed and developed an interactive Photo Booth website that allows users to capture, customize, and download their photos in a playful, engaging interface. 
-               The project blends creative coding techniques with web design to create a fun and immersive user experience.
-              </p>
               <div className="space-y-3 text-sm text-muted-foreground mb-8">
-                <div className="flex items-center gap-2">
+               {/*} <div className="flex items-center gap-2">
                   <Calendar className="w-4 h-4 text-purple-500" />
-                  2023 – 2024 · Residency hosted in Bangalore and remote pop-ups
-                </div>
+                  An interactive Photo Booth experience built with creative coding
+                </div> */}
                 <div className="flex items-center gap-2">
                   <Sparkles className="w-4 h-4 text-sky-500" />
-                  48 working prototypes shared with the community across six
-                  showcases
+                  Capture, customize, and download photos
                 </div>
               </div>
               <Button
                 asChild
                 size="lg"
-                className="bg-purple-600 text-white hover:bg-purple-700"
+                className="bg-red-900 text-white hover:bg-red-700"
               >
                 <Link to="/projects">
                   <ArrowLeft className="mr-2 h-4 w-4 rotate-180" />
@@ -141,7 +141,7 @@ const CreativeCoding = () => {
               <div className="absolute -inset-5 rounded-[40px] bg-gradient-to-br from-purple-200/40 via-white to-sky-200/40 blur-2xl" />
               <div className="relative overflow-hidden rounded-[40px] border border-purple-200/60 shadow-xl">
                 <img
-                  src="/Photos/illustrations/13.png"
+                  src="/Photos/photobooth2.png"
                   alt="Creative coding projection mapped artwork"
                   className="w-full h-full object-cover"
                 />
@@ -151,16 +151,16 @@ const CreativeCoding = () => {
         </div>
       </section>
 
+      
+
       <section className="py-20">
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-heading text-foreground mb-4">
-              Featured Experiments
+              Process
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              Each build was a conversation between algorithms and human
-              improvisation, designed to invite non-coders into generative
-              thinking.
+              A fully functional, interactive Photo Booth website that demonstrates a mix of coding skills, creativity, and user-centric design.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
@@ -172,7 +172,7 @@ const CreativeCoding = () => {
                   className="h-full border-border/50 bg-card/60 backdrop-blur-sm"
                 >
                   <CardHeader>
-                    <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-purple-100 text-purple-600">
+                    <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-red-100 text-red-600">
                       <Icon className="w-6 h-6" />
                     </div>
                     <CardTitle className="text-lg font-semibold text-foreground">
@@ -197,7 +197,32 @@ const CreativeCoding = () => {
         </div>
       </section>
 
-      <section className="py-20 bg-slate-50">
+
+      {/* Communication Loop */}
+      <section className="py-16 bg-white-50">
+        <div className="container max-w-7xl mx-auto px-4 rounded-xl shadow-lg overflow-hidden">
+          <div className="max-w-7xl mx-auto text-center mb-10 grid md:grid-cols-3 lg:grid-cols-3 gap-6 ">
+            <img
+              src="/Photos/photobooth2.png"
+              alt="Human Factors reference"
+              className="rounded-xl w-full object-cover aspect-square"
+            />
+            <img
+              src="/Photos/photobooth4.png"
+              alt="Human Factors reference"
+              className="rounded-xl w-full object-cover aspect-square"
+            />
+            <img
+              src="/Photos/photobooth6.png"
+              alt="Human Factors reference"
+              className="rounded-xl w-full object-cover aspect-square"
+            />
+          </div>
+        </div>
+      </section>
+
+      
+      {/*<section className="py-20 bg-slate-50">
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -238,7 +263,7 @@ const CreativeCoding = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section>*/}
 
       <section className="py-20">
         <div className="container mx-auto px-4 max-w-4xl">

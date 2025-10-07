@@ -78,6 +78,22 @@ const Index = () => {
   // Only show Stormy Ocean and Unreal Cinematic Challenge in exploredProjects
   const exploredProjects = [
     {
+      title: "Touch Design",
+      category: "Multi-sensory interactions",
+      image: "/Photos/touchdesign1.png",
+      description:
+        "A self-initiated exploration to understand real-time visual systems in TouchDesigner, by following a tutorial by Torin Blankensmith,",
+      slug: "touch-design",
+    },
+    {
+      title: "Creative Coding",
+      category: "Generative Art",
+      image: "/Photos/photobooth3.png",
+      description:
+        "A fully functional, interactive Photo Booth website that demonstrates a mix of coding skills, creativity, and user-centric design.",
+      slug: "creative-coding",
+    },
+    {
       title: "Stormy Ocean",
       category: "Simulation & VFX",
       image: "/Photos/Stormy Ocean.png",
@@ -101,22 +117,7 @@ const Index = () => {
         "A 2D recreation of Angry Birds with physics-based gameplay, multiple levels, and engaging visual effects.",
       slug: "angry-birds",
     },
-    {
-      title: "Touch Design",
-      category: "Tactile Interface",
-      image: "/Photos/touchdesign1.png",
-      description:
-        "A sensory-driven platform that experiments with gestures, texture, and light to craft shared touch experiences.",
-      slug: "touch-design",
-    },
-    {
-      title: "Creative Coding Residency",
-      category: "Generative Art",
-      image: "/Photos/illustrations/10.png",
-      description:
-        "A year-long series translating code, sound, and projection into playful instruments for collaborative storytelling.",
-      slug: "creative-coding",
-    },
+    
   ];
 
   return (
