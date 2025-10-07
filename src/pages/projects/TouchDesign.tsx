@@ -8,7 +8,7 @@ import {
   Sparkles,
   Layers3,
   Lightbulb,
-  Gauge,
+  Cpu,
   Users,
 } from "lucide-react";
 import Navigation from "@/components/Navigation";
@@ -36,21 +36,24 @@ const sensoryPrinciples = [
     title: "Gesture-native navigation",
     description:
       "Guided surfaces are sculpted to be read through touch. Swiping and pressing create gentle haptic pulses that confirm every move without visual overload.",
-    accent: "text-amber-600",
+    iconColor: "text-amber-600",
+    background: "bg-amber-100",
   },
   {
     icon: Palette,
     title: "Material storytelling",
     description:
       "Soft textile meshes, etched glass, and thermo-chromatic ink become interactive surfaces. Each texture signals purpose—guiding fingertips to explore new actions.",
-    accent: "text-rose-500",
+    iconColor: "text-rose-600",
+    background: "bg-rose-100",
   },
   {
     icon: Sparkles,
     title: "Micro moments of delight",
     description:
       "Ambient lighting and sound respond to pressure. A light squeeze activates glows that bloom outward, rewarding curiosity and creating memorable rituals.",
-    accent: "text-sky-500",
+    iconColor: "text-sky-600",
+    background: "bg-sky-100",
   },
 ];
 
@@ -68,7 +71,7 @@ const prototypes = [
       "Touch-reactive tiles orchestrate lighting scenes based on movement paths. The system learns favourite moods and suggests compositions for storytelling in physical rooms.",
   },
   {
-    icon: Gauge,
+    icon: Cpu,
     title: "Pressure-mapped sound controls",
     caption:
       "Haptic sliders replace knobs with a pressure fabric that modulates soundscapes. Musicians feel feedback before hearing it, helping them mix confidently without screens.",
@@ -168,8 +171,9 @@ const TouchDesign = () => {
               return (
                 <Card key={index} className="h-full border-border/50 bg-card/50 backdrop-blur-sm">
                   <CardHeader>
-                    <div className={`mb-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-white shadow ${principle.accent}/10`}></div>
-                    <Icon className={`w-6 h-6 mb-2 ${principle.accent}`} />
+                    <div className={`mb-4 inline-flex h-12 w-12 items-center justify-center rounded-full ${principle.background}`}>
+                      <Icon className={`w-6 h-6 ${principle.iconColor}`} />
+                    </div>
                     <CardTitle className="text-lg font-semibold text-foreground">
                       {principle.title}
                     </CardTitle>
