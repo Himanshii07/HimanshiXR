@@ -21,6 +21,8 @@ import PreFlightVR from "./pages/projects/PreFlight-VR";
 import SamsungAIAgent from "./pages/projects/SamsungAIAgent";
 import SystemThinking from "./pages/projects/SystemThinking";
 import Ethnography from "./pages/projects/Ethnography";
+import TouchDesign from "./pages/projects/TouchDesign";
+import CreativeCoding from "./pages/projects/CreativeCoding";
 
 const queryClient = new QueryClient();
 
@@ -60,6 +62,11 @@ const App = () => (
           <Route
             path="/projects/samsung-ai-agent"
             element={<SamsungAIAgent />}
+          />
+          <Route path="/projects/touch-design" element={<TouchDesign />} />
+          <Route
+            path="/projects/creative-coding"
+            element={<CreativeCoding />}
           />
           <Route
             path="/projects/system-thinking"
