@@ -12,8 +12,12 @@ import ValuesSection from "@/components/ValuesSection";
 const MobileOverlay = () => (
   <div className="fixed inset-0 z-50 flex items-center justify-center bg-white/95 backdrop-blur-lg md:hidden">
     <div className="text-center">
-      <h2 className="text-2xl md:text-3xl text-red-700 font-heading text-foreground mb-4">Uh-oh!</h2>
-      <p className="text-sm text-muted-foreground max-w-2xl mx-auto font-light">Open this website on a bigger screen!</p>
+      <h2 className="text-2xl md:text-3xl text-red-700 font-heading text-foreground mb-4">
+        Uh-oh!
+      </h2>
+      <p className="text-sm text-muted-foreground max-w-2xl mx-auto font-light">
+        Open this website on a bigger screen!
+      </p>
     </div>
   </div>
 );
@@ -33,12 +37,14 @@ const Index = () => {
     {
       icon: Layers3,
       title: "3D & Interaction Design",
-      description: "From prototyping in Unity and Unreal to modeling in Maya and Blender, I bring ideas to life with intuitive, interactive environments.",
+      description:
+        "From prototyping in Unity and Unreal to modeling in Maya and Blender, I bring ideas to life with intuitive, interactive environments.",
     },
     {
       icon: Palette,
       title: "Research-Driven Approach",
-      description: "Experienced in conducting design research to inform concepts, usability, and immersive solutions.",
+      description:
+        "Experienced in conducting design research to inform concepts, usability, and immersive solutions.",
     },
   ];
 
@@ -128,7 +134,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-heading text-red-700 text-foreground mb-4">
-              What I Do 
+              What I Do
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto font-light">
               Hover over the cards to see more details
@@ -139,30 +145,27 @@ const Index = () => {
         </div>
       </section>
 
-      
-
       {/* Recent Projects Preview */}
       <section className="py-24 bg-white/20">
         <div className=" container mx-auto px-4">
           <div className="mb-2 flex justify-center gap-1">
-                    <video
-                      src="/videos/ball.mp4" // Update this path
-                      autoPlay
-                      muted
-                      loop
-                      playsInline
-                      className="rounded-xl w-full max-w-2xl h-auto"
-                    />
-                  </div>
+            <video
+              src="/videos/ball.mp4" // Update this path
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="rounded-xl w-full max-w-2xl h-auto"
+            />
+          </div>
           <div className="text-center mb-16 max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-heading text-foreground mb-4">
-                 Untangling Problems Into Beautiful Solutions
+              Untangling Problems Into Beautiful Solutions
             </h2>
-               <p className="text-lg text-muted-foreground font-light">
-                  A selection of projects I've worked on
-               </p>
-           </div>
-
+            <p className="text-lg text-muted-foreground font-light">
+              A selection of projects I've worked on
+            </p>
+          </div>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-12xl mx-auto">
             {recentProjects.map((project, index) => {
@@ -222,11 +225,8 @@ const Index = () => {
         </div>
       </section>
 
-
       {/* Values Section */}
       <ValuesSection />
-
-
 
       {/* Explored */}
       <section className="py-24 bg-white/20">
@@ -236,7 +236,8 @@ const Index = () => {
               Creative Explorations
             </h2>
             <p className="text-lg text-muted-foreground font-light">
-              A collection of small builds and prototypes created just for exploration.
+              A collection of small builds and prototypes created just for
+              exploration.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-12xl mx-auto">
@@ -244,7 +245,11 @@ const Index = () => {
               const colors = ["minimal-sage", "minimal-warm", "minimal-cool"];
               const currentColor = colors[index % 3];
               return (
-                <Link key={index} to={`/projects/${project.slug}`} className="block">
+                <Link
+                  key={index}
+                  to={`/projects/${project.slug}`}
+                  className="block"
+                >
                   <Card className="group cursor-pointer overflow-hidden border border-border/50 bg-card hover:border-border transition-all duration-300 hover:shadow-lg hover:shadow-black/5">
                     <div
                       className={`aspect-video relative overflow-hidden ${

@@ -64,7 +64,10 @@ const App = () => (
             element={<SamsungAIAgent />}
           />
           <Route path="/projects/touch-design" element={<TouchDesign />} />
-          <Route path="/projects/creative-coding" element={<CreativeCoding />} />
+          <Route
+            path="/projects/creative-coding"
+            element={<CreativeCoding />}
+          />
           <Route
             path="/projects/system-thinking"
             element={<SystemThinking />}

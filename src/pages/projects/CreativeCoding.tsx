@@ -98,7 +98,10 @@ const CreativeCoding = () => {
           <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="mb-6 flex flex-wrap items-center gap-3">
-                <Badge variant="outline" className="border-purple-400 text-purple-600">
+                <Badge
+                  variant="outline"
+                  className="border-purple-400 text-purple-600"
+                >
                   Experimental Coding Lab
                 </Badge>
                 <Badge variant="secondary" className="bg-sky-100 text-sky-700">
@@ -109,7 +112,9 @@ const CreativeCoding = () => {
                 Creative Coding Residency Series
               </h1>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                A year-long residency of nightly sketches exploring how code, sound, and fabrication can translate complex emotions into playful digital instruments.
+                A year-long residency of nightly sketches exploring how code,
+                sound, and fabrication can translate complex emotions into
+                playful digital instruments.
               </p>
               <div className="space-y-3 text-sm text-muted-foreground mb-8">
                 <div className="flex items-center gap-2">
@@ -118,10 +123,15 @@ const CreativeCoding = () => {
                 </div>
                 <div className="flex items-center gap-2">
                   <Sparkles className="w-4 h-4 text-sky-500" />
-                  48 working prototypes shared with the community across six showcases
+                  48 working prototypes shared with the community across six
+                  showcases
                 </div>
               </div>
-              <Button asChild size="lg" className="bg-purple-600 text-white hover:bg-purple-700">
+              <Button
+                asChild
+                size="lg"
+                className="bg-purple-600 text-white hover:bg-purple-700"
+              >
                 <Link to="/projects">
                   <ArrowLeft className="mr-2 h-4 w-4 rotate-180" />
                   Explore more projects
@@ -149,14 +159,19 @@ const CreativeCoding = () => {
               Featured Experiments
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              Each build was a conversation between algorithms and human improvisation, designed to invite non-coders into generative thinking.
+              Each build was a conversation between algorithms and human
+              improvisation, designed to invite non-coders into generative
+              thinking.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {experiments.map((experiment, index) => {
               const Icon = experiment.icon;
               return (
-                <Card key={index} className="h-full border-border/50 bg-card/60 backdrop-blur-sm">
+                <Card
+                  key={index}
+                  className="h-full border-border/50 bg-card/60 backdrop-blur-sm"
+                >
                   <CardHeader>
                     <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-purple-100 text-purple-600">
                       <Icon className="w-6 h-6" />
@@ -169,7 +184,10 @@ const CreativeCoding = () => {
                     <p className="text-sm text-muted-foreground leading-relaxed mb-4">
                       {experiment.description}
                     </p>
-                    <Badge variant="secondary" className="bg-slate-100 text-slate-600">
+                    <Badge
+                      variant="secondary"
+                      className="bg-slate-100 text-slate-600"
+                    >
                       {experiment.badge}
                     </Badge>
                   </CardContent>
@@ -188,7 +206,10 @@ const CreativeCoding = () => {
                 Making Technology Feel Playful
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                I built a modular toolkit to combine sensors, code, projection, and sound. These foundations let workshops transform quickly—one night it's a narrative instrument, the next an ambient meditation space.
+                I built a modular toolkit to combine sensors, code, projection,
+                and sound. These foundations let workshops transform quickly—one
+                night it's a narrative instrument, the next an ambient
+                meditation space.
               </p>
               <ul className="space-y-3 text-sm text-muted-foreground">
                 {toolkit.map((item, index) => (
@@ -228,7 +249,11 @@ const CreativeCoding = () => {
                 Why Creative Coding Matters Here
               </h2>
               <p className="text-muted-foreground leading-relaxed">
-                The residency proved that accessible tools and storytelling frameworks help people reimagine technology as a companion rather than a barrier. The experiments now power workshops with schools, indie musicians, and museum educators who want to turn data into intimate experiences.
+                The residency proved that accessible tools and storytelling
+                frameworks help people reimagine technology as a companion
+                rather than a barrier. The experiments now power workshops with
+                schools, indie musicians, and museum educators who want to turn
+                data into intimate experiences.
               </p>
             </CardContent>
           </Card>
