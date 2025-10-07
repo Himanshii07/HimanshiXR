@@ -87,10 +87,11 @@ const FlipCards: React.FC = () => {
         "I design engaging AR/VR experiences that merge storytelling, interaction, and technology to create meaningful virtual worlds.",
       backContent: (
         <div>
-          <video controls className="w-full rounded-xl mb-2">
-            <source src="/videos/xr-demo.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+          <img
+                  src="/Photos/VR_Headset.jpg"
+                  alt="Realistic Props & Details"
+                  className="rounded-lg mb-4 w-full object-cover aspect-square"
+                />
           <p className="text-muted-foreground text-sm">
             XR project demo and process highlights.
           </p>
@@ -104,10 +105,11 @@ const FlipCards: React.FC = () => {
         "From prototyping in Unity and Unreal to modeling in Maya and Blender, I bring ideas to life with intuitive, interactive environments.",
       backContent: (
         <div>
-          <video controls className="w-full rounded-xl mb-2">
-            <source src="/videos/3d-demo.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+         <img
+                  src="/Photos/Object.jpg"
+                  alt="Realistic Props & Details"
+                  className="rounded-lg mb-4 w-full object-cover aspect-square"
+                />
           <p className="text-muted-foreground text-sm">
             3D workflow and interaction design showcase.
           </p>
@@ -124,10 +126,11 @@ const FlipCards: React.FC = () => {
           <p className="text-muted-foreground text-sm mb-2">
             Creative process videos and inspiration boards.
           </p>
-          <video controls className="w-full rounded-xl">
-            <source src="/videos/research-demo.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+         <img
+                  src="/Photos/sticky.png"
+                  alt="Realistic Props & Details"
+                  className="rounded-lg mb-4 w-full object-cover aspect-square"
+                />
         </div>
       ),
     },
