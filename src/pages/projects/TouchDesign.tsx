@@ -99,7 +99,11 @@ const TouchDesign = () => {
         <div className="relative container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="mb-8">
-              <Button asChild variant="ghost" className="text-muted-foreground hover:text-foreground">
+              <Button
+                asChild
+                variant="ghost"
+                className="text-muted-foreground hover:text-foreground"
+              >
                 <Link to="/projects">
                   <ArrowLeft className="w-4 h-4 mr-2" />
                   Back to Projects
@@ -109,23 +113,38 @@ const TouchDesign = () => {
 
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
-                <Badge variant="outline" className="mb-6 border-amber-400 text-amber-600">
+                <Badge
+                  variant="outline"
+                  className="mb-6 border-amber-400 text-amber-600"
+                >
                   Tactile Interaction Study
                 </Badge>
                 <h1 className="text-4xl md:text-5xl font-bold mb-5 text-foreground">
                   Touch Design Research Platform
                 </h1>
                 <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                  A suite of tactile-first prototypes exploring how surfaces, light, and sound respond to nuanced gestures. Built to help storytellers and facilitators host collaborative experiences without relying on screens.
+                  A suite of tactile-first prototypes exploring how surfaces,
+                  light, and sound respond to nuanced gestures. Built to help
+                  storytellers and facilitators host collaborative experiences
+                  without relying on screens.
                 </p>
                 <div className="flex flex-wrap gap-3 mb-8">
-                  <Badge variant="secondary" className="bg-amber-100 text-amber-700">
+                  <Badge
+                    variant="secondary"
+                    className="bg-amber-100 text-amber-700"
+                  >
                     Multi-sensory interactions
                   </Badge>
-                  <Badge variant="secondary" className="bg-rose-100 text-rose-700">
+                  <Badge
+                    variant="secondary"
+                    className="bg-rose-100 text-rose-700"
+                  >
                     Inclusive design research
                   </Badge>
-                  <Badge variant="secondary" className="bg-sky-100 text-sky-700">
+                  <Badge
+                    variant="secondary"
+                    className="bg-sky-100 text-sky-700"
+                  >
                     Physical computing
                   </Badge>
                 </div>
@@ -162,16 +181,22 @@ const TouchDesign = () => {
               Sensory Principles
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Every interaction was tuned to communicate through texture, rhythm, and temperature before visuals.
+              Every interaction was tuned to communicate through texture,
+              rhythm, and temperature before visuals.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {sensoryPrinciples.map((principle, index) => {
               const Icon = principle.icon;
               return (
-                <Card key={index} className="h-full border-border/50 bg-card/50 backdrop-blur-sm">
+                <Card
+                  key={index}
+                  className="h-full border-border/50 bg-card/50 backdrop-blur-sm"
+                >
                   <CardHeader>
-                    <div className={`mb-4 inline-flex h-12 w-12 items-center justify-center rounded-full ${principle.background}`}>
+                    <div
+                      className={`mb-4 inline-flex h-12 w-12 items-center justify-center rounded-full ${principle.background}`}
+                    >
                       <Icon className={`w-6 h-6 ${principle.iconColor}`} />
                     </div>
                     <CardTitle className="text-lg font-semibold text-foreground">
@@ -198,17 +223,22 @@ const TouchDesign = () => {
                 Prototyping Highlights
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                We iterated across foam models, conductive paint experiments, and microcontroller firmware to discover how gestures could control ambient systems without visual distraction.
+                We iterated across foam models, conductive paint experiments,
+                and microcontroller firmware to discover how gestures could
+                control ambient systems without visual distraction.
               </p>
               <ul className="space-y-3 text-sm text-muted-foreground">
                 <li>
-                  • Designed modular PCBs that snap into soft enclosures for rapid sensor swapping.
+                  • Designed modular PCBs that snap into soft enclosures for
+                  rapid sensor swapping.
                 </li>
                 <li>
-                  • Documented tactile grammar so facilitators can onboard participants within two minutes.
+                  • Documented tactile grammar so facilitators can onboard
+                  participants within two minutes.
                 </li>
                 <li>
-                  • Crafted a testing kit with thermochromic stickers to visualise heat trails from repeated gestures.
+                  • Crafted a testing kit with thermochromic stickers to
+                  visualise heat trails from repeated gestures.
                 </li>
               </ul>
             </div>
@@ -216,7 +246,10 @@ const TouchDesign = () => {
               {prototypes.map((prototype, index) => {
                 const Icon = prototype.icon;
                 return (
-                  <Card key={index} className="border border-amber-200/40 bg-white/80 shadow-sm">
+                  <Card
+                    key={index}
+                    className="border border-amber-200/40 bg-white/80 shadow-sm"
+                  >
                     <CardContent className="p-6">
                       <div className="flex items-start gap-4">
                         <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-amber-100 text-amber-600">
@@ -248,11 +281,16 @@ const TouchDesign = () => {
                 Collaboration Insights
               </h2>
               <p className="text-muted-foreground text-center mb-8">
-                Touch Design is a living platform that grows through partnerships. These insights keep the work grounded in real-world rituals.
+                Touch Design is a living platform that grows through
+                partnerships. These insights keep the work grounded in
+                real-world rituals.
               </p>
               <div className="grid md:grid-cols-3 gap-6">
                 {collaborationInsights.map((insight, index) => (
-                  <div key={index} className="rounded-xl border border-rose-200/60 bg-rose-50/60 p-6 text-sm text-muted-foreground leading-relaxed">
+                  <div
+                    key={index}
+                    className="rounded-xl border border-rose-200/60 bg-rose-50/60 p-6 text-sm text-muted-foreground leading-relaxed"
+                  >
                     {insight}
                   </div>
                 ))}
