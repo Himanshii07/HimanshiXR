@@ -414,7 +414,7 @@ const Savey = () => {
               </span>
             </h2>
           </div>
-          <div className="grid md:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-4 gap-6 ">
             <img
               src="/Photos/savey/6.png"
               alt="Laser cutting"
@@ -431,7 +431,7 @@ const Savey = () => {
               className="rounded-lg shadow w-full object-cover aspect-square"
             />
             <img
-              src="/Photos/savey/.png"
+              src="/Photos/savey/1.png"
               alt="Testing"
               className="rounded-lg shadow w-full object-cover aspect-square"
             />
@@ -442,7 +442,7 @@ const Savey = () => {
       {/* User Testing Section - grid, minimal text, more images */}
       <section className="py-16 bg-gradient-to-br from-amber-50 via-pink-50 to-sky-50">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center mb-10">
+          <div className="max-w-7xl mx-auto text-center mb-10">
             <h2 className="text-3xl font-bold mb-4">
               Kids treated Savey like a{" "}
               <span className="bg-orange-400 text-white px-2 rounded">
@@ -454,11 +454,11 @@ const Savey = () => {
               them.
             </p>
           </div>
-          <div className="grid md:grid-cols-1 gap-1 aspect-3/4 max-w-2xl mx-auto">
+          <div className="grid md:grid-cols-1 gap-1 aspect-3/4 max-w-3xl mx-auto">
             <img
               src="/Photos/savey/17.png"
               alt="Kids playing with Savey"
-              className="rounded-lg shadow w-full object-cover aspect-square"
+              className="rounded-lg w-full object-cover aspect-square"
             />
           </div>
         </div>

@@ -174,7 +174,7 @@ const PreFlightVR = () => {
         <div className="container max-w-4xl mx-auto px-4 py-6 rounded-xl shadow-lg overflow-hidden bg-slate-900 grid sm:grid-cols-1 gap-4 ">
           <div className="max-w-4xl mx-auto text-center mb-10 gap-8">
             <img
-              src="/Photos/Flight/15.png"
+              src="/Photos/Flight/Frame 35206.png"
               alt="Human Factors reference"
               className="rounded-xl aspect-16/9 object-fit"
             />
@@ -322,89 +322,6 @@ const PreFlightVR = () => {
 
 
 
-      {/* Behavior Model Section */}
-      <section className="py-24 bg-slate-900 text-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-5xl mx-auto text-center mb-16">
-            <div className="inline-flex items-center gap-2 mb-4">
-              <Lightbulb className="w-6 h-6 text-orange-400" />
-              <h2 className="text-3xl md:text-4xl font-bold text-white">
-                Behavior Model
-              </h2>
-            </div>
-            <p className="text-base text-slate-200 mb-6">
-              The Fogg Behavior Model{" "}
-              <span className="font-bold text-white">B=MAP</span> is like E=MC<sup>2</sup> but for human{" "}
-              <span className="font-bold text-white">behavior (B)</span>. It states
-              that for any behavior to occur, a person must simultaneously have
-              high enough{" "}
-              <span className="font-bold text-orange-400">motivation (M)</span> and
-              sufficient{" "}
-              <span className="font-bold text-orange-400">ability (A)</span> to
-              perform an action when{" "}
-              <span className="font-bold text-orange-400">prompted (P)</span>.
-            </p>
-            {/*<div className="text-6xl font-bold text-orange-400 mb-2">Impact</div>
-            <div className="text-base text-slate-200 mb-8">
-              Behavior (B) = Motivation (M) × Ability (A) × Prompt (P)
-            </div>*/}
-          </div>
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <Card className="bg-slate-800/80 border-none shadow-xl">
-              <CardContent className="p-8">
-                <h3 className="text-xl font-semibold mb-3 text-orange-400">
-                  Motivation
-                </h3>
-                <p className="text-slate-200 mb-2">
-                  An internal drive, heavily influenced by your preferences and
-                  biases, often dictates user's usual choices. Think of it as the
-                  hidden force subtly steering you down familiar paths.
-                </p>
-                <ul className="text-sm text-slate-300 list-disc pl-4">
-                  <li>Drives us to choose the easiest option.</li>
-                  <li>Makes us opt in for the most automatic choice.</li>
-                  <li>Reduces cognitive load (brain effort).</li>
-                </ul>
-              </CardContent>
-            </Card>
-            <Card className="bg-slate-800/80 border-none shadow-xl">
-              <CardContent className="p-8">
-                <h3 className="text-xl font-semibold mb-3 text-cyan-400">
-                  Ability
-                </h3>
-                <p className="text-slate-200 mb-2">
-                  Reflects the ease with which a person can perform an action.
-                  Imagine it as the well-traveled path the brain instinctively
-                  follows.
-                </p>
-                <ul className="text-sm text-slate-300 list-disc pl-4">
-                  <li>Favors the familiar and well-practiced.</li>
-                  <li>Seeks to minimize effort.</li>
-                  <li>Depends on available time, money, and effort.</li>
-                </ul>
-              </CardContent>
-            </Card>
-            <Card className="bg-slate-800/80 border-none shadow-xl">
-              <CardContent className="p-8">
-                <h3 className="text-xl font-semibold mb-3 text-indigo-400">
-                  Prompt
-                </h3>
-                <p className="text-slate-200 mb-2">
-                  A prompt helps initiate the default behavior. Think of it as a
-                  road sign confirming you're on the "right" path, even if other
-                  options exist.
-                </p>
-                <ul className="text-sm text-slate-300 list-disc pl-4">
-                  <li>Can nudge towards the most automatic choice.</li>
-                  <li>Draw attention to the default option.</li>
-                  <li>Preselect or visually highlight the default.</li>
-                </ul>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
 
 
 
@@ -437,6 +354,78 @@ const PreFlightVR = () => {
           </div>
         </div>
       </section>
+
+
+
+      {/* Behavior Model Section */}
+      <section className="py-24 bg-slate-900 text-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto text-center mb-16">
+            <div className="inline-flex items-center gap-2 mb-4 max-w-2xl">
+            
+              <h2 className="text-3xl md:text-4xl font-bold text-white">
+                VR Experience Walkthrough
+              </h2>
+            </div>
+            <p className="text-base text-lg text-slate-200 mb-6">
+              A step-by-step training flow that mirrors real aircraft inspections, using clear cues,
+               feedback, and transitions to keep users focused and engaged.
+            </p>
+            {/*<div className="text-6xl font-bold text-orange-400 mb-2">Impact</div>
+            <div className="text-base text-slate-200 mb-8">
+              Behavior (B) = Motivation (M) × Ability (A) × Prompt (P)
+            </div>*/}
+          </div>
+          <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            <Card className="bg-slate-800/80 border-none shadow-xl">
+              <CardContent className="p-8">
+                <h3 className="text-xl font-semibold mb-1 text-[#8DB2D6] text-center">
+                 Flow
+                </h3>
+                <p className="text-slate-200 mb-6 text-sm text-center">
+                 Training starts in guided mode with step-by-step instructor cues.
+                </p>
+                <img
+                  src="/Photos/Flight/21.png"
+                  alt="Realistic Props & Details"
+                  className="rounded-lg mb-4 w-full object-cover aspect-square"
+                />
+              </CardContent>
+            </Card>
+            <Card className="bg-slate-800/80 border-none shadow-xl">
+              <CardContent className="p-8">
+                <h3 className="text-xl font-semibold mb-1 text-[#8DB2D6] text-center">
+                  Task
+                </h3>
+                <p className="text-slate-200 mb-6 text-sm text-center">
+                  Users inspect critical aircraft components like tyres, engines, and flaps.
+                </p>
+                <img
+                  src="/Photos/Flight/22.png"
+                  alt="Realistic Props & Details"
+                  className="rounded-lg mb-4 w-full object-cover aspect-square"
+                />
+              </CardContent>
+            </Card>
+            <Card className="bg-slate-800/80 border-none shadow-xl">
+              <CardContent className="p-8">
+                <h3 className="text-xl font-semibold mb-1 text-[#8DB2D6] text-center">
+                  Feedback
+                </h3>
+                <p className="text-slate-200 mb-6 text-sm text-center">
+                  Users get visual and audio cues with options to repeat or go to next after each step.
+                </p>
+                <img
+                  src="/Photos/Flight/23.png"
+                  alt="Realistic Props & Details"
+                  className="rounded-lg mb-4 w-full object-cover aspect-square"
+                />
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
 
 
 
@@ -513,13 +502,12 @@ const PreFlightVR = () => {
             <Card className="bg-slate-800/80 border-none shadow-xl flex items-center justify-center rounded-xl ">
               <CardContent className="p-8 flex flex-col items-center justify-center">
                 <img
-                  src="/Photos/Flight/behavior-ui.png"
+                  src="/Photos/Flight/25.png"
                   alt="Behavior Model UI"
-                  className="rounded-xl shadow-lg mb-4 w-full object-cover"
+                  className="rounded-xl shadow-lg mb-4 w-full object-cover aspect-sqaure"
                 />
                 <p className="text-slate-200 text-center">
-                  UI elements and toggles can visually reinforce default choices and
-                  prompt user action.
+                  
                 </p>
               </CardContent>
             </Card>
@@ -597,15 +585,14 @@ const PreFlightVR = () => {
               </CardContent>
             </Card>
             <Card className="bg-slate-800/80 border-none shadow-xl flex items-center justify-center">
-              <CardContent className="p-8 flex flex-col items-center justify-center rounded-xl">
+              <CardContent className="p-8 flex flex-col items-center justify-center rounded-xl ">
                 <img
-                  src="/Photos/Flight/behavior-ui.png"
+                  src="/Photos/Flight/24.png"
                   alt="Behavior Model UI"
-                  className="rounded-xl shadow-lg mb-4 w-full object-cover"
+                  className="rounded-xl shadow-lg mb-4 w-full asapect-square object-cover"
                 />
                 <p className="text-slate-200 text-center">
-                  UI elements and toggles can visually reinforce default choices and
-                  prompt user action.
+               
                 </p>
               </CardContent>
             </Card>

@@ -53,23 +53,18 @@ const FlipCard: React.FC<FlipCardProps> = ({
 
         {/* Back of card */}
         <div
-          className="absolute inset-0 w-full h-full rounded-2xl border border-border/50 bg-muted/30 p-8 flex flex-col items-center justify-center text-center shadow-sm"
+          className="absolute inset-0 w-full h-full rounded-2xl border border-border/50 bg-white p-8 flex flex-col items-center justify-center text-center shadow-sm"
           style={{
             backfaceVisibility: "hidden",
             transform: "rotateY(180deg)",
           }}
         >
-          <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-minimal-sage/10 to-minimal-warm/10 rounded-xl border border-dashed border-minimal-sage/30">
-            <div className="text-center">
+          <div className="w-full h-full flex items-center justify-center  rounded-xl border border-dashed border-minimal-sage/30 ">
+            <div className="text-center p-2">
               <div className="text-muted-foreground text-sm mb-4">
                 {backContent}
               </div>
-              <div className="w-16 h-16 mx-auto bg-minimal-sage/20 rounded-xl flex items-center justify-center">
-                <span className="text-2xl">🎯</span>
-              </div>
-              <p className="text-xs text-muted-foreground mt-2 italic">
-                Media placeholder
-              </p>
+             
             </div>
           </div>
         </div>
@@ -90,10 +85,10 @@ const FlipCards: React.FC = () => {
           <img
                   src="/Photos/VR_Headset.jpg"
                   alt="Realistic Props & Details"
-                  className="rounded-lg mb-4 w-full object-cover aspect-square"
+                  className="rounded-lg mb-4 w-full object-cover bg-white aspect-square"
                 />
-          <p className="text-muted-foreground text-sm">
-            XR project demo and process highlights.
+          <p className="text-muted-foreground bg-white text-sm">
+            Where imagination meets immersion.
           </p>
         </div>
       ),
@@ -106,12 +101,12 @@ const FlipCards: React.FC = () => {
       backContent: (
         <div>
          <img
-                  src="/Photos/Object.jpg"
+                  src="/Photos/object.jpg"
                   alt="Realistic Props & Details"
-                  className="rounded-lg mb-4 w-full object-cover aspect-square"
+                  className="rounded-lg mb-4 w-full object-cover bg-white aspect-square"
                 />
-          <p className="text-muted-foreground text-sm">
-            3D workflow and interaction design showcase.
+          <p className="text-muted-foreground bg-white text-sm">
+            Designing the unseen connections between motion and meaning.
           </p>
         </div>
       ),
@@ -123,15 +118,17 @@ const FlipCards: React.FC = () => {
         "Experienced in conducting design research to inform concepts, usability, and immersive solutions.",
       backContent: (
         <div>
-          <p className="text-muted-foreground text-sm mb-2">
-            Creative process videos and inspiration boards.
-          </p>
+          
          <img
                   src="/Photos/sticky.png"
                   alt="Realistic Props & Details"
-                  className="rounded-lg mb-4 w-full object-cover aspect-square"
+                  className="rounded-lg mb-4 w-full object-cover aspect-square bg-white"
                 />
+                <p className="text-muted-foreground bg-white text-sm mb-2">
+            Curiosity leads every design decision.
+          </p>
         </div>
+        
       ),
     },
   ];

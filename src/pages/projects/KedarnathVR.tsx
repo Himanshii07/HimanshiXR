@@ -505,7 +505,7 @@ const KedarnathVR = () => {
                     with India's sacred heritage in a way that is immersive,
                     respectful, and relevant:
                   </p>
-                  <ul className="text-muted-foreground space-y-2 text-sm">
+                  {/*<ul className="text-muted-foreground space-y-2 text-sm">
                     <li>
                       • <strong>Reviving Sacred Narratives</strong> - Presenting
                       mythology as living stories
@@ -518,7 +518,7 @@ const KedarnathVR = () => {
                       • <strong>A Scalable, Replicable Model</strong> -
                       Expandable to other sacred sites
                     </li>
-                  </ul>
+                  </ul> */}
                 </CardContent>
               </Card>
 
@@ -1214,7 +1214,7 @@ const KedarnathVR = () => {
               })}
             </div>
 
-            <Card className="border-blue-200/60 bg-gradient-to-r from-sky-50 via-indigo-50 to-blue-50">
+            {/*<Card className="border-blue-200/60 bg-gradient-to-r from-sky-50 via-indigo-50 to-blue-50">
               <CardContent className="p-8 text-center">
                 <h3 className="text-2xl font-semibold mb-4 text-blue-700">
                   Key Project Insight
@@ -1229,7 +1229,7 @@ const KedarnathVR = () => {
                   accessible.
                 </p>
               </CardContent>
-            </Card>
+            </Card> */}
           </div>
         </div>
       </section>
@@ -1237,7 +1237,7 @@ const KedarnathVR = () => {
       <section className="py-24 bg-gradient-to-r from-sky-100/60 via-background to-indigo-100/60">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold mb-6 text-sky-700">
-            Explore More Sacred Innovations
+            Explore More Projects
           </h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
             Discover other projects that showcase the intersection of
@@ -1249,7 +1249,7 @@ const KedarnathVR = () => {
               asChild
               size="lg"
               variant="outline"
-              className="text-lg px-8 py-4 border-blue-300 text-blue-700 hover:bg-blue-100/60"
+              className="text-lg px-8 py-4 border-sky-300 text-sky-700 hover:bg-blue-100/60"
             >
               <Link to="/projects/savey">Next: Savey Interactive Learning</Link>
             </Button>
@@ -1257,7 +1257,7 @@ const KedarnathVR = () => {
             <Button
               asChild
               size="lg"
-              className="text-lg px-8 py-4 bg-blue-600 text-white hover:bg-blue-700"
+              className="text-lg px-8 py-4 bg-sky-600 text-white hover:bg-blue-700"
             >
               <Link to="/projects">
                 <Eye className="mr-3 h-5 w-5" />

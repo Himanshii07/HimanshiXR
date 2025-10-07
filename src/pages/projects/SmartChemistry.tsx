@@ -259,7 +259,7 @@ const SmartChemistry = () => {
                 </span>
               </div>
 
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-green-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
+              <h1 className="text-4xl md:text-8xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-green-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
                 {projectDetails.title}
               </h1>
 
@@ -291,7 +291,7 @@ const SmartChemistry = () => {
                 </Badge>
               </div>
 
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              {/*<div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button
                   size="lg"
                   className="bg-gradient-to-r from-green-400 to-blue-400 text-white hover:from-green-500 hover:to-blue-500"
@@ -307,7 +307,7 @@ const SmartChemistry = () => {
                   <FlaskConical className="mr-2 h-4 w-4" />
                   View Chemistry Interface
                 </Button>
-              </div>
+              </div>*/}
             </div>
 
             {/* Hero Video/Image Section */}
@@ -383,7 +383,7 @@ const SmartChemistry = () => {
       {/* Development Process */}
       <section className="py-24 bg-gradient-to-r from-sky-100/40 via-white to-indigo-100/40">
         <div className="container mx-auto px-4">
-          <div className="max-w-8xl mx-auto">
+          <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold mb-4 text-blue-600">
                 🔬 How We Built It
@@ -407,38 +407,26 @@ const SmartChemistry = () => {
                 return (
                   <div
                     key={index}
-                    className="flex flex-col md:flex-row items-center bg-white rounded-xl shadow p-6 gap-8"
+                    className="grid md:grid-cols-2 gap-6 items-center bg-white rounded-xl shadow p-6 gap-8"
                   >
                     <div className="flex-1">
                       <div className="flex items-center mb-2">
-                        <div className="w-12 h-12 bg-blue-400/20 rounded-full flex items-center justify-center mr-4">
-                          <Icon className="w-6 h-6 text-blue-600" />
-                        </div>
-                        <span className="text-xl font-bold text-blue-600">
+                        <span className="text-xl font-bold text-blue-400">
                           {step.step}
                         </span>
                       </div>
-                      <h3 className="text-xl font-semibold text-blue-600 mb-2">
+                      <h3 className="text-xl font-semibold text-blue-400 mb-2">
                         {step.title}
                       </h3>
                       <p className="text-muted-foreground leading-relaxed mb-2">
                         {step.description}
                       </p>
-                      <div className="flex flex-wrap gap-2 mb-2">
-                        {step.tools.map((tool, toolIndex) => (
-                          <span
-                            key={toolIndex}
-                            className="inline-flex items-center rounded-full bg-blue-100 text-blue-600 px-2.5 py-0.5 text-xs font-semibold"
-                          >
-                            {tool}
-                          </span>
-                        ))}
-                      </div>
+                      
                     </div>
                     <img
                       src={stepImages[index]}
                       alt={`Step ${step.step}`}
-                      className="rounded-lg shadow w-full max-w-xs aspect-square object-cover"
+                      className="rounded-lg shadow w-full max-w-xs aspect-square  object-cover"
                     />
                   </div>
                 );
@@ -451,7 +439,7 @@ const SmartChemistry = () => {
       {/* Results Section */}
       <section className="py-24 bg-gradient-to-r from-sky-100/30 via-white to-indigo-100/30">
         <div className="container mx-auto px-4">
-          <div className="max-w-5xl mx-auto text-center mb-12">
+          <div className="max-w-4xl mx-auto text-center mb-12">
             <h2 className="text-3xl font-bold mb-4  text-blue-600">Results</h2>
             <p className="text-lg text-muted-foreground mb-6">
               Here's what our Smart Chemistry tool looks like in action!
@@ -462,7 +450,7 @@ const SmartChemistry = () => {
             <img
               src="/Photos/chem/1.jpg"
               alt="Result 1"
-              className="rounded-xl shadow w-full object-cover"
+              className="rounded-xl shadow w-full object-cover items-center"
             />
           </div>
         </div>
@@ -488,7 +476,7 @@ const SmartChemistry = () => {
                   className="border-border/50 bg-card/50 backdrop-blur-sm hover:border-green-400/50 transition-all duration-300"
                 >
                   <CardContent className="p-6">
-                    <h3 className="text-lg font-semibold mb-3 text-green-400">
+                    <h3 className="text-lg font-semibold mb-3 text-blue-400">
                       {achievement.title}
                     </h3>
                     <p className="text-muted-foreground text-sm leading-relaxed">
@@ -563,7 +551,7 @@ const SmartChemistry = () => {
         </div>
       </section>
 
-      {/* Learning Outcomes */}
+      {/* Learning Outcomes 
       <section className="py-24">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
@@ -615,7 +603,7 @@ const SmartChemistry = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section>*/}
 
       {/* Project Navigation */}
       <section className="py-24 bg-gradient-to-r from-emerald-50 via-white to-sky-50">
@@ -633,7 +621,7 @@ const SmartChemistry = () => {
               asChild
               size="lg"
               variant="outline"
-              className="border-green-400 text-green-400 hover:bg-green-400 hover:text-white"
+              className="border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white"
             >
               <Link to="/projects/savey">
                 Similar: Savey Interactive Learning
@@ -643,7 +631,7 @@ const SmartChemistry = () => {
             <Button
               asChild
               size="lg"
-              className="bg-gradient-to-r from-green-400 to-blue-400 text-white hover:from-green-500 hover:to-blue-500"
+              className="bg-gradient-to-r from-green-400 to-blue-400 text-white hover:from-blue-500 hover:to-blue-500"
             >
               <Link to="/projects">
                 <Eye className="mr-2 h-4 w-4" />
