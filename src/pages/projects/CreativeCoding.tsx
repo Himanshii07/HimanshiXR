@@ -32,23 +32,23 @@ const MobileOverlay = () => (
 const experiments = [
   {
     icon: Code2,
-    title: "Generative typography engine",
+    title: "Concept & Design",
     description:
-      "A canvas-based playground where words react to voice input. Letterforms stretch, distill, and reform based on tone, allowing poetic performances to leave visual traces.",
+      "I sketched and designed the Photo Booth interface in Figma, experimenting with layout, colors, and interactive elements.",
     badge: "WebGL + Web Audio",
   },
   {
     icon: Cpu,
-    title: "Analog sensors meet shaders",
+    title: "AI-Assisted Implementation",
     description:
-      "Arduino-driven pressure pads stream data into GLSL shaders, creating living gradients projected onto walls. Participants choreograph colour fields through movement.",
+      "Using GitHub Copilot, I translated the Figma designs into code, providing instructions and refining the outputs for functionality.",
     badge: "Physical computing",
   },
   {
     icon: Sparkles,
-    title: "Particle narratives",
+    title: "Development",
     description:
-      "Stories unfold as particle clusters. Each sentence becomes a swarm with rules inspired by flocking and magnetism, encouraging audiences to follow arcs rather than scroll text blocks.",
+      "I implemented the interactive features, such as capturing photos, applying effects, and downloading images, while keeping the experience playful and experimental.",
     badge: "Creative storytelling",
   },
 ];
@@ -112,9 +112,8 @@ const CreativeCoding = () => {
                 Creative Coding Residency Series
               </h1>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                A year-long residency of nightly sketches exploring how code,
-                sound, and fabrication can translate complex emotions into
-                playful digital instruments.
+               I designed and developed an interactive Photo Booth website that allows users to capture, customize, and download their photos in a playful, engaging interface. 
+               The project blends creative coding techniques with web design to create a fun and immersive user experience.
               </p>
               <div className="space-y-3 text-sm text-muted-foreground mb-8">
                 <div className="flex items-center gap-2">
@@ -246,14 +245,12 @@ const CreativeCoding = () => {
           <Card className="border border-purple-200/60 bg-white/80">
             <CardContent className="p-10 text-center space-y-4">
               <h2 className="text-2xl font-heading text-foreground">
-                Why Creative Coding Matters Here
+               What I learned?
               </h2>
               <p className="text-muted-foreground leading-relaxed">
-                The residency proved that accessible tools and storytelling
-                frameworks help people reimagine technology as a companion
-                rather than a barrier. The experiments now power workshops with
-                schools, indie musicians, and museum educators who want to turn
-                data into intimate experiences.
+              Through this project, I explored the synergy between design tools, AI-assisted coding, and web development. 
+              I gained hands-on experience in translating visual designs into functional interfaces, learned to guide AI to achieve the 
+              desired outcomes, and understood how to experiment creatively while maintaining usability and responsiveness.
               </p>
             </CardContent>
           </Card>
