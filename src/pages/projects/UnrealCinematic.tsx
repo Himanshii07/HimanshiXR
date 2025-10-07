@@ -164,7 +164,7 @@ const UnrealCinematic = () => {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative py-24 overflow-hidden">
+      <section className="relative py-24 overflow-hidden max-w-8xl">
         <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-slate-900/5 to-indigo-900/10" />
 
         {/* Animated background elements */}
@@ -177,7 +177,7 @@ const UnrealCinematic = () => {
         </div>
 
         <div className="relative container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-8xl mx-auto">
             {/* Back Button */}
             <div className="mb-8">
               <Button
@@ -193,7 +193,7 @@ const UnrealCinematic = () => {
             </div>
 
             {/* Project Header */}
-            <div className="text-center mb-16">
+            <div className="text-center mb-16 max-w-8xl mx-auto">
               <div className="inline-flex items-center px-4 py-2 rounded-full bg-xr-neon/10 border border-xr-neon/20 mb-6">
                 <Castle className="w-4 h-4 mr-2 text-xr-neon" />
                 <span className="text-sm font-medium text-xr-neon">
@@ -205,7 +205,7 @@ const UnrealCinematic = () => {
                 {projectDetails.title}
               </h1>
 
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-8">
+              <p className="text-xl text-muted-foreground max-w-6xl mx-auto leading-relaxed mb-8">
                 {projectDetails.subtitle}
               </p>
 
@@ -228,31 +228,12 @@ const UnrealCinematic = () => {
                 </Badge>
               </div>
 
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button
-                  size="lg"
-                  className="bg-xr-neon text-xr-neon-foreground hover:bg-xr-neon/80"
-                >
-                  <Play className="mr-2 h-4 w-4" />
-                  Watch Cinematic
-                </Button>
-                <Button
-                  variant="outline"
-                  size="lg"
-                  className="border-xr-cyber text-xr-cyber hover:bg-xr-cyber hover:text-xr-cyber-foreground"
-                >
-                  <Github className="mr-2 h-4 w-4" />
-                  View Breakdown
-                </Button>
-              </div>
-            </div>
-
-            {/* Project Image/Video */}
-            <CustomVideoPlayer
+              <CustomVideoPlayer
               src="https://www.youtube.com/embed/NzAuL5I77Vc?mute=0"
               title="Cinematic Envirnonment Showcase"
-              className="aspect-video mb-16"
+              className="aspect-video mb-16 max-w-6xl item-center mx-auto rounded-xl shadow-lg"
             />
+            </div>
           </div>
         </div>
       </section>
@@ -260,7 +241,7 @@ const UnrealCinematic = () => {
       {/* Project Overview */}
       <section className="py-24 bg-muted/20">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 gap-12 mb-16">
               <div>
                 <h2 className="text-3xl font-bold mb-6">Project Overview</h2>
@@ -288,8 +269,8 @@ const UnrealCinematic = () => {
                 </p>
               </div>
 
-              <div className="space-y-6">
-                <div>
+              <div className="space-y-4 itemns-center">
+                <div className=" items-center">
                   <h3 className="font-semibold text-foreground mb-2">
                     Challenge Type
                   </h3>
@@ -336,7 +317,7 @@ const UnrealCinematic = () => {
         </div>
       </section>
 
-      {/* Creative Process */}
+      {/* Creative Process 
       <section className="py-24">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
@@ -374,12 +355,12 @@ const UnrealCinematic = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Key Features */}
       <section className="py-24 bg-muted/20">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
                 Key Design Elements
@@ -389,15 +370,15 @@ const UnrealCinematic = () => {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-12">
               {features.map((feature, index) => {
                 const Icon = feature.icon;
                 return (
                   <Card
                     key={index}
-                    className="border-border/50 bg-card/50 backdrop-blur-sm hover:border-xr-neon/50 transition-all duration-300"
+                    className="border-border/50 bg-card/50 backdrop-blur-sm hover:border-xr-neon/50 transition-all duration-300 max-w-6xl"
                   >
-                    <CardContent className="p-6">
+                    <CardContent className="p-6 max-w-6xl text-center">
                       <div className="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-xr-neon/10 mb-4">
                         <Icon className="h-6 w-6 text-xr-neon" />
                       </div>
@@ -416,7 +397,7 @@ const UnrealCinematic = () => {
         </div>
       </section>
 
-      {/* Challenges & Solutions */}
+      {/* Challenges & Solutions 
       <section className="py-24">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
@@ -460,7 +441,7 @@ const UnrealCinematic = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Outcomes & Learning */}
       <section className="py-24 bg-muted/20">
@@ -475,7 +456,7 @@ const UnrealCinematic = () => {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-8 mb-12">
+            {/* <div className="grid md:grid-cols-3 gap-8 mb-12">
               {outcomes.map((outcome, index) => (
                 <Card
                   key={index}
@@ -494,13 +475,11 @@ const UnrealCinematic = () => {
                   </CardContent>
                 </Card>
               ))}
-            </div>
+            </div>  */}
 
             <Card className="border-border/50 bg-card/50 backdrop-blur-sm">
               <CardContent className="p-8">
-                <h3 className="text-xl font-semibold mb-4 text-center">
-                  Key Skills Developed
-                </h3>
+                
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
                     <h4 className="font-semibold text-xr-neon mb-2">

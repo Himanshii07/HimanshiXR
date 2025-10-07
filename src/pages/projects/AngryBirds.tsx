@@ -149,7 +149,7 @@ const AngryBirds = () => {
                   {projectDetails.client}
                 </Badge>
               </div>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+             {/*} <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button
                   size="lg"
                   className="bg-gradient-to-r from-red-600 to-pink-400 text-white hover:from-red-700 hover:to-pink-500"
@@ -165,7 +165,7 @@ const AngryBirds = () => {
                   <Github className="mr-2 h-4 w-4" />
                   Source Code
                 </Button>
-              </div>
+              </div>*/}
             </div>
             {/* Video Showcase */}
             <CustomVideoPlayer
