@@ -18,6 +18,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Navigation from "@/components/Navigation";
+import CustomVideoPlayer from "@/components/ui/VideoPlayer";
 
 const MobileOverlay = () => (
   <div className="fixed inset-0 z-50 flex items-center justify-center bg-white/95 backdrop-blur-lg md:hidden">
@@ -171,10 +172,10 @@ const PreFlightVR = () => {
 
       {/* Communication Loop */}
       <section className="py-16 bg-slate-900 text-white">
-        <div className="container max-w-4xl mx-auto px-4 py-6 rounded-xl shadow-lg overflow-hidden bg-slate-900 grid sm:grid-cols-1 gap-4 ">
-          <div className="max-w-4xl mx-auto text-center mb-10 gap-8">
+        <div className="container max-w-8xl mx-auto px-4 py-6 rounded-xl shadow-lg overflow-hidden bg-slate-900 grid sm:grid-cols-1 gap-4 ">
+          <div className="max-w-8xl mx-auto text-center mb-10 gap-8">
             <img
-              src="/Photos/Flight/Frame 35206.png"
+              src="/Photos/Flight/28.png"
               alt="Human Factors reference"
               className="rounded-xl aspect-16/9 object-fit"
             />
@@ -239,10 +240,10 @@ const PreFlightVR = () => {
               a plane model, and filming the process to refine inspections and
               UI.
             </p>
-            <img
-              src="/Photos/Flight/1.png"
-              alt="Bodystorming with sticky notes and team"
-              className="rounded-xl shadow-lg w-full object-cover"
+            <CustomVideoPlayer
+              src="https://youtu.be/3CAd8phVRMc"
+              title=""
+              className="aspect-video mb-16"
             />
           </div>
         </div>

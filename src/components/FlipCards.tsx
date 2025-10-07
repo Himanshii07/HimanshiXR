@@ -53,7 +53,7 @@ const FlipCard: React.FC<FlipCardProps> = ({
 
         {/* Back of card */}
         <div
-          className="absolute inset-0 w-full h-full rounded-2xl border border-border/50 bg-white p-8 flex flex-col items-center justify-center text-center shadow-sm"
+          className="absolute inset-0 w-full h-full rounded-2xl border border-border/50 bg-white p-8 flex flex-col items-center justify-center text-center"
           style={{
             backfaceVisibility: "hidden",
             transform: "rotateY(180deg)",

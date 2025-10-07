@@ -261,23 +261,7 @@ const StormyOcean = () => {
                 </Badge>
               </div>
 
-              <div className="flex flex-col sm:flex-row gap-4 mb-8">
-                <Button
-                  size="lg"
-                  className="bg-gradient-to-r from-blue-400 to-cyan-400 text-white hover:from-blue-500 hover:to-cyan-500"
-                >
-                  <Play className="mr-2 h-4 w-4" />
-                  Watch Ocean Animation
-                </Button>
-                <Button
-                  variant="outline"
-                  size="lg"
-                  className="border-slate-400 text-slate-400 hover:bg-slate-400 hover:text-white"
-                >
-                  <Zap className="mr-2 h-4 w-4" />
-                  Render Process
-                </Button>
-              </div>
+             
             </div>
 
             {/* Hero Video/Image Section */}
@@ -292,7 +276,7 @@ const StormyOcean = () => {
 
       {/* Start of next section */}
       <div className="max-w-6xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-16 items-center py-16">
           <div>
             <h2 className="text-3xl font-bold mb-6">Learning Journey</h2>
             <p className="text-muted-foreground leading-relaxed mb-6">
@@ -356,7 +340,7 @@ const StormyOcean = () => {
         </div>
       </div>
 
-      {/* Learning Process */}
+      {/* Learning Process 
       <section className="py-24">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
@@ -373,11 +357,11 @@ const StormyOcean = () => {
                 const Icon = step.icon;
                 const isEven = index % 2 === 0;
                 return (
-                  <div key={index} className="flex justify-center">
-                    <div className="max-w-2xl w-full">
-                      <Card className="border-border/50 bg-card/50 backdrop-blur-sm hover:border-blue-400/50 transition-all duration-300">
+                  <div key={index} className=" justify-center">
+                    <div className="max-w-8xl w-full ">
+                      <Card className="border-border/50 bg-card/50  backdrop-blur-sm hover:border-blue-400/50 transition-all  duration-300">
                         <CardContent className="p-8">
-                          <div className="flex items-center mb-4">
+                          <div className="  mb-4">
                             <div className="w-12 h-12 bg-blue-400/10 rounded-full flex items-center justify-center mr-4">
                               <Icon className="w-6 h-6 text-blue-400" />
                             </div>
@@ -413,7 +397,7 @@ const StormyOcean = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Scene Features */}
       <section className="py-24 bg-gradient-to-r from-blue-900/10 via-background to-cyan-900/10">
@@ -468,7 +452,7 @@ const StormyOcean = () => {
         </div>
       </section>
 
-      {/* Render Statistics */}
+      {/* Render Statistics 
       <section className="py-24">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
@@ -500,7 +484,7 @@ const StormyOcean = () => {
                   </CardContent>
                 </Card>
               ))}
-            </div>
+            </div> 
 
             <div className="mt-12 text-center">
               <Card className="border-border/50 bg-card/50 backdrop-blur-sm">
@@ -522,9 +506,9 @@ const StormyOcean = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      {/* Technical Achievements */}
+      {/* Technical Achievements
       <section className="py-24 bg-gradient-to-r from-blue-900/10 via-background to-cyan-900/10">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
@@ -556,9 +540,9 @@ const StormyOcean = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section>  */}
 
-      {/* Skills Developed */}
+      {/* Skills Developed 
       <section className="py-24">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
@@ -592,7 +576,7 @@ const StormyOcean = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Project Navigation */}
       <section className="py-24 bg-gradient-to-r from-blue-400/10 via-background to-cyan-400/10">
