@@ -6,7 +6,7 @@ interface FlipCardProps {
   frontIcon: React.ElementType;
   frontTitle: string;
   frontDescription: string;
-  backContent: string;
+  backContent: React.ReactNode;
   index: number;
 }
 
@@ -61,9 +61,9 @@ const FlipCard: React.FC<FlipCardProps> = ({
         >
           <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-minimal-sage/10 to-minimal-warm/10 rounded-xl border border-dashed border-minimal-sage/30">
             <div className="text-center">
-              <p className="text-muted-foreground text-sm mb-4">
+              <div className="text-muted-foreground text-sm mb-4">
                 {backContent}
-              </p>
+              </div>
               <div className="w-16 h-16 mx-auto bg-minimal-sage/20 rounded-xl flex items-center justify-center">
                 <span className="text-2xl">🎯</span>
               </div>
@@ -85,21 +85,51 @@ const FlipCards: React.FC = () => {
       frontTitle: "XR Development",
       frontDescription:
         "I design engaging AR/VR experiences that merge storytelling, interaction, and technology to create meaningful virtual worlds.",
-      backContent: "Portfolio examples and design process showcase",
+      backContent: (
+        <div>
+          <video controls className="w-full rounded-xl mb-2">
+            <source src="/videos/xr-demo.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <p className="text-muted-foreground text-sm">
+            XR project demo and process highlights.
+          </p>
+        </div>
+      ),
     },
     {
       frontIcon: Layers3,
       frontTitle: "3D and Interaction Design",
       frontDescription:
         "From prototyping in Unity and Unreal to modeling in Maya and Blender, I bring ideas to life with intuitive, interactive environments.",
-      backContent: "UX research methodologies and case studies",
+      backContent: (
+        <div>
+          <video controls className="w-full rounded-xl mb-2">
+            <source src="/videos/3d-demo.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <p className="text-muted-foreground text-sm">
+            3D workflow and interaction design showcase.
+          </p>
+        </div>
+      ),
     },
     {
       frontIcon: Palette,
       frontTitle: "Research-Driven Approach",
       frontDescription:
         "Experienced in conducting design research to inform concepts, usability, and immersive solutions.",
-      backContent: "Creative process videos and inspiration boards",
+      backContent: (
+        <div>
+          <p className="text-muted-foreground text-sm mb-2">
+            Creative process videos and inspiration boards.
+          </p>
+          <video controls className="w-full rounded-xl">
+            <source src="/videos/research-demo.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      ),
     },
   ];
 
