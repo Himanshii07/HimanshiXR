@@ -36,7 +36,7 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "Kedarnath Mythological Story in VR",
+      title: "Mahakatha VR Experience",
       category: "vr",
       categoryLabel: "Virtual Reality",
       description:
@@ -247,6 +247,8 @@ const Projects = () => {
         live: "#",
       },
     },
+
+    
 
    
 

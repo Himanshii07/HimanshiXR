@@ -50,7 +50,7 @@ const Index = () => {
 
   const recentProjects = [
     {
-      title: "Kedarnath Mythological Story",
+      title: "Mahakatha VR Experience",
       category: "VR Experience",
       image: "/Photos/Kedarnath.png",
       description:
