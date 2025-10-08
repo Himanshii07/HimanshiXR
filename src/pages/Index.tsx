@@ -138,6 +138,14 @@ const Index = () => {
         "A 2D recreation of Angry Birds with physics-based gameplay, multiple levels, and engaging visual effects.",
       slug: "angry-birds",
     },
+     {
+      title: "Shooting Range",
+      category: "vr",
+      image: "/Photos/Shooting range.png",
+      description:
+        "A realistic shooting simulation that provides safe training environment with physics-based mechanics and weapon systems.",
+      slug: "shooting-range",
+    },
     
   ];
 
@@ -320,7 +328,7 @@ const Index = () => {
               exploration.
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-12xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {exploredProjects.map((project, index) => {
               const colors = ["minimal-sage", "minimal-warm", "minimal-cool"];
               const currentColor = colors[index % 3];
