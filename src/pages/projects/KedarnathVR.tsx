@@ -694,71 +694,8 @@ const KedarnathVR = () => {
         </div>
       </section>
 
-      <section className="py-24 bg-gradient-to-r from-white via-slate-50 to-blue-50/60">
-        <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <div className="grid lg:grid-cols-1 gap-12 items-center text-center">
-              <div> 
-                <h2 className="text-4xl font-bold mb-6 text-sky-700 text-center">
-                  Research
-                </h2>
-                <p className="text-muted-foreground text-sm leading-relaxed mb-6 text-center">
-                   Before beginning development, I created a detailed storyboard to map out the entire user journey and mythological narrative.
-                </p>
-                {/*<div className="grid sm:grid-cols-2 gap-4 text-sm text-muted-foreground">
-                  <div className="rounded-xl border border-blue-200/60 bg-white/70 p-4 shadow-sm">
-                    <h3 className="text-blue-700 font-semibold mb-2">
-                      Intentional Rhythm
-                    </h3>
-                    <p>
-                      Slow camera movements and soft lighting cues keep the
-                      experience contemplative while guiding focus.
-                    </p>
-                  </div>
-                  <div className="rounded-xl border border-sky-200/60 bg-white/70 p-4 shadow-sm">
-                    <h3 className="text-sky-700 font-semibold mb-2">
-                      Mythic Highlights
-                    </h3>
-                    <p>
-                      Panels emphasize key legend moments that transition users
-                      seamlessly into interactive sequences.
-                    </p>
-                  </div>
-                </div>*/}
-              </div>
-
-              <div className="grid sm:grid-cols-1 gap-6">
-                {storyboardFrames.map((frame, index) => (
-                  <Card
-                    key={index}
-                    className="overflow-hidden border border-border/40 bg-card/70 shadow-lg"
-                  >
-                    <div className="relative aspect-16/9 overflow-hidden">
-                      <img
-                        src="Photos/kedar/25.jpg"
-                        alt={frame.alt}
-                        className="w-full h-full object-cover"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
-                      <span className="absolute bottom-4 left-4 text-xs font-semibold tracking-wide uppercase text-white/80">
-                        
-                      </span>
-                    </div>
-                    <CardContent className="p-6">
-                      <h3 className="text-lg font-semibold text-sky-700 mb-2">
-                        {frame.title}
-                      </h3>
-                      <p className="text-muted-foreground text-sm leading-relaxed">
-                        {frame.description}
-                      </p>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      
+     
 
 
 

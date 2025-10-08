@@ -71,7 +71,7 @@ const Ethnography = () => {
         </div>
       </section>
 
-      <section className="py-16 bg-gradient-to-r from-sky-50 via-white to-rose-50">
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4 grid gap-8 max-w-8xl">
           {/* the ask */}
           <section className="py-16 ">
@@ -79,14 +79,12 @@ const Ethnography = () => {
               <div className="max-w-8xl mx-auto text-center mb-10">
                 <h2 className="text-3xl font-bold mb-4">The ask</h2>
                 <p className="text-lg text-muted-foreground mb-6">
-                  Before adding any interactions, we carefully planned and
-                  discussed each step to ensure a smooth and intuitive user
-                  experience in VR.
+                  
                 </p>
                 <img
                   src="/Photos/Ethnography/3.jpg"
                   alt="Checklist for interaction planning"
-                  className="rounded-xl shadow-lg w-full object-cover"
+                  className="rounded-xl w-full object-cover"
                 />
               </div>
             </div>
@@ -98,14 +96,12 @@ const Ethnography = () => {
               <div className="max-w-8xl mx-auto text-center mb-10">
                 <h2 className="text-3xl font-bold mb-4">Research Timeline</h2>
                 <p className="text-lg text-muted-foreground mb-6">
-                  Before adding any interactions, we carefully planned and
-                  discussed each step to ensure a smooth and intuitive user
-                  experience in VR.
+                 
                 </p>
                 <img
                   src="/Photos/Ethnography/1.jpg"
                   alt="Checklist for interaction planning"
-                  className="rounded-xl shadow-lg w-full object-cover"
+                  className="rounded-xl w-full object-cover"
                 />
               </div>
             </div>

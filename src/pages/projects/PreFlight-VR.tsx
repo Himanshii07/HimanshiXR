@@ -540,8 +540,7 @@ const PreFlightVR = () => {
                     <span className="text-orange-400 text-lg font-bold">
                      Guidance Principle
                      <p className="font-light text-sm text-slate-200">
-                  Intense monsoon showers overwhelm storm drains; garbage and
-                  silt block outflows.
+                  Provide guidance by using real-world maintenance tasks in virtual reality
                 </p>
                       
                     </span>

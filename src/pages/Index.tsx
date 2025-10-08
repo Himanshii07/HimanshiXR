@@ -57,6 +57,9 @@ const Index = () => {
         "Immersive VR experience bringing ancient mythological stories of Kedarnath to life",
       slug: "kedarnath",
     },
+  ];
+
+  const recentProjects1 = [
     {
       title: "Savey - Interactive Piggy Bank",
       category: "Interactive Design",
@@ -73,7 +76,25 @@ const Index = () => {
         "Fantasy 3D environment showcasing complete pipeline from Maya to Unreal Engine 5",
       slug: "mushroom-house",
     },
+     {
+      title: "System Thinking",
+      category: "research",
+      image: "/Photos/pune/28.png",
+      description:
+        "Mapping interdependencies, feedback loops, and leverage points in complex problems.",
+      slug: "system-thinking",
+    },
+     {
+      title: "Pre-flight Maintenance Check VR",
+      category: "research",
+      image: "/Photos/Flight/6.png",
+      description:
+        "VR-based pre-flight maintenance training with guided inspection and independent practice in a safe, immersive environment",
+      slug: "preflight-maintenance-check-vr",
+    },
   ];
+
+
 
   // Only show Stormy Ocean and Unreal Cinematic Challenge in exploredProjects
   const exploredProjects = [
@@ -168,7 +189,7 @@ const Index = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-12xl mx-auto">
+          <div className="grid md:grid-cols-1 gap-8 max-w-5xl mx-auto">
             {recentProjects.map((project, index) => {
               const colors = ["minimal-sage", "minimal-warm", "minimal-cool"];
               const currentColor = colors[index];
@@ -221,6 +242,64 @@ const Index = () => {
                   </Card>
                 </Link>
               );
+              
+            })}
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            {recentProjects1.map((project, index) => {
+              const colors = ["minimal-sage", "minimal-warm", "minimal-cool"];
+              const currentColor = colors[index];
+
+              return (
+                <Link key={index} to={`/projects/${project.slug}`}>
+                  <Card className="group cursor-pointer overflow-hidden border border-border/50 bg-card hover:border-border transition-all duration-300 hover:shadow-lg hover:shadow-black/5">
+                    <div
+                      className={`aspect-video relative overflow-hidden ${
+                        currentColor === "minimal-sage"
+                          ? "bg-minimal-sage/10"
+                          : currentColor === "minimal-warm"
+                            ? "bg-minimal-warm/10"
+                            : "bg-minimal-cool/10"
+                      }`}
+                    >
+                      {/* Project Image */}
+                      <img
+                        src={project.image}
+                        alt={project.title}
+                        className="absolute inset-0 w-full h-full object-cover object-center z-0"
+                      />
+                      {/* Project category badge */}
+                      <div className="absolute top-4 left-4 z-10">
+                        <span className="text-xs font-normal text-muted-foreground bg-background/80 backdrop-blur-sm px-3 py-1 rounded-full border border-border/50">
+                          {project.category}
+                        </span>
+                      </div>
+
+                      {/* Simple accent dot */}
+                      <div
+                        className={`absolute bottom-4 right-4 w-3 h-3 rounded-full z-10 ${
+                          currentColor === "minimal-sage"
+                            ? "bg-minimal-sage/60"
+                            : currentColor === "minimal-warm"
+                              ? "bg-minimal-warm/60"
+                              : "bg-minimal-cool/60"
+                        }`}
+                      />
+                    </div>
+
+                    <CardContent className="p-6">
+                      <h3 className="text-xl font-normal text-foreground mb-2 group-hover:text-foreground/80 transition-colors duration-300">
+                        {project.title}
+                      </h3>
+                      <p className="text-muted-foreground text-sm leading-relaxed font-light">
+                        {project.description}
+                      </p>
+                    </CardContent>
+                  </Card>
+                </Link>
+              );
+              
             })}
           </div>
         </div>
