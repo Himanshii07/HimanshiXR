@@ -253,8 +253,8 @@ const SmartChemistry = () => {
             {/* Project Header */}
             <div className="text-center mb-16">
               <div className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-green-400/10 to-blue-400/10 border border-green-400/20 mb-6">
-                <Brain className="w-4 h-4 mr-2 text-green-400" />
-                <span className="text-sm font-medium text-green-400">
+                <Brain className="w-4 h-4 mr-2 text-sky-400" />
+                <span className="text-sm font-medium text-sky-400">
                   AI-Powered Educational Tool
                 </span>
               </div>
@@ -321,7 +321,7 @@ const SmartChemistry = () => {
       </section>
 
       {/* Problem Statement */}
-      <section className="py-24 bg-gradient-to-r from-emerald-100/40 via-white to-sky-100/40">
+      <section className="py-24 bg-sage-100">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
@@ -379,6 +379,21 @@ const SmartChemistry = () => {
           </div>
         </div>
       </section>
+
+      {/* Interaction Planning Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto text-center mb-10">
+            <img
+              src="/Photos/chem/6.jpg"
+              alt="Checklist for interaction planning"
+              className="rounded-xl w-full object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
+
 
       {/* Development Process */}
       <section className="py-24 bg-gradient-to-r from-sky-100/40 via-white to-indigo-100/40">
@@ -457,7 +472,7 @@ const SmartChemistry = () => {
       </section>
 
       {/* Technical Achievements */}
-      <section className="py-24">
+      <section className="py-24 bg-ember-50">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
@@ -465,7 +480,7 @@ const SmartChemistry = () => {
                 🚀 Technical Achievements
               </h2>
               <p className="text-lg text-muted-foreground">
-                Key technical milestones accomplished in one week
+               
               </p>
             </div>
 
@@ -538,18 +553,7 @@ const SmartChemistry = () => {
         </div>
       </section>
 
-      {/* Interaction Planning Section */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto text-center mb-10">
-            <img
-              src="/Photos/chem/6.jpg"
-              alt="Checklist for interaction planning"
-              className="rounded-xl shadow-lg w-full object-cover"
-            />
-          </div>
-        </div>
-      </section>
+      
 
       {/* Learning Outcomes 
       <section className="py-24">

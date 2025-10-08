@@ -991,7 +991,7 @@ const KedarnathVR = () => {
               {challenges.map((challenge, index) => (
                 <Card
                   key={index}
-                  className="group border-border/50 bg-card/70 backdrop-blur-sm hover:border-blue-300/60 transition-all duration-300"
+                  className="group border-border/50 bg-card/70 backdrop-blur-sm hover:border-blue-300/60 transition-all duration-300 "
                 >
                   <CardContent className="p-8">
                     <div className="grid md:grid-cols-2 gap-8 relative">
