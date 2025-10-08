@@ -4,7 +4,7 @@ import HandDrawnIllustrations from "./HandDrawnIllustrations";
 
 const MinimalistHero: React.FC = () => {
   return (
-    <section className="relative flex items-center overflow-hidden bg-gradient-to-br from-minimal-sage/35 via-background to-minimal-warm/30 py-24 md:py-32 min-h-[80vh] md:min-h-screen">
+    <section className="relative flex min-h-screen items-center overflow-hidden  bg-[radial-gradient(#bcbcbc_0.7px,transparent_1px)] [background-size:20px_20px] md:min-h-screen">
       <div className="absolute inset-0 pointer-events-none">
         <div
           className="absolute inset-0 opacity-70"
