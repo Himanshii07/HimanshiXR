@@ -16,7 +16,7 @@ const MobileOverlay = () => (
         Uh-oh!
       </h2>
       <p className="text-sm text-muted-foreground max-w-2xl mx-auto font-light">
-        Open this website on a bigger screen!
+        Tinny screens can't handle all this creativity!
       </p>
     </div>
   </div>
