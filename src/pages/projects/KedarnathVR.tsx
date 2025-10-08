@@ -56,7 +56,7 @@ const KedarnathVR = () => {
   const [activeLevel, setActiveLevel] = useState("level1");
 
   const projectDetails = {
-    title: "Mahakatha VR Experience",
+    title: "महाकथा VR Experience",
     subtitle: "Immersive Spiritual Journey Through Ancient Sacred Tales",
     duration: "6 Weeks",
     year: "2025",
@@ -468,7 +468,7 @@ const KedarnathVR = () => {
       </section>
 
       <section className="py-6 bg-white ">
-        <div className="container mx-auto px-4 shadow bg-slate-200  py-12">
+        <div className="container mx-auto px-4 shadow bg-slate-200 rounded-3xl py-12">
           <div className="max-w-6xl mx-auto">
             <div className="grid lg:grid-cols-3 gap-10 mb-8">
               <Card className="border-border/50 bg-card/60 backdrop-blur-sm hover:border-blue-300/60 transition-all duration-300">
@@ -531,11 +531,9 @@ const KedarnathVR = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground leading-relaxed text-base">
-                    A deeply immersive VR experience that lets users step inside
-                    Kedarnath temple, engage in rituals, discover mythological
-                    stories, and reconnect with India's sacred heritage. Users
-                    need an engaging and immersive way to experience Indian
-                    mythological stories because traditional storytelling
+                    Many devotees face challenges like distance, long queues, or physical limitations. Mahakatha enables them to
+                     virtually visit temples, engage in rituals, and connect with cultural heritage from anywhere. 
+                    Because traditional storytelling
                     methods no longer capture their interest due to language
                     barriers and decreasing attention spans.
                   </p>
@@ -695,6 +693,74 @@ const KedarnathVR = () => {
           </div>
         </div>
       </section>
+
+      <section className="py-24 bg-gradient-to-r from-white via-slate-50 to-blue-50/60">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid lg:grid-cols-1 gap-12 items-center text-center">
+              <div> 
+                <h2 className="text-4xl font-bold mb-6 text-sky-700 text-center">
+                  Research
+                </h2>
+                <p className="text-muted-foreground text-sm leading-relaxed mb-6 text-center">
+                   Before beginning development, I created a detailed storyboard to map out the entire user journey and mythological narrative.
+                </p>
+                {/*<div className="grid sm:grid-cols-2 gap-4 text-sm text-muted-foreground">
+                  <div className="rounded-xl border border-blue-200/60 bg-white/70 p-4 shadow-sm">
+                    <h3 className="text-blue-700 font-semibold mb-2">
+                      Intentional Rhythm
+                    </h3>
+                    <p>
+                      Slow camera movements and soft lighting cues keep the
+                      experience contemplative while guiding focus.
+                    </p>
+                  </div>
+                  <div className="rounded-xl border border-sky-200/60 bg-white/70 p-4 shadow-sm">
+                    <h3 className="text-sky-700 font-semibold mb-2">
+                      Mythic Highlights
+                    </h3>
+                    <p>
+                      Panels emphasize key legend moments that transition users
+                      seamlessly into interactive sequences.
+                    </p>
+                  </div>
+                </div>*/}
+              </div>
+
+              <div className="grid sm:grid-cols-1 gap-6">
+                {storyboardFrames.map((frame, index) => (
+                  <Card
+                    key={index}
+                    className="overflow-hidden border border-border/40 bg-card/70 shadow-lg"
+                  >
+                    <div className="relative aspect-16/9 overflow-hidden">
+                      <img
+                        src="Photos/kedar/25.jpg"
+                        alt={frame.alt}
+                        className="w-full h-full object-cover"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                      <span className="absolute bottom-4 left-4 text-xs font-semibold tracking-wide uppercase text-white/80">
+                        
+                      </span>
+                    </div>
+                    <CardContent className="p-6">
+                      <h3 className="text-lg font-semibold text-sky-700 mb-2">
+                        {frame.title}
+                      </h3>
+                      <p className="text-muted-foreground text-sm leading-relaxed">
+                        {frame.description}
+                      </p>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
 
       <section className="py-24 bg-gradient-to-r from-white via-slate-50 to-blue-50/60">
         <div className="container mx-auto px-4">
