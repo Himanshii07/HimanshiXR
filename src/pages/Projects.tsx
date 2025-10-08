@@ -114,31 +114,16 @@ const Projects = () => {
       },
     },
 
+    
 
-    {
-      id: 11,
-      title: "Samsung AI Agent",
-      category: "interactive",
-      categoryLabel: "Interactive Design",
-      description:
-        "Concept prototype for a proactive multimodal assistant across Samsung devices.",
-      longDescription:
-        "Exploration of context-aware assistance, privacy-preserving on-device intelligence, and helpful automation spanning phone, tablet, and wearable surfaces.",
-      image: "Photos/kedar 7.png",
-      tags: ["AI", "Agentic AI", "Multimodal interactions"],
-      featured: false,
-      year: "2025",
-      client: "Concept Study",
-      duration: "1 week",
-      slug: "samsung-ai-agent",
-      links: { demo: "#", github: "#", live: "#" },
-    },
 
+    
+    
 
 
     
    
-    {
+     {
       id: 7,
       title: "Smart Chemistry",
       category: "interactive",
@@ -178,7 +163,7 @@ const Projects = () => {
         "VR-based pre-flight maintenance training with guided inspection and independent practice in a safe, immersive environment.",
       longDescription:
         "We designed a VR-based pre-flight maintenance simulation to replace costly, risky traditional training. Trainees first complete a guided inspection with real-time feedback, then practice independently to build confidence safely.",
-      image: "/Photos/Flight/8.png",
+      image: "/Photos/Flight/6.png",
       tags: [
         "VR",
         "Training Simulation",
@@ -206,7 +191,7 @@ const Projects = () => {
         "Mapping interdependencies, feedback loops, and leverage points in complex problems.",
       longDescription:
         "Case study applying systems thinking tools to reveal dynamics over time and identify intervention opportunities.",
-      image: "/Photos/pune/3.jpg",
+      image: "/Photos/pune/28.png",
       tags: ["Systems", "Causal Loops", "Leverage Points", "Modeling"],
       featured: false,
       year: "2025",
@@ -243,7 +228,7 @@ const Projects = () => {
         "A realistic virtual reality shooting simulation that provides safe training environment with physics-based mechanics and multiple weapon systems.",
       longDescription:
         "This VR shooting simulation offers a comprehensive training experience with realistic ballistics, multiple weapon types, and various challenging scenarios. Built with safety and education in mind, it provides an immersive environment for skill development without real-world risks.",
-      image: "/Photos/Shooting range 1.png",
+      image: "/Photos/shooting.png",
       tags: [
         "Unreal Engine 5",
         "VR",

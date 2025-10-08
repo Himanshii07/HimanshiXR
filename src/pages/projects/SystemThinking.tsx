@@ -225,10 +225,10 @@ const SystemThinking = () => {
                   <Users className="w-4 h-4 mt-0.5" />
                   Understand Community Impact and Behavior
                 </li>
-                <li className="flex items-start gap-2">
+                {/*<li className="flex items-start gap-2">
                   <Building2 className="w-4 h-4 mt-0.5" />
                   Explore Cost-Effective Solutions
-                </li>
+                </li> */}
               </ul>
             </div>
             <div>
@@ -250,11 +250,15 @@ const SystemThinking = () => {
         </div>
       </section>
 
+
+
+
+
       {/* Initial & Secondary Research (structured, not screenshots) */}
       <section className="py-8">
-        <div className="container mx-auto px-4 max-w-7xl grid lg:grid-cols-2 gap-6">
+        <div className="container mx-auto px-4 max-w-7xl grid lg:grid-cols-2 gap-6 ">
           <div className="rounded-xl border border-border/60 bg-card/40 p-5">
-            <h3 className="text-xl font-semibold mb-3">Initial Research</h3>
+            <h3 className="text-2xl font-bold mb-3 text-emerald-600">Initial Research</h3>
             <ul className="list-disc pl-5 space-y-1 text-sm text-muted-foreground mb-4">
               <li>
                 Explored recurring floods in Pune to define scope and key
@@ -292,8 +296,8 @@ const SystemThinking = () => {
               />
             </div>
           </div>
-          <div className="rounded-xl border border-border/60 bg-card/40 p-5 max-w-4xl mx-auto ">
-            <h3 className="text-xl font-semibold mb-3">Secondary Research</h3>
+          <div className="rounded-xl border border-border/60 bg-card/40 p-5 max-w-7xl mx-auto ">
+            <h3 className="text-2xl font-bold mb-3 text-emerald-600">Secondary Research</h3>
             <ul className="list-disc pl-5 space-y-1 text-sm text-muted-foreground">
               <li>STANDARD OPERATING PROCEDURE (state/city)</li>
               <li>National Disaster Management Guidelines (NDMA)</li>
@@ -604,6 +608,22 @@ const SystemThinking = () => {
           </div>
         </div>
       </section>
+
+
+      {/* solutions */}
+      <section className="py-16 bg-white-50">
+        <div className="container mx-auto px-4 rounded-xl shadow-lg overflow-hidden">
+          <div className="max-w-7xl mx-auto text-center mb-10 gap-8">
+            <img
+              src="/Photos/pune/30.jpg"
+              alt="Human Factors reference"
+              className="rounded-xl w-full object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
+
 
          {/* solutions */}
       <section className="py-16 bg-white-50">

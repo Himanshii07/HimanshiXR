@@ -4,13 +4,30 @@ import { motion } from "framer-motion";
 const HorizontalCarousel: React.FC = () => {
   const images = [
     {
-      src: "/Photos/life/13.jpeg",
-      caption: "First time celebrating onam",
-    },
-    {
       src: "/Photos/life/14.jpeg",
       caption: "He taught me how to be fearless",
     },
+    {
+      src: "/Photos/life/2.jpeg",
+      caption: "Survival kit in college",
+    },
+     {
+      src: "/Photos/life/11.jpeg",
+      caption: "Drove 1500km from delhi to pune :)",
+    },
+     {
+      src: "/Photos/life/10.jpeg",
+      caption: "love/hate relationship with pune's monsoon",
+    },
+    {
+      src: "/Photos/life/18.jpg",
+      caption: "First month in pune was really scaryy",
+    },
+    {
+      src: "/Photos/life/13.jpeg",
+      caption: "First time celebrating onam",
+    },
+    
     {
       src: "/Photos/life/7.jpeg",
       caption: "and that's oreo!",
@@ -19,30 +36,17 @@ const HorizontalCarousel: React.FC = () => {
       src: "/Photos/life/16.jpeg",
       caption: "One of my favorite days 🥰",
     },
-    {
-      src: "/Photos/life/2.jpeg",
-      caption: "Survival kit in college",
-    },
+    
     {
       src: "/Photos/life/3.jpeg",
-      caption: "I am his 2nd mother",
+      caption: "Part time babysitter",
     },
-    {
-      src: "/Photos/life/11.jpeg",
-      caption: "Drove 1500km from delhi to pune :)",
-    },
+   
     {
       src: "/Photos/life/12.jpeg",
       caption: "We Explored some places in Pune",
     },
-    {
-      src: "/Photos/life/10.jpeg",
-      caption: "love/hate relationship with pune's monsoon",
-    },
-    {
-      src: "/Photos/life/18.jpg",
-      caption: "First month in pune was really scaryy",
-    },
+   
   ];
 
   // Duplicate images for seamless loop

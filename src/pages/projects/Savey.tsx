@@ -354,9 +354,78 @@ const Savey = () => {
         </div>
       </section>
 
-      {/* Features Section - grid, minimal text, more images */}
-      <section className="py-16 bg-gradient-to-br from-amber-50 via-pink-50 to-sky-50">
+
+      {/* User Testing Section - grid, minimal text, more images */}
+      <section className="py-32 bg-gradient-to-br from-amber-50 via-pink-50 to-sky-50">
         <div className="container mx-auto px-4">
+          <div className="max-w-2xl mx-auto text-center mb-10">
+            <h2 className="text-5xl font-bold mb-4">
+              Traditional Piggy Banks are{" "}
+              <span className="bg-pink-400 text-white px-2 rounded">
+                Passive
+              </span>
+              - Kids lose interest
+            </h2>
+            <p className="text-lg text-muted-foreground ">
+            They are passive boxes that just stores money, No excietment, no learning
+            </p>
+            <p className="text-lg text-muted-foreground mb-6">
+            Result? Savings feels boring and kids lose interest fast
+            </p>
+          </div>
+          <hr className="mt-10 border-t border-border/70 mb-6" />
+          
+          <div className="grid md:grid-cols-1 gap-1 aspect-3/4 max-w-6xl mx-auto text-center">
+           
+              <h2 className="text-xl font-bold mb-4">
+              
+              <span className="bg-pink-400 text-white px-2 rounded">
+                Design Challenge :
+              </span>
+             
+            </h2>
+            <p className="text-lg text-muted-foreground ">
+            Can we turn the traditional piggy banks into something that childern love to interact with?
+            </p>
+            <p className="text-lg text-muted-foreground mb-6">
+            Result? Savings feels boring and kids lose interest fast
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+      {/* User Testing Section - grid, minimal text, more images */}
+      <section className="py-32 bg-gradient-to-br from-amber-50 via-pink-50 to-sky-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-7xl mx-auto text-center mb-10">
+            <h2 className="text-3xl font-bold mb-4">
+              It all begins with{" "}
+              <span className="bg-orange-400 text-white px-2 rounded">
+                Sketching our Ideas
+              </span>
+            </h2>
+            <p className="text-lg text-muted-foreground mb-6">
+            
+            </p>
+          </div>
+          <div className="grid md:grid-cols-1 gap-1 aspect-3/4 max-w-6xl mx-auto">
+            <img
+              src="/Photos/savey/12.jpg"
+              alt="Kids playing with Savey"
+              className="rounded-lg w-full object-cover aspect-16/9"
+            />
+          </div>
+        </div>
+      </section>
+
+      
+
+
+
+      {/* Features Section - grid, minimal text, more images */}
+      <section className="py-32 bg-pink-100 ">
+        <div className="container mx-auto px-4  max-w-7xl">
           <div className="max-w-3xl mx-auto text-center mb-10">
             <h2 className="text-3xl font-bold mb-4">
               Making saving exciting through{" "}
@@ -366,7 +435,7 @@ const Savey = () => {
             </h2>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-yellow-50 p-4 rounded-xl shadow">
+            <div className="bg-white p-4 rounded-xl shadow">
               <img
                 src="/Photos/savey/16.png"
                 alt="Expressive OLED Eyes"
@@ -377,7 +446,7 @@ const Savey = () => {
                 Animated eyes blink, wink, and express emotions.
               </p>
             </div>
-            <div className="bg-pink-50 p-4 rounded-xl shadow">
+            <div className="bg-white p-4 rounded-xl shadow">
               <img
                 src="/Photos/savey/Rectangle 4.png"
                 alt="Playful Sound Cues"
@@ -388,7 +457,7 @@ const Savey = () => {
                 Cheerful sounds reward every deposit.
               </p>
             </div>
-            <div className="bg-blue-50 p-4 rounded-xl shadow">
+            <div className="bg-white p-4 rounded-xl shadow">
               <img
                 src="/Photos/savey/12.png"
                 alt="Coin & Note Detection"
@@ -404,7 +473,7 @@ const Savey = () => {
       </section>
 
       {/* Prototype Section - grid, minimal text, more images */}
-      <section className="py-16 bg-blue-50">
+      <section className="py-32 bg-blue-50">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-10">
             <h2 className="text-3xl font-bold mb-4">
@@ -418,29 +487,29 @@ const Savey = () => {
             <img
               src="/Photos/savey/6.png"
               alt="Laser cutting"
-              className="rounded-lg shadow w-full object-cover aspect-square"
+              className="rounded-lg bg-white p-4 shadow w-full object-cover aspect-square"
             />
             <img
               src="/Photos/savey/5.png"
               alt="Assembly"
-              className="rounded-lg shadow w-full object-cover aspect-square"
+              className="rounded-lg bg-white p-4 shadow w-full object-cover aspect-square"
             />
             <img
               src="/Photos/savey/10.png"
               alt="Circuit design"
-              className="rounded-lg shadow w-full object-cover aspect-square"
+              className="rounded-lg bg-white p-4 shadow w-full object-cover aspect-square"
             />
             <img
               src="/Photos/savey/1.png"
               alt="Testing"
-              className="rounded-lg shadow w-full object-cover aspect-square"
+              className="rounded-lg bg-white p-4 shadow w-full object-cover aspect-square"
             />
           </div>
         </div>
       </section>
 
       {/* User Testing Section - grid, minimal text, more images */}
-      <section className="py-16 bg-gradient-to-br from-amber-50 via-pink-50 to-sky-50">
+      <section className="py-32 bg-gradient-to-br from-amber-50 via-pink-50 to-sky-50">
         <div className="container mx-auto px-4">
           <div className="max-w-7xl mx-auto text-center mb-10">
             <h2 className="text-3xl font-bold mb-4">
@@ -463,6 +532,83 @@ const Savey = () => {
           </div>
         </div>
       </section>
+
+       {/* User Testing Section - grid, minimal text, more images */}
+      <section className="py-32 bg-gradient-to-br from-amber-50 via-pink-50 to-sky-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-7xl mx-auto text-center mb-10">
+            <h2 className="text-3xl font-bold mb-4">
+              Cost Breakdown{" "}
+              <span className="bg-orange-400 text-white px-2 rounded">
+                Building Smart on a Budget
+              </span>
+            </h2>
+            <p className="text-lg text-muted-foreground mb-6">
+            
+            </p>
+          </div>
+          <div className="grid md:grid-cols-1 gap-1 aspect-3/4 max-w-5xl mx-auto">
+            <img
+              src="/Photos/savey/11.jpg"
+              alt="Kids playing with Savey"
+              className="rounded-lg w-full object-cover aspect-16/9"
+            />
+          </div>
+        </div>
+      </section>
+
+
+      {/* Features Section - grid, minimal text, more images */}
+      <section className="py-32 bg-sky-100 ">
+        <div className="container mx-auto px-4  max-w-7xl">
+          <div className="max-w-3xl mx-auto text-center mb-10">
+            <h2 className="text-3xl font-bold mb-4">
+              Future Scope{" "}
+              <span className="bg-blue-400 text-white px-2 rounded">
+                playful features
+              </span>
+            </h2>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-white p-4 rounded-xl shadow">
+              <img
+                src="/Photos/savey/1.jpg"
+                alt="Expressive OLED Eyes"
+                className="rounded-lg mb-4 w-half object-cover aspect-square"
+              />
+              <h3 className="font-bold mb-2">AI Voice Assistant</h3>
+              <p className="text-sm text-muted-foreground">
+                Integrate a voice assistant feature, allowing kids to ask questions about money, saving, 
+                or spending—and receive simple, age-appropriate answers, making it both fun and educational.
+              </p>
+            </div>
+            <div className="bg-white p-4 rounded-xl shadow">
+              <img
+                src="/Photos/savey/2.jpg"
+                alt="Playful Sound Cues"
+                className="rounded-lg mb-4 w-half object-cover aspect-square"
+              />
+              <h3 className="font-bold mb-2">Mobile App Integration</h3>
+              <p className="text-sm text-muted-foreground">
+                A companion app can help parents and kids track savings, set goals, and receive progress reports.
+              </p>
+            </div>
+            <div className="bg-white p-4 rounded-xl shadow">
+              <img
+                src="/Photos/savey/3.jpg"
+                alt="Coin & Note Detection"
+                className="rounded-lg mb-4 w-half object-cover aspect-square"
+              />
+              <h3 className="font-bold mb-2">Goal-Based Challenges</h3>
+              <p className="text-sm text-muted-foreground">
+                Children can choose or set custom saving goals—like buying a toy or book—and the piggy bank will encourage them with milestones and rewards.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
 
       {/* Project Navigation */}
       <section className="py-16 bg-white">

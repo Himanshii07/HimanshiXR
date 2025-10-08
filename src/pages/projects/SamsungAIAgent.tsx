@@ -64,7 +64,7 @@ const SamsungAIAgent: React.FC = () => {
       <Navigation />
 
       {/* COVER / TITLE */}
-      <section className="relative pt-12 pb-20 overflow-hidden">
+      <section className="relative pt-12 pb-34 items-center overflow-hidden bg-white max-w-8xl ">
         <div className="container mx-auto px-8">
           <div className="max-w-7xl mx-auto text-center">
             <div className="mb-8">
@@ -81,16 +81,16 @@ const SamsungAIAgent: React.FC = () => {
             </div>
 
             {/* Large Title block */}
-            <div className="py-10 max-w-8xl">
-              <h1 className="text-6xl md:text-3xl font-extrabold leading-tight text-sky-600">
+            <div className="py-72 max-w-8xl">
+              <h1 className="text-8xl md:text-5xl font-extrabold leading-tight text-sky-600">
                 Samsung
               </h1>
-              <p className="mt-4 text-xl md:text-2xl text-slate-700 font-semibold mb-64">
+              <p className="mt-4 text-xl md:text-2xl text-slate-700 font-semibold mb-80">
                 Designing Agentic AI Interactions in XR
               </p>
 
               {/* author / course line */}
-              <div className="mt-8 border-t border-border/40 pt-4 flex items-center justify-between text-sm text-muted-foreground">
+              <div className="mt-8  border-t border-border/40 pt-4 flex items-center justify-between text-sm text-muted-foreground">
                 <div>M.Des. Immersive Media Design | 6 weeks</div>
                 <div>Nidhi Surekha | Himanshi Puri | Akash Rawat | Rachit Bhatnagar</div>
               </div>
@@ -101,7 +101,7 @@ const SamsungAIAgent: React.FC = () => {
 
 
 
-      {/* Design brief card centered */}
+      {/* Design brief card centered
             <div className="mt-12 max-w-6xl items-center">
               <div className="mx-auto bg-white md:text-2xl rounded-lg shadow-md p-8">
                 <div className="text-center">
@@ -121,7 +121,22 @@ const SamsungAIAgent: React.FC = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
+
+
+
+             {/* design brief */}
+      <section className="py-16 bg-white-50">
+        <div className="container max-w-7xl mx-auto px-4 rounded-xl  overflow-hidden">
+          <div className="max-w-7xl mx-auto text-center mb-10 gap-8">
+            <img
+              src="/Photos/sam/1.jpg"
+              alt="Human Factors reference"
+              className="rounded-xl w-full object-cover"
+            />
+          </div>
+        </div>
+      </section>
 
 
 
@@ -163,7 +178,119 @@ const SamsungAIAgent: React.FC = () => {
         </div>
       </section>
 
-      {/* USER-CENTERED CREATION PROCESS */}
+     
+
+
+       {/* competitors */}
+      <section className="py-16 bg-white">
+        <div className="container max-w-12xl mx-auto px-4 rounded-xl  overflow-hidden">
+          <div className="max-w-7xl mx-auto text-center mb-10 gap-8">
+            <img
+              src="/Photos/sam/6.jpg"
+              alt="Human Factors reference"
+              className="rounded-xl w-full object-cover aspect-4/3"
+            />
+          </div>
+        </div>
+      </section>
+
+
+
+             {/* Cuser persona */}
+      <section className="py-16 bg-white-50">
+        <div className="container max-w-12xl mx-auto px-4 rounded-xl  overflow-hidden">
+          <div className="max-w-7xl mx-auto text-center mb-10 gap-8">
+            <img
+              src="/Photos/sam/2.jpg"
+              alt="Human Factors reference"
+              className="rounded-xl w-full object-cover aspect-16/9"
+            />
+          </div>
+        </div>
+      </section>
+
+
+       {/* user flow */}
+      <section className="py-16 bg-white">
+        <div className="container max-w-12xl mx-auto px-4 rounded-xl  overflow-hidden">
+          <div className="max-w-7xl mx-auto text-center mb-10 gap-8">
+            <img
+              src="/Photos/sam/4.jpg"
+              alt="Human Factors reference"
+              className="rounded-xl w-full object-cover aspect-4/3"
+            />
+          </div>
+        </div>
+      </section>
+
+
+      {/* user flow */}
+      <section className="py-16 bg-white">
+        <div className="container max-w-12xl mx-auto px-4 rounded-xl  overflow-hidden">
+          <div className="max-w-7xl mx-auto text-center mb-10 gap-8">
+            <img
+              src="/Photos/sam/3.jpg"
+              alt="Human Factors reference"
+              className="rounded-xl w-full object-cover aspect-16/9"
+            />
+          </div>
+        </div>
+      </section>
+
+
+      {/* key user interface */}
+      <section className="py-12 bg-white text-sky-700">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <div>
+            <h2 className="text-4xl font-bold mb-2 text-sky-600 text-center">
+             Key User Interface Considerations
+            </h2>
+            <p className="text-white font-light text-sm leading-relaxed mb-6 text-center">
+              
+            </p>
+            <div className="grid sm:grid-cols-2 gap-4 text-sm text-muted-foreground">
+              <div className="rounded-xl border border-blue-200/60 bg-slate-100 p-4 shadow-sm">
+                <h3 className="text-blue-900 font-semibold mb-2">
+                  Peripheral-first
+                </h3>
+                <p>
+                  Place primary presence (agent orb) at lower-right periphery (≈15° off gaze).
+                </p>
+              </div>
+              <div className="rounded-xl border border-sky-200/60 bg-slate-100 p-4 shadow-sm">
+                <h3 className="text-blue-900 font-semibold mb-2">
+                Gaze lanes
+                </h3>
+                <p>
+                 Keep 8-12° cone clear; only transiently enter center with micro-confirmations, less than 2s.
+                </p>
+              </div>
+               <div className="rounded-xl border border-sky-200/60 bg-slate-100 p-4 shadow-sm">
+                <h3 className="text-blue-900 font-semibold mb-2">
+                 Depth layering
+                </h3>
+                <p>
+                  Place capture guides at object depth (object-locked), not HUD depth, to reduce parallax fatigue.
+                </p>
+              </div>
+               <div className="rounded-xl border border-sky-200/60 bg-slate-100 p-4 shadow-sm">
+                <h3 className="text-blue-900 font-semibold mb-2">
+                Safe zones
+                </h3>
+                <p>
+                  10% inset margins on all sides for labels; avoid edge clipping in motion.
+
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+      {/* USER-CENTERED CREATION PROCESS 
       <section className="py-16 bg-white/60">
         <div className="container mx-auto px-8">
           <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
@@ -180,9 +307,9 @@ const SamsungAIAgent: React.FC = () => {
             <div className="flex items-center justify-end">
               <div className="text-sm text-muted-foreground">Brand Guidelines</div>
             </div>
-          </div>
+          </div> */}
 
-          {/* TIMELINE CARDS */}
+          {/* TIMELINE CARDS
           <div className="mt-10 max-w-8xl mx-auto items-center">
             <div className="overflow-x-auto">
               <div className="flex gap-6 items-start py-6 px-2">
@@ -221,7 +348,7 @@ const SamsungAIAgent: React.FC = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section>  */}
 
       {/* CTA */}
       <section className="py-12">
