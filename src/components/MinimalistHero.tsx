@@ -55,16 +55,16 @@ const MinimalistHero: React.FC = () => {
           </motion.h1>
 
           <motion.p
-            className="text-base sm:text-lg md:text-xl text-muted-foreground mb-4 font-light tracking-wide"
+            className="text-base sm:text-lg md:text-xl text-muted-foreground mb-2 font-regular  tracking-wide"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            curious • creative • consistent
+            curious + creative + consistent
           </motion.p>
 
           <motion.p
-            className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed font-normal"
+            className="text-sm sm:text-base md:text-sm text-muted-foreground max-w-2xl mx-auto mb-4 leading-relaxed font-normal"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.55 }}
@@ -74,6 +74,7 @@ const MinimalistHero: React.FC = () => {
             interactive media, and 3D worlds.
           </motion.p>
 
+          {/*}
           <motion.div
             className="flex flex-wrap items-center justify-center gap-3 text-xs sm:text-sm text-muted-foreground/80"
             initial={{ opacity: 0, y: 15 }}
@@ -93,6 +94,7 @@ const MinimalistHero: React.FC = () => {
               3D design & environments
             </span>
           </motion.div>
+          */}
 
           <motion.div
             className="mt-16 flex flex-col items-center"

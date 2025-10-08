@@ -18,30 +18,30 @@ const HandDrawnIllustrations: React.FC<HandDrawnIllustrationsProps> = ({
       message: "Binge-watching counts as research, right?",
       svg: (
         <img
-          src="/Photos/illustrations/netflix.png"
+          src="/Photos/illustrations/21.png"
           alt="Netflix Logo"
           width={180}
           height={350}
           className="object-contain"
         />
       ),
-      position: { top: "10%", left: "54%" },
+      position: { top: "7%", left: "74%" },
       color: "text-red-500",
-      tooltipPosition: { right: "-25%", top: "4rem" },
+      tooltipPosition: { right: "-25%", top: "-2rem" },
     },
     {
       name: "chai",
       message: "Chai Addicted",
       svg: (
         <img
-          src="/Photos/illustrations/8.png"
+          src="/Photos/illustrations/22.png"
           alt="Chai logo"
-          width={220}
-          height={280}
+          width={160}
+          height={160}
           className="object-contain"
         />
       ),
-      position: { top: "27%", right: "26%" },
+      position: { top: "57%", right: "8%" },
       color: "text-amber-600",
       tooltipPosition: { right: "16%", top: "-2.5rem" },
     },
@@ -50,30 +50,30 @@ const HandDrawnIllustrations: React.FC<HandDrawnIllustrationsProps> = ({
       message: "Comfort food",
       svg: (
         <img
-          src="/Photos/illustrations/13.png"
+          src="/Photos/illustrations/26.png"
           alt="Chai logo"
-          width={220}
-          height={180}
+          width={150}
+          height={120}
           className="object-contain"
         />
       ),
-      position: { top: "37%", left: "22%" },
+      position: { top: "42%", left: "10%" },
       color: "text-orange-600",
       tooltipPosition: { left: "10%", top: "-2.5rem" },
     },
     {
-      name: "dog",
-      message: "Heart stolen by every dog on the street",
+      name: "Unreal Engine",
+      message: "Creating cool 3d Environments",
       svg: (
         <img
-          src="/Photos/illustrations/11.png"
+          src="/Photos/illustrations/15.png"
           alt="Chai logo"
           width={240}
           height={180}
           className="object-contain"
         />
       ),
-      position: { top: "62%", right: "31%" },
+      position: { top: "22%", right: "65%" },
       color: "text-blue-600",
       tooltipPosition: { right: "10%", top: "-2.5rem" },
     },
@@ -82,14 +82,14 @@ const HandDrawnIllustrations: React.FC<HandDrawnIllustrationsProps> = ({
       message: "Plant Parent",
       svg: (
         <img
-          src="/Photos/illustrations/10.png"
+          src="/Photos/illustrations/19.png"
           alt="Chai logo"
-          width={420}
-          height={680}
+          width={320}
+          height={240}
           className="object-contain"
         />
       ),
-      position: { top: "60%", left: "34%" },
+      position: { top: "67%", left: "4%" },
       color: "text-purple-600",
       tooltipPosition: { left: "20%", top: "3rem" },
     },
@@ -98,62 +98,95 @@ const HandDrawnIllustrations: React.FC<HandDrawnIllustrationsProps> = ({
       message: "Living in multiple realities.",
       svg: (
         <img
-          src="/Photos/illustrations/12.png"
+          src="/Photos/illustrations/16.png"
           alt="Chai logo"
-          width={220}
+          width={420}
           height={380}
           className="object-contain"
         />
       ),
-      position: { top: "25%", left: "30%" },
+      position: { top: "25%", left: "74%" },
       color: "text-green-600",
       tooltipPosition: { left: "5%", top: "-1rem" },
     },
     {
       name: "to do list",
-      message: "Daily task manager",
+      message: "Planning and strategizing",
       svg: (
         <img
-          src="/Photos/illustrations/2.png"
+          src="/Photos/illustrations/14.png"
           alt="Chai logo"
           width={220}
           height={280}
           className="object-contain"
         />
       ),
-      position: { top: "49%", right: "22%" },
+      position: { top: "62%", right: "26%" },
       color: "text-indigo-600",
       tooltipPosition: { right: "5%", top: "-2.5rem" },
     },
     {
-      name: "clock",
-      message: "124 Alarms set, 120 snoozed",
+      name: "Research",
+      message: "Brainstorming sessions",
       svg: (
         <img
-          src="/Photos/illustrations/3.png"
+          src="/Photos/illustrations/25.png"
           alt="Chai logo"
-          width={180}
-          height={120}
+          width={380}
+          height={250}
           className="object-contain"
         />
       ),
-      position: { top: "20%", right: "48%" },
+      position: { top: "1%", right: "40%" },
       color: "text-indigo-600",
-      tooltipPosition: { right: "10%", top: "-2.5rem" },
+      tooltipPosition: { right: "10%", top: "2rem" },
+    },
+    {
+      name: "ipad",
+      message: "sketching and illustrating on my ipad",
+      svg: (
+        <img
+          src="/Photos/illustrations/27.png.webp"
+          alt="Chai logo"
+          width={200}
+          height={140}
+          className="object-contain"
+        />
+      ),
+      position: { top: "25%", right: "27%" },
+      color: "text-indigo-600",
+      tooltipPosition: { right: "6%", top: "-2rem" },
+    },
+    {
+      name: "3d modelling",
+      message: "3d modelling",
+      svg: (
+        <img
+          src="/Photos/illustrations/24.png"
+          alt="Chai logo"
+          width={400}
+          height={300}
+          className="object-contain"
+        />
+      ),
+      position: { top: "2%", right: "80%" },
+      color: "text-indigo-600",
+      tooltipPosition: { right: "10%", top: "2rem" },
     },
     {
       name: "Stock Market",
       message: "Investing wisely",
       svg: (
         <img
-          src="/Photos/illustrations/5.png"
+          src="/Photos/illustrations/20.png"
           alt="Chai logo"
           width={260}
           height={320}
           className="object-contain"
         />
       ),
-      position: { top: "52%", left: "25%" },
+      
+      position: { top: "54%", left: "25%" },
       color: "text-indigo-600",
       tooltipPosition: { left: "5%", top: "3rem" },
     },
