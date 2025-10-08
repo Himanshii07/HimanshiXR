@@ -6,9 +6,16 @@ import Footer from "@/components/Footer";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 
-const MobileOverlay = () => (
+type TimelineCardProps = {
+  index: number | string;
+  title: string;
+  subtitle?: string;
+  dark?: boolean;
+};
+
+const MobileOverlay: React.FC = () => (
   <div className="fixed inset-0 z-50 flex items-center justify-center bg-white/95 backdrop-blur-lg md:hidden">
-    <div className="text-center">
+    <div className="text-center px-6">
       <h2 className="text-2xl md:text-3xl text-red-700 font-heading text-foreground mb-4">
         Uh-oh!
       </h2>
@@ -19,7 +26,33 @@ const MobileOverlay = () => (
   </div>
 );
 
-const SamsungAIAgent = () => {
+const TimelineCard: React.FC<TimelineCardProps> = ({
+  index,
+  title,
+  subtitle = "",
+  dark = false,
+}) => (
+  <div
+    className={`rounded-lg border ${dark ? "bg-gradient-to-br from-slate-800/80 to-slate-700/60 text-white" : "bg-white"
+      } p-4 shadow-sm min-w-[200px]`}
+  >
+    <div className="flex justify-between items-start">
+      <div>
+        <p className="text-xs uppercase font-medium tracking-wider text-muted-foreground">
+          {subtitle}
+        </p>
+        <h4 className={`mt-2 font-semibold ${dark ? "text-white" : "text-slate-800"}`}>
+          {title}
+        </h4>
+      </div>
+      <div className={`text-sm font-mono ${dark ? "text-slate-100/80" : "text-muted-foreground"}`}>
+        {String(index).padStart(2, "0")}
+      </div>
+    </div>
+  </div>
+);
+
+const SamsungAIAgent: React.FC = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -30,83 +63,169 @@ const SamsungAIAgent = () => {
       <MobileOverlay />
       <Navigation />
 
-      <section className="relative py-24 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-white via-slate-50 to-blue-200/40" />
-        <div className="relative container mx-auto px-4">
-          <div className="max-w-5xl mx-auto text-center">
-            <Button
-              asChild
-              variant="ghost"
-              className="mb-8 text-muted-foreground hover:text-foreground"
-            >
-              <Link to="/projects">
-                <ArrowLeft className="w-4 h-4 mr-2" />
-                Back to Projects
-              </Link>
-            </Button>
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              Samsung AI Agent
-            </h1>
-            <p className="text-lg text-muted-foreground mb-8 max-w-3xl mx-auto">
-              Concept prototype exploring proactive multimodal assistance across
-              Samsung devices—context awareness, on-device privacy, and helpful
-              automation.
-            </p>
-            <div className="flex flex-wrap justify-center gap-3 mb-8">
-              <Badge variant="outline" className="text-sm">
-                <Calendar className="w-3 h-3 mr-1" />
-                2025
-              </Badge>
-              <Badge variant="outline" className="text-sm">
-                <Users className="w-3 h-3 mr-1" />
-                Individual
-              </Badge>
-              <Badge variant="outline" className="text-sm">
-                <Award className="w-3 h-3 mr-1" />
-                Concept
-              </Badge>
+      {/* COVER / TITLE */}
+      <section className="relative pt-12 pb-20 overflow-hidden">
+        <div className="container mx-auto px-8">
+          <div className="max-w-7xl mx-auto text-center">
+            <div className="mb-8">
+              <Button
+                asChild
+                variant="ghost"
+                className="mb-4 text-muted-foreground hover:text-foreground"
+              >
+                <Link to="/projects">
+                  <ArrowLeft className="w-4 h-4 mr-2 inline-block" />
+                  Back to Projects
+                </Link>
+              </Button>
             </div>
-            <div className="aspect-video max-w-4xl mx-auto rounded-xl overflow-hidden border border-border/50 bg-card/50">
-              <img
-                src="/Photos/illustrations/netflix.png"
-                alt="Samsung AI Agent concept"
-                className="w-full h-full object-cover"
-              />
+
+            {/* Large Title block */}
+            <div className="py-10 max-w-8xl">
+              <h1 className="text-6xl md:text-3xl font-extrabold leading-tight text-sky-600">
+                Samsung
+              </h1>
+              <p className="mt-4 text-xl md:text-2xl text-slate-700 font-semibold mb-64">
+                Designing Agentic AI Interactions in XR
+              </p>
+
+              {/* author / course line */}
+              <div className="mt-8 border-t border-border/40 pt-4 flex items-center justify-between text-sm text-muted-foreground">
+                <div>M.Des. Immersive Media Design | 6 weeks</div>
+                <div>Nidhi Surekha | Himanshi Puri | Akash Rawat | Rachit Bhatnagar</div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
+
+
+      {/* Design brief card centered */}
+            <div className="mt-12 max-w-6xl items-center">
+              <div className="mx-auto bg-white md:text-2xl rounded-lg shadow-md p-8">
+                <div className="text-center">
+                  <h3 className="text-sm text-sky-600 font-semibold">Design Brief</h3>
+                  <h2 className="mt-3 text-2xl md:text-2xl font-medium text-slate-900">
+                    Design user-agent <span className="font-bold">interactions</span> for a futuristic
+                    and ubiquitous agent in an XR device.
+                  </h2>
+                </div>
+
+                <div className="mt-6 border-t border-border/50 pt-6 flex items-start gap-6">
+                  <div className="text-sky-600 font-semibold text-sm">Key Challenge</div>
+                  <div className="text-xs text-muted-foreground">
+                    Designing an AI agent that can seamlessly understand user context, anticipate needs,
+                    and act intelligently in real time within an XR environment, while maintaining natural
+                    and intuitive interactions.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+      {/* QUOTE + INTRO PARAGRAPH */}
       <section className="py-16">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <div>
-              <h2 className="text-xl font-semibold mb-2">Overview</h2>
-              <p className="text-sm text-muted-foreground">
-                Framing the opportunity for an assistant that anticipates needs,
-                reduces friction, and respects privacy.
+        <div className="container mx-auto px-8">
+          <div className="max-w-6xl mx-auto">
+            <blockquote className="text-3xl md:text-4xl font-extrabold leading-snug text-slate-900">
+              “The <span className="text-sky-600">more senses</span> an agent understands the
+              more human the interactions feels.”
+            </blockquote>
+
+            <p className="mt-6 text-sm md:text-base text-muted-foreground max-w-3xl">
+              As technology evolves, our interactions with digital products are no longer limited to a
+              mouse and keyboard. Users can now tap, swipe, speak, and gesture — and even glance —
+              to interact. This shift toward multimodal interfaces, where multiple input methods coexist
+              has opened up exciting possibilities for creating more intuitive, accessible, and
+              versatile experiences.
+            </p>
+
+            <div className="mt-4">
+              <a
+                href="#"
+                className="inline-block text-sky-600 font-semibold underline text-sm"
+              >
+                how do we design effectively for such diverse interactions?
+              </a>
+            </div>
+
+            <hr className="mt-10 border-t border-border/50" />
+          </div>
+        </div>
+      </section>
+
+      {/* USER-CENTERED CREATION PROCESS */}
+      <section className="py-16 bg-white/60">
+        <div className="container mx-auto px-8">
+          <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+            <div className="md:col-span-2">
+              <h3 className="text-lg font-medium text-muted-foreground">Design Process</h3>
+              <h2 className="mt-2 text-3xl font-bold text-slate-900">User-Centered Creation Process</h2>
+              <p className="mt-4 text-sm text-muted-foreground max-w-prose">
+                BetterAI was a journey focused on delivering an intuitive, user-friendly, & AI-powered
+                experience that simplifies everyday tasks. Every stage of the design process was aimed
+                at understanding user needs and anticipating challenges.
               </p>
             </div>
-            <div>
-              <h2 className="text-xl font-semibold mb-2">Approach</h2>
-              <p className="text-sm text-muted-foreground">
-                Journey mapping, intent modeling, and lightweight prototypes for
-                notification, voice, and glanceable UI.
-              </p>
+
+            <div className="flex items-center justify-end">
+              <div className="text-sm text-muted-foreground">Brand Guidelines</div>
             </div>
-            <div>
-              <h2 className="text-xl font-semibold mb-2">Outcomes</h2>
-              <p className="text-sm text-muted-foreground">
-                Design directions for proactive prompts, cross-device handoff,
-                and safe-guarded automation.
-              </p>
+          </div>
+
+          {/* TIMELINE CARDS */}
+          <div className="mt-10 max-w-8xl mx-auto items-center">
+            <div className="overflow-x-auto">
+              <div className="flex gap-6 items-start py-6 px-2">
+                <div className="min-w-[120px] text-xs text-center text-muted-foreground">1 week</div>
+                <div className="min-w-[120px] text-xs text-center text-muted-foreground">2 week</div>
+                <div className="min-w-[120px] text-xs text-center text-muted-foreground">3 week</div>
+                <div className="min-w-[120px] text-xs text-center text-muted-foreground">4 week</div>
+                <div className="min-w-[120px] text-xs text-center text-muted-foreground">5 week</div>
+                <div className="min-w-[120px] text-xs text-center text-muted-foreground">6 week</div>
+              </div>
+
+              <div className="flex gap-6 items-center max-w-8xl mt-4 px-2 pb-6">
+                <div className="flex flex-col gap-6">
+                  <TimelineCard index={1} title="Market Research" subtitle="MARKET RESEARCH" dark />
+                  <div className="mt-10">
+                    <TimelineCard index={2} title="Information Architecture" subtitle="INFORMATION ARCHITECTURE" />
+                  </div>
+                </div>
+
+                <div className="flex flex-col gap-6">
+                  <TimelineCard index={3} title="Wireframes" subtitle="WIREFRAMES" dark />
+                  <div className="mt-6">
+                    <TimelineCard index={4} title="UX Design" subtitle="UX DESIGN" />
+                  </div>
+                </div>
+
+                <div className="flex flex-col gap-6">
+                  <div className="mt-12">
+                    <TimelineCard index={5} title="UI Design & Style Guide" subtitle="UI DESIGN & STYLE GUIDE" />
+                  </div>
+                  <div className="mt-14">
+                    <TimelineCard index={6} title="Development" subtitle="DEVELOPMENT" />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
+      {/* CTA */}
       <section className="py-12">
-        <div className="container mx-auto px-4 text-center">
+        <div className="container mx-auto px-8 text-center">
           <Button asChild size="lg" variant="outline">
             <Link to="/projects">Back to All Projects</Link>
           </Button>

@@ -115,10 +115,27 @@ const Projects = () => {
     },
 
 
+    {
+      id: 11,
+      title: "Samsung AI Agent",
+      category: "interactive",
+      categoryLabel: "Interactive Design",
+      description:
+        "Concept prototype for a proactive multimodal assistant across Samsung devices.",
+      longDescription:
+        "Exploration of context-aware assistance, privacy-preserving on-device intelligence, and helpful automation spanning phone, tablet, and wearable surfaces.",
+      image: "Photos/kedar 7.png",
+      tags: ["AI", "Agentic AI", "Multimodal interactions"],
+      featured: false,
+      year: "2025",
+      client: "Concept Study",
+      duration: "1 week",
+      slug: "samsung-ai-agent",
+      links: { demo: "#", github: "#", live: "#" },
+    },
 
 
 
-  
     
    
     {
