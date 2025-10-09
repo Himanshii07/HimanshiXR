@@ -31,7 +31,9 @@ const MinimalistHero: React.FC = () => {
         <HandDrawnIllustrations showTooltip />
       </div>
 
-      <div className="container relative z-10 mx-auto px-5 sm:px-6 md:px-10 max-w-2xl">
+      <div className="container relative z-10 mx-auto px-5 sm:px-6 md:px-10 max-w-2xl w-full flex justify-center items-center"
+      // ensure the wrapper doesn't shrink the canvas on smaller viewports
+      style={{ minHeight: "100vh", paddingTop: 40 }} >
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -49,7 +51,7 @@ const MinimalistHero: React.FC = () => {
           </motion.span>*/}
 
           <motion.h1
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-heading text-foreground mb-6 tracking-tight leading-tight"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-heading text-foreground mb-4 tracking-tight leading-tight "
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.25 }}
