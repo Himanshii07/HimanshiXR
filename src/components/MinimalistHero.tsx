@@ -2,6 +2,9 @@ import React from "react";
 import { motion } from "framer-motion";
 import HandDrawnIllustrations from "./HandDrawnIllustrations";
 
+const CANVAS_WIDTH = 1280; // px - fixed desktop canvas width
+const CANVAS_HEIGHT = 720; // px - fixed desktop canvas height
+
 const MinimalistHero: React.FC = () => {
   return (
     <section className="relative flex min-h-screen items-center overflow-hidden  bg-[radial-gradient(#bcbcbc_0.7px,transparent_1px)] [background-size:20px_20px] md:min-h-screen">
@@ -28,7 +31,7 @@ const MinimalistHero: React.FC = () => {
         <HandDrawnIllustrations showTooltip />
       </div>
 
-      <div className="container relative z-10 mx-auto px-5 sm:px-6 md:px-10">
+      <div className="container relative z-10 mx-auto px-5 sm:px-6 md:px-10 max-w-2xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -69,9 +72,7 @@ const MinimalistHero: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.55 }}
           >
-            Designing purposeful immersive experiences that balance
-            storytelling, functionality, and craftsmanship across XR,
-            interactive media, and 3D worlds.
+            Designing purposeful immersive experiences
           </motion.p>
 
           {/*}

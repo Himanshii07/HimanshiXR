@@ -16,8 +16,8 @@ interface HandDrawnIllustrationsProps {
  * If you want a different fixed desktop canvas size, change CANVAS_WIDTH / CANVAS_HEIGHT.
  */
 
-const CANVAS_WIDTH = 1200; // px - fixed desktop canvas width
-const CANVAS_HEIGHT = 800; // px - fixed desktop canvas height
+const CANVAS_WIDTH = 1280; // px - fixed desktop canvas width
+const CANVAS_HEIGHT = 720; // px - fixed desktop canvas height
 
 const HandDrawnIllustrations: React.FC<HandDrawnIllustrationsProps> = ({
   showTooltip = true,
@@ -42,7 +42,7 @@ const HandDrawnIllustrations: React.FC<HandDrawnIllustrationsProps> = ({
           draggable={false}
         />
       ),
-      position: { top: "4%", left: "90%" },
+      position: { top: "1%", left: "90%" },
       color: "text-red-500",
       tooltipPosition: { right: "-25%", top: "-2rem" },
     },
@@ -89,14 +89,14 @@ const HandDrawnIllustrations: React.FC<HandDrawnIllustrationsProps> = ({
         <img
           src="/Photos/illustrations/15.png"
           alt="Unreal Engine"
-          width={240}
+          width={220}
           height={180}
-          style={{ width: 240, height: 180 }}
+          style={{ width: 220, height: 180 }}
           className="object-contain select-none"
           draggable={false}
         />
       ),
-      position: { top: "22%", right: "65%" },
+      position: { top: "20%", right: "68%" },
       color: "text-blue-600",
       tooltipPosition: { right: "10%", top: "-2.5rem" },
     },
@@ -107,14 +107,14 @@ const HandDrawnIllustrations: React.FC<HandDrawnIllustrationsProps> = ({
         <img
           src="/Photos/illustrations/19.png"
           alt="Plants"
-          width={320}
+          width={220}
           height={240}
-          style={{ width: 320, height: 240 }}
+          style={{ width: 220, height: 240 }}
           className="object-contain select-none"
           draggable={false}
         />
       ),
-      position: { top: "92%", Right: "90%" },
+      position: { top: "65%", Right: "100%" },
       color: "text-purple-600",
       tooltipPosition: { left: "20%", top: "3rem" },
     },
@@ -125,14 +125,14 @@ const HandDrawnIllustrations: React.FC<HandDrawnIllustrationsProps> = ({
         <img
           src="/Photos/illustrations/16.png"
           alt="VR Headset"
-          width={420}
-          height={380}
-          style={{ width: 420, height: 380 }}
+          width={320}
+          height={300}
+          style={{ width: 320, height: 300 }}
           className="object-contain select-none"
           draggable={false}
         />
       ),
-      position: { top: "25%", left: "74%" },
+      position: { top: "32%", left: "74%" },
       color: "text-green-600",
       tooltipPosition: { left: "5%", top: "-1rem" },
     },
@@ -144,13 +144,13 @@ const HandDrawnIllustrations: React.FC<HandDrawnIllustrationsProps> = ({
           src="/Photos/illustrations/14.png"
           alt="To do list"
           width={220}
-          height={280}
-          style={{ width: 220, height: 280 }}
+          height={200}
+          style={{ width: 220, height: 200 }}
           className="object-contain select-none"
           draggable={false}
         />
       ),
-      position: { top: "82%", right: "16%" },
+      position: { top: "74%", right: "24%" },
       color: "text-indigo-600",
       tooltipPosition: { right: "5%", top: "-2.5rem" },
     },
@@ -161,14 +161,14 @@ const HandDrawnIllustrations: React.FC<HandDrawnIllustrationsProps> = ({
         <img
           src="/Photos/illustrations/25.png"
           alt="Research"
-          width={380}
+          width={360}
           height={250}
-          style={{ width: 380, height: 250 }}
+          style={{ width: 360, height: 250 }}
           className="object-contain select-none"
           draggable={false}
         />
       ),
-      position: { top: "1%", right: "40%" },
+      position: { top: "-3%", right: "40%" },
       color: "text-indigo-600",
       tooltipPosition: { right: "10%", top: "2rem" },
     },
@@ -186,7 +186,7 @@ const HandDrawnIllustrations: React.FC<HandDrawnIllustrationsProps> = ({
           draggable={false}
         />
       ),
-      position: { top: "25%", right: "27%" },
+      position: { top: "15%", right: "20%" },
       color: "text-indigo-600",
       tooltipPosition: { right: "6%", top: "-2rem" },
     },
@@ -198,13 +198,13 @@ const HandDrawnIllustrations: React.FC<HandDrawnIllustrationsProps> = ({
           src="/Photos/illustrations/24.png"
           alt="3D modelling"
           width={400}
-          height={340}
-          style={{ width: 400, height: 340 }}
+          height={380}
+          style={{ width: 400, height: 380 }}
           className="object-contain select-none"
           draggable={false}
         />
       ),
-      position: { top: "27%", right: "80%" },
+      position: { top: "27%", right: "84%" },
       color: "text-indigo-600",
       tooltipPosition: { right: "10%", top: "2rem" },
     },
@@ -215,14 +215,14 @@ const HandDrawnIllustrations: React.FC<HandDrawnIllustrationsProps> = ({
         <img
           src="/Photos/illustrations/20.png"
           alt="Stock Market"
-          width={260}
-          height={320}
-          style={{ width: 260, height: 320 }}
+          width={180}
+          height={220}
+          style={{ width: 180, height: 220 }}
           className="object-contain select-none"
           draggable={false}
         />
       ),
-      position: { top: "57%", left: "10%" },
+      position: { top: "56%", left: "18%" },
       color: "text-indigo-600",
       tooltipPosition: { left: "5%", top: "3rem" },
     },
