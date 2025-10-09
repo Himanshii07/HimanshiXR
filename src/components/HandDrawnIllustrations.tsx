@@ -144,13 +144,13 @@ const HandDrawnIllustrations: React.FC<HandDrawnIllustrationsProps> = ({
           src="/Photos/illustrations/14.png"
           alt="To do list"
           width={220}
-          height={200}
-          style={{ width: 220, height: 200 }}
+          height={180}
+          style={{ width: 220, height: 180 }}
           className="object-contain select-none"
           draggable={false}
         />
       ),
-      position: { top: "74%", right: "24%" },
+      position: { top: "70%", right: "22%" },
       color: "text-indigo-600",
       tooltipPosition: { right: "5%", top: "-2.5rem" },
     },
@@ -168,7 +168,7 @@ const HandDrawnIllustrations: React.FC<HandDrawnIllustrationsProps> = ({
           draggable={false}
         />
       ),
-      position: { top: "-3%", right: "40%" },
+      position: { top: "-5%", right: "40%" },
       color: "text-indigo-600",
       tooltipPosition: { right: "10%", top: "2rem" },
     },
