@@ -160,7 +160,7 @@ const Index = () => {
       <MinimalistHero />
 
       {/* Features Section */}
-      <section className="py-24 bg-white bg-[radial-gradient(#bcbcbc_0.7px,transparent_0.7px)] [background-size:20px_20px]">
+      <section className="py-24 bg-white bg-[radial-gradient(#bcbcbc_0.7px,transparent_1px)] [background-size:20px_20px]">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-heading text-red-700 text-foreground mb-4">
@@ -176,7 +176,8 @@ const Index = () => {
       </section>
 
       {/* Recent Projects Preview */}
-      <section className="py-24 bg-white/20  bg-[radial-gradient(#bcbcbc_0.7px,transparent_0.7px)] [background-size:20px_20px]">
+      <section className="py-24 bg-white   bg-[radial-gradient(#bcbcbc_0.7px,transparent_1px)] [background-size:20px_20px]. 
+     ">
         <div className=" container mx-auto px-4">
           <div className="mb-2 flex justify-center gap-1">
             <video
@@ -204,7 +205,7 @@ const Index = () => {
 
               return (
                 <Link key={index} to={`/projects/${project.slug}`}>
-                  <Card className="group cursor-pointer overflow-hidden border border-border/50 bg-card hover:border-border transition-all duration-300 hover:shadow-lg hover:shadow-black/5">
+                  <Card className="group cursor-pointer overflow-hidden border border-border/50 bg-card hover:border-border transition-all duration-300 hover:shadow-lg hover:shadow-black/5 mb-8">
                     <div
                       className={`aspect-video relative overflow-hidden ${
                         currentColor === "minimal-sage"
@@ -317,7 +318,7 @@ const Index = () => {
       <ValuesSection />
 
       {/* Explored */}
-      <section className="py-24 bg-white/20  bg-[radial-gradient(#bcbcbc_0.7px,transparent_0.7px)] [background-size:20px_20px]">
+      <section className="py-24 bg-white/20  bg-[radial-gradient(#bcbcbc_0.7px,transparent_1px)] [background-size:20px_20px]">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-heading text-foreground mb-4">

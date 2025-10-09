@@ -27,7 +27,7 @@ const ValuesSection: React.FC = () => {
   ];
 
   return (
-    <section className="py-24 bg-muted/20  bg-[radial-gradient(#bcbcbc_0.7px,transparent_0.7px)] [background-size:20px_20px]">
+    <section className="py-24 bg-white/20  bg-[radial-gradient(#bcbcbc_0.7px,transparent_1px)] [background-size:20px_20px]">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <motion.div
