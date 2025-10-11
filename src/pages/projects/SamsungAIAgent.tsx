@@ -124,7 +124,7 @@ const SamsungAIAgent: React.FC = () => {
                 </Link>
               </Button>
             </div>
-                <div className="max-w-7xl mx-auto text-center">
+                <div className="max-w-8xl mx-auto text-center">
                   <Button
                     asChild
                     variant="ghost"
