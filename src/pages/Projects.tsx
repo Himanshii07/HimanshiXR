@@ -62,7 +62,7 @@ const Projects = () => {
       category: "interactive",
       categoryLabel: "Interactive Design",
       description:
-        "A friendly, expressive piggy bank that reacts to a child's behavior, encouraging them to save not out of obligation, but out of joy. Turns saving into a game using emotional cues, sounds, and interaction.",
+        "A friendly piggy bank that reacts to a child's behavior, encouraging them to save. Turns saving into a game using emotional cues, sounds, and interaction.",
       longDescription:
         "Savey is an interactive companion that turns saving into an emotional, sensory, and cognitive experience. With expressive OLED eyes, happy sounds, coin detection, and transparent design, it makes kids want to save more because they enjoy it, not because they have to.",
       image: "/Photos/savey/13.png",
@@ -84,24 +84,7 @@ const Projects = () => {
         live: "#",
       },
     },
-    {
-      id: 11,
-      title: "Samsung AI Agent",
-      category: "interactive",
-      categoryLabel: "Interactive Design",
-      description:
-        "Concept prototype for a proactive multimodal assistant across Samsung devices.",
-      longDescription:
-        "Exploration of context-aware assistance, privacy-preserving on-device intelligence, and helpful automation spanning phone, tablet, and wearable surfaces.",
-      image: "Photos/sam/6.jpg",
-      tags: ["AI", "Assistant", "Prototyping", "Voice", "Multimodal"],
-      featured: false,
-      year: "2025",
-      client: "Concept Study",
-      duration: "1 week",
-      slug: "samsung-ai-agent",
-      links: { demo: "#", github: "#", live: "#" },
-    },
+    
 
         {
       id: 4,
@@ -132,44 +115,29 @@ const Projects = () => {
       },
     },
 
-    
-
-
-    
-    
+    {
+      id: 11,
+      title: "Samsung AI Agent",
+      category: "interactive",
+      categoryLabel: "Interactive Design",
+      description:
+        "Concept prototype for a proactive multimodal assistant across Samsung devices.",
+      longDescription:
+        "Exploration of context-aware assistance, privacy-preserving on-device intelligence, and helpful automation spanning phone, tablet, and wearable surfaces.",
+      image: "Photos/sam/26.jpg",
+      tags: ["AI", "Assistant", "Prototyping", "Voice", "Multimodal"],
+      featured: false,
+      year: "2025",
+      client: "Interaction Design",
+      duration: "6 week",
+      slug: "samsung-ai-agent",
+      links: { demo: "#", github: "#", live: "#" },
+    },
 
 
     
    
-     {
-      id: 7,
-      title: "Smart Chemistry",
-      category: "interactive",
-      categoryLabel: "Interactive Design",
-      description:
-        "An AI-powered educational tool using color-coded element cards and image recognition to make chemistry interactive and fun for students. Real-time compound identification with instant feedback.",
-      longDescription:
-        "To make chemistry more interactive and fun for students, we designed an AI-powered educational tool using color-coded element cards. Each card represents a chemical element, and students can arrange them to form compounds. Using image recognition, the tool instantly identifies the compound and gives real-time feedback. This hands-on approach helps students visualize and understand chemical combinations better.",
-      image: "/Photos/Chem.png",
-      tags: [
-        "Artificial Intelligence",
-        "Machine Learning",
-        "Image Recognition",
-        "Educational Technology",
-        "Computer Vision",
-        "Group Project",
-      ],
-      featured: true,
-      year: "2025",
-      client: "Educational Innovation",
-      duration: "1 Week",
-      slug: "smart-chemistry",
-      links: {
-        demo: "#",
-        github: "#",
-        live: "#",
-      },
-    },
+     
     
     ,
     {
@@ -218,13 +186,42 @@ const Projects = () => {
       slug: "system-thinking",
       links: { demo: "#", github: "#", live: "#" },
     },
+
+    {
+      id: 7,
+      title: "Smart Chemistry",
+      category: "interactive",
+      categoryLabel: "Interactive Design",
+      description:
+        "An AI-powered educational tool to make chemistry interactive and fun for students. Real-time compound identification with instant feedback.",
+      longDescription:
+        "To make chemistry more interactive and fun for students, we designed an AI-powered educational tool using color-coded element cards. Each card represents a chemical element, and students can arrange them to form compounds. Using image recognition, the tool instantly identifies the compound and gives real-time feedback. This hands-on approach helps students visualize and understand chemical combinations better.",
+      image: "/Photos/Chem.png",
+      tags: [
+        "Artificial Intelligence",
+        "Machine Learning",
+        
+      ],
+      featured: true,
+      year: "2025",
+      client: "Educational Innovation",
+      duration: "1 Week",
+      slug: "smart-chemistry",
+      links: {
+        demo: "#",
+        github: "#",
+        live: "#",
+      },
+    },
+
+
     {
       id: 13,
       title: "Ethnography",
       category: "research",
       categoryLabel: "Research",
       description:
-        "Qualitative field study capturing behaviors, contexts, and insights.",
+        "Research project that explores the tiffin scene at MIT College, to identify what defines a great tiffin experience on campus.",
       longDescription:
         "Research project using observations and interviews to surface needs, constraints, and design opportunities.",
       image: "Photos/1.jpg",

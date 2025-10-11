@@ -164,15 +164,15 @@ const SamsungAIAgent: React.FC = () => {
                       6 Weeks
                     </Badge>
                   </div>
-                  <div className="flex justify-center mb-8">
+                 {/*} <div className="flex justify-center mb-8">
                     <img
-                      src="Photos/sam/26.jpg"
+                      src="/Photos/sam/23.jpg"
                       alt="Aircraft maintenance hangar"
-                      className="rounded-lg shadow w-full grid md:grid-cols-1 gap-1 aspect-16/9 max-w-14xl mx-auto"
+                      className="rounded-lg shadow aspect-16/9 max-w-5xl mx-auto"
                     />
-                  </div>
+                  </div> */}
                    {/* author / course line */}
-              <div className="mt-8  border-t border-border/40 pt-4 flex items-center justify-between text-sm text-muted-foreground">
+              <div className="mt-8 border-t border-border/40 pt-4 flex items-center justify-between text-sm text-muted-foreground">
                 <div>M.Des. Immersive Media Design | 6 weeks</div>
                 <div>Nidhi Surekha | Himanshi Puri | Akash Rawat | Rachit Bhatnagar</div>
               </div>
