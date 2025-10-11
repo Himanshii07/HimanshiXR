@@ -62,7 +62,7 @@ const Index = () => {
   const recentProjects1 = [
     {
       title: "Savey - Interactive Piggy Bank",
-      category: "Interactive Design",
+      category: "Product Design",
       image: "/Photos/savey/13.png",
       description:
         "Friendly piggy bank that makes saving joyful for kids with expressive eyes and sounds",
@@ -71,7 +71,7 @@ const Index = () => {
      {
       title: "Samsung - Agentic AI Interactions",
       category: "Interaction Design",
-      image: "/Photos/sam/26.png",
+      image: "/Photos/sam/26.jpg",
       description:
         "User-Agent Interaction design for a futuristic and ubiquitos agent in an XR device.",
       slug: "samsung-ai-agent",
