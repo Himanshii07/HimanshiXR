@@ -164,13 +164,13 @@ const SamsungAIAgent: React.FC = () => {
                       6 Weeks
                     </Badge>
                   </div>
-                 {/*} <div className="flex justify-center mb-8">
+                 <div className="flex justify-center mb-8">
                     <img
-                      src="/Photos/sam/23.jpg"
+                      src="/Photos/sam/29.jpg"
                       alt="Aircraft maintenance hangar"
-                      className="rounded-lg shadow aspect-16/9 max-w-5xl mx-auto"
+                      className="rounded-lg aspect-16/9  mx-auto"
                     />
-                  </div> */}
+                  </div> 
                    {/* author / course line */}
               <div className="mt-8 border-t border-border/40 pt-4 flex items-center justify-between text-sm text-muted-foreground">
                 <div>M.Des. Immersive Media Design | 6 weeks</div>
@@ -323,62 +323,14 @@ const SamsungAIAgent: React.FC = () => {
       </section>
 
 
-      {/* key user interface 
-      <section className="py-12 bg-white text-sky-700">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <div>
-            <h2 className="text-4xl font-bold mb-2 text-sky-600 text-center">
-             Key User Interface Considerations
-            </h2>
-            <p className="text-white font-light text-sm leading-relaxed mb-6 text-center">
-              
-            </p>
-            <div className="grid sm:grid-cols-2 gap-4 text-sm text-muted-foreground">
-              <div className="rounded-xl border border-blue-200/60 bg-slate-100 p-4 shadow-sm">
-                <h3 className="text-blue-900 font-semibold mb-2">
-                  Peripheral-first
-                </h3>
-                <p>
-                  Place primary presence (agent orb) at lower-right periphery (≈15° off gaze).
-                </p>
-              </div>
-              <div className="rounded-xl border border-sky-200/60 bg-slate-100 p-4 shadow-sm">
-                <h3 className="text-blue-900 font-semibold mb-2">
-                Gaze lanes
-                </h3>
-                <p>
-                 Keep 8-12° cone clear; only transiently enter center with micro-confirmations, less than 2s.
-                </p>
-              </div>
-               <div className="rounded-xl border border-sky-200/60 bg-slate-100 p-4 shadow-sm">
-                <h3 className="text-blue-900 font-semibold mb-2">
-                 Depth layering
-                </h3>
-                <p>
-                  Place capture guides at object depth (object-locked), not HUD depth, to reduce parallax fatigue.
-                </p>
-              </div>
-               <div className="rounded-xl border border-sky-200/60 bg-slate-100 p-4 shadow-sm">
-                <h3 className="text-blue-900 font-semibold mb-2">
-                Safe zones
-                </h3>
-                <p>
-                  10% inset margins on all sides for labels; avoid edge clipping in motion.
-
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
-
+      
 
 
       {/* Travel Agent */}
       <section className="py-12 bg-white text-black">
         <div className="container mx-auto px-4 max-w-7xl">
           <h2 className="text-3xl font-bold text-sky-600 mb-8 ">
-                Design Considerations
+                AI Travel Agent
               </h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div>
@@ -432,6 +384,30 @@ const SamsungAIAgent: React.FC = () => {
           </div>
         </div>
       </section>
+
+
+      {/* QUOTE + INTRO PARAGRAPH */}
+      <section className="py-16">
+        <div className="container mx-auto px-8 py-24">
+          <div className="max-w-6xl mx-auto">
+            <blockquote className="text-3xl md:text-4xl font-extrabold leading-snug text-slate-900">
+              “The <span className="text-sky-600">Calm technology or calm design</span> is a type of information technology 
+              where the interaction between the technology and its user is designed to occur in the user's periphery rather than 
+              constantly at the center of attention." 
+            </blockquote>
+
+            <p className="mt-6 text-sm md:text-base text-muted-foreground max-w-3xl">
+              The use of calm technology is paired with <span className="text-sky-600 font-bold"> ubiquitous computing</span>  as a way to minimize the perceptible 
+              invasiveness of computers in everyday life.
+            </p>
+
+            <hr className="mt-10 border-t border-border/50" />
+          </div>
+        </div>
+      </section>
+
+
+
 
        <section className="py-24 bg-gradient-to-r from-white via-slate-50 to-blue-50/60">
               <div className="container mx-auto px-4">
@@ -558,6 +534,79 @@ const SamsungAIAgent: React.FC = () => {
           </div>
         </div>
       </section>  */}
+
+      {/* key user interface */}
+      <section className="py-24 bg-white text-sky-700">
+        <div className="container mx-auto px-4 max-w-7xl">
+          <div>
+            <h2 className="text-4xl font-bold mb-2 text-sky-600 text-center">
+             Key User Interface Considerations
+            </h2>
+            <p className="text-white font-light text-sm leading-relaxed mb-6 text-center">
+              
+            </p>
+            <div className="grid sm:grid-cols-3 gap-4 text-sm text-muted-foreground">
+              <div className="rounded-xl border border-blue-200/60 bg-slate-100 p-4 shadow-sm">
+                <h3 className="text-blue-900 font-semibold mb-2">
+                  Inform without interrupting
+                </h3>
+                <p>
+                 Peripheral displays can inform without interrupting, allowing central vision to remain focused on primary tasks.
+                 The user’s central view is for doing. Put urgent info near center, background reasoning should live peripherally.
+
+                </p>
+              </div>
+              <div className="rounded-xl border border-sky-200/60 bg-slate-100 p-4 shadow-sm">
+                <h3 className="text-blue-900 font-semibold mb-2">
+                Progressive disclosure
+                </h3>
+                <p>
+                 Progressive disclosure manages complexity by revealing information as needed, preventing overload.
+                 Show a tiny signal for thinking, expand on demand to detailed reasoning. Don’t dump chain-of-thought into view by default.
+                </p>
+              </div>
+               <div className="rounded-xl border border-sky-200/60 bg-slate-100 p-4 shadow-sm">
+                <h3 className="text-blue-900 font-semibold mb-2">
+                 Decision Efficiency
+                </h3>
+                <p>
+                 By surfacing the best option first, the design reduces decision fatigue, users don’t need to scan through multiple menus.
+                 The secondary options remain visible but less prominent, reducing clutter while allowing for comparison if needed.
+                </p>
+              </div>
+               <div className="rounded-xl border border-sky-200/60 bg-slate-100 p-4 shadow-sm">
+                <h3 className="text-blue-900 font-semibold mb-2">
+                Actionable Items
+                </h3>
+                <p>
+                 Keep action items close to central vision but not blocking the primary scene.
+                 And use horizontal layout format for easy scannable linear arrangement.
+
+                </p>
+              </div>
+              <div className="rounded-xl border border-blue-200/60 bg-slate-100 p-4 shadow-sm">
+                <h3 className="text-blue-900 font-semibold mb-2">
+                  Cognitive Load Reduction
+                </h3>
+                <p>
+                  Showing only essential metrics (distance, gate, ETA) prevents information overload in a crowded environment like an airport.
+                  The small, persistent arrow subtly adapts as the user moves, guiding attention forward without demanding active focus.
+                </p>
+              </div>
+              <div className="rounded-xl border border-sky-200/60 bg-slate-100 p-4 shadow-sm">
+                <h3 className="text-blue-900 font-semibold mb-2">
+                Natural Interactions
+                </h3>
+                <p>
+                 Placing the arrow low simulates how people naturally look at the ground when following a path, 
+                 it feels intuitive and consistent with real-world navigation.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> 
+
 
       {/* CTA */}
       <section className="py-12">
