@@ -68,6 +68,14 @@ const Index = () => {
         "Friendly piggy bank that makes saving joyful for kids with expressive eyes and sounds",
       slug: "savey",
     },
+     {
+      title: "Samsung - Agentic AI Interactions",
+      category: "Interaction Design",
+      image: "/Photos/sam/26.png",
+      description:
+        "User-Agent Interaction design for a futuristic and ubiquitos agent in an XR device.",
+      slug: "samsung-ai-agent",
+    },
     {
       title: "The Mushroom House",
       category: "3D Environment",
@@ -84,14 +92,7 @@ const Index = () => {
         "Mapping interdependencies, feedback loops, and leverage points in complex problems.",
       slug: "system-thinking",
     },
-     {
-      title: "Pre-flight Maintenance Check VR",
-      category: "research",
-      image: "/Photos/Flight/6.png",
-      description:
-        "VR-based pre-flight maintenance training with guided inspection and independent practice in a safe, immersive environment",
-      slug: "preflight-maintenance-check-vr",
-    },
+  
   ];
 
 
