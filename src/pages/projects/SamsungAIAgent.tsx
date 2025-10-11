@@ -5,6 +5,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 type TimelineCardProps = {
   index: number | string;
@@ -12,6 +13,51 @@ type TimelineCardProps = {
   subtitle?: string;
   dark?: boolean;
 };
+const storyboardFrames = [
+    {
+      image: "/Photos/sam/18.jpg",
+      alt: "Task Bar UI of AI Agent ",
+      title: "Action Menu",
+      description:
+        "A clean, distraction-free layout with 3–5 primary tasks displayed upfront. One-tap action model, selecting a task directly initiates the process",
+    },
+    {
+      image: "/Photos/sam/20.jpg",
+      alt: "Agentic Camera UI",
+      title: "Floating App Bar",
+      description: "Clean, minimal and expandable UI displaying essential apps and their live notifications, offering quick access to calls, messages, and mails"
+    },
+    {
+      image: "/Photos/sam/21.jpg",
+      alt: "Agent Thinking and reasoning UI ",
+      title: "Agent Thinking / Reasoning",
+      description: "Subtle Visual Indicator that signals the agent’s presence and soft animation indicating that the agent is active. Positioned in lower-right peripheral vision where it’s visible but non-intrusive."
+    },
+       {
+      image: "/Photos/sam/19.jpg",
+      alt: "Navigation UI ",
+      title: "Navigation ",
+      description:
+        "A subtle arrow and indicators are placed at the bottom center of the user’s field of view. Showing only essential metrics prevents information overload in a crowded environment.",
+    },
+    {
+      image: "/Photos/sam/17.jpg",
+      alt: "Cab Booking UI OF AI Agent",
+      title: "Transportation Booking",
+      description: "The most relevant option is placed directly in the center of the user’s field of view and the alternative transport modes are displayed in the peripheral vision."
+    },
+      {
+      image: "/Photos/sam/16.jpg",
+      alt: "Agentic Camera UI",
+      title: "Agentic Camera",
+      description: "Subtle framing guide composition without obstructing the subject. Instead of the user actively opening a camera app, the agent anticipates intent and offers capture."
+    },
+
+    
+    
+
+  ];
+
 
 const MobileOverlay: React.FC = () => (
   <div className="fixed inset-0 z-50 flex items-center justify-center bg-white/95 backdrop-blur-lg md:hidden">
@@ -120,7 +166,7 @@ const SamsungAIAgent: React.FC = () => {
                   </div>
                   <div className="flex justify-center mb-8">
                     <img
-                      src=""
+                      src="Photos/sam/26.jpg"
                       alt="Aircraft maintenance hangar"
                       className="rounded-lg shadow w-full grid md:grid-cols-1 gap-1 aspect-16/9 max-w-14xl mx-auto"
                     />
@@ -256,7 +302,7 @@ const SamsungAIAgent: React.FC = () => {
             <img
               src="/Photos/sam/4.jpg"
               alt="Human Factors reference"
-              className="rounded-xl w-full object-cover aspect-4/3"
+              className="rounded-xl w-full object-cover"
             />
           </div>
         </div>
@@ -277,7 +323,7 @@ const SamsungAIAgent: React.FC = () => {
       </section>
 
 
-      {/* key user interface */}
+      {/* key user interface 
       <section className="py-12 bg-white text-sky-700">
         <div className="container mx-auto px-4 max-w-4xl">
           <div>
@@ -324,86 +370,134 @@ const SamsungAIAgent: React.FC = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
 
 
       {/* Travel Agent */}
       <section className="py-12 bg-white text-black">
         <div className="container mx-auto px-4 max-w-7xl">
-          <div className="grid md:grid-cols-2 gap-8">
-            <div>
-              <h2 className="text-3xl font-bold text-sky-600 mb-8 ">
+          <h2 className="text-3xl font-bold text-sky-600 mb-8 ">
                 Design Considerations
               </h2>
-              <ul className="space-y-8 text-left">
-                  <li className="flex gap-3 items-start">
-                    <span className="text-sky-800 font-bold text-lg">1.</span>
-                    
-                
-                    <span className="text-sky-800 text-lg font-bold">
-                     Speak Like a Travel Companion, Not a Command Prompt
-                     <p className="font-light text-sm text-black">
+          <div className="grid md:grid-cols-2 gap-8">
+            <div>
+              
+              <div className="grid sm:grid-cols-1 gap-4 text-sm text-muted-foreground">
+              <div className="rounded-xl border border-blue-200/60 bg-slate-100 p-4 shadow-sm">
+                <h3 className="text-sky-800 font-semibold mb-2">
+                  Speak Like a Travel Companion, Not a Command Prompt
+                </h3>
+                <p>
                   The agent uses friendly, situational language, supportive without being overbearing.
                    It adapts tone to the user’s mood, urgency, and setting.
                 </p>
-                      
-                    </span>
-                  </li>
-                  <li className="flex gap-3 items-start">
-                    <span className="text-sky-800 font-bold text-lg">2.</span>
-                    <span className="text-sky-800 text-lg font-bold">
-                      Signaling Principle
-                       <p className="font-light text-sm text-black">
-                 Color-coded cues (green for correct, yellow for pending, red for error) helped users identify task progress instantly, improving situational clarity and reducing confusion.
-                </p>
-                    </span>
-                  </li>
-                  <li className="flex gap-3 items-start">
-                    <span className="text-sky-800 font-bold text-lg">3.</span>
-                    <span className="text-sky-800 text-lg font-bold">
-                     Let the Interaction Fit the Moment
-                     <p className="font-light text-sm text-black">
+              </div>
+              <div className="rounded-xl border border-sky-200/60 bg-slate-100 p-4 shadow-sm">
+                <h3 className="text-sky-800 font-semibold mb-2">
+                Let the Interaction Fit the Moment
+                </h3>
+                <p>
                  Gestures, haptics, gaze, and contextual triggers replace constant voice or text input. 
                  Agent reads environment and user cues to act with minimal friction.
                 </p>
-                    </span>
-                  </li>
-                  <li className="flex gap-3 items-start">
-                    <span className="text-sky-800 font-bold text-lg">4.</span>
-                    <span className="text-sky-800 text-lg font-bold">
-                      Adapt to Patterns, Anticipate Needs
-                      <p className="font-light text-sm text-black">
+              </div>
+               <div className="rounded-xl border border-sky-200/60 bg-slate-100 p-4 shadow-sm">
+                <h3 className="text-sky-800 font-semibold mb-2">
+                 Design for All Abilities and Situations
+                </h3>
+                <p>
+                  The system supports varied physical, sensory, and cognitive needs, adapting interaction modes to the moment, 
+                whether the user’s hands are full, environment is noisy, or visibility is low.
+                </p>
+              </div>
+               <div className="rounded-xl border border-sky-200/60 bg-slate-100 p-4 shadow-sm">
+                <h3 className="text-sky-800 font-semibold mb-2">
+              Adapt to Patterns, Anticipate Needs
+                </h3>
+                <p>
                  The agent observes repeated choices, like preferred music volume, photo-sharing habits,
                   or travel booking methods and applies them proactively when relevant.
                 </p>
-                    </span>
-                  </li>
-                  <li className="flex gap-3 items-start">
-                    <span className="text-sky-800 font-bold text-lg">5.</span>
-                    <span className="text-sky-800 text-lg font-bold">
-                      Design for All Abilities and Situations
-                      <p className="font-light text-sm text-black">
-                The system supports varied physical, sensory, and cognitive needs, adapting interaction modes to the moment, 
-                whether the user’s hands are full, environment is noisy, or visibility is low.
-                </p>
-                    </span>
-                  </li>
-                </ul>
+              </div>
             </div>
-            <div>
+            </div>
+            <div className=" max-w-2xl">
               <img
-                src="/Photos/Flight/13.png"
+                src="/Photos/sam/7.jpg"
                 alt="Bodystorming with sticky notes and team"
-                className="rounded-xl shadow-lg w-full object-cover"
+                className="rounded-xl max-w-2xl object-cover"
               />
             </div>
           </div>
         </div>
       </section>
 
-
-
+       <section className="py-24 bg-gradient-to-r from-white via-slate-50 to-blue-50/60">
+              <div className="container mx-auto px-4">
+                <div className="max-w-8xl mx-auto">
+                  <div className="grid lg:grid-cols-1 gap-12 items-center text-center">
+                    <div> 
+                      <h2 className="text-4xl font-bold mb-6 text-sky-700 text-center">
+                       UI Explorations | Design Philosophy
+                      </h2>
+                      <p className="text-muted-foreground text-sm leading-relaxed mb-6 text-center">
+                         Before beginning development, I created a detailed storyboard to map out the entire user journey and mythological narrative.
+                      </p>
+                      {/*<div className="grid sm:grid-cols-2 gap-4 text-sm text-muted-foreground">
+                        <div className="rounded-xl border border-blue-200/60 bg-white/70 p-4 shadow-sm">
+                          <h3 className="text-blue-700 font-semibold mb-2">
+                            Intentional Rhythm
+                          </h3>
+                          <p>
+                            Slow camera movements and soft lighting cues keep the
+                            experience contemplative while guiding focus.
+                          </p>
+                        </div>
+                        <div className="rounded-xl border border-sky-200/60 bg-white/70 p-4 shadow-sm">
+                          <h3 className="text-sky-700 font-semibold mb-2">
+                            Mythic Highlights
+                          </h3>
+                          <p>
+                            Panels emphasize key legend moments that transition users
+                            seamlessly into interactive sequences.
+                          </p>
+                        </div>
+                      </div>*/}
+                    </div>
+      
+                    <div className="grid sm:grid-cols-2 gap-6">
+                      {storyboardFrames.map((frame, index) => (
+                        <Card
+                          key={index}
+                          className="overflow-hidden border border-border/40 bg-white"
+                        >
+                          <div className="relative aspect-16/9 overflow-hidden">
+                            <img
+                              src={frame.image}
+                              alt={frame.alt}
+                              className="w-full h-full object-cover aspect-16/9"
+                            />
+                            <div className="absolute inset-0 bg-transparent" />
+                            <span className="absolute bottom-4 left-4 text-xs font-semibold tracking-wide uppercase text-white/80">
+                              
+                            </span>
+                          </div>
+                          <CardContent className="p-6">
+                            <h3 className="text-lg font-semibold text-sky-700 mb-2">
+                              {frame.title}
+                            </h3>
+                            <p className="text-muted-foreground text-sm leading-relaxed">
+                              {frame.description}
+                            </p>
+                          </CardContent>
+                        </Card>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
 
       {/* USER-CENTERED CREATION PROCESS 
       <section className="py-16 bg-white/60">
