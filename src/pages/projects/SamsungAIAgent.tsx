@@ -62,12 +62,11 @@ const SamsungAIAgent: React.FC = () => {
       {/* Mobile-only overlay */}
       <MobileOverlay />
       <Navigation />
-
-      {/* COVER / TITLE */}
-      <section className="relative pt-12 pb-34 items-center overflow-hidden bg-white max-w-8xl ">
-        <div className="container mx-auto px-8">
-          <div className="max-w-7xl mx-auto text-center">
-            <div className="mb-8">
+      
+      {/* Hero Section - concise summary, visual */}
+            <section className="relative py-24 bg-white text-slate-900 overflow-hidden text-white ">
+              <div className="container mx-auto px-4">
+                <div className="mb-8">
               <Button
                 asChild
                 variant="ghost"
@@ -79,25 +78,65 @@ const SamsungAIAgent: React.FC = () => {
                 </Link>
               </Button>
             </div>
-
-            {/* Large Title block */}
-            <div className="py-72 max-w-8xl">
-              <h1 className="text-8xl md:text-5xl font-extrabold leading-tight text-sky-600">
-                Samsung
-              </h1>
-              <p className="mt-4 text-xl md:text-2xl text-slate-700 font-semibold mb-80">
-                Designing Agentic AI Interactions in XR
-              </p>
-
-              {/* author / course line */}
+                <div className="max-w-7xl mx-auto text-center">
+                  <Button
+                    asChild
+                    variant="ghost"
+                    className="mb-8 text-muted-white hover:text-foreground"
+                  >
+                    <Link to="/projects">
+                      <ArrowLeft className="w-4 h-4 mr-2" />
+                      Back to Projects
+                    </Link>
+                  </Button>
+                  <h1 className="text-2xl md:text-5xl font-bold mb-6 text-sky-600">
+                    Samsung
+                  </h1>
+                  <p className="text-lg text-slate-900 max-w-5xl mx-auto leading-relaxed mb-8 font-light">
+                    Designing Agentic AI Interactions for XR Devices
+                  </p>
+                  <div className="flex flex-wrap justify-center gap-4 mb-8">
+                    <Badge
+                      variant="outline"
+                      className="text-sm border-blue text-blue-400"
+                    >
+                      <Calendar className="w-3 h-3 mr-1" />
+                      July'25
+                    </Badge>
+                    <Badge
+                      variant="outline"
+                      className="text-sm border-blue text-blue-400"
+                    >
+                      <Users className="w-3 h-3 mr-1" />
+                      Team Project
+                    </Badge>
+                    <Badge
+                      variant="outline"
+                      className="text-sm border-blue text-blue-400"
+                    >
+                      <Award className="w-3 h-3 mr-1" />
+                      6 Weeks
+                    </Badge>
+                  </div>
+                  <div className="flex justify-center mb-8">
+                    <img
+                      src=""
+                      alt="Aircraft maintenance hangar"
+                      className="rounded-lg shadow w-full grid md:grid-cols-1 gap-1 aspect-16/9 max-w-14xl mx-auto"
+                    />
+                  </div>
+                   {/* author / course line */}
               <div className="mt-8  border-t border-border/40 pt-4 flex items-center justify-between text-sm text-muted-foreground">
                 <div>M.Des. Immersive Media Design | 6 weeks</div>
                 <div>Nidhi Surekha | Himanshi Puri | Akash Rawat | Rachit Bhatnagar</div>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
+                  
+                </div>
+              </div>
+            </section>
+      
+
+      
 
 
 
@@ -125,7 +164,7 @@ const SamsungAIAgent: React.FC = () => {
 
 
 
-             {/* design brief */}
+             {/* design brief 
       <section className="py-16 bg-white-50">
         <div className="container max-w-7xl mx-auto px-4 rounded-xl  overflow-hidden">
           <div className="max-w-7xl mx-auto text-center mb-10 gap-8">
@@ -136,7 +175,7 @@ const SamsungAIAgent: React.FC = () => {
             />
           </div>
         </div>
-      </section>
+      </section> */}
 
 
 
@@ -149,7 +188,7 @@ const SamsungAIAgent: React.FC = () => {
 
       {/* QUOTE + INTRO PARAGRAPH */}
       <section className="py-16">
-        <div className="container mx-auto px-8">
+        <div className="container mx-auto px-8 py-24">
           <div className="max-w-6xl mx-auto">
             <blockquote className="text-3xl md:text-4xl font-extrabold leading-snug text-slate-900">
               “The <span className="text-sky-600">more senses</span> an agent understands the
@@ -282,6 +321,82 @@ const SamsungAIAgent: React.FC = () => {
 
                 </p>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      {/* Travel Agent */}
+      <section className="py-12 bg-white text-black">
+        <div className="container mx-auto px-4 max-w-7xl">
+          <div className="grid md:grid-cols-2 gap-8">
+            <div>
+              <h2 className="text-3xl font-bold text-sky-600 mb-8 ">
+                Design Considerations
+              </h2>
+              <ul className="space-y-8 text-left">
+                  <li className="flex gap-3 items-start">
+                    <span className="text-sky-800 font-bold text-lg">1.</span>
+                    
+                
+                    <span className="text-sky-800 text-lg font-bold">
+                     Speak Like a Travel Companion, Not a Command Prompt
+                     <p className="font-light text-sm text-black">
+                  The agent uses friendly, situational language, supportive without being overbearing.
+                   It adapts tone to the user’s mood, urgency, and setting.
+                </p>
+                      
+                    </span>
+                  </li>
+                  <li className="flex gap-3 items-start">
+                    <span className="text-sky-800 font-bold text-lg">2.</span>
+                    <span className="text-sky-800 text-lg font-bold">
+                      Signaling Principle
+                       <p className="font-light text-sm text-black">
+                 Color-coded cues (green for correct, yellow for pending, red for error) helped users identify task progress instantly, improving situational clarity and reducing confusion.
+                </p>
+                    </span>
+                  </li>
+                  <li className="flex gap-3 items-start">
+                    <span className="text-sky-800 font-bold text-lg">3.</span>
+                    <span className="text-sky-800 text-lg font-bold">
+                     Let the Interaction Fit the Moment
+                     <p className="font-light text-sm text-black">
+                 Gestures, haptics, gaze, and contextual triggers replace constant voice or text input. 
+                 Agent reads environment and user cues to act with minimal friction.
+                </p>
+                    </span>
+                  </li>
+                  <li className="flex gap-3 items-start">
+                    <span className="text-sky-800 font-bold text-lg">4.</span>
+                    <span className="text-sky-800 text-lg font-bold">
+                      Adapt to Patterns, Anticipate Needs
+                      <p className="font-light text-sm text-black">
+                 The agent observes repeated choices, like preferred music volume, photo-sharing habits,
+                  or travel booking methods and applies them proactively when relevant.
+                </p>
+                    </span>
+                  </li>
+                  <li className="flex gap-3 items-start">
+                    <span className="text-sky-800 font-bold text-lg">5.</span>
+                    <span className="text-sky-800 text-lg font-bold">
+                      Design for All Abilities and Situations
+                      <p className="font-light text-sm text-black">
+                The system supports varied physical, sensory, and cognitive needs, adapting interaction modes to the moment, 
+                whether the user’s hands are full, environment is noisy, or visibility is low.
+                </p>
+                    </span>
+                  </li>
+                </ul>
+            </div>
+            <div>
+              <img
+                src="/Photos/Flight/13.png"
+                alt="Bodystorming with sticky notes and team"
+                className="rounded-xl shadow-lg w-full object-cover"
+              />
             </div>
           </div>
         </div>
