@@ -141,7 +141,7 @@ const SamsungAIAgent: React.FC = () => {
                   <p className="text-lg text-slate-900 max-w-5xl mx-auto leading-relaxed mb-8 font-light">
                     Designing Agentic AI Interactions for XR Devices
                   </p>
-                  <div className="flex flex-wrap justify-center gap-4 mb-8">
+                  <div className="flex flex-wrap justify-center gap-4 mb-4">
                     <Badge
                       variant="outline"
                       className="text-sm border-blue text-blue-400"
@@ -166,9 +166,9 @@ const SamsungAIAgent: React.FC = () => {
                   </div>
                  <div className="flex justify-center mb-8">
                     <img
-                      src="/Photos/sam/29.jpg"
+                      src="/Photos/sam/30.jpg"
                       alt="Aircraft maintenance hangar"
-                      className="rounded-lg aspect-16/9  object-cover mx-auto"
+                      className="aspect-16/9 object-cover mx-auto"
                     />
                   </div> 
                    {/* author / course line */}
