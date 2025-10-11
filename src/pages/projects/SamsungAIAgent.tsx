@@ -168,7 +168,7 @@ const SamsungAIAgent: React.FC = () => {
                     <img
                       src="/Photos/sam/29.jpg"
                       alt="Aircraft maintenance hangar"
-                      className="rounded-lg aspect-16/9  mx-auto"
+                      className="rounded-lg aspect-16/9  object-cover mx-auto"
                     />
                   </div> 
                    {/* author / course line */}
