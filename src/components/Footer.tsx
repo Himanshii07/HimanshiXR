@@ -120,9 +120,7 @@ const Footer = () => {
           </p>
 
           <div className="flex items-center space-x-1 text-sm text-muted-foreground">
-            <span>Made with</span>
-            <Heart className="w-4 h-4 text-red-500 fill-current" />
-            <span>for immersive experiences</span>
+           
           </div>
         </div>
       </div>

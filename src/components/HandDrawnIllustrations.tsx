@@ -44,7 +44,7 @@ const HandDrawnIllustrations: React.FC<HandDrawnIllustrationsProps> = ({
       ),
       position: { top: "1%", left: "90%" },
       color: "text-red-500",
-      tooltipPosition: { right: "-25%", top: "-2rem" },
+      tooltipPosition: { right: "-55%", top: "4rem" },
     },
     {
       name: "chai",
@@ -60,9 +60,9 @@ const HandDrawnIllustrations: React.FC<HandDrawnIllustrationsProps> = ({
           draggable={false}
         />
       ),
-      position: { top: "62%", right: "2%" },
+      position: { top: "68%", right: "-4%" },
       color: "text-amber-600",
-      tooltipPosition: { right: "16%", top: "-2.5rem" },
+      tooltipPosition: { right: "16%", top: "-1rem" },
     },
     {
       name: "rajma-chawal",
@@ -116,7 +116,7 @@ const HandDrawnIllustrations: React.FC<HandDrawnIllustrationsProps> = ({
       ),
       position: { top: "65%", Right: "100%" },
       color: "text-purple-600",
-      tooltipPosition: { left: "20%", top: "3rem" },
+      tooltipPosition: { left: "20%", top: "1rem" },
     },
     {
       name: "VR Headset",
@@ -134,7 +134,7 @@ const HandDrawnIllustrations: React.FC<HandDrawnIllustrationsProps> = ({
       ),
       position: { top: "32%", left: "74%" },
       color: "text-green-600",
-      tooltipPosition: { left: "5%", top: "-1rem" },
+      tooltipPosition: { left: "5%", top: "2rem" },
     },
     {
       name: "to do list",
@@ -206,7 +206,7 @@ const HandDrawnIllustrations: React.FC<HandDrawnIllustrationsProps> = ({
       ),
       position: { top: "27%", right: "84%" },
       color: "text-indigo-600",
-      tooltipPosition: { right: "10%", top: "2rem" },
+      tooltipPosition: { right: "6%", top: "5rem" },
     },
     {
       name: "Stock Market",
@@ -224,7 +224,7 @@ const HandDrawnIllustrations: React.FC<HandDrawnIllustrationsProps> = ({
       ),
       position: { top: "56%", left: "18%" },
       color: "text-indigo-600",
-      tooltipPosition: { left: "5%", top: "3rem" },
+      tooltipPosition: { left: "5%", top: "1rem" },
     },
   ];
 

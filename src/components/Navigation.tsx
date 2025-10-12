@@ -21,7 +21,7 @@ const Navigation = () => {
     { path: "/", label: "Home", icon: Home },
     { path: "/about", label: "About", icon: User },
     { path: "/projects", label: "Projects", icon: Briefcase },
-    { path: "/contact", label: "Contact", icon: Mail },
+   {/*  { path: "/contact", label: "Contact", icon: Mail }, */}
   ];
 
   return (

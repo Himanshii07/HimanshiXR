@@ -1,11 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
 
 const PolaroidHero: React.FC = () => {
   return (
     <section className="py-24 md:py-32 bg-background">
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Polaroid Photo */}
             <motion.div
@@ -57,7 +58,7 @@ const PolaroidHero: React.FC = () => {
               </motion.h2>
 
               <motion.p
-                className="text-lg md:text-xl text-muted-foreground leading-relaxed font-light"
+                className="text-lg text-muted-foreground leading-relaxed font-light mb-8"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.7 }}
@@ -66,6 +67,27 @@ const PolaroidHero: React.FC = () => {
                 simple, beautiful solutions through thoughtful design and user
                 research.
               </motion.p>
+
+              {/* Resume Button */}
+              <motion.div
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.9 }}
+              >
+                <a
+                  href="https://drive.google.com/file/d/1XVpEshRoCZvl7EKWoShzAtXc6-05T65Q/view?usp=share_link" // 🔗 Replace this with your actual resume link
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button
+                    variant="default"
+                    className="bg-foreground text-background hover:bg-foreground/90 transition-colors"
+                  >
+                    View Resume
+                  </Button>
+                </a>
+              </motion.div>
+              
             </motion.div>
           </div>
         </div>
