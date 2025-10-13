@@ -75,7 +75,7 @@ const PolaroidHero: React.FC = () => {
                 transition={{ duration: 0.6, delay: 0.9 }}
               >
                 <a
-                  href="https://drive.google.com/file/d/1XVpEshRoCZvl7EKWoShzAtXc6-05T65Q/view?usp=share_link" // 🔗 Replace this with your actual resume link
+                  href="https://drive.google.com/file/d/1DWhEVZQNPmUxlk1eJRspsSLMFFIeQBWa/view?usp=sharing" // 🔗 Replace this with your actual resume link
                   target="_blank"
                   rel="noopener noreferrer"
                 >
