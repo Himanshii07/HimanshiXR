@@ -468,7 +468,7 @@ const KedarnathVR = () => {
       </section>
 
       <section className="py-6 bg-white ">
-        <div className="container mx-auto px-4 shadow bg-slate-200 rounded-3xl py-12">
+        <div className="container mx-auto px-4 bg-white rounded-3xl py-12">
           <div className="max-w-6xl mx-auto">
             <div className="grid lg:grid-cols-3 gap-10 mb-8">
               <Card className="border-border/50 bg-card/60 backdrop-blur-sm hover:border-blue-300/60 transition-all duration-300">
@@ -621,13 +621,80 @@ const KedarnathVR = () => {
                 })}
               </div>
             </section>
-
-
-
-
           </div>
         </div>
       </section>
+
+
+
+
+
+      <section className="py-24 bg-gradient-to-r from-white via-slate-50 to-blue-50/60">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-bold mb-6 text-sky-700">
+                Target Audience
+              </h2>
+              <p className="text-xl text-muted-foreground">
+                Understanding who needs this sacred connection
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-8">
+              {targetAudience.map((audience, index) => {
+                const Icon = audience.icon;
+                const accent = audienceAccents[index % audienceAccents.length];
+
+                return (
+                  <Card
+                    key={index}
+                    className="border-border/50 bg-card/60 backdrop-blur-sm hover:border-blue-300/60 transition-all duration-300"
+                  >
+                    <CardContent className="p-8">
+                      <div className="text-center mb-6">
+                       {/* <div
+                          className={`w-16 h-16 ${accent.iconBg} rounded-full flex items-center justify-center mx-auto mb-4`}
+                        >
+                          <Icon className={`w-8 h-8 ${accent.icon}`} />
+                        </div> */}
+                        <h3 className="text-2xl font-bold mb-2 text-sky-700">
+                          {audience.name}
+                        </h3>
+                         <h3 className="text-sm font-bold mb-2 text-sky-700">
+                          {audience.age}
+                        </h3>
+                      </div>
+
+                      <div className="space-y-4">
+                        <div>
+                          <h4 className="font-semibold text-sm  text-sky-900 mb-2">
+                            CHARACTERISTICS
+                          </h4>
+                          <p className="text-muted-foreground text-sm leading-relaxed">
+                            {audience.characteristics}
+                          </p>
+                        </div>
+                        <div>
+                          <h4 className="font-semibold text-sm text-sky-900 mb-2">
+                            CHALLENGE
+                          </h4>
+                          <p className="text-muted-foreground text-sm leading-relaxed">
+                            {audience.challenge}
+                          </p>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
 
       <section className="py-24">
         <div className="container mx-auto px-4">
@@ -697,71 +764,6 @@ const KedarnathVR = () => {
       
      
 
-
-
-      <section className="py-24 bg-gradient-to-r from-white via-slate-50 to-blue-50/60">
-        <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold mb-6 text-sky-700">
-                Target Audience
-              </h2>
-              <p className="text-xl text-muted-foreground">
-                Understanding who needs this sacred connection
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-3 gap-8">
-              {targetAudience.map((audience, index) => {
-                const Icon = audience.icon;
-                const accent = audienceAccents[index % audienceAccents.length];
-
-                return (
-                  <Card
-                    key={index}
-                    className="border-border/50 bg-card/60 backdrop-blur-sm hover:border-blue-300/60 transition-all duration-300"
-                  >
-                    <CardContent className="p-8">
-                      <div className="text-center mb-6">
-                       {/* <div
-                          className={`w-16 h-16 ${accent.iconBg} rounded-full flex items-center justify-center mx-auto mb-4`}
-                        >
-                          <Icon className={`w-8 h-8 ${accent.icon}`} />
-                        </div> */}
-                        <h3 className="text-2xl font-bold mb-2 text-sky-700">
-                          {audience.name}
-                        </h3>
-                         <h3 className="text-sm font-bold mb-2 text-sky-700">
-                          {audience.age}
-                        </h3>
-                      </div>
-
-                      <div className="space-y-4">
-                        <div>
-                          <h4 className="font-semibold text-sm  text-sky-900 mb-2">
-                            CHARACTERISTICS
-                          </h4>
-                          <p className="text-muted-foreground text-sm leading-relaxed">
-                            {audience.characteristics}
-                          </p>
-                        </div>
-                        <div>
-                          <h4 className="font-semibold text-sm text-sky-900 mb-2">
-                            CHALLENGE
-                          </h4>
-                          <p className="text-muted-foreground text-sm leading-relaxed">
-                            {audience.challenge}
-                          </p>
-                        </div>
-                      </div>
-                    </CardContent>
-                  </Card>
-                );
-              })}
-            </div>
-          </div>
-        </div>
-      </section>
 
       <section className="py-24">
         <div className="container mx-auto px-4">
@@ -933,7 +935,7 @@ const KedarnathVR = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold mb-6 text-sky-700">
+              <h2 className="text-4xl font-bold mb-2 text-sky-700">
                 User Actions & Interactions
               </h2>
               <p className="text-xl text-muted-foreground">
@@ -950,7 +952,7 @@ const KedarnathVR = () => {
                     className="border-border/50 bg-card/70 backdrop-blur-sm hover:border-blue-300/60 transition-all duration-300"
                   >
                     <CardContent className="p-2">
-                      <div className="grid sm:grid-cols-[180px_1fr] gap-6 items-center">
+                      <div className="grid sm:grid-cols-1 gap-6 items-center">
                         <div className="relative overflow-hidden rounded aspect-[4/3] shadow-md">
                           <img
                             src={interaction.image}
@@ -978,51 +980,7 @@ const KedarnathVR = () => {
         </div>
       </section>
 
-      <section className="py-24 bg-gradient-to-r from-white via-slate-50 to-blue-50/60">
-        <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold mb-6 text-sky-700">
-                Development Challenges
-              </h2>
-              <p className="text-xl text-muted-foreground">
-                Overcoming obstacles to create an authentic spiritual experience
-              </p>
-            </div>
-
-            <div className="space-y-8">
-              {challenges.map((challenge, index) => (
-                <Card
-                  key={index}
-                  className="group border-border/50 bg-card/70 backdrop-blur-sm hover:border-blue-300/60 transition-all duration-300 "
-                >
-                  <CardContent className="p-8">
-                    <div className="grid md:grid-cols-2 gap-8 relative">
-                      <div className="group-hover:translate-x-1 transition-transform duration-300">
-                        <h3 className="text-xl font-semibold mb-3 text-cyan-700">
-                          Challenge: {challenge.title}
-                        </h3>
-                        <p className="text-muted-foreground leading-relaxed">
-                          {challenge.description}
-                        </p>
-                      </div>
-
-                      <div className="group-hover:-translate-x-1 transition-transform duration-300">
-                        <h3 className="text-xl font-semibold mb-3 text-sky-700">
-                          Solution Approach
-                        </h3>
-                        <p className="text-muted-foreground leading-relaxed">
-                          {challenge.solution}
-                        </p>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
+      
 
       <section className="py-24">
         <div className="container mx-auto px-4">
@@ -1087,14 +1045,14 @@ const KedarnathVR = () => {
                 {developmentGallery.map((item, index) => (
                   <div
                     key={index}
-                    className="relative overflow-hidden shadow-lg group aspect-[9/16]"
+                    className="relative overflow-hidden aspect-[9/16]"
                   >
                     <img
                       src={item.image}
                       alt={item.alt}
-                      className="w-full h-full object-cover aspect-9/16"
+                      className="w-full h-full object-cover aspect-9/16 rounded-2xl"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent opacity-90 group-hover:opacity-100 transition-opacity duration-300" />
+                    <div className="absolute inset-0 opacity-90 group-hover:opacity-100 transition-opacity duration-300" />
                    {/* <div className="absolute bottom-4 left-4 right-4 text-sm text-white leading-relaxed">
                       <p className="font-semibold mb-1">{item.caption}</p>
                       <p className="opacity-80">{item.alt}</p>
@@ -1106,6 +1064,82 @@ const KedarnathVR = () => {
           </div>
         </div>
       </section>
+
+
+      {/* key user interface */}
+      <section className="py-24 bg-white text-sky-700">
+        <div className="container mx-auto px-4 max-w-8xl">
+          <div>
+            <h2 className="text-4xl font-bold mb-2 text-sky-600 text-center">
+             Development Challenges
+            </h2>
+            <p className="text-white font-light text-sm leading-relaxed mb-6 text-center">
+              
+            </p>
+            <div className="grid sm:grid-cols-3 gap-4 text-sm text-muted-foreground">
+              <div className="rounded-xl border border-blue-200/60 bg-slate-100 p-4 shadow-sm">
+                <h3 className="text-sky-800 font-semibold mb-2">
+                  Character and Deity Modeling
+                </h3>
+                <p>
+                 Modeling characters and deities was a major challenge, requiring detailed attention to cultural accuracy and spiritual representation.
+                 Did extensive research and multiple iterations to achieve respectful and authentic representations.
+
+                </p>
+              </div>
+              <div className="rounded-xl border border-sky-200/60 bg-slate-100 p-4 shadow-sm">
+                <h3 className="text-sky-800 font-semibold mb-2">
+               Narrative Tone
+                </h3>
+                <p>
+                Writing narrations in a tone that felt spiritual yet simple, avoiding heavy 'shudh Hindi' to maintain accessibility.
+                Multiple script revisions with cultural consultants to balance authenticity with accessibility.
+                </p>
+              </div>
+               <div className="rounded-xl border border-sky-200/60 bg-slate-100 p-4 shadow-sm">
+                <h3 className="text-sky-800 font-semibold mb-2">
+                  Custom Asset Creation
+                </h3>
+                <p>
+                 Assets weren't readily available, I had to create or customize them manually. Creating the whole Temple Model from scratch.
+                 Developed comprehensive asset library through careful 3D modeling and texturing work.
+                </p>
+              </div>
+               <div className="rounded-xl border border-sky-200/60 bg-slate-100 p-4 shadow-sm">
+                <h3 className="text-sky-800 font-semibold mb-2">
+                Technical Learning Curve
+                </h3>
+                <p>
+                As a beginner, understanding Blueprint scripting and Niagara particle systems took time.
+                Dedicated learning sessions and community support to master Unreal Engine 5 systems.
+
+                </p>
+              </div>
+              <div className="rounded-xl border border-blue-200/60 bg-slate-100 p-4 shadow-sm">
+                <h3 className="text-sky-800 font-semibold mb-2">
+                  Animation Complexity
+                </h3>
+                <p>
+                  Animating the characters was even tougher, especially rigging clothing like dhotis, which often clipped or stuck unnaturally while walking.
+                  Advanced rigging techniques and careful weight painting to achieve natural cloth movement.
+                </p>
+              </div>
+              <div className="rounded-xl border border-sky-200/60 bg-slate-100 p-4 shadow-sm">
+                <h3 className="text--900 font-semibold mb-2">
+               VR Hardware Issues
+                </h3>
+                <p>
+                 Connecting my VR Headset was also a challenge because of some glitch it was very difficult.
+                 Troubleshooting through forums and technical documentation to resolve compatibility issues.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> 
+
+
+
 
       <section className="py-24 bg-gradient-to-r from-white via-slate-50 to-blue-50/60">
         <div className="container mx-auto px-4">

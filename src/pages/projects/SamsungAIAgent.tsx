@@ -235,16 +235,16 @@ const SamsungAIAgent: React.FC = () => {
       {/* QUOTE + INTRO PARAGRAPH */}
       <section className="py-16">
         <div className="container mx-auto px-8 py-24">
-          <div className="max-w-6xl mx-auto">
-            <blockquote className="text-3xl md:text-4xl font-extrabold leading-snug text-slate-900">
+          <div className="max-w-5xl mx-auto text-center items-center">
+            <blockquote className="text-3xl md:text-5xl font-extrabold leading-snug text-slate-900">
               “The <span className="text-sky-600">more senses</span> an agent understands the
               more human the interactions feels.”
             </blockquote>
 
-            <p className="mt-6 text-sm md:text-base text-muted-foreground max-w-3xl">
+            <p className="mt-6 text-sm md:text-base text-muted-foreground ">
               As technology evolves, our interactions with digital products are no longer limited to a
-              mouse and keyboard. Users can now tap, swipe, speak, and gesture — and even glance —
-              to interact. This shift toward multimodal interfaces, where multiple input methods coexist
+              mouse and keyboard. Users can now tap, swipe, speak, gesture and even glance to interact. 
+              This shift toward multimodal interfaces, where multiple input methods coexist
               has opened up exciting possibilities for creating more intuitive, accessible, and
               versatile experiences.
             </p>
@@ -327,12 +327,12 @@ const SamsungAIAgent: React.FC = () => {
 
 
       {/* Travel Agent */}
-      <section className="py-12 bg-white text-black">
+      <section className="py-12 bg-white text-black ">
         <div className="container mx-auto px-4 max-w-7xl">
           <h2 className="text-3xl font-bold text-sky-600 mb-8 ">
                 AI Travel Agent
               </h2>
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-8 mb-24">
             <div>
               
               <div className="grid sm:grid-cols-1 gap-4 text-sm text-muted-foreground">
@@ -378,7 +378,7 @@ const SamsungAIAgent: React.FC = () => {
               <img
                 src="/Photos/sam/7.jpg"
                 alt="Bodystorming with sticky notes and team"
-                className="rounded-xl max-w-2xl object-cover"
+                className="rounded-xl max-w-2xl object-cover "
               />
             </div>
           </div>
@@ -411,7 +411,7 @@ const SamsungAIAgent: React.FC = () => {
 
        <section className="py-24 bg-gradient-to-r from-white via-slate-50 to-blue-50/60">
               <div className="container mx-auto px-4">
-                <div className="max-w-8xl mx-auto">
+                <div className="max-w-7xl mx-auto">
                   <div className="grid lg:grid-cols-1 gap-12 items-center text-center">
                     <div> 
                       <h2 className="text-4xl font-bold mb-6 text-sky-700 text-center">
