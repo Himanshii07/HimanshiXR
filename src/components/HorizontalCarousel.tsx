@@ -5,7 +5,11 @@ const HorizontalCarousel: React.FC = () => {
   const images = [
     {
       src: "/Photos/life/car.jpeg",
-      caption: "Started loving the city!",
+      caption: "Started loving the city ❤️",
+    },
+      {
+      src: "/Photos/life/plant.jpeg",
+      caption: "Growing and glowing",
     },
     {
       src: "/Photos/life/2.jpeg",

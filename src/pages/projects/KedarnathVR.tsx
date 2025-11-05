@@ -61,7 +61,7 @@ const KedarnathVR = () => {
     duration: "6 Weeks",
     year: "2025",
     client: "Individual Project",
-    team: "Solo Developer",
+    team: "Individual Project",
     role: "Lead XR Designer & Developer",
     status: "Completed",
     category: "Virtual Reality & Cultural Heritage",
