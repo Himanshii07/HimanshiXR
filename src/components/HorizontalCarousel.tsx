@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 const HorizontalCarousel: React.FC = () => {
   const images = [
     {
-      src: "/Photos/life/14.jpeg",
-      caption: "He taught me how to be fearless",
+      src: "/Photos/life/car.jpeg",
+      caption: "Started loving the city!",
     },
     {
       src: "/Photos/life/2.jpeg",
@@ -14,6 +14,10 @@ const HorizontalCarousel: React.FC = () => {
      {
       src: "/Photos/life/11.jpeg",
       caption: "Drove 1500km from delhi to pune :)",
+    },
+     {
+      src: "/Photos/life/trek.jpeg",
+      caption: "First trek in Maharashtra",
     },
      {
       src: "/Photos/life/10.jpeg",
@@ -30,7 +34,7 @@ const HorizontalCarousel: React.FC = () => {
     
     {
       src: "/Photos/life/7.jpeg",
-      caption: "and that's oreo!",
+      caption: "That's oreo!",
     },
     {
       src: "/Photos/life/16.jpeg",
@@ -43,8 +47,8 @@ const HorizontalCarousel: React.FC = () => {
     },
    
     {
-      src: "/Photos/life/12.jpeg",
-      caption: "We Explored some places in Pune",
+      src: "/Photos/life/5.jpeg",
+      caption: "Love to explore new places",
     },
    
   ];
@@ -57,7 +61,7 @@ const HorizontalCarousel: React.FC = () => {
       <motion.div
         className="flex gap-6"
         animate={{
-          x: ["0%", "-140%"],
+          x: ["0%", "-160%"],
         }}
         transition={{
           duration: 90,
