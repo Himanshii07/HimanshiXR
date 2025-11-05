@@ -51,7 +51,7 @@ const Index = () => {
   const recentProjects = [
     {
       title: "Mahakatha VR Experience",
-      category: "VR Experience",
+      category: "Virtual Reality Experience",
       image: "/Photos/Kedarnath.png",
       description:
         "Immersive VR experience bringing ancient mythological stories of Kedarnath to life",
@@ -77,16 +77,16 @@ const Index = () => {
       slug: "samsung-ai-agent",
     },
     {
-      title: "The Mushroom House",
-      category: "3D Environment",
-      image: "/Photos/Mushroom.png",
+      title: "Preflight Maintenance Check VR",
+      category: "Human Factors & Ergonomics",
+      image: "/Photos/Flight/6.png",
       description:
-        "Fantasy 3D environment showcasing complete pipeline from Maya to Unreal Engine 5",
-      slug: "mushroom-house",
+        "VR-based pre-flight maintenance training with guided inspection and independent practice in a safe, immersive environment.",
+      slug: "preflight-maintenance-check-vr",
     },
      {
       title: "System Thinking",
-      category: "research",
+      category: "Research",
       image: "/Photos/pune/28.png",
       description:
         "Mapping interdependencies, feedback loops, and leverage points in complex problems.",
@@ -141,7 +141,7 @@ const Index = () => {
     },
      {
       title: "Shooting Range",
-      category: "vr",
+      category: "Virtual Reality Training Simulation",
       image: "/Photos/Shooting range.png",
       description:
         "A realistic shooting simulation that provides safe training environment with physics-based mechanics and weapon systems.",
@@ -180,7 +180,7 @@ const Index = () => {
       <section className="py-24 bg-white   bg-[radial-gradient(#bcbcbc_0.7px,transparent_1px)] [background-size:20px_20px]. 
      ">
         <div className=" container mx-auto px-4">
-          <div className="mb-2 flex justify-center gap-1">
+          <div className="mb-2 flex justify-center gap-1 bg-white">
             <video
               src="/videos/ball.mp4" // Update this path
               autoPlay

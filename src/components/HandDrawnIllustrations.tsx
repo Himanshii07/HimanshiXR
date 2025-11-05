@@ -168,7 +168,7 @@ const HandDrawnIllustrations: React.FC<HandDrawnIllustrationsProps> = ({
           draggable={false}
         />
       ),
-      position: { top: "-5%", right: "40%" },
+      position: { top: "-7%", right: "40%" },
       color: "text-indigo-600",
       tooltipPosition: { right: "10%", top: "2rem" },
     },

@@ -44,7 +44,7 @@ const Projects = () => {
       longDescription:
         "This spiritually immersive VR application recreates the sacred pilgrimage site of Kedarnath and tells the ancient mythological stories through interactive narratives. Users can explore the holy temple, witness divine manifestations, and experience the rich cultural heritage of Hindu mythology in a respectful and educational manner.",
       image: "/Photos/Kedarnath.png",
-      tags: ["Unity", "VR", "Storytelling", "Cultural Heritage", "3D Modeling"],
+      tags: ["Unreal Engine", "Storytelling", "Cultural Heritage", "3D Modeling"],
       featured: true,
       year: "2025",
       client: "Individual Project",
@@ -60,7 +60,7 @@ const Projects = () => {
       id: 2,
       title: "Savey - Interactive Piggy Bank",
       category: "interactive",
-      categoryLabel: "Interactive Design",
+      categoryLabel: "Interactive Product Design",
       description:
         "A friendly piggy bank that reacts to a child's behavior, encouraging them to save. Turns saving into a game using emotional cues, sounds, and interaction.",
       longDescription:
@@ -97,7 +97,7 @@ const Projects = () => {
         "This project demonstrates mastery of the full 3D pipeline including modeling in Maya, UV mapping, hand-painted textures in Substance Painter, rigging and animation, culminating in a magical environment built in Unreal Engine 5 with detailed props and atmospheric lighting.",
       image: "/Photos/Mushroom.png",
       tags: [
-        "Autodesk Maya",
+        "Maya",
         "Substance Painter",
         "Unreal Engine 5",
         "3D Modeling",
@@ -105,7 +105,7 @@ const Projects = () => {
       ],
       featured: true,
       year: "2025",
-      client: "3D Art Portfolio",
+      client: "Individual Project",
       duration: "2 weeks",
       slug: "mushroom-house",
       links: {
@@ -119,13 +119,13 @@ const Projects = () => {
       id: 11,
       title: "Samsung AI Agent",
       category: "interactive",
-      categoryLabel: "Interactive Design",
+      categoryLabel: "XR Interaction Design",
       description:
         "Concept prototype for a proactive multimodal assistant across Samsung devices.",
       longDescription:
         "Exploration of context-aware assistance, privacy-preserving on-device intelligence, and helpful automation spanning phone, tablet, and wearable surfaces.",
       image: "Photos/sam/26.jpg",
-      tags: ["AI", "Assistant", "Prototyping", "Voice", "Multimodal"],
+      tags: ["AI", "AI Agents", "Prototyping", "Multimodal Interactions"],
       featured: false,
       year: "2025",
       client: "Interaction Design",
@@ -144,18 +144,17 @@ const Projects = () => {
       id: 10,
       title: "Preflight Maintenance Check VR",
       category: "vr",
-      categoryLabel: "Virtual Reality",
+      categoryLabel: "Human Factors & Ergonomics",
       description:
         "VR-based pre-flight maintenance training with guided inspection and independent practice in a safe, immersive environment.",
       longDescription:
         "We designed a VR-based pre-flight maintenance simulation to replace costly, risky traditional training. Trainees first complete a guided inspection with real-time feedback, then practice independently to build confidence safely.",
       image: "/Photos/Flight/6.png",
       tags: [
-        "VR",
-        "Training Simulation",
-        "Task Analysis",
-        "Human Factors",
-        "XR Heuristics",
+         "XR Heuristics",
+         "Interaction Design",
+         "UX in XR",
+        "VR Training Simulation",
       ],
       featured: true,
       year: "2025",
@@ -178,7 +177,7 @@ const Projects = () => {
       longDescription:
         "Case study applying systems thinking tools to reveal dynamics over time and identify intervention opportunities.",
       image: "/Photos/pune/28.png",
-      tags: ["Systems", "Causal Loops", "Leverage Points", "Modeling"],
+      tags: ["Design Thinking", "field research", "Affinity Mapping", "Feedback loops"],
       featured: false,
       year: "2025",
       client: "Case Study",
@@ -200,6 +199,8 @@ const Projects = () => {
       tags: [
         "Artificial Intelligence",
         "Machine Learning",
+        "LLM",
+        "Image Recognition",
         
       ],
       featured: true,
@@ -246,7 +247,6 @@ const Projects = () => {
       image: "/Photos/shooting.png",
       tags: [
         "Unreal Engine 5",
-        "VR",
         "Physics Simulation",
         "Training",
         "Haptic Feedback",
