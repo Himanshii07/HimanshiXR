@@ -4,7 +4,11 @@ import { Menu, X, Home, User, Briefcase, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
-const Navigation = () => {
+type NavigationProps = {
+  forceWhite?: boolean;
+};
+
+const Navigation = ({ forceWhite }: NavigationProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
@@ -37,8 +41,13 @@ const Navigation = () => {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
-            <Link to="/" className="flex items-center space-x-2 group">
-              <span className="font-display font-normal text-lg text-foreground transition-colors">
+              <Link to="/" className="flex items-center space-x-2 group">
+              <span
+                className={cn(
+                  "font-display font-normal text-lg transition-colors",
+                  forceWhite ? "text-white" : "text-foreground",
+                )}
+              >
                 XR Designer
               </span>
             </Link>
@@ -54,7 +63,11 @@ const Navigation = () => {
                     className={cn(
                       "relative px-3 py-2 rounded-md text-sm font-medium transition-all duration-200",
                       isActive
-                        ? "text-foreground"
+                        ? forceWhite
+                          ? "text-white"
+                          : "text-foreground"
+                        : forceWhite
+                        ? "text-white/70 hover:text-white"
                         : "text-muted-foreground hover:text-foreground",
                     )}
                   >
@@ -71,7 +84,7 @@ const Navigation = () => {
             <Button
               variant="ghost"
               size="sm"
-              className="md:hidden"
+                className="md:hidden"
               onClick={() => setIsOpen(!isOpen)}
             >
               {isOpen ? (
@@ -98,7 +111,11 @@ const Navigation = () => {
                     className={cn(
                       "flex items-center space-x-3 px-3 py-2 rounded-md text-sm font-medium transition-all",
                       isActive
-                        ? "text-foreground bg-muted"
+                        ? forceWhite
+                          ? "text-white bg-muted"
+                          : "text-foreground bg-muted"
+                        : forceWhite
+                        ? "text-white/70 hover:text-white hover:bg-accent"
                         : "text-muted-foreground hover:text-foreground hover:bg-accent",
                     )}
                   >

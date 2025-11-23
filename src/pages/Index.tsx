@@ -108,11 +108,11 @@ const Index = () => {
       slug: "touch-design",
     },
     {
-      title: "Creative Coding",
-      category: "Generative Art",
-      image: "/Photos/photobooth3.png",
+      title: "Web Design & Development",
+      category: "UI/UX Design",
+      image: "/Photos/42-4.png",
       description:
-        "A fully functional, interactive Photo Booth website that demonstrates a mix of coding skills, creativity, and user-centric design.",
+        "A complete design and development of the Four Two Agency to reflect the brand’s unconventional identity.",
       slug: "creative-coding",
     },
     {
