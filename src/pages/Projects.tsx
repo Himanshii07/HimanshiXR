@@ -103,7 +103,7 @@ const Projects = () => {
         "3D Modeling",
         "Hand-painted Textures",
       ],
-      featured: true,
+      featured: false,
       year: "2025",
       client: "Individual Project",
       duration: "2 weeks",
@@ -156,7 +156,7 @@ const Projects = () => {
          "UX in XR",
         "VR Training Simulation",
       ],
-      featured: true,
+      featured: false,
       year: "2025",
       client: "Team Project",
       duration: "3 weeks",
@@ -178,7 +178,7 @@ const Projects = () => {
         "Case study applying systems thinking tools to reveal dynamics over time and identify intervention opportunities.",
       image: "/Photos/pune/28.png",
       tags: ["Design Thinking", "field research", "Affinity Mapping", "Feedback loops"],
-      featured: false,
+      featured: true,
       year: "2025",
       client: "Case Study",
       duration: "1 week",
@@ -237,7 +237,7 @@ const Projects = () => {
        {
       id: 3,
       title: "  Bold BI Dashboard Redesign",
-      category: "UI/UX Design",
+      category: "research",
       categoryLabel: "UI/UX Design",
       description:
         "Redesigning a complex hospital management dashboard (Bold BI) for improved usability and data visualization.",
@@ -278,7 +278,7 @@ const Projects = () => {
         "Training",
         "Haptic Feedback",
       ],
-      featured: true,
+      featured: false,
       year: "2025",
       client: "Individual Project",
       duration: "2 weeks",
@@ -291,12 +291,6 @@ const Projects = () => {
     },
 
     
-
-   
-
-
-
-
 
 
   ];
