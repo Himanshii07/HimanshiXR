@@ -38,6 +38,7 @@ const Projects = () => {
       id: 1,
       title: "Mahakatha VR Experience",
       category: "vr",
+      categories: ["vr", "3d-art"],
       categoryLabel: "Virtual Reality",
       description:
         "An immersive VR experience that brings ancient mythological stories of Kedarnath to life, allowing users to witness divine tales in a sacred virtual environment.",
@@ -119,6 +120,7 @@ const Projects = () => {
       id: 11,
       title: "Samsung AI Agent",
       category: "interactive",
+      categories: ["interactive", "research"],
       categoryLabel: "XR Interaction Design",
       description:
         "Concept prototype for a proactive multimodal assistant across Samsung devices.",
@@ -133,13 +135,7 @@ const Projects = () => {
       slug: "samsung-ai-agent",
       links: { demo: "#", github: "#", live: "#" },
     },
-
-
-    
    
-     
-    
-    ,
     {
       id: 10,
       title: "Preflight Maintenance Check VR",
@@ -234,11 +230,11 @@ const Projects = () => {
       slug: "ethnography",
       links: { demo: "#", github: "#", live: "#" },
     },
-       {
-      id: 3,
-      title: "  Bold BI Dashboard Redesign",
-      category: "research",
-      categoryLabel: "UI/UX Design",
+      {
+        id: 20,
+        title: "Bold BI Dashboard Redesign",
+        category: "research",
+        categoryLabel: "Research & UX",
       description:
         "Redesigning a complex hospital management dashboard (Bold BI) for improved usability and data visualization.",
       longDescription:
@@ -253,8 +249,8 @@ const Projects = () => {
       featured: true,
       year: "2024",
       client: "Individual Project",
-      duration: "1 weeks",
-      slug: "unreal-cinematic",
+        duration: "1 week",
+        slug: "dashboard-redesign",
       links: {
         demo: "#",
         github: "#",
@@ -299,7 +295,7 @@ const Projects = () => {
     { id: "all", label: "All Projects", icon: Filter },
     { id: "vr", label: "VR & Spatial", icon: Headphones },
     { id: "interactive", label: "Interactive & Games", icon: Smartphone },
-    { id: "research", label: "Research", icon: Microscope },
+    { id: "research", label: "Research & UX", icon: Microscope },
     { id: "3d-art", label: "3D Environment", icon: MonitorSpeaker },
   ];
 
@@ -308,7 +304,9 @@ const Projects = () => {
   const filteredProjects =
     activeFilter === "all"
       ? projects
-      : projects.filter((project) => project.category === activeFilter);
+      : projects.filter((project) =>
+          project.categories ? project.categories.includes(activeFilter) : project.category === activeFilter
+        );
 
   const featuredProjects = projects.filter((project) => project.featured);
 

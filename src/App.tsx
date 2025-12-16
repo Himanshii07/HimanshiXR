@@ -12,6 +12,7 @@ import Savey from "./pages/projects/Savey";
 import ShootingRange from "./pages/projects/ShootingRange";
 import MushroomHouse from "./pages/projects/MushroomHouse";
 import UnrealCinematic from "./pages/projects/UnrealCinematic";
+import DashboardRedesign from "./pages/projects/DashboardRedesign";
 import StormyOcean from "./pages/projects/StormyOcean";
 import SmartChemistry from "./pages/projects/SmartChemistry";
 import AngryBirds from "./pages/projects/AngryBirds";
@@ -43,6 +44,10 @@ const App = () => (
           <Route
             path="/projects/unreal-cinematic"
             element={<UnrealCinematic />}
+          />
+          <Route
+            path="/projects/dashboard-redesign"
+            element={<DashboardRedesign />}
           />
           <Route path="/projects/stormy-ocean" element={<StormyOcean />} />
           <Route
