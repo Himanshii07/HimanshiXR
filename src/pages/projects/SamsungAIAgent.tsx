@@ -224,6 +224,18 @@ const SamsungAIAgent: React.FC = () => {
       </section> */}
 
 
+     {/* competitors */}
+      <section className="py-16 bg-white">
+        <div className="container max-w-12xl mx-auto px-4 rounded-xl  overflow-hidden">
+          <div className="max-w-7xl mx-auto text-center mb-10 gap-8">
+            <img
+              src="/Photos/sam/33.png"
+              alt="Human Factors reference"
+              className="rounded-xl w-full object-cover aspect-4/3"
+            />
+          </div>
+        </div>
+      </section>
 
 
 
@@ -236,6 +248,8 @@ const SamsungAIAgent: React.FC = () => {
       <section className="py-16">
         <div className="container mx-auto px-8 py-24">
           <div className="max-w-5xl mx-auto text-center items-center">
+             
+                    
             <blockquote className="text-3xl md:text-5xl font-extrabold leading-snug text-slate-900">
               “The <span className="text-sky-600">more senses</span> an agent understands the
               more human the interactions feels.”
@@ -263,6 +277,21 @@ const SamsungAIAgent: React.FC = () => {
         </div>
       </section>
 
+
+      {/* competitors */}
+      <section className="py-16 bg-white">
+        <div className="container max-w-12xl mx-auto px-4 rounded-xl  overflow-hidden">
+          <div className="max-w-7xl mx-auto text-center mb-10 gap-8">
+            <img
+              src="/Photos/sam/31.png"
+              alt="Human Factors reference"
+              className=" w-full object-cover aspect-4/3"
+            />
+          </div>
+        </div>
+      </section>
+
+
      
 
 
@@ -274,6 +303,20 @@ const SamsungAIAgent: React.FC = () => {
               src="/Photos/sam/6.jpg"
               alt="Human Factors reference"
               className="rounded-xl w-full object-cover aspect-4/3"
+            />
+          </div>
+        </div>
+      </section>
+       
+
+       {/* mindmap */}
+      <section className="py-16 bg-white">
+        <div className="container max-w-12xl mx-auto px-4 rounded-xl  overflow-hidden">
+          <div className="max-w-7xl mx-auto text-center mb-10 gap-8">
+            <img
+              src="/Photos/sam/34 copy.png"
+              alt="Human Factors reference"
+              className=" w-full object-cover"
             />
           </div>
         </div>
