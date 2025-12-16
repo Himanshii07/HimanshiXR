@@ -108,6 +108,14 @@ const Index = () => {
       slug: "touch-design",
     },
     {
+      title: "Bold BI Dashboard Redesign",
+      category: "UI/UX Design",
+      image: "/Photos/UI/1.png",
+      description:
+        "Redesigning a complex hospital management dashboard (Bold BI) for improved usability and data visualization.",
+      slug: "unreal-cinematic",
+    },
+    {
       title: "Web Design & Development",
       category: "UI/UX Design",
       image: "/Photos/42-4.png",
@@ -123,14 +131,7 @@ const Index = () => {
         "A dynamic ocean simulation project exploring water physics and visual effects in Unreal Engine.",
       slug: "stormy-ocean",
     },
-    {
-      title: "Unreal Cinematic Challenge",
-      category: "Cinematic & Animation",
-      image: "/Photos/Unreal.png",
-      description:
-        "Short film created for Unreal Engine's cinematic challenge, focusing on lighting, camera, and storytelling.",
-      slug: "unreal-cinematic",
-    },
+   
     {
       title: "Angry Birds Game",
       category: "Interactive Game Design",

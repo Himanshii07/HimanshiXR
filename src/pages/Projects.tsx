@@ -234,8 +234,35 @@ const Projects = () => {
       slug: "ethnography",
       links: { demo: "#", github: "#", live: "#" },
     },
-
-      {
+       {
+      id: 3,
+      title: "  Bold BI Dashboard Redesign",
+      category: "UI/UX Design",
+      categoryLabel: "UI/UX Design",
+      description:
+        "Redesigning a complex hospital management dashboard (Bold BI) for improved usability and data visualization.",
+      longDescription:
+        "This project involved redesigning the Bold BI dashboard used in hospital management to enhance usability and data visualization. The focus was on creating a more intuitive interface that allows users to quickly access critical information, improving overall efficiency and decision-making in a healthcare setting.",
+      image: "/Photos/UI/1.png",
+      tags: [
+        "UI Design",
+        "UX Research",
+        "Data Visualization",
+        "Dashboard Design",
+      ],
+      featured: true,
+      year: "2024",
+      client: "Individual Project",
+      duration: "1 weeks",
+      slug: "unreal-cinematic",
+      links: {
+        demo: "#",
+        github: "#",
+        live: "#",
+      },
+    },
+  
+  {
       id: 3,
       title: "Shooting Range in VR",
       category: "vr",
