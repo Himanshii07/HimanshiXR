@@ -31,7 +31,7 @@ const DashboardRedesign = () => {
         <div className="container mx-auto px-6 max-w-6xl">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h1 className="text-5xl font-bold mb-6">Bold BI Dashboard — Redesign</h1>
+              <h1 className="text-5xl font-bold mb-6">Dashboard Redesign</h1>
               <p className="text-lg text-white/80 mb-6">
                 We redesigned a hospital management dashboard (Bold BI) to improve information hierarchy, visual clarity, and
                 data-driven decision-making for healthcare teams. The redesign focuses on prioritizing critical metrics, a clean grid
@@ -39,26 +39,23 @@ const DashboardRedesign = () => {
               </p>
 
               <div className="mb-6 flex flex-wrap items-center gap-3">
-                <Badge variant="outline" className="border-teal-500 text-teal-400">Data Visualization</Badge>
+                <Badge variant="outline" className="border-orange-500 text-orange-400">Data Visualization</Badge>
                 <Badge variant="secondary" className="bg-white/5 text-white/90">Dashboard UI</Badge>
               </div>
 
               <div className="flex gap-3">
-                <Button asChild size="lg" className="bg-teal-700 hover:bg-teal-600">
+                <Button asChild size="lg" className="bg-orange-700 hover:bg-orange-600">
                   <Link to="/projects">
                     <ArrowLeft className="mr-2 h-4 w-4 rotate-180" />
                     Back to Projects
                   </Link>
-                </Button>
-                <Button asChild size="lg" variant="outline" className="border-white/10">
-                  <a href="#overview">Jump to overview</a>
                 </Button>
               </div>
             </div>
 
             <div className="relative">
               <div className="rounded-3xl overflow-hidden border border-white/6 shadow-lg">
-                <img src="/Photos/dashboard-overview.png" alt="Dashboard overview" className="w-full h-full object-cover" />
+                <img src="/Photos/UI/1.png" alt="Dashboard overview" className="w-full h-full object-cover" />
               </div>
             </div>
           </div>
@@ -80,7 +77,8 @@ const DashboardRedesign = () => {
 
             <div>
               <h3 className="text-xl font-semibold mb-3">Design Process</h3>
-              <div className="grid grid-cols-5 gap-6">
+
+              {/*<div className="grid grid-cols-5 gap-6">
                 <div className="text-center">
                   <div className="w-20 h-20 rounded-lg border border-white/6 flex items-center justify-center mb-2">⚙️</div>
                   <div className="text-sm">Understand</div>
@@ -101,7 +99,10 @@ const DashboardRedesign = () => {
                   <div className="w-20 h-20 rounded-lg border border-white/6 flex items-center justify-center mb-2">⚡</div>
                   <div className="text-sm">Prototype</div>
                 </div>
-              </div>
+              </div>*/}
+               <div className="rounded-lg overflow-hidden border border-white/6 p-8 bg-white/3">
+            <img src="/Photos/UI/2.png" className="w-full object-cover rounded-md" />
+          </div>
             </div>
           </div>
         </div>
@@ -126,7 +127,7 @@ const DashboardRedesign = () => {
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             <Card className="bg-white/5 border-white/6">
               <CardContent>
-                <img src="/Photos/dashboard-before.png" alt="Before dashboard" className="w-full object-cover rounded-md" />
+                <img src="/Photos/UI/10.png" alt="Before dashboard" className="w-full object-cover rounded-md" />
               </CardContent>
             </Card>
 
@@ -146,9 +147,9 @@ const DashboardRedesign = () => {
       {/* Typography */}
       <section className="py-20 bg-black">
         <div className="container mx-auto px-6 max-w-6xl">
-          <h2 className="text-4xl font-bold mb-8">Typography</h2>
+         
           <div className="rounded-lg overflow-hidden border border-white/6 p-8 bg-white/3">
-            <img src="/Photos/dashboard-typography.png" alt="Typography" className="w-full object-cover rounded-md" />
+            <img src="/Photos/UI/9.png"  className="w-full object-cover rounded-md" />
           </div>
         </div>
       </section>
@@ -158,7 +159,7 @@ const DashboardRedesign = () => {
         <div className="container mx-auto px-6 max-w-6xl">
           <h2 className="text-4xl font-bold mb-8">Grid System</h2>
           <div className="rounded-lg overflow-hidden border border-white/6 p-8 bg-white/3">
-            <img src="/Photos/dashboard-grid.png" alt="Grid system" className="w-full object-cover rounded-md" />
+            <img src="/Photos/UI/4.png" alt="Grid system" className="w-full object-cover rounded-md" />
           </div>
         </div>
       </section>
@@ -170,7 +171,7 @@ const DashboardRedesign = () => {
           <div className="grid lg:grid-cols-2 gap-8">
             <Card className="bg-white/5 border-white/6">
               <CardContent>
-                <img src="/Photos/dashboard-viz.png" alt="Data visualizations" className="w-full object-cover rounded-md" />
+                <img src="/Photos/UI/8.png" alt="Data visualizations" className="w-full object-cover rounded-md" />
               </CardContent>
             </Card>
             <div className="text-white/80">
@@ -192,14 +193,14 @@ const DashboardRedesign = () => {
           <h2 className="text-4xl font-bold mb-8">Design</h2>
           <div className="grid lg:grid-cols-1 gap-8">
             <div className="rounded-lg overflow-hidden border border-white/6">
-              <img src="/Photos/dashboard-design.png" alt="Final design" className="w-full object-cover rounded-md" />
+              <img src="/Photos/UI/6.png" alt="Final design" className="w-full object-cover rounded-md" />
             </div>
             <div className="rounded-lg overflow-hidden border border-white/6 p-6 bg-white/3">
               <h3 className="text-2xl font-semibold mb-4">Before & After</h3>
               <p className="text-white/80 mb-4">The redesigned dashboard improves clarity and reduces cognitive load while maintaining rich, actionable information.</p>
               <div className="flex gap-4">
-                <img src="/Photos/dashboard-before.png" alt="before" className="w-1/2 rounded-md object-cover border border-white/6" />
-                <img src="/Photos/dashboard-design.png" alt="after" className="w-1/2 rounded-md object-cover border border-white/6" />
+                <img src="/Photos/UI/10.png" alt="before" className="w-1/2 rounded-md object-cover border border-white/6" />
+                <img src="/Photos/UI/5.png" alt="after" className="w-1/2 rounded-md object-cover border border-white/6" />
               </div>
             </div>
           </div>
@@ -208,10 +209,10 @@ const DashboardRedesign = () => {
 
       {/* Learnings */}
       <section className="py-20 bg-black">
-        <div className="container mx-auto px-6 max-w-4xl">
+        <div className="container mx-auto px-6 max-w-6xl">
           <Card className="bg-white/5 border-white/6">
             <CardContent className="p-8">
-              <h3 className="text-2xl font-semibold mb-4">What I learned</h3>
+              <h3 className="text-2xl font-semibold mb-4 text-white">What I learned</h3>
               <p className="text-white/80">This redesign reinforced the importance of prioritizing information architecture, establishing a consistent visual language, and designing compact, high-signal data visualizations for fast decision-making in operational contexts.</p>
             </CardContent>
           </Card>
@@ -228,7 +229,7 @@ const DashboardRedesign = () => {
         </div>
       </section>
 
-      <Footer />
+     
     </div>
   );
 };
